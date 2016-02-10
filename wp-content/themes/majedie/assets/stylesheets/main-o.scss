@@ -1,7 +1,7 @@
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
+$background-header: #9d948a;
+$font-size: 1em;
 
-body {
-  font: 100% $font-stack;
-  color: $primary-color;
+.wpg-main-header {
+  background: $background-header;
+  font-size: $font-size;
 }

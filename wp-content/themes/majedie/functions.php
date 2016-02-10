@@ -1,7 +1,6 @@
 <?php
 
 function theme_enqueue_style() {
-	wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', array(), false, false );
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/stylesheets/bootstrap/bootstrap-grid.css', array(), false, false ); 
 	wp_enqueue_style( 'normalize', get_template_directory_uri() . '/assets/stylesheets/normalize.css', array(), false, false ); 
 	wp_enqueue_style( 'pixelperfect-css', get_template_directory_uri() . '/assets/javascripts/pixelperfect/src/pixel-perfect.css', array(), false, false ); 
@@ -21,9 +20,9 @@ function theme_enqueue_script() {
 	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/assets/javascripts/vendor/modernizr/modernizr.js', array(), false, false );
 	wp_enqueue_script( 'pixelperfect-js', get_template_directory_uri() . '/assets/javascripts/pixelperfect/src/pixel-perfect.js' , array(), false, true); 
 
-	wp_enqueue_script( 'cycle2', get_template_directory_uri() . '/assets/javascripts/cycle2/jquery.cycle2.min.js', array(), false, true );
-	wp_enqueue_script( 'cycle2-carousel', get_template_directory_uri() . '/assets/javascripts/cycle2/jquery.cycle2.carousel.js', array(), false, true );
-	wp_enqueue_script( 'cycle2-swipe', get_template_directory_uri() . '/assets/javascripts/cycle2/jquery.cycle2.swipe.min.js', array(), false, true );
+	wp_enqueue_script( 'cycle2', get_template_directory_uri() . '/assets/javascripts/cycle2/jquery.cycle2.min.js', false, false, true );
+	wp_enqueue_script( 'cycle2-carousel', get_template_directory_uri() . '/assets/javascripts/cycle2/jquery.cycle2.carousel.js', false, false, true );
+	wp_enqueue_script( 'cycle2-swipe', get_template_directory_uri() . '/assets/javascripts/cycle2/jquery.cycle2.swipe.min.js', false, false, true );
 
 	wp_enqueue_script( 'modules-w', get_template_directory_uri() . '/assets/javascripts/modules-w.js', array(), false, true );
 	wp_enqueue_script( 'modules-o', get_template_directory_uri() . '/assets/javascripts/modules-o.js', array(), false, true );
