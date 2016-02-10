@@ -22,7 +22,7 @@
 			<nav>
 				<ul class="wpg-top-menu">
 					<li><a href="#">Majlq Login</a></li>
-					<li><input type="submit" value="Submit"><input type="search" placehilder="Search"></li>
+					<li><input type="submit" value="Submit"><input type="search" placeholder="Search"></li>
 				</ul>
 			</nav>
 		</header>
