@@ -58,17 +58,27 @@ $background-main-header: #9d948a;
 		> li {
 			float: left;
 		}
+		li {
+			font-size: 10px;
+			text-transform: uppercase;
+		}
 	}
 	.wpg-other-menu {
 		float: right;
 		> li {
 			float: left;
 		}
+		li {
+			font-size: 14px;
+		}
 	}
 	.wpg-main-menu {
 		float: right;
 		> li {
 			float: left;
+		}
+		li {
+			font-size: 14px;
 		}
 	}
 

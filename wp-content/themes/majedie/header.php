@@ -12,8 +12,8 @@
 			<div class="container">
 				<h1><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-fs8.png" alt="Majedie"></a></h1>
 				<nav>
-					<ul class="wpg-top-menu wpg-dropdown-menu">
-						<li><label for="wpg-dropdown-consultant">Consultant</label>
+					<ul class="wpg-top-menu">
+						<li class="wpg-dropdown-menu"><label for="wpg-dropdown-consultant">Consultant</label>
 							<input type="checkbox" id="wpg-dropdown-consultant">
 							<ul class="sub-menu">
 								<li><a href="#">Example 1</a></li>
@@ -21,7 +21,7 @@
 								<li><a href="#">Example 3</a></li>
 							</ul>
 						</li>
-						<li><label for="wpg-dropdown-lang">United Kingdom</label>
+						<li class="wpg-dropdown-menu"><label for="wpg-dropdown-lang">United Kingdom</label>
 							<input type="checkbox" id="wpg-dropdown-lang">
 							<ul class="sub-menu">
 								<li><a href="#">French</a></li>
