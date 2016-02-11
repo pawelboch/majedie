@@ -1,0 +1,39 @@
+$background-main-header: #9d948a;
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
+
+.wpg-main-header {
+	background: $background-main-header;
+	color: #fff;
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	a {
+		color: inherit;
+	}
+	h1 {
+		margin: 0;
+		padding: 0;
+		max-width: 118px;
+	}
+	@include placeholder {
+	    color: #fff;
+	}	
+	input[type=search] {
+		background: $background-main-header;
+	}
+	.wpg-top-menu .sub-menu {
+		display: none;
+	}
+	input[type=checkbox] {
+		display: none;
+	}
+	input[type=checkbox]:checked + .sub-menu {
+		display: block;
+	}
+}

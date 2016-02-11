@@ -10,12 +10,29 @@
 	<body <?php body_class(); ?>>
 		<header class="wpg-main-header">
 			<div class="container">
-				<h1><a href="/"><img src="" alt="Majedie"></a></h1>
+				<h1><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-fs8.png" alt="Majedie"></a></h1>
 				<nav>
 					<ul class="wpg-top-menu">
-						<li>Consultant</li>
-						<li>United Kingdom</li>
+						<li><label for="wpg-dropdown-consultant">Consultant</label>
+							<input type="checkbox" id="wpg-dropdown-consultant">
+							<ul class="sub-menu">
+								<li><a href="#">Example 1</a></li>
+								<li><a href="#">Example 2</a></li>
+								<li><a href="#">Example 3</a></li>
+							</ul>
+						</li>
+						<li><label for="wpg-dropdown-lang">United Kingdom</label>
+							<input type="checkbox" id="wpg-dropdown-lang">
+							<ul class="sub-menu">
+								<li><a href="#">French</a></li>
+								<li><a href="#">Germany</a></li>
+								<li><a href="#">Poland</a></li>
+							</ul>
+						</li>
 					</ul>
+
+
+
 				</nav>
 				<nav>
 					<?php wp_nav_menu( array( 'container_class' => fasle, 'menu' => 'main' ) ); ?>
