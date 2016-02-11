@@ -12,7 +12,7 @@
 			<div class="container">
 				<h1><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-fs8.png" alt="Majedie"></a></h1>
 				<nav>
-					<ul class="wpg-top-menu">
+					<ul class="wpg-top-menu wpg-dropdown-menu">
 						<li><label for="wpg-dropdown-consultant">Consultant</label>
 							<input type="checkbox" id="wpg-dropdown-consultant">
 							<ul class="sub-menu">
@@ -35,13 +35,11 @@
 
 				</nav>
 				<nav>
-					<?php wp_nav_menu( array( 'container_class' => fasle, 'menu' => 'main' ) ); ?>
-				</nav>
-				<nav>
-					<ul class="wpg-top-menu">
+					<ul class="wpg-other-menu">
 						<li><a href="#">Majlq Login</a></li>
 						<li><input type="submit" value="Submit"><input type="search" placeholder="Search"></li>
 					</ul>
+					<?php wp_nav_menu( array( 'container' => fasle, 'menu' => 'main', 'menu_class' => 'wpg-main-menu' ) ); ?>
 				</nav>
 			</div>
 		</header>

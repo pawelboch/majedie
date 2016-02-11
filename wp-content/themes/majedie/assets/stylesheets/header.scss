@@ -7,19 +7,28 @@ $background-main-header: #9d948a;
 }
 
 .wpg-main-header {
+	font-family: Avenir-Book, Arial, Helvetica, sans-serif;
 	background: $background-main-header;
 	color: #fff;
+	padding: 15px 0;
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
 	img {
 		max-width: 100%;
 		height: auto;
 	}
 	a {
 		color: inherit;
+		text-decoration: none;
 	}
 	h1 {
 		margin: 0;
 		padding: 0;
 		max-width: 118px;
+		float: left;
 	}
 	@include placeholder {
 	    color: #fff;
@@ -27,13 +36,54 @@ $background-main-header: #9d948a;
 	input[type=search] {
 		background: $background-main-header;
 	}
-	.wpg-top-menu .sub-menu {
-		display: none;
+
+	.wpg-dropdown-menu {
+		label {
+			cursor: pointer;
+		}
+		.sub-menu {
+			display: none;
+		}
+
+		input[type=checkbox] {
+			display: none;
+		}
+		input[type=checkbox]:checked + .sub-menu {
+			display: block;
+		}
 	}
-	input[type=checkbox] {
-		display: none;
+
+	.wpg-top-menu {
+		float: right;
+		> li {
+			float: left;
+		}
 	}
-	input[type=checkbox]:checked + .sub-menu {
+	.wpg-other-menu {
+		float: right;
+		> li {
+			float: left;
+		}
+	}
+	.wpg-main-menu {
+		float: right;
+		> li {
+			float: left;
+		}
+	}
+
+	.container:after {
+		content: '';
 		display: block;
+		height: 1px;
+		overflow: hidden;
+		clear: both;
+		background: #fff;
+	}
+	nav {
+		display: block;
+		width: 70%;
+		float: right;
+		clear: right;
 	}
 }
