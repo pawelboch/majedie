@@ -39,8 +39,10 @@
     float: left;
   }
   min-height: 1px;
-  padding-left:  ($gutter / 2);
-  padding-right: ($gutter / 2);
+  padding-left:  15px;
+  padding-right: 15px;
+  //padding-left:  ($gutter / 2);
+  //padding-right: ($gutter / 2);
 }
 
 @mixin make-col-span($size, $columns: $grid-columns) {
