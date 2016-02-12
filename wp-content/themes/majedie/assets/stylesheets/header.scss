@@ -185,12 +185,17 @@ input {
 	}
 }
 
-@media screen and (max-width: 992px) {
-
+@media screen and (max-width: 900px) {
 	.wpg-main-header {
 		input[type=search]:focus {
 		    width: 46px;
 		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	.wpg-main-header {
 		.wpg-other-menu,
 		.wpg-main-menu {
 			li {
@@ -199,6 +204,7 @@ input {
 		}
 	}
 }
+
 @media screen and (max-width: 700px) {
 	.wpg-main-header {
 		padding: 0;
