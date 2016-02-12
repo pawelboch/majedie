@@ -12,9 +12,9 @@
 		list-style-type: none;
 	}
 	.wpg-socials-ico {
-		margin-top: 6px;
+		margin-top: 4px;
 		margin-bottom: 0;
-		padding: 0 0 15px 0;
+		padding: 0 0 0 0;
 		li {
 			display: inline-block;
 			font-size: 12px;
@@ -43,6 +43,13 @@
 		}	
 		span {
 			display: none;
+		}
+	}
+}
+@media screen and (max-width: 800px) {
+	.wpg-main-footer {
+		.wpg-socials-ico {
+			padding-bottom: 15px;
 		}
 	}
 }
