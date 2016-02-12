@@ -68,8 +68,15 @@ $grid-gutter-width:          30px !default; // 30px
 @import "mixins/grid-framework";
 @import "mixins/grid";
 @import "mixins/nav-divider";
+<<<<<<< HEAD
 @import "mixins/clearfix";
 @import "mixins/pulls";
 
 @import "grid";
+=======
+@import "mixins/pulls";
+
+@import "grid";
+
+>>>>>>> 2430e9c0181a0ba71c45971b623a25fb682e5297
 @import "utilities";
