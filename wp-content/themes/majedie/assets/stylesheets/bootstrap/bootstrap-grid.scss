@@ -24,7 +24,7 @@ $grid-breakpoints: (
   // Large screen / desktop
   lg: 992px,
   // Extra large screen / wide desktop
-  xl: 1120px
+  xl: 1114px
 ) !default;
 
 
@@ -36,7 +36,7 @@ $container-max-widths: (
   //sm: 576px,
   //md: 720px,
   //lg: 940px,
-  xl: 1060px
+  xl: 1054px
 ) !default;
 
 
@@ -52,7 +52,16 @@ $grid-gutter-width:          30px !default; // 30px
 // Grid mixins
 //
 
+// Core variables and mixins
 @import "variables";
+@import "mixins";
+
+// Reset and dependencies
+@import "normalize";
+@import "print";
+
+// Core CSS
+@import "reboot";
 
 @import "mixins/clearfix";
 @import "mixins/breakpoints";
@@ -61,4 +70,3 @@ $grid-gutter-width:          30px !default; // 30px
 @import "mixins/nav-divider";
 
 @import "grid";
-@import "normalize";
