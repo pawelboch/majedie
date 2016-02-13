@@ -3,6 +3,7 @@
 * Content
 */
 ?>
+<div class="content-module">
 <div class="wpg-tbd1t wpg-tbd1t-1 big-text-block">
 	<div class="span-table-cell-inset
 		<?php if($this->get('block_height') == 'normal') {
@@ -41,4 +42,5 @@
 		><?php echo $this->get('paragraph') ;?></div>
 		<?php } ;?>
 	</div>
+</div>
 </div>
