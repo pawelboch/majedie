@@ -30,4 +30,10 @@
       .module-full_width_image-title-icons-paragraph-link .table-block .second-col p {
         margin: 0; }
 
+.module-full_width_photo .inner {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px; }
+
 /*# sourceMappingURL=modules-wojtek.css.map */
