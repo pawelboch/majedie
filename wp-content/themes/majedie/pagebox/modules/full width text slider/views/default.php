@@ -1,3 +1,3 @@
-<div class="container-fluid full_width_text_slider">
+<div class="container-fluid module_full_width_text_slider">
 
 </div>

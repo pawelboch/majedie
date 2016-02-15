@@ -1,3 +1,3 @@
-<div class="container-fluid full_width_contact_form-title-paragraph">
+<div class="container-fluid module_full_width_contact_form-title-paragraph">
 
 </div>
