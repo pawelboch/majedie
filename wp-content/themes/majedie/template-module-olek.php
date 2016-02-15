@@ -11,6 +11,7 @@
 		
 		<div class="cycle-slideshow-wrap">
 			<div class="cycle-slideshow"
+				data-cycle-timeout="0"
 				data-cycle-fx="scrollHorz"
 				data-cycle-swipe="true"
 				data-cycle-swipe-fx="scrollHorz"
@@ -18,12 +19,13 @@
 				data-cycle-slides="> div"
 				data-cycle-prev=".cycle-slideshow-prev-<?php echo $idUniqid; ?>"
 				data-cycle-next=".cycle-slideshow-next-<?php echo $idUniqid; ?>"
+				data-cycle-auto-height="container"
 			>
 				<div>
 					<p>We are proud of our distinctive, long-term track recordbut remain as hungry to perform today as we were on day one.</p>
 				</div>
 				<div>
-					<p>We are proud of our distinctive, long-term track recordbut remain as hungry to perform today as we were on day one.</p>
+					<p>We are proud of our distinctive, long-term track recordbut remain as hungry to perform today as we were on day one. We are proud of our distinctive, long-term track recordbut remain as hungry to perform today as we were on day one. We are proud of our distinctive, long-term track recordbut remain as hungry to perform today as we were on day one. We are proud of our distinctive, long-term track recordbut remain as hungry to perform today as we were on day one. We are proud of our distinctive, long-term track recordbut remain as hungry to perform today as we were on day one.</p>
 				</div>
 				<div>
 					<p>We are proud of our distinctive, long-term track recordbut remain as hungry to perform today as we were on day one.</p>
