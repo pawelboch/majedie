@@ -1,32 +1,14 @@
-<?php //global $post; ?>
+<?php 
+global $post; 
+$post_id = $wp_query->post->ID
 
-<div class="container main-container">
+$post = get_post( $post_id );
+$slug = $post->post_name;
+?>
 
-    <div class="container-inset clear-both-fix">
-
-        <div class="container-bar clear-both-fix">
-
-        </div><!-- .container-bar -->
-
-
-        <!--<div class="main-content-article">-->
-        <div class="template-full-width">
-
-            <div class="span-table ">
-                <div class="span_24 overflow-hidden">
-
-                    <?php foreach ($this->get_variable( 'full_width_modules' ) as $module): ?>
-
-                        <?php $module->display(); ?>
-
-                    <?php endforeach ?>
-
-                </div>
-
-            </div><!-- .jsheight -->
-
-        </div><!-- .template-full-width -->
-
-    </div><!-- .container-inset -->
-
-</div><!-- .container -->
+<div class="container-fluid main-container <?php echo $slug ;?>">
+	<?php foreach ($this->get_variable( 'full_width_modules' ) as $module): ?>
+	    <?php $module->display(); ?>
+	<?php endforeach ?>
+<div class="clearfix"></div>
+</div>
