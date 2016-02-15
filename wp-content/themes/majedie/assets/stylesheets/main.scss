@@ -20,3 +20,20 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: Avenir-Light, "Times New Roman", Times, serif;
 	font-weight: 400;
 }
+.container-fluid {
+	padding: 0px;
+}
+.btn-1 {
+    border: 1px solid #fff;
+    color: #fff;
+    display: inline-block;
+    font-family: avenir;
+    font-size: 14px;
+    margin: 20px 0 0;
+    padding: 10px 24px;
+}
+.btn-1:hover, .btn-1:focus {
+    border-color: #fff;
+    color: #fff;
+    text-decoration: none;
+}
