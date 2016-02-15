@@ -1,0 +1,33 @@
+.module-full_width_image-title-icons-paragraph-link {
+  padding: 30px 0; }
+  .module-full_width_image-title-icons-paragraph-link .table-block {
+    display: table;
+    width: 100%; }
+    .module-full_width_image-title-icons-paragraph-link .table-block .first-col {
+      display: table-cell;
+      width: 50%;
+      padding: 0 15px;
+      position: relative; }
+    .module-full_width_image-title-icons-paragraph-link .table-block .second-col {
+      display: table-cell;
+      width: 50%;
+      vertical-align: middle;
+      color: #fff;
+      padding: 15px 15px;
+      position: relative; }
+      .module-full_width_image-title-icons-paragraph-link .table-block .second-col h2 {
+        font-size: 50px;
+        margin: 0px 0 10px;
+        font-weight: 300;
+        line-height: 1.1em;
+        text-transform: uppercase; }
+      .module-full_width_image-title-icons-paragraph-link .table-block .second-col .social-icons {
+        margin: 0 0 10px; }
+        .module-full_width_image-title-icons-paragraph-link .table-block .second-col .social-icons a {
+          color: #fff;
+          font-size: 20px;
+          margin: 0 6px 0 0; }
+      .module-full_width_image-title-icons-paragraph-link .table-block .second-col p {
+        margin: 0; }
+
+/*# sourceMappingURL=modules-wojtek.css.map */

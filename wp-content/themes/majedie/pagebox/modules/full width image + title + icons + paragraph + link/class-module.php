@@ -107,6 +107,7 @@ class Module extends Abstract_Module {
 					'type'        => 'cpt',
 					'group'       => __( 'General', 'pagebox' ),
 					'name'        => 'button_link',
+					'post_type'   => array('post', 'page'),
 					'label'       => __( 'Button link', 'pagebox' ),
 					'description' => __( 'Link where button leads to', 'pagebox' ),
 				),
