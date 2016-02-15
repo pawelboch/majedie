@@ -74,11 +74,11 @@ class Module extends Abstract_Module {
 					),
 					'fields' => array(
 						array(
-							'type'        => 'image',
+							'type'        => 'text',
 							'group'		  => __( 'General', 'pagebox' ),
 							'name'        => 'icon',
 							'label'       => __( 'Icon', 'pagebox' ),
-							'description' => __( 'Choose displaying social media icon', 'pagebox' )
+							'description' => __( 'Example icon: fa-facebook' . "\n" . 'http://fortawesome.github.io/Font-Awesome/cheatsheet/', 'pagebox' )
 						),
 						array(
 							'type'        => 'text',
@@ -117,6 +117,8 @@ class Module extends Abstract_Module {
 					'label'       => __( 'Photo', 'pagebox' ),
 					'description' => __( 'Main module image', 'pagebox' ),
 				),
+
+
 
 				array(
 					'type'        => 'select',
