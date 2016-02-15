@@ -120,3 +120,76 @@
 		}
 	}
 }
+
+
+.module-full-width-contact-form-title-paragraph {
+	text-align: center;
+	padding: 30px 0;
+	color: #fff;
+	background-color: #9d948a;
+	
+	.container {
+		max-width: 710px;
+	}
+
+	h2 {
+		font-size: 40px;
+		text-transform: uppercase;
+		margin: 0 auto 5px;
+		max-width: 550px;
+
+	}
+	p {
+		font-size: 15px;
+		margin: 0 auto 15px;
+		max-width: 550px;
+	}
+
+	input,
+	textarea {
+		outline: none;
+	}
+
+	input[type=text],
+	input[type=email],
+	textarea {
+		width: 100%;
+		border: none;
+		margin: 0;
+		color: #000;
+		padding: 10px;
+		font-size: 14px;
+		font-family: Avenir-Light, "Times New Roman", Times, serif;
+	}
+	textarea {
+		margin-bottom: 15px;
+		height: 115px;
+	}
+	label {
+		width: 100%;
+		text-align: left;
+		font-family: Avenir-Light, "Times New Roman", Times, serif;
+		margin: 0;
+		padding: 10px 5px 5px;
+	}
+
+	input[type=submit] {
+		border: 1px solid #fff;
+		background: transparent;
+		font-family: Avenir-Light, "Times New Roman", Times, serif;
+		padding: 10px;
+		min-width: 150px;
+		text-transform: uppercase;
+		font-size: 14px;
+	}
+	span.wpcf7-not-valid-tip {
+		color: #cc0000;
+	}
+	.ajax-loader {
+		padding: 5px;
+		display: inline-block;
+		background-color: #fff;
+		margin: 5px 10px;
+		position: absolute;
+	}
+}
