@@ -55,16 +55,81 @@ class Module extends Abstract_Module {
 				array(
 					'type'        => 'text',
 					'group'       => __( 'General', 'pagebox' ),
+					'name'        => 'above_title',
+					'label'       => __( 'Above title', 'pagebox' ),
+					'description' => __( 'Text placed above of the title', 'pagebox' ),
+				),
+				array(
+					'type'        => 'text',
+					'group'       => __( 'General', 'pagebox' ),
 					'name'        => 'title',
 					'label'       => __( 'Title', 'pagebox' ),
 					'description' => __( 'Main module title', 'pagebox' ),
 				),
+				array(
+					'type'        => 'repeater',
+					'group'		  => __( 'General', 'pagebox' ),
+					'name'        => 'carousel',
+					'description' => __( 'Carousel', 'pagebox' ),
+					'labels'       => array(
+						'singular' => __('Carousel element', 'pagebox'),
+						'plural' => __('Carousel elements', 'pagebox')
+					),
+					'buttons' => array(
+						'add' => __('Add carousel element', 'pagebox'),
+						'remove' => __('Remove carousel element', 'pagebox')
+					),
+					'fields' => array(
+						array(
+							'type'        => 'textarea',
+							'group'		  => __( 'General', 'pagebox' ),
+							'name'        => 'carousel_text',
+							'label'       => __( 'Carousel text', 'pagebox' ),
+							'description' => __( '', 'pagebox' )
+						),
+					)
+				),
 
+				array(
+					'type'        => 'number',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'above_title_size',
+					'label'       => __( 'Above title size', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
 				array(
 					'type'        => 'colorpicker',
 					'group'		    => __( 'Design', 'pagebox' ),
-					'name'        => 'button_font_color',
-					'label'       => __( 'Button font color', 'pagebox' ),
+					'name'        => 'above_title_color',
+					'label'       => __( 'Above title color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'number',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'title_size',
+					'label'       => __( 'Title size', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'title_color',
+					'label'       => __( 'Title color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'number',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'carousel_text_size',
+					'label'       => __( 'Carousel text size', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'carousel_text_color',
+					'label'       => __( 'Carousel text color', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
 				),
 			)
