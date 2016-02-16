@@ -214,13 +214,29 @@
 	padding: 60px 0;
 	.wpg-red-block {
 		background-color: #d44451;
+		background-repeat: no-repeat;
+		background-position: right bottom;
+		background-size: auto 100%;
+
+		h2 {
+			font-size: 40px;
+			strong {
+				font-family: Avenir-Black;
+				font-weight: 400;
+			}
+		}
 	}
 	.wpg-blue-block {
 		background-color: #355274;
+		background-repeat: no-repeat;
+		background-position: right bottom;
+		background-size: auto 100%;
 	}
 	.wpg-red-block,
 	.wpg-blue-block {
 		color: #fff;
 		padding: 20px 30px;
+		min-height: 285px;
 	}
+
 }

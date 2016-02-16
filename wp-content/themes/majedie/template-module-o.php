@@ -76,14 +76,14 @@
 
 		<div class="row">
 			<div class="col-xs-12 col-sm-6">
-				<div class="wpg-red-block">
-					<h2>Maj<strong>IQ</strong></h2>
+				<div class="wpg-red-block" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/cloud-big-fs8.png)">
+					<h2><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cloud-fs8.png" alt="x">Maj<strong>IQ</strong></h2>
 					<p>Search our market intel<br>archive your way.</p>
 					<a class="wpg-button-type-1" href="#">LOGIN</a>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6">
-				<div class="wpg-blue-block">
+				<div class="wpg-blue-block" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/one-fs8.png)">
 					<p>We have one clear Aim:<br>Simply to make money<br>for our Clients</p>
 					<a class="wpg-button-type-1" href="#">LEARN MORE ABOUT US</a>
 				</div>
