@@ -67,4 +67,43 @@
 	</div>
 </div>
 
+
+<!-- Module two blocks with logo + title + button + background image (MajiQ and About Us) -->
+<div class="module-two-blocks-with-logo-title-button-background-image bg-grey-grain">
+	<div class="container container-corrected">
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<div class="wpg-red-block">
+					<h2>Maj<strong>IQ</strong></h2>
+					<p>Search our market intel<br>archive your way.</p>
+					<a class="wpg-button-type-1" href="#">LOGIN</a>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<div class="wpg-blue-block">
+					<p>We have one clear Aim:<br>Simply to make money<br>for our Clients</p>
+					<a class="wpg-button-type-1" href="#">LEARN MORE ABOUT US</a>
+				</div>
+			</div>
+		</div>
+
+		<!--
+		<div class="span-table">
+			<div class="span-table-cell">
+				<h2>Maj<strong>IQ</strong></h2>
+				<p>Search our market intel<br>archive your way.</p>
+				<a class="wpg-button-type-1" href="#">LOGIN</a>
+			</div>
+			<div class="span-table-cell">
+				<p>We have one clear Aim:<br>Simply to make money<br>for our Clients</p>
+				<a class="wpg-button-type-1" href="#">LEARN MORE ABOUT US</a>
+			</div>
+		</div>
+		-->
+
+
+	</div>
+</div>
+
 <?php get_footer(); ?> 

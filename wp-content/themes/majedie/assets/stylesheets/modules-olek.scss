@@ -208,3 +208,18 @@
 		position: absolute;
 	}
 }
+
+.module-two-blocks-with-logo-title-button-background-image {
+	padding: 60px 15px;
+	.wpg-red-block {
+		background-color: #d44451;
+	}
+	.wpg-blue-block {
+		background-color: #355274;
+	}
+	.wpg-red-block,
+	.wpg-blue-block {
+		color: #fff;
+		padding: 20px 30px;
+	}
+}
