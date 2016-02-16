@@ -27,6 +27,10 @@ input {
 	background: $background-main-header;
 	color: #fff;
 	padding: 22px 0 15px;
+
+	.container {
+		max-width: 1054px !important;
+	}
 	.wpg-hamburger {
 		display: none;
 	}
