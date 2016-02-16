@@ -132,8 +132,9 @@
 	color: #fff;
 	background-color: #9d948a;
 	
-	.container {
+	.container > div {
 		max-width: 710px;
+		margin: 0 auto;
 	}
 
 	h2 {
@@ -210,7 +211,7 @@
 }
 
 .module-two-blocks-with-logo-title-button-background-image {
-	padding: 60px 15px;
+	padding: 60px 0;
 	.wpg-red-block {
 		background-color: #d44451;
 	}
