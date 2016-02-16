@@ -1,5 +1,9 @@
 /* framework display table */
 
+.wpg-clear-both {
+	clear: both;
+}
+
 .span-table {
 	display: table;
 	table-layout: fixed;
@@ -124,7 +128,7 @@
 
 .module-full-width-contact-form-title-paragraph {
 	text-align: center;
-	padding: 30px 0;
+	padding: 30px 0 45px;
 	color: #fff;
 	background-color: #9d948a;
 	
@@ -162,15 +166,27 @@
 		font-family: Avenir-Light, "Times New Roman", Times, serif;
 	}
 	textarea {
-		margin-bottom: 15px;
 		height: 115px;
 	}
-	label {
+	label,
+	span.wpcf7-not-valid-tip,
+	div.wpcf7-validation-errors {
 		width: 100%;
+		display: block;
 		text-align: left;
 		font-family: Avenir-Light, "Times New Roman", Times, serif;
 		margin: 0;
 		padding: 10px 5px 5px;
+		font-size: 14px;
+	}
+	span.wpcf7-not-valid-tip {
+		color: #cc0000;
+		padding: 5px;
+	}
+	div.wpcf7-validation-errors {
+		text-align: center;
+		margin-top: 15px;
+		padding: 10px;
 	}
 
 	input[type=submit] {
@@ -181,15 +197,29 @@
 		min-width: 150px;
 		text-transform: uppercase;
 		font-size: 14px;
+		margin-top: 15px;
 	}
-	span.wpcf7-not-valid-tip {
-		color: #cc0000;
-	}
+	
 	.ajax-loader {
 		padding: 5px;
 		display: inline-block;
 		background-color: #fff;
-		margin: 5px 10px;
+		margin: 15px 10px 0;
 		position: absolute;
+	}
+}
+
+.module-two-blocks-with-logo-title-button-background-image {
+	padding: 60px 15px;
+	.wpg-red-block {
+		background-color: #d44451;
+	}
+	.wpg-blue-block {
+		background-color: #355274;
+	}
+	.wpg-red-block,
+	.wpg-blue-block {
+		color: #fff;
+		padding: 20px 30px;
 	}
 }

@@ -11,7 +11,6 @@
 	<div class="container">
 		<p>Majedie was founded by a team from Mercury Asset Management with a clear aim: </p>
 		<h2>simply to make money for our clients.</h2>
-		
 		<div class="cycle-slideshow-wrap">
 			<div class="cycle-slideshow"
 				data-cycle-timeout="0"
@@ -37,12 +36,9 @@
 			<div class="cycle-slideshow-prev cycle-slideshow-prev-<?php echo $idUniqid; ?>"><i class="fa fa-angle-left"></i></div>
 			<div class="cycle-slideshow-next cycle-slideshow-next-<?php echo $idUniqid; ?>"><i class="fa fa-angle-right"></i></div>
 		</div>
-
 		<div class="cycle-slideshow-pager cycle-slideshow-pager-<?php echo $idUniqid; ?>"></div>
-
 	</div>
 </div>
-
 
 
 
@@ -56,21 +52,57 @@
 /*
 <div class="row">
 <div class="col-xs-12 col-sm-6">
-<label for="wpg-contact-name">Name</label>
-[text* name id:wpg-contact-name]
+<label for="wpg-contact-name">Name</label>[text* name id:wpg-contact-name]
 </div>
 <div class="col-xs-12 col-sm-6">
-<label for="wpg-contact-email">Email</label>
-[email* email id:wpg-contact-email]
+<label for="wpg-contact-email">Email</label>[email* email id:wpg-contact-email]
 </div>
-<div class="col-md-12">
-<label for="wpg-comments">Comments</label>
-[textarea comments id:wpg-comments]
+<div class="col-md-12 wpg-clear-both">
+<label for="wpg-comments">Comments</label>[textarea* comments id:wpg-comments]
 </div>
 <div>[submit "SUBMIT"]</div>
 </div>
 */
 		?>
+	</div>
+</div>
+
+
+<!-- Module two blocks with logo + title + button + background image (MajiQ and About Us) -->
+<div class="module-two-blocks-with-logo-title-button-background-image bg-grey-grain">
+	<div class="container container-corrected">
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<div class="wpg-red-block">
+					<h2>Maj<strong>IQ</strong></h2>
+					<p>Search our market intel<br>archive your way.</p>
+					<a class="wpg-button-type-1" href="#">LOGIN</a>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<div class="wpg-blue-block">
+					<p>We have one clear Aim:<br>Simply to make money<br>for our Clients</p>
+					<a class="wpg-button-type-1" href="#">LEARN MORE ABOUT US</a>
+				</div>
+			</div>
+		</div>
+
+		<!--
+		<div class="span-table">
+			<div class="span-table-cell">
+				<h2>Maj<strong>IQ</strong></h2>
+				<p>Search our market intel<br>archive your way.</p>
+				<a class="wpg-button-type-1" href="#">LOGIN</a>
+			</div>
+			<div class="span-table-cell">
+				<p>We have one clear Aim:<br>Simply to make money<br>for our Clients</p>
+				<a class="wpg-button-type-1" href="#">LEARN MORE ABOUT US</a>
+			</div>
+		</div>
+		-->
+
+
 	</div>
 </div>
 
