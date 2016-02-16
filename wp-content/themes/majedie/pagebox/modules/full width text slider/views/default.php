@@ -1,8 +1,8 @@
-<div class="module-full-width-text-slider bg-grey-grain">
+<div class="module-full-width-text-slider">
 	<?php $idUniqid=uniqid(); ?>
 	<div class="container">
-		<p>Majedie was founded by a team from Mercury Asset Management with a clear aim: </p>
-		<h2>simply to make money for our clients.</h2>
+		<p><?php echo $this->get('above_title') ;?></p>
+		<h2><?php echo $this->get('title') ;?></h2>
 		<div class="cycle-slideshow-wrap">
 			<div class="cycle-slideshow"
 				data-cycle-timeout="0"
@@ -15,15 +15,11 @@
 				data-cycle-next=".cycle-slideshow-next-<?php echo $idUniqid; ?>"
 				data-cycle-auto-height="container"
 			>
-				<div>
-					<p>We are proud of our distinctive, long-term track recordbut remain as hungry to perform today as we were on day one.</p>
+			<?php foreach ($this->get('carousel') as $slide) { ?>
+				<div class="slide">
+					<p><?php echo $slide->carousel_text ;?></p>
 				</div>
-				<div>
-					<p>We are proud of our distinctive, long-term track recordbut remain as hungry to perform today as we were on day one. We are proud of our distinctive, long-term track recordbut remain as hungry to perform today as we were on day one. We are proud of our distinctive, long-term track recordbut remain as hungry to perform today as we were on day one. We are proud of our distinctive, long-term track recordbut remain as hungry to perform today as we were on day one. We are proud of our distinctive, long-term track recordbut remain as hungry to perform today as we were on day one.</p>
-				</div>
-				<div>
-					<p>We are proud of our distinctive, long-term track recordbut remain as hungry to perform today as we were on day one.</p>
-				</div>
+			<?php } ;?>
 			</div>
 			<div class="cycle-slideshow-prev cycle-slideshow-prev-<?php echo $idUniqid; ?>"><i class="fa fa-angle-left"></i></div>
 			<div class="cycle-slideshow-next cycle-slideshow-next-<?php echo $idUniqid; ?>"><i class="fa fa-angle-right"></i></div>
