@@ -190,6 +190,7 @@
 		padding: 10px;
 	}
 
+
 	input[type=submit] {
 		border: 1px solid #fff;
 		background: transparent;
@@ -224,6 +225,21 @@
 				font-family: Avenir-Black;
 				font-weight: 400;
 			}
+			span {
+				display: inline-block;
+				vertical-align: bottom;
+				position: relative;
+				bottom: -5px;
+			}
+			img {
+				vertical-align: bottom;
+				margin-right: 10px;
+			}
+		}
+		p {
+			font-size: 25px;
+			line-height: 120%;
+			margin: 30px 0 0 0;
 		}
 	}
 	.wpg-blue-block {
@@ -231,12 +247,22 @@
 		background-repeat: no-repeat;
 		background-position: right bottom;
 		background-size: auto 100%;
+		p {
+			font-size: 23px;
+			line-height: 145%;
+			margin: 30px 0 0 0;
+			font-family: Avenir-Book;
+			text-transform: uppercase;
+		}
 	}
 	.wpg-red-block,
 	.wpg-blue-block {
 		color: #fff;
-		padding: 20px 30px;
+		padding: 40px 30px 20px;
 		min-height: 285px;
+	}
+	.btn-2 {
+		margin-top: 15px;
 	}
 
 }
