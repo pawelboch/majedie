@@ -84,7 +84,7 @@
 						><?php echo $this->get('paragraph') ;?></p>
 						<?php } ;?>
 						<?php if($this->get('button_link') && $this->get('button_text') != '') { ;?>
-						<a href="<?php echo $this->get('button_link') ;?>" class="btn btn-1"
+						<a href="<?php echo get_permalink($this->get('button_link')) ;?>" class="btn btn-1"
 							<?php if($this->get('button_font_size') || $this->get('button_font_color') != '') {
 								echo 'style=" ';
 								if($this->get('button_font_size')) {

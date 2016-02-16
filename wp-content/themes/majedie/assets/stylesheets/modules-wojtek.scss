@@ -1,3 +1,10 @@
+.pixelperfect-image.activated {
+	opacity: 0.8 !important;
+	top: 117px;
+}
+
+
+
 .module-full_width_image-title-icons-paragraph-link {
 	padding: 30px 0;
 	background-color: #9d948a;
@@ -82,5 +89,57 @@
 		}
 	}
 }
+.module_full_width_title-text-photo {
+  padding: 25px 0;
+	.block-outer {
+		display: table;
+		width: 100%;
+	}
+	.block {
+		display: table-cell;
+		width: 50%;
+	}
+	.first-block {
+		&.is-left {
+			padding-right: 0;
+		}
+		&.is-right {
+			padding-left: 0;
+		}
+		.inner {
+			background-color: #fff;
+			padding: 45px 25px;
+			display: block;
+			min-height: 390px;
+		}
+		h2 {
+		    font-size: 38px;
+		    text-transform: uppercase;
+		}
+		.text {
+		    font-size: 15px;
+		}
+	}
+	.second-block {
+		.image {
+			background-position: center center;
+			background-size: cover;
+			display: block;
+			min-height: 390px;
+		}
+		&.is-right {
+			padding-left: 0;
+		}
+		&.is-left {
+			padding-right: 0;
+		}
+	}
+}
+
+
+
+
+
+
 
 
