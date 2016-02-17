@@ -90,6 +90,15 @@ class Module extends Abstract_Module {
 					)
 				),
 
+
+
+				array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'outside_background_color',
+					'label'       => __( 'Outside background color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
 				array(
 					'type'        => 'number',
 					'group'		    => __( 'Design', 'pagebox' ),
