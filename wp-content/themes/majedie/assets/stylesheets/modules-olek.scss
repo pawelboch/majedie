@@ -1,5 +1,3 @@
-@import "bootstrap/bootstrap-grid";
-
 /* framework display table */
 
 .wpg-clear-both {
@@ -261,7 +259,7 @@
 }
 
 
-@media screen and (max-width: map-get($grid-breakpoints,sm)) {
+@media screen and (max-width: 544px) {
 	.wpg-item-max-height {
 		height: auto !important;
 	}
