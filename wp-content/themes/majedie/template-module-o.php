@@ -121,26 +121,64 @@
 	</div>
 </div>
 
-<div class="container">
 
-	<div class="row wpg-wrap-items-max-height">
-		<div class="col-xs-12 col-sm-4">
-			<div class="wpg-red-block span-table wpg-item-max-height" style="background-color: red;">
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
+
+
+
+<div class="module-full-width-left-title-right-text wpg-bg-grain">
+	<div class="container">
+		<div class="wpg-container-inset">
+			<h2>£11bn</h2>
+			<p>Assets under management<br>total approximately</p>
+			<!--
+			<div class="row">
+				<div class="col-xs-12 col-sm-5">
+					<h2>£11bn</h2>
+				</div>
+				<div class="col-xs-12 col-sm-7">
+					<p>Assets under management<br>total approximately</p>
+				</div>
 			</div>
-		</div>
-		<div class="col-xs-12 col-sm-4">
-			<div class="wpg-red-block span-table wpg-item-max-height" style="background-color: lime;">
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-			</div>
-		</div>
-		<div class="col-xs-12 col-sm-4">
-			<div class="wpg-red-block span-table wpg-item-max-height" style="background-color: yellow;">
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-			</div>
+			-->
 		</div>
 	</div>
+</div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="module-demo">
+	<div class="container">
+
+		<div class="row wpg-wrap-items-max-height">
+			<div class="col-xs-12 col-sm-4">
+				<div class="wpg-red-block wpg-item-max-height wpg-demo-block" style="background-color: red;">
+	Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<div class="wpg-red-block wpg-item-max-height wpg-demo-block" style="background-color: lime;">
+	Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<div class="wpg-red-block wpg-item-max-height wpg-demo-block" style="background-color: yellow;">
+	Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+				</div>
+			</div>
+		</div>
+
+	</div>
 </div>
 
 <?php get_footer(); ?> 

@@ -258,6 +258,51 @@
 
 }
 
+.module-full-width-left-title-right-text {
+	background-color: #d0681b;
+	padding: 30px 0;
+	text-align: center;
+	h2 {
+		color: #fff;
+		font-size: 77px;
+		font-style: italic;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		margin: 0 10px;;
+		display: inline-block;
+		vertical-align: bottom;
+		line-height: 105%;
+		text-align: left;
+	}
+	p {
+		font-size: 24px;
+		font-style: italic;
+		color: #773b10;
+		margin: 0 10px;
+		display: inline-block;
+		vertical-align: middle;
+		line-height: 130%;
+		position: relative;
+		bottom: 5px;
+		text-align: left;
+	}
+
+	.wpg-container-inset {
+		max-width: 550px;
+		margin: 0 auto;
+
+	}
+}
+.module-demo {
+	padding: 30px 0;
+	background-color: pink;
+	.wpg-demo-block {
+		padding: 15px;
+		margin: 15px 0;
+	}
+}
+
+
+
 
 @media screen and (max-width: 544px) {
 	.wpg-item-max-height {
