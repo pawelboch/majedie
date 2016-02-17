@@ -6,7 +6,7 @@
 
 
 
-<div class="module-full-width-text-slider bg-grey-grain">
+<div class="module-full-width-text-slider">
 	<?php $idUniqid=uniqid(); ?>
 	<div class="container">
 		<p>Majedie was founded by a team from Mercury Asset Management with a clear aim: </p>
@@ -71,21 +71,34 @@
 
 
 <!-- Module two blocks with logo + title + button + background image (MajiQ and About Us) -->
-<div class="module-two-blocks-with-logo-title-button-background-image bg-grey-grain">
+<div class="module-two-blocks-with-logo-title-button-background-image">
 	<div class="container container-corrected">
 
 		<div class="row">
 			<div class="col-xs-12 col-sm-6">
-				<div class="wpg-red-block" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/cloud-big-fs8.png)">
-					<h2><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cloud-fs8.png" alt="x"><span>Maj<strong>IQ</strong></span></h2>
-					<p>Search our market intel<br>archive your way.</p>
-					<a class="btn-2" href="#">LOGIN</a>
+				<div class="wpg-red-block span-table" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/cloud-big-fs8.png)">
+					<div class="span-table-row">
+						<div class="span-table-cell vertical-align-top">
+							<h2><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cloud-fs8.png" alt="x"><span>Maj<strong>IQ</strong></span></h2>
+						</div>
+					</div>
+
+					<div class="span-table-row">
+						<div class="span-table-cell vertical-align-bottom">
+							<p>Search our market intel<br>archive your way.</p>
+							<a class="btn-2" href="#">LOGIN</a>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6">
-				<div class="wpg-blue-block" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/one-fs8.png)">
-					<p>We have one clear Aim:<br>Simply to make money<br>for our Clients</p>
-					<a class="btn-2" href="#">LEARN MORE ABOUT US</a>
+				<div class="wpg-blue-block span-table" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/one-fs8.png)">
+					<div class="span-table-row">
+						<div class="span-table-cell vertical-align-bottom">
+							<p>We have one clear Aim:<br>Simply to make money<br>for our Clients</p>
+							<a class="btn-2" href="#">LEARN MORE ABOUT US</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -55,10 +55,6 @@
 
 /* modules */
 
-.bg-grey-grain {
-	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA5UExURenp6eXl5e7u7u3t7ebm5uzs7Ojo6Orq6uvr6+fn5+Tk5O/v7+Pj4+Li4vDw8PHx8eHh4fLy8uDg4C7kqyoAAANnSURBVDjLHZUJkhoxDEUlW6vdDUnuf9g8QRU1gN3S1180opI7RdukQiXEoytE2kzjUXPXCLN+JN9cxakd84wQi95iaZbt3Cgpk7BKyUjZxR0LWW/03JfDpd3ilNXN7SgXKdEVdFvSIeeqLck65a29tZsOR+aVIocKK69Kr1haZaWrNReYdnLSzNFS6pXqmWJtVV1fSXOp41VZl1te7sYxjxtouKtdixZtmyqbewqY+OdfEEPInaZqAhzI8M3Q3yxeasYEn52MtQ6z5F+QDVnCxVzMuA1wU3WFrz3s1KEpSDxBNR/nM/SCo0GY0tshJnJqR+paLldgOzN8RyW8tQALuAbHlQfiqSwfup58koGk5a4U0NrJLfVy6OCT26OZpsIdMkUeQ6zUu+B330IfYPlc9FocNpXkgc+wPBLDMZqViEHffl2G29etQZrnGPL1ctWymQ8105jf+oo4LbEIeOCTe8iKFG0/Hmp1l6/vHSditJ3fv9cxG7Pgj2ayMK93ZBgu6sKPzoeODZfFoBofHHNqevIj6qLpMLNkAz8ef4pae+vP6cpTAPZgXObG+QBCAEHDpkv5Ht8xF7aK8dMHWWqLXzEcmFBlOASX5bjLRoXkZVNxFUi/cKqPlfk2HOAx9XcfHm7szm08CKVICEddf4jiZoD1a8ob0aobJ2FG8rDvoSoAD/bFNRy6Jt5um/YHU8pqW5imJlw+qYZ1/hguJmUkZTSBcKc8j4txWlfjxc7L8MdTMiKdut9eiyuPOt5n2iZouU6MJF56tBUfHxCd7YgRD+opJtqCZ0KzdBNs5bxsQsUbDsgFGXmQSlAkR09Ms/snwkc9oJ4o6AcwyNuwLuMOVgukyodwYogMkiE59ZIfjHQRNbYDCeEZtePqCjfKuAVXmgFtuKDt0okNhXLGDVPbheMQ481yNR2305gEBTym8u2BuNl4jZh+OgtXIw3LjufWnQYE8w9uH2M3gUKiYy+AZ50BnKgitvmckAzMx2479YwgYx3mwN98kzEIHGOVnJU6/urJNt3QlyQQ+mb/wPSke7bXJ3lk9itrYecB+S126Nh5lpmObebLb9MaU2FnjETx+hIcx4Tscp6czuMZnBoIwXQQYWuaUQ365OQiRKiLrENt8i+DWLCWi/1EVV7kEX3xPJChGOTxH63YIa83j1poAAAAAElFTkSuQmCC");
-}
-
 .module-full-width-text-slider {
 	text-align: center;
 	padding: 60px 0 30px;
@@ -238,7 +234,7 @@
 		p {
 			font-size: 25px;
 			line-height: 120%;
-			margin: 30px 0 0 0;
+			margin: 0;
 		}
 	}
 	.wpg-blue-block {
@@ -249,7 +245,7 @@
 		p {
 			font-size: 23px;
 			line-height: 145%;
-			margin: 30px 0 0 0;
+			margin: 0;
 			font-family: Avenir-Book;
 			text-transform: uppercase;
 		}
@@ -257,11 +253,11 @@
 	.wpg-red-block,
 	.wpg-blue-block {
 		color: #fff;
-		padding: 40px 30px 20px;
-		min-height: 285px;
+		padding: 40px 30px 25px;
+		height: 285px;
 	}
 	.btn-2 {
-		margin-top: 15px;
+		margin-top: 30px;
 	}
 
 }
