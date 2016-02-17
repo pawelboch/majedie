@@ -1,26 +1,68 @@
-<div class="module-full-width-contact-form-title-paragraph">
+<div class="module-full-width-contact-form-title-paragraph"
+<?php 
+if($this->get('background_color') != '') {
+	echo 'style=" ';
+	echo 'background-color: ' . $this->get('background_color') . ';';
+	echo '"';
+}
+;?>
+>
 	<div class="container">
 		<div>
-			<h2>Contact Us</h2>
-			<p>If you have any queries of a non-urgent nature, please fill in the form and we will endeavour to get back to you within 48 hours.</p>
-			<p>Alternatively to speak to someone about dealing for direct investment, please call  BNY Mellon on +44 (0)344 892 0974.</p>
-			<?php echo do_shortcode('[contact-form-7 id="24" title="Contact form 1"]'); ?>
-			<?php
-	/*
-<div class="row">
-<div class="col-xs-12 col-sm-6">
-<label for="wpg-contact-name">Name</label>[text* name id:wpg-contact-name]
-</div>
-<div class="col-xs-12 col-sm-6">
-<label for="wpg-contact-email">Email</label>[email* email id:wpg-contact-email]
-</div>
-<div class="col-md-12 wpg-clear-both">
-<label for="wpg-comments">Comments</label>[textarea* comments id:wpg-comments]
-</div>
-<div>[submit class:btn-1 "SUBMIT"]</div>
-</div>
-	*/
-			?>
+			<h2
+			<?php 
+			if($this->get('title_size') || $this->get('title_color') != '') {
+				echo 'style=" ';
+				if($this->get('title_size') != '') {
+					echo 'font-size: ' . $this->get('title_size') . 'px;';
+				}
+				if($this->get('title_color') != '') {
+					echo 'color: ' . $this->get('title_color') . ';';
+				}
+				echo '"';
+			}
+			;?>
+			><?php echo $this->get('title') ;?></h2>
+			<div class="text"
+			<?php 
+			if($this->get('text_size') || $this->get('text_color') != '') {
+				echo 'style=" ';
+				if($this->get('text_size') != '') {
+					echo 'font-size: ' . $this->get('text_size') . 'px;';
+				}
+				if($this->get('text_color') != '') {
+					echo 'color: ' . $this->get('text_color') . ';';
+				}
+				echo '"';
+			}
+			;?>
+			>
+			<?php echo $this->get('text') ;?>
+			</div>
+			<?php echo do_shortcode('[contact-form-7 id="' . $this->get('contact_form') . '"]'); ?>
 		</div>
 	</div>
 </div>
+
+<?php 
+
+if($this->get('form_label_size') || $this->get('form_label_color') || $this->get('form_input_color') != '') {
+	echo '<style>';
+	if($this->get('form_label_size') || $this->get('form_label_color') != '') {
+		echo '.module-full-width-contact-form-title-paragraph label {';
+		if($this->get('form_label_size') != '') {
+			echo 'font-size: ' . $this->get('form_label_size') . 'px;';
+		}
+		if($this->get('form_label_color') != '') {
+			echo 'color: ' . $this->get('form_label_color') . ';';
+		}
+		echo '}';
+	}
+	if($this->get('form_input_color') != '') {
+		echo '.module-full-width-contact-form-title-paragraph input, .module-full-width-contact-form-title-paragraph textarea {';
+		echo 'background-color: ' . $this->get('form_input_color') . ';';
+		echo '}';
+	}
+	echo '</style>';
+
+} ;?>
