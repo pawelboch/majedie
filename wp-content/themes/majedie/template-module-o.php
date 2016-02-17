@@ -86,7 +86,7 @@
 					<div class="span-table-row">
 						<div class="span-table-cell vertical-align-bottom">
 							<p>Search our market intel<br>archive your way.</p>
-							<a class="btn-2" href="#">LOGIN</a>
+							<a class="btn-1" href="#">LOGIN</a>
 						</div>
 					</div>
 				</div>
@@ -96,7 +96,7 @@
 					<div class="span-table-row">
 						<div class="span-table-cell vertical-align-bottom">
 							<p>We have one clear Aim:<br>Simply to make money<br>for our Clients</p>
-							<a class="btn-2" href="#">LEARN MORE ABOUT US</a>
+							<a class="btn-1" href="#">LEARN MORE ABOUT US</a>
 						</div>
 					</div>
 				</div>
