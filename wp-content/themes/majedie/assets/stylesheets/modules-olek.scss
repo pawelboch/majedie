@@ -54,6 +54,12 @@
 
 
 /* modules */
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
 
 .module-full-width-text-slider {
 	text-align: center;
@@ -293,7 +299,7 @@
 	}
 }
 .module-demo {
-	padding: 30px 0;
+	padding: 45px 0;
 	background-color: pink;
 	.wpg-demo-block {
 		padding: 15px;
@@ -301,7 +307,104 @@
 	}
 }
 
+.module-full-width-search-funds-title-paragraph-link {
+	padding: 60px 0;
+	.wpg-first-block {
+		background-color: #fefffe;
+		padding: 30px;
+		h2 {
+			font-size: 40px;
+			text-transform: uppercase;
+			margin: 0;
+		}
+	}
+	.wpg-second-block {
+		background-color: #dd6e1d;
+		padding: 20px;
+		width: 328px;
+		h2 {
+			font-size: 30px;
+			text-transform: uppercase;
+			font-family: Avenir-Medium, "Times New Roman", Times, serif;
+			color: #fff;
+			margin: 0;
+		}
+	}
+	p {
+		font-size: 15px;
+		margin: 15px 0 0 0;
+	}
+	h2 + p {
+		margin: 10px 0 0 0;
+	}
+	.btn-2 {
+		margin-top: 30px;
+	}
+	.wpg-plugin-select-simulate {
+		position: relative;
+		margin-top: 10px;
+		.wpg-plugin-select-simulate-selection {
+			background: #fff;
+			color: #b1b1b1;
+			padding: 9px 45px 9px 15px;
+			cursor: pointer;
+			font-size: 14px;
+			font-family: "Open Sans";
+			position: relative;
+			overflow: hidden;
+		}
+		.wpg-plugin-select-simulate-selection:after {
+			content: "\f107";
+			width: 40px;
+			min-height: 40px;
+			line-height: 40px;
+			text-align: center;
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			font-family: FontAwesome;
+			background-color: #4c2604;
+			color: #fff;
+			font-size: 24px;
+		}
+		.wpg-plugin-select-simulate-selection.wpg-plugin-select-simulate-selection-active:after {
+			content: "\f00d"; //"\0000D7";
+		}
+		.wpg-plugin-select-simulate-selection strong {
+			font-weight: 400;
+		}
+		.wpg-plugin-select-simulate-options {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			z-index: 600;
+			background-color: lime;
+			width: 100%;
+			max-height: 200px;
+			overflow-x: hidden;
+			overflow-y: auto;
+			.wpg-plugin-select-simulate-option {
+				background-color: #f9f9f9;
+				color: #b1b1b1;
+				padding: 9px 15px;
+				cursor: pointer;
+				font-size: 14px;
+				font-family: "Open Sans";
+				border-top: 1px solid #eee;
+			}
+			.wpg-plugin-select-simulate-option:hover {
+				background-color: #ececec;
+			}
+			.wpg-plugin-select-simulate-option.wpg-plugin-select-simulate-option-active {
+				background: #999;
+				color: #fff;
+			}
 
+		}
+	}
+}
 
 
 @media screen and (max-width: 544px) {

@@ -27,7 +27,10 @@ pixelperfect.init( {
 			{
 				if($('.wpg-plugin-select-simulate-options').eq(i).css("display")!="none")
 				{
-					if(i!=ti) $('.wpg-plugin-select-simulate-options').eq(i).slideToggle(speedAnimate);
+					if(i!=ti){
+						$('.wpg-plugin-select-simulate-selection').eq(i).toggleClass("wpg-plugin-select-simulate-selection-active");
+						$('.wpg-plugin-select-simulate-options').eq(i).slideToggle(speedAnimate);
+					}
 				}
 			}
 		};
@@ -50,12 +53,14 @@ pixelperfect.init( {
 				$(".wpg-plugin-select-simulate").eq(t).find(".wpg-plugin-select-simulate-selection").html("<strong>" + wps + "</strong>").click(function() { 
 					var thisIndex=$(".wpg-plugin-select-simulate-selection").parent().index($(this).parent());
 					closeDefaultoptions(thisIndex);
+					$(this).toggleClass("wpg-plugin-select-simulate-selection-active");
 					$(this).next().slideToggle(speedAnimate); 
 				});
 
 				for(var i=0, iLength=$wpgPluginSelect.eq(t).find("option").length; i<iLength; i++)
 				{
-					$(".wpg-plugin-select-simulate-options").eq(t).append('<div class="wpg-plugin-select-simulate-option">' + $wpgPluginSelect.eq(t).find("option").eq(i).text() + '</div>');
+					var defaultActiveSelected=(($wpgPluginSelect.eq(t).find('option').eq(i).attr("selected")=="selected")?' wpg-plugin-select-simulate-option-active':'');
+					$(".wpg-plugin-select-simulate-options").eq(t).append('<div class="wpg-plugin-select-simulate-option' + defaultActiveSelected + '">' + $wpgPluginSelect.eq(t).find("option").eq(i).text() + '</div>');
 				}
 			}
 		}
@@ -65,6 +70,7 @@ pixelperfect.init( {
 			$(this).parent().prev().find("strong").html($(this).text());
 			var indexOption=$(this).parent().find(".wpg-plugin-select-simulate-option").index($(this));
 			$(this).parent().parent().prev().find('option').removeAttr("selected").eq(indexOption).attr("selected","selected");
+			$(this).parent().prev().toggleClass("wpg-plugin-select-simulate-selection-active");
 			$(this).parent().slideToggle(speedAnimate);
 		});
 		jQuery(document).on("click","body", function(e) {

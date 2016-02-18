@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 		<meta name="robots" content="noindex, nofollow">
 		<title><?php wp_title('|', true, 'right'); ?></title>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<?php wp_head(); ?>
 	</head>

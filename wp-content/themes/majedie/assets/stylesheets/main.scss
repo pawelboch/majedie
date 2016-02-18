@@ -32,7 +32,7 @@ body {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	color: #000;
 	font-size: 14px;
-	line-height: 1.6em;
+	line-height: 1.5em;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: Avenir-Light, "Times New Roman", Times, serif;
@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1.2em;
 }
 p {
-	line-height: 1.6em;
+	line-height: 1.5em;
 }
 .container-fluid {
 	padding: 0px;
@@ -51,21 +51,27 @@ p {
 	background-repeat: repeat;
 }
 
-.btn-1 {
-    border: 1px solid #fff;
-    color: #fff;
+.btn-1,
+.btn-2 {
     display: inline-block;
     background: transparent;
-    font-family: Avenir-Light, "Times New Roman", Times, serif;
+    font-family: Avenir-Book, "Times New Roman", Times, serif;
     font-size: 14px;
     margin: 15px 0 0;
     padding: 10px 30px;
     text-align: center;
     line-height: 1.4em;
+    text-decoartion: none;
+    outline: none;
 }
-.btn-1:hover, .btn-1:focus {
-    border-color: #fff;
-    color: #fff;
-    text-decoration: none;
+.btn-1, .btn-1:hover {
+	color: #fff;
+	border: 1px solid #fff;
+	text-decoration: none;
+}
+.btn-2, .btn-2:hover {
+	color: #4b2805;
+	border: 1px solid #4b2805;
+	text-decoration: none;
 }
 
