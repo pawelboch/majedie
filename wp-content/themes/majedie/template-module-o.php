@@ -163,17 +163,52 @@
 		<div class="row wpg-wrap-items-max-height">
 			<div class="col-xs-12 col-sm-4">
 				<div class="wpg-red-block wpg-item-max-height wpg-demo-block" style="background-color: red;">
-	Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
+					
+					<h2>Simulate select examples</h2>
+
+					<select class="wpg-plugin-select">
+						<option value="1">Option 1</option>
+						<option value="2">Option 2</option>
+						<option value="3">Option 3</option>
+						<option value="4" selected="selected">Option 4</option>
+						<option value="5">Option 5</option>
+						<option value="6">Option 6</option>
+						<option value="7">Option 7</option>
+						<option value="8">Option 8</option>
+						<option value="9">Option 9</option>
+						<option value="10">Option 10</option>
+					</select>
+
+					<select class="wpg-plugin-select">
+						<option value="1">example 1</option>
+						<option value="2">example 2</option>
+						<option value="3">example 3</option>
+						<option value="4">example 4</option>
+						<option value="5">example 5</option>
+						<option value="6" selected="selected">example 6</option>
+					</select>
+
+					<select class="wpg-plugin-select">
+						<option value="1">one</option>
+						<option value="2">two</option>
+						<option value="3">three</option>
+						<option value="4">four</option>
+					</select>
+
+					<h2>Simple Paragraph</h2>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-4">
 				<div class="wpg-red-block wpg-item-max-height wpg-demo-block" style="background-color: lime;">
-	Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+					<h2>Simple Paragraph</h2>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-4">
 				<div class="wpg-red-block wpg-item-max-height wpg-demo-block" style="background-color: yellow;">
-	Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+					<h2>Simple Paragraph</h2>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 				</div>
 			</div>
 		</div>
