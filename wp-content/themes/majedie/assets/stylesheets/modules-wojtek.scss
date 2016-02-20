@@ -1,3 +1,5 @@
+@import "wpg-variables";
+
 .pixelperfect-image.activated {
 	opacity: 0.8 !important;
 	top: 117px;
@@ -8,11 +10,16 @@
 .module-full_width_image-title-icons-paragraph-link {
 	padding: 30px 0;
 	background-color: #9d948a;
+	img {
+		max-width: 100%;
+		height: auto;
+	}
 	.table-block {
 		display: table;
 		width: 100%;
 		.first-col {
 			display: table-cell;
+			vertical-align: middle;
 			width: 50%;
 			padding: 0 15px;
 			position: relative;

@@ -1,3 +1,4 @@
+@import "wpg-variables";
 $background-main-header: #9d948a;
 @mixin placeholder {
   ::-webkit-input-placeholder {@content}
@@ -272,7 +273,7 @@ input {
 			max-width: 30%;
 			margin-top: 6px;
 			position: relative;
-			left: 15px;
+			left: $grid-gutter-width/2;
 		}
 		nav {
 			width: 100%;

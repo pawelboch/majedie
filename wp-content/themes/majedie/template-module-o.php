@@ -4,6 +4,44 @@
 <?php get_header(); ?>
 
 
+<div class="module-full-width-image-title-icons-paragraph-link">
+	<div class="container">
+		
+
+		<div class="row" data-wpg-equal-height-wrap="height">
+			<!-- .col-xs-	.col-sm-	.col-md-	.col-lg-	.col-xl- -->
+			<div class="col-xs-12 col-sm-8 col-lg-6 pull-xs-right" data-wpg-equal-height-item>
+
+				<div class="span-table wpg-100p">
+					<div class="span-table-cell vertical-align-middle">
+						<h1>Majedie Asset Management</h1>
+						<ul class="wpg-social-icons">
+							<li><a href="#"><span>Facebook</span><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><span>Twitter</span><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><span>Linkedin</span><i class="fa fa-linkedin"></i></a></li>
+						</ul>
+						<p>Established in 2002, is an independent investment boutique that actively manages equities for institutional investors, wealth managers and endowments across a range of UK and Global strategies.</p>
+						<a href="#" class="btn-1">ABOUT US</a>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-xs-12 col-sm-4 col-lg-6 pull-xs-left" data-wpg-equal-height-item>
+
+				<div class="span-table wpg-100p">
+					<div class="span-table-cell vertical-align-middle text-xs-center">
+						<img src="http://majedie-dev.kurtosysdev.com/wp-content/uploads/2016/02/111.png" alt="Majedie Asset Management">
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+
 
 
 <div class="module-full-width-text-slider">
@@ -74,9 +112,9 @@
 <div class="module-two-blocks-with-logo-title-button-background-image">
 	<div class="container container-corrected">
 
-		<div class="row wpg-wrap-items-max-height">
+		<div class="row" data-wpg-equal-height-wrap="min-height">
 			<div class="col-xs-12 col-sm-6">
-				<div class="wpg-red-block span-table wpg-item-max-height" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/cloud-big-fs8.png)">
+				<div class="wpg-red-block span-table" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/cloud-big-fs8.png)" data-wpg-equal-height-item>
 					<div class="span-table-row">
 						<div class="span-table-cell vertical-align-top">
 							<h2><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cloud-fs8.png" alt="x"><span>Maj<strong>IQ</strong></span></h2>
@@ -92,7 +130,7 @@
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6">
-				<div class="wpg-blue-block span-table wpg-item-max-height" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/one-fs8.png)">
+				<div class="wpg-blue-block span-table" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/one-fs8.png)" data-wpg-equal-height-item>
 					<div class="span-table-row">
 						<div class="span-table-cell vertical-align-bottom">
 							<p>We have one clear Aim:<br>Simply to make money<br>for our Clients</p>
@@ -208,6 +246,81 @@
 
 
 
+<div class="module-full-width-2-posts-with-thumnails-2-posts">
+	<div class="container">
+		<h2>News &amp; Insights</h2>
+		<p class="wpg-filter-topic">Filter Topic</p>
+	
+		<div class="row" data-wpg-equal-height-wrap="height">
+			
+			<div class="col-xs-12 col-md-6 col-lg-4 wpg-col wpg-col-classic">
+				<div style="background-color: #fff;" data-wpg-equal-height-item>
+					<div class="wpg-inside-bg" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/example-1.jpg);"></div>
+					<div class="wpg-post-box">
+						<p class="wpg-post-box_tag">Equity</p>
+						<h3><a href="#">Global American Fund</a></h3>
+						<p class="wpg-post-box_date">12 / 11/ 2005</p>
+						<div class="wpg-post-box_main-content">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-md-6 col-lg-4 wpg-col wpg-col-classic">
+				<div style="background-color: #fff;" data-wpg-equal-height-item>
+					<div class="wpg-inside-bg" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/example-1.jpg);"></div>
+					<div class="wpg-post-box">
+						<p class="wpg-post-box_tag">Equity</p>
+						<h3><a href="#">Global American Fund</a></h3>
+						<p class="wpg-post-box_date">12 / 11/ 2005</p>
+						<div class="wpg-post-box_main-content">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet condimentum diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas nulla ac vestibulum hendrerit.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-xs-12 col-md-12 col-lg-4 wpg-col wpg-col-special-1" data-wpg-equal-height-item>
+				
+				<div class="span-table wpg-post-box-cols" style="height: 100%">
+					<div class="span-table-row">
+						<div class="span-table-cell wpg-post-box-corrected-1-outset vertical-align-top">
+							<div class="wpg-post-box wpg-post-box-corrected-1" style="background-color: #fff;">
+								<p class="wpg-post-box_tag">Equity</p>
+								<h3><a href="#">Global American Fund</a></h3>
+								<p class="wpg-post-box_date">12 / 11/ 2005</p>
+								<div class="wpg-post-box_main-content">
+									<p>Lorem ipsum...</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="span-table-row">
+						<div class="span-table-cell wpg-post-box-corrected-2-outset vertical-align-bottom">
+							<div class="wpg-post-box wpg-post-box-corrected-2" style="background-color: #fff;">
+								<p class="wpg-post-box_tag">Equity</p>
+								<h3><a href="#">Global American Fund</a></h3>
+								<p class="wpg-post-box_date">12 / 11/ 2005</p>
+								<div class="wpg-post-box_main-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet condimentum diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas nulla ac vestibulum hendrerit.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+		</div>
+
+	</div>
+</div>
+
+
 
 
 
@@ -215,14 +328,15 @@
 <div class="module-demo">
 	<div class="container">
 
-		<div class="row wpg-wrap-items-max-height">
+		<div class="row" data-wpg-equal-height-wrap="min-height">
+			<!-- .col-xs-	.col-sm-	.col-md-	.col-lg-	.col-xl- -->
 			<div class="col-xs-12 col-sm-4">
-				<div class="wpg-red-block wpg-item-max-height wpg-demo-block" style="background-color: red;">
+				<div class="wpg-red-block wpg-demo-block" style="background-color: red;" data-wpg-equal-height-item>
 					
 					<h2>Simulate select examples</h2>
 
 					<select class="wpg-plugin-select">
-						<option value="1">Option 1</option>
+						<option value="http://majedie-dev-local.kurtosysweb.com/about-us/">About us</option>
 						<option value="2">Option 2</option>
 						<option value="3">Option 3</option>
 						<option value="4" selected="selected">Option 4</option>
@@ -255,13 +369,13 @@
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-4">
-				<div class="wpg-red-block wpg-item-max-height wpg-demo-block" style="background-color: lime;">
+				<div class="wpg-red-block wpg-demo-block" style="background-color: lime;" data-wpg-equal-height-item>
 					<h2>Simple Paragraph</h2>
 					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-4">
-				<div class="wpg-red-block wpg-item-max-height wpg-demo-block" style="background-color: yellow;">
+				<div class="wpg-red-block wpg-demo-block" style="background-color: yellow;" data-wpg-equal-height-item>
 					<h2>Simple Paragraph</h2>
 					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 				</div>

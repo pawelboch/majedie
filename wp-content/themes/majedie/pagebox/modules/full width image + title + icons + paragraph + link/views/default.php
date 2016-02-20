@@ -1,3 +1,41 @@
+
+
+<div class="module-full-width-image-title-icons-paragraph-link">
+	<div class="container">
+		<div class="row wpg-wrap-items-max-height">
+			<!-- .col-xs-	.col-sm-	.col-md-	.col-lg-	.col-xl- -->
+			<div class="col-xs-12 col-sm-8 col-lg-6 pull-xs-right wpg-item-max-height">
+
+				<div class="span-table wpg-100p">
+					<div class="span-table-cell vertical-align-middle">
+						<h1>Majedie Asset Management</h1>
+						<ul class="wpg-social-icons">
+							<li><a href="#"><span>Facebook</span><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><span>Twitter</span><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><span>Linkedin</span><i class="fa fa-linkedin"></i></a></li>
+						</ul>
+						<p>Established in 2002, is an independent investment boutique that actively manages equities for institutional investors, wealth managers and endowments across a range of UK and Global strategies.</p>
+						<a href="#" class="btn-1">ABOUT US</a>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-xs-12 col-sm-4 col-lg-6 pull-xs-left wpg-item-max-height">
+
+				<div class="span-table wpg-100p">
+					<div class="span-table-cell vertical-align-middle text-xs-center">
+						<img src="http://majedie-dev.kurtosysdev.com/wp-content/uploads/2016/02/111.png" alt="Majedie Asset Management">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!--
 <div class="container-fluid module-full_width_image-title-icons-paragraph-link" 
 <?php 
 	if($this->get('background_color')) {
@@ -25,6 +63,7 @@
 					</div>
 					<?php } ;?>
 				</div>
+
 				<div class="second-col
 					<?php 
 					if($this->get('photo_side') == 'right') {
@@ -104,3 +143,4 @@
 		</div>
 	</div>
 </div>
+-->
