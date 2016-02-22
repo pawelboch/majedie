@@ -43,7 +43,7 @@
 	</div>
 </div>
 
-<div style="background: red; height: 30px;"></div>
+<hr class="wpg-separator">
 
 
 <div class="module-full-width-image-title-icons-paragraph-link">
@@ -83,8 +83,7 @@
 	</div>
 </div>
 
-
-
+<hr class="wpg-separator">
 
 <div class="module-full-width-title-text-photo">
 	<div class="container">
@@ -94,10 +93,10 @@
 				<a href="#" class="wpg-block wpg-image-bg" style="background-image: url(http://majedie-dev.kurtosysdev.com/wp-content/uploads/2016/02/sample2.jpg);" data-wpg-equal-height-item></a>
 			</div>
 
-			<div class="col-xs-12 col-sm-6 col-lg-6 pull-xs-left">
-				<div class="span-table">
-					<div class="span-table-cell vertical-align-middle" data-wpg-equal-height-item>
-						<h2>Investment Approach</h2>
+			<div class="col-xs-12 col-sm-6 col-lg-6 pull-xs-left wpg-container-text">
+				<div class="span-table" data-wpg-equal-height-item>
+					<div class="span-table-cell vertical-align-middle">
+						<h2><a href="#">Investment Approach</a></h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus odio quis pharetra feugiat. Aliquam in purus facilisis, maximus sem sed, efficitur mauris. Morbi interdum bibendum mauris sed pretium. Morbi in tincidunt mauris. </p>
 						<p>Morbi auctor neque et nisl dapibus pretium. Donec laoreet tellus a nisi accumsan consectetur. Vestibulum sed laoreet erat. Donec eu efficitur purus. Nunc mattis dui sit amet eros malesuada hendrerit. Nullam non sagittis quam. Donec lacinia risus metus, ut consequat ligula euismod in.</p>
 					</div>
@@ -108,7 +107,31 @@
 	</div>
 </div>
 
+<hr class="wpg-separator">
 
+<div class="module-full-width-title-text-photo">
+	<div class="container">
+		<div class="row" data-wpg-equal-height-wrap="height">
+			
+			<div class="col-xs-12 col-sm-6 col-lg-6 pull-xs-left">
+				<a href="#" class="wpg-block wpg-image-bg" style="background-image: url(http://majedie-dev.kurtosysdev.com/wp-content/uploads/2016/02/sample2.jpg);" data-wpg-equal-height-item></a>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-lg-6 pull-xs-right wpg-container-text">
+				<div class="span-table" data-wpg-equal-height-item>
+					<div class="span-table-cell vertical-align-middle">
+						<h2><a href="#">Investment Approach</a></h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus odio quis pharetra feugiat. Aliquam in purus facilisis, maximus sem sed, efficitur mauris. Morbi interdum bibendum mauris sed pretium. Morbi in tincidunt mauris. </p>
+						<p>Morbi auctor neque et nisl dapibus pretium. Donec laoreet tellus a nisi accumsan consectetur. Vestibulum sed laoreet erat. Donec eu efficitur purus. Nunc mattis dui sit amet eros malesuada hendrerit. Nullam non sagittis quam. Donec lacinia risus metus, ut consequat ligula euismod in.</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<hr class="wpg-separator">
 
 
 <div class="module-full-width-text-slider">
@@ -145,7 +168,7 @@
 	</div>
 </div>
 
-
+<hr class="wpg-separator">
 
 <div class="module-full-width-contact-form-title-paragraph">
 	<div class="container">
@@ -174,6 +197,7 @@
 	</div>
 </div>
 
+<hr class="wpg-separator">
 
 <!-- Module two blocks with logo + title + button + background image (MajiQ and About Us) -->
 <div class="module-two-blocks-with-logo-title-button-background-image">
@@ -226,9 +250,7 @@
 	</div>
 </div>
 
-
-
-
+<hr class="wpg-separator">
 
 <div class="module-full-width-left-title-right-text wpg-bg-grain">
 	<div class="container">
@@ -249,8 +271,7 @@
 	</div>
 </div>
 
-
-
+<hr class="wpg-separator">
 
 <div class="module-full-width-search-funds-title-paragraph-link">
 	<div class="container">
@@ -307,11 +328,7 @@
 	</div>
 </div>
 
-
-
-
-
-
+<hr class="wpg-separator">
 
 <div class="module-full-width-2-posts-with-thumnails-2-posts">
 	<div class="container">
@@ -387,10 +404,7 @@
 	</div>
 </div>
 
-
-
-
-
+<hr class="wpg-separator">
 
 <div class="module-demo">
 	<div class="container">
