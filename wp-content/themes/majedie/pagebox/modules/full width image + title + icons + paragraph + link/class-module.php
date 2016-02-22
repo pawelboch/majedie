@@ -132,6 +132,18 @@ class Module extends Abstract_Module {
 						'right' => 'right'
 					)
 				),
+
+				array(
+					'type'        => 'select',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'photo_align',
+					'label'       => __( 'Photo vertical align', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+					'options'     => array(
+						'middle' => 'middle',
+						'bottom' => 'bottom'
+					)
+				),
 				array(
 					'type'        => 'colorpicker',
 					'group'		    => __( 'Design', 'pagebox' ),
