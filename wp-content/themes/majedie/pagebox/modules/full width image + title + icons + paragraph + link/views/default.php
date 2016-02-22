@@ -1,38 +1,40 @@
 
-
 <div class="module-full-width-image-title-icons-paragraph-link">
 	<div class="container">
-		<div class="row wpg-wrap-items-max-height">
-			<!-- .col-xs-	.col-sm-	.col-md-	.col-lg-	.col-xl- -->
-			<div class="col-xs-12 col-sm-8 col-lg-6 pull-xs-right wpg-item-max-height">
+		
+
+		<div class="row" data-wpg-equal-height-wrap="height">
+			<div class="col-xs-12 col-sm-8 col-lg-6 pull-xs-left" data-wpg-equal-height-item><!-- wersja z obrazkiem po lewej estronie zamiast klasy pull-xs-left  ma miec pull-xs-right -->
 
 				<div class="span-table wpg-100p">
 					<div class="span-table-cell vertical-align-middle">
-						<h1>Majedie Asset Management</h1>
+						<h1>Tuned to<br>clients needs</h1>
 						<ul class="wpg-social-icons">
 							<li><a href="#"><span>Facebook</span><i class="fa fa-facebook"></i></a></li>
 							<li><a href="#"><span>Twitter</span><i class="fa fa-twitter"></i></a></li>
 							<li><a href="#"><span>Linkedin</span><i class="fa fa-linkedin"></i></a></li>
 						</ul>
-						<p>Established in 2002, is an independent investment boutique that actively manages equities for institutional investors, wealth managers and endowments across a range of UK and Global strategies.</p>
-						<a href="#" class="btn-1">ABOUT US</a>
+						<p>Majedie was founded by a team from Mercury Asset Management with a clear aim: simply to make money for our clients. We are proud of our distinctive, long-term track record - but remain as hungry to perform today as we were on day one.</p>
+						<!--<a href="#" class="btn-1">ABOUT US</a>-->
 					</div>
 				</div>
 
 			</div>
-			<div class="col-xs-12 col-sm-4 col-lg-6 pull-xs-left wpg-item-max-height">
+			<div class="col-xs-12 col-sm-4 col-lg-6 pull-xs-right" data-wpg-equal-height-item><!-- wersja z obrazkiem po lewej estronie zamiast klasy pull-xs-right  ma miec pull-xs-left -->
 
 				<div class="span-table wpg-100p">
-					<div class="span-table-cell vertical-align-middle text-xs-center">
-						<img src="http://majedie-dev.kurtosysdev.com/wp-content/uploads/2016/02/111.png" alt="Majedie Asset Management">
+					<!-- tu ma byc do wyboru obrazek u dolu krawedzi ma miec klase: vertical-align-bottom, obarazek wycentrowany w pionie ma miec klase vertical-align-middle -->
+					<div class="span-table-cell text-xs-center vertical-align-bottom">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/example-2-fs8.png" alt="Majedie Asset Management">
 					</div>
 				</div>
 
 			</div>
 		</div>
+
+
 	</div>
 </div>
-
 
 
 <!--
