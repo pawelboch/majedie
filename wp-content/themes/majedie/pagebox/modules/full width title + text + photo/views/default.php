@@ -1,3 +1,28 @@
+<div class="module-full-width-title-text-photo">
+	<div class="container">
+		<div class="row" data-wpg-equal-height-wrap="height">
+			
+			<div class="col-xs-12 col-sm-6 col-lg-6 pull-xs-right"><!-- pull-xs-right / pull-xs-left -->
+				<a href="#" class="wpg-block wpg-image-bg" style="background-image: url(http://majedie-dev.kurtosysdev.com/wp-content/uploads/2016/02/sample2.jpg);" data-wpg-equal-height-item></a>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-lg-6 pull-xs-left wpg-container-text"><!-- pull-xs-left / pull-xs-right -->
+				<div class="span-table" data-wpg-equal-height-item>
+					<div class="span-table-cell vertical-align-middle">
+						<h2><a href="#">Investment Approach</a></h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus odio quis pharetra feugiat. Aliquam in purus facilisis, maximus sem sed, efficitur mauris. Morbi interdum bibendum mauris sed pretium. Morbi in tincidunt mauris. </p>
+						<p>Morbi auctor neque et nisl dapibus pretium. Donec laoreet tellus a nisi accumsan consectetur. Vestibulum sed laoreet erat. Donec eu efficitur purus. Nunc mattis dui sit amet eros malesuada hendrerit. Nullam non sagittis quam. Donec lacinia risus metus, ut consequat ligula euismod in.</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+
+<!--
 <div class="container-fluid module_full_width_title-text-photo"
 <?php 
 	if($this->get('block_outside_color')) {
@@ -75,3 +100,4 @@
 		</div>
 	</div>
 </div>
+-->
