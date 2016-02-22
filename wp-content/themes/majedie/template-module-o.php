@@ -418,7 +418,7 @@
 					<?php } ?>	
 				</ul>
 				<ul>
-					<?php for($i=6; $i<13; $i++) { ?>
+					<?php for($i=7; $i<13; $i++) { ?>
 					<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-example-<?php echo$i;  ?>.png" alt="x"></a></li>
 					<?php } ?>	
 				</ul>

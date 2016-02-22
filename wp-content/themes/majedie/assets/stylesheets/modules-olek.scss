@@ -786,7 +786,12 @@
 		}
 
 	}
-	
+	#wpadminbar {
+		display: none !important;
+	}
+	body.admin-bar {
+		padding-bottom: 0 !important;
+	}	
 }
 
 
