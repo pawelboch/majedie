@@ -1,17 +1,85 @@
-<div class="module-full-width-title-text-photo">
+<?php 
+$background_inside_color = $this->get('block_inside_color');
+?>
+
+<div class="module-full-width-title-text-photo"
+<?php 
+	if($this->get('block_outside_color')) {
+		echo 'style="';
+		echo 'background-color: ' . $this->get('block_outside_color') . ';';
+		echo '"';
+	}
+;?>
+>
 	<div class="container">
 		<div class="row" data-wpg-equal-height-wrap="height">
 			
-			<div class="col-xs-12 col-sm-6 col-lg-6 pull-xs-right"><!-- pull-xs-right / pull-xs-left -->
+			<div class="col-xs-12 col-sm-6 col-lg-6 
+			<?php  
+			if($this->get('image_side') == 'right') {
+				echo 'pull-xs-right';
+			} else {
+				echo 'pull-xs-left';
+			}
+			;?>
+			"><!-- pull-xs-right / pull-xs-left -->
 				<a href="#" class="wpg-block wpg-image-bg" style="background-image: url(http://majedie-dev.kurtosysdev.com/wp-content/uploads/2016/02/sample2.jpg);" data-wpg-equal-height-item></a>
 			</div>
 
-			<div class="col-xs-12 col-sm-6 col-lg-6 pull-xs-left wpg-container-text"><!-- pull-xs-left / pull-xs-right -->
+			<div class="col-xs-12 col-sm-6 col-lg-6 wpg-container-text
+			<?php  
+			if($this->get('image_side') == 'right') {
+				echo 'pull-xs-left';
+			} else {
+				echo 'pull-xs-right';
+			}
+			;?>
+			"
+			<?php 
+					if($this->get('block_inside_color')) {
+						echo 'style="';
+						echo 'background-color: ' . $this->get('block_inside_color') . ';';
+						echo '"';
+					}
+				;?>
+			>
+
+			<!-- zmienna do koloru background inside -> $background_inside_color; -->
+
 				<div class="span-table" data-wpg-equal-height-item>
 					<div class="span-table-cell vertical-align-middle">
-						<h2><a href="#">Investment Approach</a></h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus odio quis pharetra feugiat. Aliquam in purus facilisis, maximus sem sed, efficitur mauris. Morbi interdum bibendum mauris sed pretium. Morbi in tincidunt mauris. </p>
-						<p>Morbi auctor neque et nisl dapibus pretium. Donec laoreet tellus a nisi accumsan consectetur. Vestibulum sed laoreet erat. Donec eu efficitur purus. Nunc mattis dui sit amet eros malesuada hendrerit. Nullam non sagittis quam. Donec lacinia risus metus, ut consequat ligula euismod in.</p>
+						<h2><a href="<?php echo get_permalink($this->get('link')) ;?>"
+						<?php 
+					if($this->get('title_size') || $this->get('title_color') != '') {
+						echo 'style=" ';
+						if($this->get('title_size') != '') {
+							echo 'font-size: ' . $this->get('title_size') . 'px;';
+						}
+						if($this->get('title_color') != '') {
+							echo 'color: ' . $this->get('title_color') . ';';
+						}
+						echo '"';
+					}
+					;?>>
+					<?php echo $this->get('title') ;?>
+					</a></h2>
+						
+					<?php if($this->get('text') != '') { ;?>
+						<div
+						<?php if($this->get('text_size') || $this->get('text_color') != '') {
+							echo 'style=" ';
+							if($this->get('text_size') != '') {
+								echo 'font-size: ' . $this->get('text_size') . 'px;';
+							}
+							if($this->get('text_color') != '') {
+								echo 'color: ' . $this->get('text_color') . ';';
+							}
+							echo '"';
+						} ;?>
+						><?php echo $this->get('text') ;?></div>
+						<?php } ;?>
+
+					
 					</div>
 				</div>
 			</div>
