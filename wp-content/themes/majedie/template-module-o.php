@@ -4,6 +4,48 @@
 <?php get_header(); ?>
 
 
+
+
+<div class="module-full-width-image-title-icons-paragraph-link">
+	<div class="container">
+		
+
+		<div class="row" data-wpg-equal-height-wrap="height">
+			<!-- .col-xs-	.col-sm-	.col-md-	.col-lg-	.col-xl- -->
+			<div class="col-xs-12 col-sm-8 col-lg-6 pull-xs-left" data-wpg-equal-height-item>
+
+				<div class="span-table wpg-100p">
+					<div class="span-table-cell vertical-align-middle">
+						<h1>Tuned to<br>clients needs</h1>
+						<ul class="wpg-social-icons">
+							<li><a href="#"><span>Facebook</span><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><span>Twitter</span><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><span>Linkedin</span><i class="fa fa-linkedin"></i></a></li>
+						</ul>
+						<p>Majedie was founded by a team from Mercury Asset Management with a clear aim: simply to make money for our clients. We are proud of our distinctive, long-term track record - but remain as hungry to perform today as we were on day one.</p>
+						<!--<a href="#" class="btn-1">ABOUT US</a>-->
+					</div>
+				</div>
+
+			</div>
+			<div class="col-xs-12 col-sm-4 col-lg-6 pull-xs-left" data-wpg-equal-height-item>
+
+				<div class="span-table wpg-100p">
+					<div class="span-table-cell vertical-align-bottom text-xs-center">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/example-2-fs8.png" alt="Majedie Asset Management">
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+<div style="background: red; height: 30px;"></div>
+
+
 <div class="module-full-width-image-title-icons-paragraph-link">
 	<div class="container">
 		
@@ -38,6 +80,31 @@
 		</div>
 
 
+	</div>
+</div>
+
+
+
+
+<div class="module-full-width-title-text-photo">
+	<div class="container">
+		<div class="row" data-wpg-equal-height-wrap="height">
+			
+			<div class="col-xs-12 col-sm-6 col-lg-6 pull-xs-right">
+				<a href="#" class="wpg-block wpg-image-bg" style="background-image: url(http://majedie-dev.kurtosysdev.com/wp-content/uploads/2016/02/sample2.jpg);" data-wpg-equal-height-item></a>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-lg-6 pull-xs-left">
+				<div class="span-table">
+					<div class="span-table-cell vertical-align-middle" data-wpg-equal-height-item>
+						<h2>Investment Approach</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus odio quis pharetra feugiat. Aliquam in purus facilisis, maximus sem sed, efficitur mauris. Morbi interdum bibendum mauris sed pretium. Morbi in tincidunt mauris. </p>
+						<p>Morbi auctor neque et nisl dapibus pretium. Donec laoreet tellus a nisi accumsan consectetur. Vestibulum sed laoreet erat. Donec eu efficitur purus. Nunc mattis dui sit amet eros malesuada hendrerit. Nullam non sagittis quam. Donec lacinia risus metus, ut consequat ligula euismod in.</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
 	</div>
 </div>
 

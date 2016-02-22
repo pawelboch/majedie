@@ -145,4 +145,3 @@ jQuery(window).resize(function(){
 jQuery(window).load(function(){
 	wpgMaxHeightItem(jQuery);
 });
-

@@ -27,7 +27,7 @@ input {
 	font-weight: 400;
 	background: $background-main-header;
 	color: #fff;
-	padding: 22px 0 15px;
+	padding: 22px 0 $grid-gutter-width/2;
 
 	.container {
 		max-width: 1054px !important;
