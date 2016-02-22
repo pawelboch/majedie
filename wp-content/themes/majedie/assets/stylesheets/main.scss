@@ -46,6 +46,9 @@ p {
 	line-height: 1.5em;
 	margin: 15px 0 0;
 }
+p:first-child {
+	margin-top: 0;
+}
 a, a:hover {
 	color: inherit;
 }

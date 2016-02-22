@@ -406,6 +406,35 @@
 
 <hr class="wpg-separator">
 
+<div class="module-full-width-above-title-title-12-logotypes">
+	<div class="container">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Proin maximus odio quis pharetra feugiat.</p>
+		<h2>Awards</h2>
+		<div class="row">
+			<div class="wpg-list-items-inline-block">
+				<ul>
+					<?php for($i=1; $i<7; $i++) { ?>
+					<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-example-<?php echo$i;  ?>.png" alt="x"></a></li>
+					<?php } ?>	
+				</ul>
+				<ul>
+					<?php for($i=6; $i<13; $i++) { ?>
+					<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-example-<?php echo$i;  ?>.png" alt="x"></a></li>
+					<?php } ?>	
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<hr class="wpg-separator">
+
 <div class="module-demo">
 	<div class="container">
 

@@ -649,6 +649,71 @@
 }
 
 
+
+.module-full-width-above-title-title-12-logotypes {
+	padding: 60px 0;
+	text-align: center;
+	h2 {
+		font-size: 40px;
+		text-transform: uppercase;
+		margin-top: 10px;
+	}
+	p {
+		font-style: italic;
+	}
+	.wpg-list-items-inline-block ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		font-size: 0;
+		text-align: center;
+
+		display: -webkit-flex;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		li {
+			margin: 0;
+			padding: 0;
+			display: inline;
+			img {
+				display: inline-block;
+				vertical-align: middle;
+				padding: 0 $grid-gutter-width/2;
+				max-width: 100%;
+				height: auto;
+				margin: $grid-gutter-width 0;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /** BREAKPOINTS **/
 
 @media screen and (max-width: map-get($grid-breakpoints, lg) ) { //~992px
@@ -674,6 +739,23 @@
 			height: auto !important;
 		}
 	}
+
+	.module-full-width-above-title-title-12-logotypes {
+		.wpg-list-items-inline-block {
+			text-align: center;
+			ul {
+				display: inline;
+				li {
+					img {
+						width: auto;
+						max-width: 100%;
+						padding: 0 $grid-gutter-width;
+					}
+				}
+			}
+		}
+	}
+
 }
 
 @media screen and (max-width: map-get($grid-breakpoints, md) ) { //~768px
@@ -796,6 +878,7 @@
 			min-height: 288px !important;
 		}
 	}
+
 
 
 }
