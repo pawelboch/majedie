@@ -561,6 +561,41 @@
 
 <hr class="wpg-separator">
 
+
+<div class="module-full-width-2-blocks-with-title-text">
+	<div class="container">
+
+		<div class="row" data-wpg-equal-height-wrap="min-height">
+			<div class="col-xs-12 col-sm-6">
+				<div class="wpg-inset-col" style="background-color: #fff;" data-wpg-equal-height-item>
+					<h2>Instituional Pathway</h2>
+					<p>10 Old Bailey<br>London<br>EC4M 7NG</p>
+					<p>+44 (0)20 7618 3900<br><a href="mailto:info@majedie.com">info@majedie.com</a></p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<div class="wpg-inset-col" style="background-color: #fff;" data-wpg-equal-height-item>
+					<h2>Private Individual Pathway</h2>
+					<p>One of the ways in which we are able to keep our fees low is by encouraging investors to use fund platforms and financial advisers that have well-developed systems for investment transactions. There are many ways to invest with us listed below, you should look to your own circumstances – and take independent advice, if need be - before buying or selling any investment.  Good advice is worth paying for.</p>
+					<p>Our fees are listed in full detail <a href="#">here</a></p>
+					<p><a href="#">QUICK LINKS</a></p>
+					<ul>
+						<li><a href="#">- Platforms</a></li>
+						<li><a href="#">- Execution</a></li> 
+						<li><a href="#">- Only broker</a></li>
+						<li><a href="#">- Find an IFA</a></li>
+					</ul>
+				</div>
+			</div>			
+		</div>
+
+	</div>
+</div>
+
+<hr class="wpg-separator">
+
+
+
 <div class="module-demo">
 	<div class="container">
 
