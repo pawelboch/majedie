@@ -729,6 +729,43 @@
 		border: none;
 	}
 }
+.module-full-width-title-subtitle-paragraph {
+	background-color: #9d948a;
+	color: #fff;
+	text-align: center;
+	padding: 60px 0;
+	h2 {
+		font-size: 100px;
+	}
+	h3 {
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size: 32px;
+	}
+	p {
+		a {
+			text-decoration: underline;
+		}
+	}
+}
+
+
+.module-full-width-title-paragraph-background-image {
+	padding: 60px 0;
+	.wpg-container-inset {
+		h2 {
+			font-size: 50px;
+			text-transform: uppercase;
+			line-height: 105%;
+		}
+		background-color: #9d948a;
+		color: #fff;
+		padding: 30px;
+		background-repeat: no-repeat;
+		background-position: bottom right;
+		min-height: 250px;
+	}
+}
+
 
 
 
@@ -919,6 +956,13 @@
 		}
 	}
 
+	.module-full-width-title-paragraph-background-image {
+		.wpg-container-inset {
+			h2 {
+				font-size: 40px;
+			}
+		}
+	}
 
 
 }

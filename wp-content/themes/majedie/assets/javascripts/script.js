@@ -89,31 +89,51 @@ pixelperfect.init( {
 
 /* max height for items horizonatl */
 var wpgMaxHeightItem=function($) {
-	
-	var wpgWrapItemsMaxHeight=$("[data-wpg-equal-height-wrap]");
-	$("[data-wpg-equal-height-item]").css({"height":"auto","min-height":10});
-	for(var i=0, iLength=wpgWrapItemsMaxHeight.length; i<iLength; i++)
+	if($("[data-wpg-equal-height-wrap]").length>0)
 	{
-		if(wpgWrapItemsMaxHeight.eq(i).data("wpg-equal-height-wrap")=="height" || wpgWrapItemsMaxHeight.eq(i).data("wpg-equal-height-wrap")=="min-height")
+		var wpgWrapItemsMaxHeight=$("[data-wpg-equal-height-wrap]");
+		$("[data-wpg-equal-height-item]").css({"height":"auto","min-height":10});
+		for(var i=0, iLength=wpgWrapItemsMaxHeight.length; i<iLength; i++)
 		{
-			//console.log("-------------------------------");
-			var heightArray=[]; 
-			wpgWrapItemsMaxHeight.eq(i).find("[data-wpg-equal-height-item]").removeProp("height").removeProp("min-height");
-			for(var k=0, kLength=wpgWrapItemsMaxHeight.eq(i).find("[data-wpg-equal-height-item]").length; k<kLength; k++)
+			if(wpgWrapItemsMaxHeight.eq(i).data("wpg-equal-height-wrap")=="height" || wpgWrapItemsMaxHeight.eq(i).data("wpg-equal-height-wrap")=="min-height")
 			{
-				var heightItem=parseInt(wpgWrapItemsMaxHeight.eq(i).find("[data-wpg-equal-height-item]").eq(k).css("height"));
-				//console.log(heightItem);
-				heightArray.push(heightItem);
+				//console.log("-------------------------------");
+				var heightArray=[]; 
+				wpgWrapItemsMaxHeight.eq(i).find("[data-wpg-equal-height-item]").removeProp("height").removeProp("min-height");
+				for(var k=0, kLength=wpgWrapItemsMaxHeight.eq(i).find("[data-wpg-equal-height-item]").length; k<kLength; k++)
+				{
+					var heightItem=parseInt(wpgWrapItemsMaxHeight.eq(i).find("[data-wpg-equal-height-item]").eq(k).css("height"));
+					//console.log(heightItem);
+					heightArray.push(heightItem);
+				}
+				wpgWrapItemsMaxHeight.eq(i).find("[data-wpg-equal-height-item]").css(wpgWrapItemsMaxHeight.eq(i).data("wpg-equal-height-wrap"),Math.max.apply(null, heightArray));
 			}
-			wpgWrapItemsMaxHeight.eq(i).find("[data-wpg-equal-height-item]").css(wpgWrapItemsMaxHeight.eq(i).data("wpg-equal-height-wrap"),Math.max.apply(null, heightArray));
-		}
-		else
-		{
-			console.log("Bad parametr...");
-		}
-	}	
+			else
+			{
+				console.log("Bad parametr...");
+			}
+		}	
+	}
 }
 wpgMaxHeightItem(jQuery);
 jQuery(window).resize(function(){ wpgMaxHeightItem(jQuery); });
 jQuery(window).load(function(){ wpgMaxHeightItem(jQuery); });
 /* end max height for items horizonatl */
+
+
+/* block height 100% window */
+var wpgHeight100pWindow=function($) {
+	if($("[data-wpg-height-100p-window]").length>0)
+	{
+		var dwh100pw=$("[data-wpg-height-100p-window]"),
+			heightHeader=$(".wpg-main-header").height(),
+			heightFooter=$(".wpg-main-footer").height(),
+			heightInset=$(window).height() - heightHeader - heightFooter
+		
+		dwh100pw.css("height",heightInset);
+	}
+}
+wpgHeight100pWindow(jQuery);
+jQuery(window).resize(function(){ wpgHeight100pWindow(jQuery); });
+jQuery(window).load(function(){ wpgHeight100pWindow(jQuery); });
+/* end block height 100% window */

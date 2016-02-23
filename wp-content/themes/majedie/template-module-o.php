@@ -495,8 +495,37 @@
 	</div>
 </div>
 
+<hr class="wpg-separator">
+
+
+
+<div class="module-full-width-title-subtitle-paragraph span-table" data-wpg-height-100p-window>
+	<div class="span-table-cell vertical-align-middle">
+		<div class="container">
+			<h2>404</h2>
+			<h3>Page not found</h3>
+			<p>The page you are looking for doesnt’t exist or another error occured. <br>Go <a href="#">back</a>, or head over to <a href="http://www.majedie.com">www.majedie.com</a> to choose another direction.</p>
+		</div>
+	</div>
+</div>
 
 <hr class="wpg-separator">
+
+<div class="module-full-width-title-paragraph-background-image">
+	<div class="container">
+		<div class="wpg-container-inset" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/toortl.jpg);">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<h2>Our<br>Funds</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus odio quis pharetra feugiat. Aliquam in purus facilisis, maximus sem sed, efficitur mauris. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<hr class="wpg-separator">
+
 
 
 <div class="module-demo">
