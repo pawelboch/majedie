@@ -450,7 +450,7 @@
 					<p>Since launch, Majedie is proud to have directly supported the following charities:</p>
 
 
-					<ul class="wpg-two-column">
+					<ul>
 						<li><a href="#">Asthma UK</a></li>
 						<li><a href="#">Back Up</a></li>
 						<li><a href="#">BHR Hospitals Charity</a></li>
