@@ -608,7 +608,53 @@
 					<p><a href="mailto:info@majedie.com">info@majedie.com</a><br>+44 (0)20 7618 3900</p>
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					[contact]
+					<div class="wpg-form-contact span-table">
+						<div class="span-table-row">
+							<label for="wpg-id-your-name" class="span-table-cell vertical-align-middle">
+								Your name*
+							</label>
+							<div class="span-table-cell vertical-align-middle">
+								<input type="text" id="wpg-id-your-name" name="wpg-id-your-name">
+							</div>
+						</div>
+						<div class="span-table-row">
+							<label for="wpg-id-your-email" class="span-table-cell vertical-align-middle">
+								Your eamil*
+							</label>
+							<div class="span-table-cell vertical-align-middle">
+								<input type="email" id="wpg-id-your-email" name="wpg-id-your-name">
+							</div>
+						</div>
+						<div class="span-table-row">
+							<div class="span-table-cell vertical-align-middle wpg-label-style">
+								Title
+							</div>
+							<div class="span-table-cell vertical-align-middle">
+								<input type="radio" id="wpg-id-mr" name="wpg-id-mr-mrs[]"> <label for="wpg-id-mr">Mr</label>
+								<input type="radio" id="wpg-id-mrs" name="wpg-id-mr-mrs[]"> <label for="wpg-id-mrs">Mrs</label>
+							</div>
+						</div>
+						<div class="span-table-row">
+							<label for="wpg-id-company" class="span-table-cell vertical-align-middle">
+								Company*
+							</label>
+							<div class="span-table-cell vertical-align-middle">
+								<input type="text" id="wpg-id-company" name="wpg-id-company">
+							</div>
+						</div>
+						<div class="span-table-row">
+							<label for="wpg-id-comments" class="span-table-cell vertical-align-top">
+								Comments
+							</label>
+							<div class="span-table-cell vertical-align-top">
+								<textarea id="wpg-id-comments" name="wpg-id-comments"></textarea>
+								<br>
+								[reCAPTCHA]
+								<br>
+								<input class="btn-1" type="submit" value="SUBMIT">
+							</div>
+						</div>
+					</div>
 				</div>
 
 			</div>

@@ -57,6 +57,14 @@ p:first-child {
 a, a:hover {
 	color: inherit;
 }
+
+input {
+    -webkit-appearance: none !important;
+    border-radius: 0 !important;
+}
+input[type=radio] {
+	-webkit-appearance: radio !important;
+}
 .container-fluid {
 	padding: 0px;
 }

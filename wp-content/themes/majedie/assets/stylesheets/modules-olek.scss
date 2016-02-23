@@ -821,8 +821,18 @@
 	padding: (60-($grid-gutter-width/2)) 0;
 	background-color: #9d948a;
 	color: #fff;
-	input {
+	input[type=text],
+	input[type=email],
+	textarea {
 		color: black;
+		border: none;
+		display: block;
+		width: 100%;
+		font-size: 14px;
+		padding: 10px;
+	}
+	textarea {
+		height: 215px;
 	}
 	h1 {
 		font-size: 50px;
@@ -836,6 +846,22 @@
 	}
 	.container .row > div {
 		margin: $grid-gutter-width/2 0;
+	}
+	.wpg-form-contact {
+		background-color: #8d857c;
+		border-spacing: 20px;
+		padding: 10px 0 20px;
+		table-layout: auto;
+		font-family: "Open Sans";
+	}
+	.wpg-label-style,
+	label {
+		color: #f4f0ee;
+		font-size: 14px;
+	}
+	.span-table-row > label,
+	.span-table-row > .wpg-label-style {
+		width: 90px;
 	}
 }
 
