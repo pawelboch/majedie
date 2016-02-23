@@ -817,7 +817,27 @@
 	} 
 }
 
-
+.module-full-width-contact-form-box-title-text {
+	padding: (60-($grid-gutter-width/2)) 0;
+	background-color: #9d948a;
+	color: #fff;
+	input {
+		color: black;
+	}
+	h1 {
+		font-size: 50px;
+		text-transform: uppercase;
+	}
+	a {
+		text-decoration: underline;
+	}
+	h1, p {
+		max-width: 450px;
+	}
+	.container .row > div {
+		margin: $grid-gutter-width/2 0;
+	}
+}
 
 
 

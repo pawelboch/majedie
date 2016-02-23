@@ -594,6 +594,32 @@
 
 <hr class="wpg-separator">
 
+<div class="module-full-width-contact-form-box-title-text span-table" data-wpg-height-100p-window>
+	<div class="span-table-cell vertical-align-middle">
+		
+		<div class="container">
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<h1>Contact Us</h1>
+					<p>If you have any queries of a non-urgent nature, please fill in the form and we will endeavour to get back to you within 48 hours.</p>
+					<p>Alternatively to speak to someone about dealing for direct investment, please call  BNY Mellon on +44 (0)344 892 0974.</p>
+					<p>Majedie Asset Management<br>10 Old Bailey<br>London<br>EC4M 7NG</p>
+					<p><a href="mailto:info@majedie.com">info@majedie.com</a><br>+44 (0)20 7618 3900</p>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					[contact]
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+<hr class="wpg-separator">
+
 
 
 <div class="module-demo">
