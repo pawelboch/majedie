@@ -1,10 +1,13 @@
 'use strict';
 
+
 /* pixel perefect developer */
 pixelperfect.init( { 
     image: "http://majedie-dev.kurtosysdev.com/wp-content/themes/majedie/assets/images/www.png",
     opacity: 1,
 } );
+/* end pixel perefect developer */
+
 
 /* menu mobile */
 (function($){
@@ -14,6 +17,8 @@ pixelperfect.init( {
 		$wpgNavGroup.toggleClass("wpg-active-menu-dropdown");
 	});
 })(jQuery);
+/* end menu mobile */
+
 
 /* plugin select */
 (function($){
@@ -79,6 +84,7 @@ pixelperfect.init( {
 		});
 	}
 })(jQuery);
+/* end plugin select */
 
 
 /* max height for items horizonatl */
@@ -106,42 +112,8 @@ var wpgMaxHeightItem=function($) {
 			console.log("Bad parametr...");
 		}
 	}	
-
-
-	/*
-	var maxi = 0, wpgWrapItemsMaxHeight=$(".wpg-wrap-items-max-height");
-	$(".wpg-item-max-height").css("height","auto");
-	for(var i=0, iLength=wpgWrapItemsMaxHeight.length; i<iLength; i++)
-	{
-		console.log("-------------------------------");
-		var heightArray=[]; 
-		wpgWrapItemsMaxHeight.eq(i).find(".wpg-item-max-height").removeProp("height");
-		for(var k=0, kLength=wpgWrapItemsMaxHeight.eq(i).find(".wpg-item-max-height").length; k<kLength; k++)
-		{
-			var heightItem=parseInt(wpgWrapItemsMaxHeight.eq(i).find(".wpg-item-max-height").eq(k).css("height"));
-			console.log(heightItem);
-			heightArray.push(heightItem);
-		}
-		wpgWrapItemsMaxHeight.eq(i).find(".wpg-item-max-height").css("height",Math.max.apply(null, heightArray));
-	}
-	*/
 }
 wpgMaxHeightItem(jQuery);
-
-( function funX( $ ) {
-    console.log($(window).width());
-    $(window).resize(function() {
-        console.log($(window).width());
-    } );
-} )( jQuery );
-
-
-/* main events */
-
-jQuery(window).resize(function(){ 
-	wpgMaxHeightItem(jQuery); 
-});
-
-jQuery(window).load(function(){
-	wpgMaxHeightItem(jQuery);
-});
+jQuery(window).resize(function(){ wpgMaxHeightItem(jQuery); });
+jQuery(window).load(function(){ wpgMaxHeightItem(jQuery); });
+/* end max height for items horizonatl */

@@ -428,12 +428,76 @@
 </div>
 
 
+<hr class="wpg-separator">
 
 
+<div class="module-full-width-title-text-column-list-custom-paragraph">
+	<div class="container">
+		<div class="wpg-container-inset">
+			<h2>OUR CHARITIES</h2>
+			<div class="row">
+				<!-- .col-xs-	.col-sm-	.col-md-	.col-lg-	.col-xl- -->
+				<div class="col-xs-12 col-sm-6">
+					<p>Majedie Asset Management is committed to supporting charitable causes and has long had a policy of matching all personal employee donations made under the CAF Give As You Earn Scheme.</p>
 
+					<p>To mark the tenth anniversary of Majedie's first fund launches, 2013 saw every member of the team involved in raising funds as part of our '10-for-10' charity drive. With company matching, together we raised £150,000 for our three chosen charities: <a href="#">Tommy's</a>, <a href="#">Richard House Hospice</a> and <a href="#">Cancer Research UK</a>.</p>
+
+					<p>Majedie is also a participant in the Lord Mayor’s ‘City Giving Day’, which raises funds for the Lord Mayor’s Appeal and highlights philanthropy in the City of London.</p>
+
+					<p>Separately, Majedie was chosen at launch by the <a href="#">Battle Against Cancer Investment Trust (BACIT)</a>, for which our fund management services are provided without charge. BACIT’s investment objective is to deliver superior returns from investments in leading long-only and alternative investment funds across multiple asset classes. BACIT makes an annual charitable donation of 1% of NAV, half of which is donated to the Institute of Cancer Research and half of which is donated to the BACIT Foundation.</p>		
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<p>Since launch, Majedie is proud to have directly supported the following charities:</p>
+
+
+					<ul class="wpg-two-column">
+						<li><a href="#">Asthma UK</a></li>
+						<li><a href="#">Back Up</a></li>
+						<li><a href="#">BHR Hospitals Charity</a></li>
+						<li><a href="#">Cancer Research UK</a></li>
+						<li><a href="#">Children of St. Mary's Intensive Care</a></li>
+						<li><a href="#">Daisy Palmer Trust</a></li>
+						<li><a href="#">DEC Ebola Crisis Appeal</a></li>
+						<li><a href="#">DEC Haiti Earthquake Appeal</a></li>
+						<li><a href="#">DEC Nepal Earthquake Appeal</a></li>
+						<li><a href="#">Macmillan</a></li>
+						<li><a href="#">Mencap</a></li>
+						<li><a href="#">New Ways</a></li>
+
+						<li><a href="#">Richard House Hospice</a></li>
+						<li><a href="#">Rifles Care for Casualties</a></li>
+						<li><a href="#">Royal College of Gynaecologists</a></li>
+						<li><a href="#">Sarcoma UK</a></li>
+						<li><a href="#">Scope</a></li>
+						<li><a href="#">St Bart's Hospital and The London Charity</a></li>
+						<li><a href="#">St James's Place Foundation</a></li>
+						<li><a href="#">St Joseph's Hospice
+						<li><a href="#">Tommy's</a></li>
+						<li><a href="#">Tough Guy Charities</a></li>
+						<li><a href="#">Trinity Hospice</a></li>
+						<li><a href="#">Zetland Foundation</a></li>
+					</ul>
+					<hr class="wpg-separate-1">
+					<div class="row">
+						<div class="col-xs-4">
+							<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/platinum-award-2015-fs8.png" alt="Platinum Award 2015"></a>
+						</div>
+						<div class="col-xs-8">
+							<p>The Payroll Giving Quality Mark recognises organisations for making Payroll Giving available to their staff, benefiting good causes and employees alike. Majedie has achieved the top Platinum Award for several consecutive years, reflecting our extremely high participation rate.</p>
+						</div>
+					</div>
+		
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
 
 
 <hr class="wpg-separator">
+
 
 <div class="module-demo">
 	<div class="container">
@@ -494,5 +558,7 @@
 
 	</div>
 </div>
+
+<hr class="wpg-separator">
 
 <?php get_footer(); ?> 

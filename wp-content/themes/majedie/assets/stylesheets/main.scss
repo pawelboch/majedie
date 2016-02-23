@@ -45,6 +45,11 @@ h1, h2, h3, h4, h5, h6 {
 p {
 	line-height: 1.5em;
 	margin: 15px 0 0;
+	font-size: 15px;
+}
+ul, ol {
+	font-size: 15px;
+	line-height: 1.5em;
 }
 p:first-child {
 	margin-top: 0;
