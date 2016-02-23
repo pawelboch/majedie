@@ -526,7 +526,40 @@
 
 <hr class="wpg-separator">
 
+<div class="module-full-width-3-blocks-with-icon-title-text">
+	<div class="container">
+		<h2>3 ways to invest</h2>
+		
+		<div class="row" data-wpg-equal-height-wrap="min-height">
+			<div class="col-xs-12 col-sm-4">
+				<div class="wpg-inset-col" style="background-color: #355274;" data-wpg-equal-height-item>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/w-pound-fs8.png" alt="x">
+					<h3>A range of platforms</h3>
+					<p>Fund platforms are services that enable investors to buy and often hold their investments online all in one place, with a degree of flexibility to switch investments around as their lives change without having to keep paying high charges for buying and selling them. They allow you to buy and sell investments simply online (sometimes at a discounted rate) and hold funds from a variety of fund managers in one place. Please browse the list and select your preferred platform from the list here</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<div class="wpg-inset-col" style="background-color: #d44451;" data-wpg-equal-height-item>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/w-hands-fs8.png" alt="x">
+					<h3>A financial adviser</h3>
+					<p>If you would like professional financial advice, there is an industry of qualified and experienced financial advisers who will be able to assess your needs and advise whether our funds are an appropriate investment choice for you.</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<div class="wpg-inset-col" style="background-color: #dc6e26;" data-wpg-equal-height-item>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/w-cel-fs8.png" alt="x">
+					<h3>Execution-only brokers</h3>
+					<p>Execution-only brokers offer a simple and cost-effective way of investing without advice. Please call BNY Mellon on +44 (0)344 892 0974. </p>
+				</div>
+			</div>
+		</div>
 
+
+
+	</div>
+</div>
+
+<hr class="wpg-separator">
 
 <div class="module-demo">
 	<div class="container">
