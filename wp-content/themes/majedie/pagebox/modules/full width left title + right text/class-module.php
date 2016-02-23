@@ -55,16 +55,52 @@ class Module extends Abstract_Module {
 				array(
 					'type'        => 'text',
 					'group'       => __( 'General', 'pagebox' ),
-					'name'        => 'title',
-					'label'       => __( 'Title', 'pagebox' ),
-					'description' => __( 'Main module title', 'pagebox' ),
+					'name'        => 'text_left',
+					'label'       => __( 'Text left', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+
+				array(
+					'type'        => 'text',
+					'group'       => __( 'General', 'pagebox' ),
+					'name'        => 'text_right',
+					'label'       => __( 'Text right', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
 				),
 
 				array(
 					'type'        => 'colorpicker',
 					'group'		    => __( 'Design', 'pagebox' ),
-					'name'        => 'button_font_color',
-					'label'       => __( 'Button font color', 'pagebox' ),
+					'name'        => 'background_color',
+					'label'       => __( 'Background color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'text_left_color',
+					'label'       => __( 'Text left color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'number',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'text_left_size',
+					'label'       => __( 'Text left size', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'text_right_color',
+					'label'       => __( 'Text right color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'number',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'text_right_size',
+					'label'       => __( 'Text right size', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
 				),
 			)

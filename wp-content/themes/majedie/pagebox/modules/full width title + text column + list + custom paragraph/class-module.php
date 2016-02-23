@@ -59,12 +59,55 @@ class Module extends Abstract_Module {
 					'label'       => __( 'Title', 'pagebox' ),
 					'description' => __( 'Main module title', 'pagebox' ),
 				),
+				array(
+					'type'        => 'editor',
+					'group'       => __( 'General', 'pagebox' ),
+					'name'        => 'editor1',
+					'label'       => __( 'Editor - left side', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+
+				array(
+					'type'        => 'editor',
+					'group'       => __( 'General', 'pagebox' ),
+					'name'        => 'editor2',
+					'label'       => __( 'Editor - right side', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'image',
+					'group'       => __( 'General', 'pagebox' ),
+					'name'        => 'image',
+					'label'       => __( 'Image - right bottom block', 'pagebox' ),
+					'description' => __( 'Add image for block under right editor', 'pagebox' ),
+				),
+				array(
+					'type'        => 'text',
+					'group'       => __( 'General', 'pagebox' ),
+					'name'        => 'url',
+					'label'       => __( 'Image url', 'pagebox' ),
+					'description' => __( 'Add url to the image (optionally)', 'pagebox' ),
+				),
+				array(
+					'type'        => 'editor',
+					'group'       => __( 'General', 'pagebox' ),
+					'name'        => 'editor3',
+					'label'       => __( 'Editor - right bottom block', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
 
 				array(
 					'type'        => 'colorpicker',
 					'group'		    => __( 'Design', 'pagebox' ),
-					'name'        => 'button_font_color',
-					'label'       => __( 'Button font color', 'pagebox' ),
+					'name'        => 'title_font_color',
+					'label'       => __( 'Title font color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'number',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'title_size',
+					'label'       => __( 'Title size', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
 				),
 			)

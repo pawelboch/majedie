@@ -55,16 +55,77 @@ class Module extends Abstract_Module {
 				array(
 					'type'        => 'text',
 					'group'       => __( 'General', 'pagebox' ),
+					'name'        => 'paragraph',
+					'label'       => __( 'Paragraph', 'pagebox' ),
+					'description' => __( 'Main module title', 'pagebox' ),
+				),
+				array(
+					'type'        => 'text',
+					'group'       => __( 'General', 'pagebox' ),
 					'name'        => 'title',
 					'label'       => __( 'Title', 'pagebox' ),
 					'description' => __( 'Main module title', 'pagebox' ),
 				),
 
+						array(
+					'type'        => 'repeater',
+					'group'		  => __( 'General', 'pagebox' ),
+					'name'        => 'logos',
+					'description' => __( 'Add logo image', 'pagebox' ),
+					'labels'       => array(
+						'singular' => __('Logo', 'pagebox'),
+						'plural' => __('Logos', 'pagebox')
+					),
+					'buttons' => array(
+						'add' => __('Add logo', 'pagebox'),
+						'remove' => __('Remove logo', 'pagebox')
+					),
+					'fields' => array(
+						array(
+							'type'        => 'image',
+							'group'		  => __( 'General', 'pagebox' ),
+							'name'        => 'logo',
+							'label'       => __( 'Add Logo image', 'pagebox' ),
+							'description' => __( '', 'pagebox' )
+						),
+						array(
+					'type'        => 'text',
+					'group'       => __( 'General', 'pagebox' ),
+					'name'        => 'url',
+					'label'       => __( 'Url', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+
+				
+					)
+				),
+
+				array(
+					'type'        => 'number',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'paragraph_size',
+					'label'       => __( 'Paragraph size', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
 				array(
 					'type'        => 'colorpicker',
 					'group'		    => __( 'Design', 'pagebox' ),
-					'name'        => 'button_font_color',
-					'label'       => __( 'Button font color', 'pagebox' ),
+					'name'        => 'paragraph_color',
+					'label'       => __( 'Paragraph color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'number',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'title_size',
+					'label'       => __( 'Title size', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'title_color',
+					'label'       => __( 'Title color', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
 				),
 			)
