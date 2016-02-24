@@ -5,6 +5,7 @@
 
 
 
+<hr class="wpg-separator">
 
 <div class="module-full-width-image-title-icons-paragraph-link">
 	<div class="container">
@@ -600,15 +601,35 @@
 		<div class="container">
 
 			<div class="row">
-				<div class="col-xs-12 col-sm-6">
+				<div class="col-xs-12 col-md-6">
 					<h1>Contact Us</h1>
 					<p>If you have any queries of a non-urgent nature, please fill in the form and we will endeavour to get back to you within 48 hours.</p>
 					<p>Alternatively to speak to someone about dealing for direct investment, please call  BNY Mellon on +44 (0)344 892 0974.</p>
 					<p>Majedie Asset Management<br>10 Old Bailey<br>London<br>EC4M 7NG</p>
 					<p><a href="mailto:info@majedie.com">info@majedie.com</a><br>+44 (0)20 7618 3900</p>
 				</div>
-				<div class="col-xs-12 col-sm-6">
+				<div class="col-xs-12 col-md-6">
 					<?php echo do_shortcode('[contact-form-7 id="26" title="Contact Page"]'); ?>
+
+					<!-- to copy on contact form 7 -->
+					<!--
+					<div class="wpg-form-contact span-table">
+
+					<div class="span-table-row"><label for="wpg-id-your-name" class="span-table-cell vertical-align-top">Your name*</label><div class="span-table-cell vertical-align-middle">[text* wpg-id-your-name id:wpg-id-your-name]</div></div>
+
+					<div class="span-table-row"><label for="wpg-id-your-email" class="span-table-cell vertical-align-top">Your eamil*</label><div class="span-table-cell vertical-align-middle">[email* wpg-id-your-email id:wpg-id-your-email]</div></div>
+
+					<div class="span-table-row"><div class="span-table-cell vertical-align-top wpg-label-style">Title</div><div class="span-table-cell vertical-align-middle"><input type="radio" name="wpg-id-mr-mrs[]" id="wpg-id-mr"> <label for="wpg-id-mr">Mr</label> <input type="radio" name="wpg-id-mr-mrs[]" id="wpg-id-mrs"> <label for="wpg-id-mrs">Mrs</label></div></div>
+						
+					<div class="span-table-row"><label for="wpg-id-company" class="span-table-cell vertical-align-top">Company*</label><div class="span-table-cell vertical-align-middle">[text* wpg-id-company id:wpg-id-company]</div></div>
+
+					<div class="span-table-row"><label for="wpg-id-comments" class="span-table-cell vertical-align-top">Comments</label><div class="span-table-cell vertical-align-top"><div>[textarea* wpg-id-comments id:wpg-id-comments]</div><div>[reCAPTCHA]</div><div>[submit class:btn-1 "SUBMIT"]</div></div></div>
+
+					</div>
+					-->
+
+
+					<!-- Orgianl form HTML  -->
 					<!--
 					<form>
 						<div class="wpg-form-contact span-table">
@@ -671,7 +692,116 @@
 
 <hr class="wpg-separator">
 
+<div class="module-full-width-title">
+	<div class="container">
+		<h1>Privacy</h1>
+	</div>
+</div>
 
+
+<hr class="wpg-separator">
+
+<div class="module-full-width-content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-8">
+
+				<p style="font-size: 20px;">The privacy policy we apply on this web site is designed to help you to understand the ways in which we collect and use the personal information you may provide.</p>
+				<h4>What Information do we Collect on this Site?</h4>
+				<p>You may provide us with two different types of information when you use this web site:</p>
+				<ol>
+					<li>Personal information you disclose by consent.</li>
+					<li>Web site usage information collected while you use our web site.</li>
+				</ol>
+				<p>Personal Information Disclosed by Consent<br>Access to the client log in area is restricted to existing Majedie clients - we collect no other personal information.</p>
+
+				<h4>Web Site Usage Information</h4>
+				<p>We may store and analyse site usage information in order to improve this web site, but this information<br>is aggregated and not used in any way to track individual users.</p>
+				<hr>
+				<p><strong>All formating tags</strong></p>
+				<h1>Header h1</h1>
+				<h2>Header h2</h2>
+				<h3>Header h3</h3>
+				<h4>Header h4</h4>
+				<h5>Header h5</h5>
+				<h6>Header h6</h6>
+				<p>Simple Paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Simple Paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<ul>
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+					<li>Item 4</li>
+					<li>Item 5</li>
+					<li>Item 6</li>
+				</ul>
+				<ol>
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+					<li>Item 4</li>
+					<li>Item 5</li>
+					<li>Item 6</li>
+				</ol>
+
+			</div>
+		
+			<div class="col-xs-12 col-md-4">
+
+
+				<!-- Module full width vertical 2 blocks with post + block with twitter post (New Content) -->
+				<div class="module-full-width-vertical-2-blocks-with-post-block-with-twitter-post">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="wpg-post-box wpg-bg-navy-blue">
+
+								<p class="wpg-post-box_tag">Equity</p>
+								<h3><a href="#">Global American Fund</a></h3>
+								<p class="wpg-post-box_date">12 / 11/ 2005</p>
+								<div class="wpg-post-box_main-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet condimentum diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas nulla ac vestibulum hendrerit.</p>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="wpg-post-box wpg-bg-white" style="background-color: #fefffe; color: #000;">
+								<p class="wpg-post-box_tag">Equity</p>
+								<h3><a href="#">Global American Fund</a></h3>
+								<p class="wpg-post-box_date">12 / 11/ 2005</p>
+								<div class="wpg-post-box_main-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet condimentum diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas nulla ac vestibulum hendrerit. </p>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="wpg-post-box wpg-bg-orange-twitter" style="background-color: #dd6e1d; color: #fff;">
+								<p class="wpg-post-box_tag">Social</p>
+								<i class="fa fa-twitter"></i>
+								
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet condimentum diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas nulla ac vestibulum hendrerit.</p>
+								<p><a href="http://www.ghjjjd.com">http://www.ghjjjd.com</a></p>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- / Module full width vertical 2 blocks with post + block with twitter post (New Content) -->
+
+				
+			</div>
+			
+
+		</div>
+	</div>
+</div>
+
+<hr class="wpg-separator">
 
 <div class="module-demo">
 	<div class="container">

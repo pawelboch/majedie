@@ -510,7 +510,7 @@
 		background-repeat: no-repeat;
 	}
 	.wpg-post-box {
-		padding: 20px 15px;
+		padding: 20px;
 		position: relative;
 		.wpg-post-box_tag {
 			font-size: 15px;
@@ -521,6 +521,7 @@
 			font-family: Avenir-Medium, Arial, Helvetica, sans-serif;
 			color: #000;
 			text-transform: uppercase;
+			margin-top: 5px;
 		}
 		.wpg-post-box_date {
 			color: #aaa;
@@ -888,12 +889,165 @@
 	label {
 		color: #f4f0ee;
 		font-size: 14px;
+		padding: 10px 0 0 0;
 	}
 	.span-table-row > label,
 	.span-table-row > .wpg-label-style {
 		width: 90px;
 	}
+	.wpcf7-not-valid-tip {
+		color: #cc0000;
+	}
+	.ajax-loader {
+		padding: 5px;
+		display: inline-block;
+		background-color: #fff;
+		margin: 15px 10px 0;
+		position: absolute;
+	}
+	.btn-1 {
+		min-width: 150px;
+	}
 }
+
+.module-full-width-title {
+	padding: 40px 0;
+	background-color: #9d948a;
+	color: #fff;
+	h1 {
+		font-size: 50px;
+		line-height: 105%;
+		text-transform: uppercase;
+	}
+}
+
+.module-full-width-content {
+	padding: (60-($grid-gutter-width/2)) 0;
+	.container > .row > div {
+		margin-top: $grid-gutter-width/2;
+		margin-bottom: $grid-gutter-width/2;
+	}
+	ol, ul {
+		padding: 0 0 0 18px;
+		margin: 15px 0 0 0;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-weight: 700;
+		margin: 15px 0 0 0;
+	}
+	h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+		margin-top: 0;
+	}
+	h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p,
+	h1 + ul, h2 + ul, h3 + ul, h4 + ul, h5 + ul, h6 + ul,
+	h1 + ol, h2 + ol, h3 + ol, h4 + ol, h5 + ol, h6 + ol {
+		margin-top: 0;
+	}
+	h1 {
+		font-size: 40px;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	h4 {
+		font-size: 15px;
+	}
+	h5 {
+		font-size: 12px;
+	}
+	h6 {
+		font-size: 10px;
+	}
+	p {
+		font-size: 15px;
+	}
+	strong {
+		font-weight: 700;
+	}
+	hr {
+	    margin: 30px 0;
+	    height: 1px;
+	    background-color: #ccc;
+	    overflow: hidden;
+	    border: none;		
+	}
+}
+
+.module-full-width-vertical-2-blocks-with-post-block-with-twitter-post {
+	.row:first-child .wpg-post-box {
+		margin-top: 0;
+	}
+	.wpg-post-box {
+		padding: 20px;
+		position: relative;
+		margin-top: 20px;
+		background-color: #fefffe;
+
+		.wpg-post-box_tag {
+			font-size: 15px;
+			color: #dd6e1d;
+		}
+		h3 {
+			font-size: 21px;
+			font-family: Avenir-Medium, Arial, Helvetica, sans-serif;
+			color: #000;
+			text-transform: uppercase;
+			margin-top: 5px;
+			font-weight: 400;
+		}
+		.wpg-post-box_date {
+			color: #aaa;
+			font-size: 15px;
+
+		}
+		.wpg-post-box_main-content p {
+			font-size: 15px;
+			margin-top: 15px;
+		}
+		
+
+	}
+	.wpg-post-box.wpg-bg-navy-blue {
+		background-color: #355274;
+		.wpg-post-box_date, 
+		h3, 
+		h3 a, 
+		.wpg-post-box_main-content p {
+			color: #fff;
+		}		
+	}
+	.wpg-bg-orange-twitter {
+		position: relative;
+		.wpg-post-box_tag {
+			color: #fff;
+		}
+		.wpg-post-box_main-content p {
+			font-style: italic;
+		}
+		.fa.fa-twitter {
+			color: #fff;
+			position: absolute;
+			right: 20px;
+			top: 15px;
+			font-size: 32px;
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
