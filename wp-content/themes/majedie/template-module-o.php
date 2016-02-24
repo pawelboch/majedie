@@ -862,7 +862,130 @@
 <hr class="wpg-separator">
 
 
+<div class="module-full-width-funds-literature">
 
+	<div class="wpg-selects-funds-literature">
+		<div class="container">
+			
+			<form>
+				<select class="wpg-plugin-select">
+					<option value="1">Doc Type</option>
+					<option value="2">Option 2</option>
+					<option value="4">Option 3</option>
+					<option value="4">Option 4</option>
+					<option value="5">Option 5</option>
+					<option value="6">Option 6</option>
+					<option value="7">Option 7</option>
+					<option value="8">Option 8</option>
+					<option value="9">Option 9</option>
+					<option value="10">Option 10</option>
+				</select>
+				<select class="wpg-plugin-select">
+					<option value="1">Fund</option>
+					<option value="2">Option 2</option>
+					<option value="4">Option 3</option>
+					<option value="4">Option 4</option>
+					<option value="5">Option 5</option>
+					<option value="6">Option 6</option>
+					<option value="7">Option 7</option>
+					<option value="8">Option 8</option>
+					<option value="9">Option 9</option>
+					<option value="10">Option 10</option>
+				</select>
+				<select class="wpg-plugin-select">
+					<option value="1">Fund Domicile</option>
+					<option value="2">Option 2</option>
+					<option value="4">Option 3</option>
+					<option value="4">Option 4</option>
+					<option value="5">Option 5</option>
+					<option value="6">Option 6</option>
+					<option value="7">Option 7</option>
+					<option value="8">Option 8</option>
+					<option value="9">Option 9</option>
+					<option value="10">Option 10</option>
+				</select>					
+				<select class="wpg-plugin-select">
+					<option value="1">Share Class</option>
+					<option value="2">Option 2</option>
+					<option value="4">Option 3</option>
+					<option value="4">Option 4</option>
+					<option value="5">Option 5</option>
+					<option value="6">Option 6</option>
+					<option value="7">Option 7</option>
+					<option value="8">Option 8</option>
+					<option value="9">Option 9</option>
+					<option value="10">Option 10</option>
+				</select>
+				<select class="wpg-plugin-select">
+					<option value="1">Acc / Inc</option>
+					<option value="2">Option 2</option>
+					<option value="4">Option 3</option>
+					<option value="4">Option 4</option>
+					<option value="5">Option 5</option>
+					<option value="6">Option 6</option>
+					<option value="7">Option 7</option>
+					<option value="8">Option 8</option>
+					<option value="9">Option 9</option>
+					<option value="10">Option 10</option>
+				</select>
+				<select class="wpg-plugin-select">
+					<option value="1">Currency</option>
+					<option value="2">Option 2</option>
+					<option value="4">Option 3</option>
+					<option value="4">Option 4</option>
+					<option value="5">Option 5</option>
+					<option value="6">Option 6</option>
+					<option value="7">Option 7</option>
+					<option value="8">Option 8</option>
+					<option value="9">Option 9</option>
+					<option value="10">Option 10</option>
+				</select>
+				
+				<input type="submit" name="wpg-submit-example1" class="btn-1" value="Apply">
+			</form>
+		</div>
+	</div>
+
+	<div class="wpg-container-tablets">
+		<div class="container">
+			<div class="row">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus pulvinar scelerisque. Maecenas pharetra ac augue et aliquet. Nullam auctor ligula varius quam aliquam tempus. Mauris a aliquet sem, vel suscipit libero. Morbi ultricies mattis semper. </p>
+
+				<table>
+					<caption>UK Domiciled Funds - Majedie Asset Management Investment Fund Company</caption>
+					<thead>
+						<tr>
+							<th>Document Type</th>
+							<th>Fund</th>
+							<th>Share Class</th>
+							<th>Currency</th>
+							<th>Acc / Inc</th>
+							<th>File</th>
+						</tr>
+					</thead>
+					<tbody>
+						<?php for($i=0; $i<5; $i++) { ?>
+						<tr>
+							<td>Application Form</td>
+							<td>Global Equity Fund;<br>Global Focus Fund</td>
+							<td></td>
+							<td>USd</td>
+							<td>Acc</td>
+							<td><a href="#">Institutional Intermediary Investor<br>Application Form (USD)</td></td>
+						</tr>
+						<?php } ?>
+					</tbody>
+				</table>
+
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+
+<hr class="wpg-separator">
 
 <div class="module-demo">
 	<div class="container">

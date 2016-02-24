@@ -1042,7 +1042,7 @@
 
 
 .module-full-width-archive-navigation {
-	padding: 15px 0;
+	padding: 10px 0;
 	background-color: #675c50;
 	color: #fff;
 	line-height: 115%;
@@ -1059,7 +1059,7 @@
 			}
 			font-size: 15px;
 			cursor: pointer;
-			padding: 5px 0;
+			padding: 10px 0;
 		}
 		.wpg-plugin-select-simulate-selection:after {
 			font: normal normal normal 21px/1 FontAwesome;
@@ -1141,9 +1141,77 @@
 }
 
 
+.module-full-width-funds-literature {
+	.wpg-selects-funds-literature {
+		padding: 10px 0;
+		background-color: #675c50;
+		color: #fff;
+		line-height: 115%;
+		select, option {
+			color: #000;
+		}
+		.wpg-plugin-select-simulate {
+			margin-right: 50px;
+			position: relative;
+			width: auto;
+			float: left;
+			.wpg-plugin-select-simulate-selection {
+				strong {
+					font-weight: 400;
+				}
+				font-size: 15px;
+				cursor: pointer;
+				padding: 10px 0;
+			}
+			.wpg-plugin-select-simulate-selection:after {
+				font: normal normal normal 21px/1 FontAwesome;
+				content: "\f107";
+				display: inline-block;
+				margin-left: 10px;
+				color: #b3aea8;
+				position: relative;
+				top: 2px;
+			}
+			.wpg-plugin-select-simulate-options {
+				position: absolute;
+				top: 100%;
+				left: 0;
+				z-index: 600;
+				box-shadow: 0 0 5px rgba(0,0,0,.28);
+				max-height: 192px;
+				overflow-y: auto;
+				overflow-x: hidden;
+			}
+			.wpg-plugin-select-simulate-option {
+				background-color: #f9f9f9;
+				color: #000;
+				cursor: pointer;
+				padding: 8px 10px;
+				min-width: 160px;
+				font-size: 15px;
+			}
+			.wpg-plugin-select-simulate-option:hover {
+				background-color: #eee;
+			}
+			.wpg-plugin-select-simulate-option-active,
+			.wpg-plugin-select-simulate-option-active:hover {
+				background-color: #3e3831;
+				color: #fff;
+			}
+		}
+		.btn-1 {
+			margin-top: 0;
+			float: right;
+		}
 
+	}
+	.wpg-container-tablets {
+		caption {
+		    caption-side: top;
+		}
+	}
 
-
+}
 
 
 
@@ -1162,6 +1230,16 @@
 
 
 /** BREAKPOINTS **/
+
+@media screen and (max-width: map-get($grid-breakpoints, xl) ) { //~1200px
+	.module-full-width-funds-literature {
+		.wpg-selects-funds-literature {
+			.wpg-plugin-select-simulate {
+				margin-right: 20px;
+			}
+		}
+	}
+}
 
 @media screen and (max-width: map-get($grid-breakpoints, lg) ) { //~992px
 	.module-full-width-2-posts-with-thumnails-2-posts {
@@ -1203,6 +1281,15 @@
 		}
 	}
 
+	.module-full-width-funds-literature {
+		.wpg-selects-funds-literature {
+			.btn-1 {
+				float: left;
+				clear: left;
+			}
+		}
+	}
+
 }
 
 @media screen and (max-width: map-get($grid-breakpoints, md) ) { //~768px
@@ -1239,6 +1326,9 @@
 	body.admin-bar {
 		padding-bottom: 0 !important;
 	}	
+
+
+
 }
 
 
