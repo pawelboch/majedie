@@ -54,18 +54,87 @@ class Module extends Abstract_Module {
 			'fields'      => array(
 				array(
 					'type'        => 'text',
-					'group'       => __( 'General', 'pagebox' ),
-					'name'        => 'title',
+					'group'       => __( 'Row 1', 'pagebox' ),
+					'name'        => 'title1',
 					'label'       => __( 'Title', 'pagebox' ),
 					'description' => __( 'Main module title', 'pagebox' ),
 				),
 
 				array(
 					'type'        => 'colorpicker',
-					'group'		    => __( 'Design', 'pagebox' ),
-					'name'        => 'button_font_color',
-					'label'       => __( 'Button font color', 'pagebox' ),
+					'group'		    => __( 'Row 1', 'pagebox' ),
+					'name'        => 'title1_font_color',
+					'label'       => __( 'Title font color', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
+				),
+
+				
+				array(
+					'type'        => 'number',
+					'group'		    => __( 'Row 1', 'pagebox' ),
+					'name'        => 'title1_size',
+					'label'       => __( 'Title size', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Row 1', 'pagebox' ),
+					'name'        => 'row1_background',
+					'label'       => __( 'Background color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+
+				array(
+					'type'        => 'editor',
+					'group'       => __( 'Row 1', 'pagebox' ),
+					'name'        => 'editor1',
+					'label'       => __( 'Editor', 'pagebox' ),
+					'description' => __( 'Main module title', 'pagebox' ),
+				),
+
+
+
+
+
+
+					array(
+					'type'        => 'text',
+					'group'       => __( 'Row 2', 'pagebox' ),
+					'name'        => 'title2',
+					'label'       => __( 'Title', 'pagebox' ),
+					'description' => __( 'Main module title', 'pagebox' ),
+				),
+
+				array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Row 2', 'pagebox' ),
+					'name'        => 'title2_font_color',
+					'label'       => __( 'Title font color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+
+				
+				array(
+					'type'        => 'number',
+					'group'		    => __( 'Row 2', 'pagebox' ),
+					'name'        => 'title2_size',
+					'label'       => __( 'Title size', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Row 2', 'pagebox' ),
+					'name'        => 'row2_background',
+					'label'       => __( 'Background color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+
+				array(
+					'type'        => 'editor',
+					'group'       => __( 'Row 2', 'pagebox' ),
+					'name'        => 'editor2',
+					'label'       => __( 'Editor', 'pagebox' ),
+					'description' => __( 'Main module title', 'pagebox' ),
 				),
 			)
 		);

@@ -51,7 +51,7 @@ class Module extends Abstract_Module {
 			),
 			// minimum and maximum percent width that module fits in
 			// WPGeeks_Forms
-			'fields'      => array(
+				'fields'      => array(
 				array(
 					'type'        => 'text',
 					'group'       => __( 'General', 'pagebox' ),
@@ -59,12 +59,70 @@ class Module extends Abstract_Module {
 					'label'       => __( 'Title', 'pagebox' ),
 					'description' => __( 'Main module title', 'pagebox' ),
 				),
+		
+						array(
+					'type'        => 'editor',
+					'group'       => __( 'General', 'pagebox' ),
+					'name'        => 'editor',
+					'label'       => __( 'Content', 'pagebox' ),
+					'description' => __( 'Add content', 'pagebox' ),
+				),
 
+								array(
+					'type'        => 'image',
+					'group'       => __( 'General', 'pagebox' ),
+					'name'        => 'background_image',
+					'label'       => __( 'Background image', 'pagebox' ),
+					'description' => __( 'Add background image', 'pagebox' ),
+				),
+
+
+			
+
+
+
+			array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'ou_background_color',
+					'label'       => __( 'Outside Background color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+
+			array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'in_background_color',
+					'label'       => __( 'Inside Background color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'number',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'title_size',
+					'label'       => __( 'Title size', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
 				array(
 					'type'        => 'colorpicker',
 					'group'		    => __( 'Design', 'pagebox' ),
-					'name'        => 'button_font_color',
-					'label'       => __( 'Button font color', 'pagebox' ),
+					'name'        => 'title_color',
+					'label'       => __( 'Title color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+
+				array(
+					'type'        => 'number',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'subtitle_size',
+					'label'       => __( 'SubTitle size', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'subtitle_color',
+					'label'       => __( 'SubTitle color', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
 				),
 			)

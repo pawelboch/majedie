@@ -59,12 +59,59 @@ class Module extends Abstract_Module {
 					'label'       => __( 'Title', 'pagebox' ),
 					'description' => __( 'Main module title', 'pagebox' ),
 				),
+					array(
+					'type'        => 'text',
+					'group'       => __( 'General', 'pagebox' ),
+					'name'        => 'subtitle',
+					'label'       => __( 'SubTitle', 'pagebox' ),
+					'description' => __( 'Main module subtitle', 'pagebox' ),
+				),
+						array(
+					'type'        => 'editor',
+					'group'       => __( 'General', 'pagebox' ),
+					'name'        => 'editor',
+					'label'       => __( 'Content', 'pagebox' ),
+					'description' => __( 'Add content', 'pagebox' ),
+				),
 
+			
+
+
+
+			array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'background_color',
+					'label'       => __( 'Background color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'number',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'title_size',
+					'label'       => __( 'Title size', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
 				array(
 					'type'        => 'colorpicker',
 					'group'		    => __( 'Design', 'pagebox' ),
-					'name'        => 'button_font_color',
-					'label'       => __( 'Button font color', 'pagebox' ),
+					'name'        => 'title_color',
+					'label'       => __( 'Title color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+
+				array(
+					'type'        => 'number',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'subtitle_size',
+					'label'       => __( 'SubTitle size', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'subtitle_color',
+					'label'       => __( 'SubTitle color', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
 				),
 			)
