@@ -784,7 +784,7 @@
 								<p class="wpg-post-box_tag">Social</p>
 								<i class="fa fa-twitter"></i>
 								
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet condimentum diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas nulla ac vestibulum hendrerit.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet condi mentum diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas nulla ac vestibulum hendrerit.</p>
 								<p><a href="http://www.ghjjjd.com">http://www.ghjjjd.com</a></p>
 							
 							</div>
@@ -793,7 +793,7 @@
 				</div>
 				<!-- / Module full width vertical 2 blocks with post + block with twitter post (New Content) -->
 
-				
+
 			</div>
 			
 
@@ -801,7 +801,68 @@
 	</div>
 </div>
 
+
+
+
+
+
+
+
+
+
 <hr class="wpg-separator">
+
+
+<div class="module-full-width-archive-navigation">
+	<div class="container">
+		<select class="wpg-plugin-select" onchange="document.location.href=this.options[this.selectedIndex].value;">
+			<option value="http://majedie-dev-local.kurtosysweb.com/Archive-2015/">Archive 2015</option>
+			<option value="http://majedie-dev-local.kurtosysweb.com/Archive-2014/">Archive 2014</option>
+			<option value="http://majedie-dev-local.kurtosysweb.com/Archive-2015/">Archive 2013</option>
+			<option value="http://majedie-dev-local.kurtosysweb.com/Archive-2016/" selected="selected">Archive 2012</option>
+			<option value="http://majedie-dev-local.kurtosysweb.com/Archive-2011/">Archive 2011</option>
+			<option value="http://majedie-dev-local.kurtosysweb.com/Archive-2010/">Archive 2010</option>
+			<option value="7">Archive 2009</option>
+			<option value="8">Archive 2008</option>
+			<option value="9">Archive 2007</option>
+			<option value="10">Archive 2006</option>
+		</select>	
+		<!--
+		<select class="wpg-plugin-select">
+		  <?php wp_get_archives( array( 'before' => 'Archive', 'type' => 'yearly', 'format' => 'option', 'show_post_count' => 1 ) ); ?>
+		</select>
+		-->
+
+	</div>
+</div>
+
+<hr class="wpg-separator">
+
+<div class="module-full-width-3-blocks-with-cover-title-date-download">
+	<div class="container">
+		<div class="row">
+			<?php for($i=0; $i<5; $i++) { ?>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="wpg-inset-box">
+						<?php /* important size image: 281x397px (cut image) */ ?>
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARkAAAGNAQMAAAAfKZcBAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAADUExURe/v7+yXuo0AAAAkSURBVGje7cEBAQAAAIIg/69uSEABAAAAAAAAAAAAAAAAAJwZOWEAAcQ3+hoAAAAASUVORK5CYII=" alt="blank">
+						<!--<img src="<?php echo get_template_directory_uri(); ?>/assets/images/sample-3.jpg" alt="X">-->
+						<h3>Issue No.1</h3>
+						<p class="wpg-date">12 / 11/ 2005</p>
+						<a class="wpg-link-download" href="#">DOWNLOAD</a>
+					</div>
+				</div>
+			<?php } ?>
+		</div>
+	</div>
+</div>
+
+
+
+<hr class="wpg-separator">
+
+
+
 
 <div class="module-demo">
 	<div class="container">
@@ -816,7 +877,7 @@
 					<select class="wpg-plugin-select">
 						<option value="http://majedie-dev-local.kurtosysweb.com/about-us/">About us</option>
 						<option value="2">Option 2</option>
-						<option value="3">Option 3</option>
+						<option>Option 3</option>
 						<option value="4" selected="selected">Option 4</option>
 						<option value="5">Option 5</option>
 						<option value="6">Option 6</option>

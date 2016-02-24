@@ -65,7 +65,7 @@ pixelperfect.init( {
 				for(var i=0, iLength=$wpgPluginSelect.eq(t).find("option").length; i<iLength; i++)
 				{
 					var defaultActiveSelected=(($wpgPluginSelect.eq(t).find('option').eq(i).attr("selected")=="selected")?' wpg-plugin-select-simulate-option-active':'');
-					$(".wpg-plugin-select-simulate-options").eq(t).append('<div class="wpg-plugin-select-simulate-option' + defaultActiveSelected + '">' + $wpgPluginSelect.eq(t).find("option").eq(i).text() + '</div>');
+					$(".wpg-plugin-select-simulate-options").eq(t).append('<div data-value="' + $wpgPluginSelect.eq(t).find("option").eq(i).val() + '" class="wpg-plugin-select-simulate-option' + defaultActiveSelected + '">' + $wpgPluginSelect.eq(t).find("option").eq(i).text() + '</div>');
 				}
 			}
 		}
@@ -77,6 +77,13 @@ pixelperfect.init( {
 			$(this).parent().parent().prev().find('option').removeAttr("selected").eq(indexOption).attr("selected","selected");
 			$(this).parent().prev().toggleClass("wpg-plugin-select-simulate-selection-active");
 			$(this).parent().slideToggle(speedAnimate);
+				
+			var dataValue=String($(this).data("value"));
+			if (dataValue.indexOf("http://") == 0 || dataValue.indexOf("https://") == 0)
+			{
+				document.location.href=dataValue;
+			}
+
 		});
 		jQuery(document).on("click","body", function(e) {
 			if (jQuery(e.target).is('.wpg-plugin-select-simulate *')) return; 
