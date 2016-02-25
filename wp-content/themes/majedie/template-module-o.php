@@ -3,6 +3,68 @@
 ?>
 <?php get_header(); ?>
 
+<hr class="wpg-separator">
+
+<div class="module-demo">
+	<div class="container">
+
+		<div class="row" data-wpg-equal-height-wrap="min-height">
+			<!-- .col-xs-	.col-sm-	.col-md-	.col-lg-	.col-xl- -->
+			<div class="col-xs-12 col-sm-4">
+				<div class="wpg-red-block wpg-demo-block" style="background-color: red;" data-wpg-equal-height-item>
+					
+					<h2>Simulate select examples</h2>
+
+					<select class="wpg-plugin-select">
+						<option value="http://majedie-dev-local.kurtosysweb.com/about-us/">About us</option>
+						<option value="2">Option 2</option>
+						<option>Option 3</option>
+						<option value="4" selected="selected">Option 4</option>
+						<option value="5">Option 5</option>
+						<option value="6">Option 6</option>
+						<option value="7">Option 7</option>
+						<option value="8">Option 8</option>
+						<option value="9">Option 9</option>
+						<option value="10">Option 10</option>
+					</select>
+
+					<select class="wpg-plugin-select">
+						<option value="1">example 1</option>
+						<option value="2">example 2</option>
+						<option value="3">example 3</option>
+						<option value="4">example 4</option>
+						<option value="5">example 5</option>
+						<option value="6" selected="selected">example 6</option>
+					</select>
+
+					<select class="wpg-plugin-select">
+						<option value="1">one</option>
+						<option value="2">two</option>
+						<option value="3">three</option>
+						<option value="4">four</option>
+					</select>
+
+					<h2>Simple Paragraph</h2>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<div class="wpg-red-block wpg-demo-block" style="background-color: lime;" data-wpg-equal-height-item>
+					<h2>Simple Paragraph</h2>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<div class="wpg-red-block wpg-demo-block" style="background-color: yellow;" data-wpg-equal-height-item>
+					<h2>Simple Paragraph</h2>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
 
 
 <hr class="wpg-separator">
@@ -946,38 +1008,92 @@
 		</div>
 	</div>
 
-	<div class="wpg-container-tablets">
+	<div class="wpg-container-tabels">
 		<div class="container">
-			<div class="row">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus pulvinar scelerisque. Maecenas pharetra ac augue et aliquet. Nullam auctor ligula varius quam aliquam tempus. Mauris a aliquet sem, vel suscipit libero. Morbi ultricies mattis semper. </p>
 
-				<table>
-					<caption>UK Domiciled Funds - Majedie Asset Management Investment Fund Company</caption>
-					<thead>
-						<tr>
-							<th>Document Type</th>
-							<th>Fund</th>
-							<th>Share Class</th>
-							<th>Currency</th>
-							<th>Acc / Inc</th>
-							<th>File</th>
-						</tr>
-					</thead>
-					<tbody>
-						<?php for($i=0; $i<5; $i++) { ?>
-						<tr>
-							<td>Application Form</td>
-							<td>Global Equity Fund;<br>Global Focus Fund</td>
-							<td></td>
-							<td>USd</td>
-							<td>Acc</td>
-							<td><a href="#">Institutional Intermediary Investor<br>Application Form (USD)</td></td>
-						</tr>
-						<?php } ?>
-					</tbody>
-				</table>
-
+			<p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus pulvinar scelerisque.<br>Maecenas pharetra ac augue et aliquet. Nullam auctor ligula varius quam aliquam tempus.<br>Mauris a aliquet sem, vel suscipit libero. Morbi ultricies mattis semper. </p>
+			
+			<div class="wpg-table-wrap-outset">
+				<div class="wpg-table-wrap">
+					<table>
+						<caption>UK Domiciled Funds - Majedie Asset Management Investment Fund Company</caption>
+						<thead>
+							<tr>
+								<th>Document Type</th>
+								<th>Fund</th>
+								<th>Share Class</th>
+								<th>Currency</th>
+								<th>Acc / Inc</th>
+								<th>File</th>
+							</tr>
+						</thead>
+						<tbody>
+							<?php for($i=0; $i<5; $i++) { ?>
+							<tr>
+								<td>Application Form</td>
+								<td>Global Equity Fund;<br>Global Focus Fund</td>
+								<td></td>
+								<td>USd</td>
+								<td>Acc</td>
+								<td><a href="#">Institutional Intermediary Investor<br>Application Form (USD)</a></td>
+							</tr>
+							<?php } ?>
+						</tbody>
+					</table>
+				</div>
 			</div>
+
+			<div class="wpg-table-wrap-outset">
+				<div class="wpg-table-wrap">
+					<table>
+						<caption>UUK Domiciled Funds - Majedie Institutional Trust</caption>
+						<thead>
+							<tr>
+								<th>Document Type</th>
+								<th>Fund</th>
+								<th>Share Class</th>
+								<th>Currency</th>
+								<th>Acc / Inc</th>
+								<th>File</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>KIID</td>
+								<td>Majedie Institutional Trust</td>
+								<td>A</td>
+								<td>GBP</td>
+								<td>Acc</td>
+								<td><a href="#">Majedie Institutional Trust A KIID</a></td>
+							</tr>
+							<tr>
+								<td>Application Form</td>
+								<td>Global Equity Fund;<br>Global Focus Fund</td>
+								<td></td>
+								<td>USd</td>
+								<td>Acc</td>
+								<td><a href="#">Institutional Intermediary Investor<br>Application Form (USD)</a></td>
+							</tr>
+							<tr>
+								<td>KIID</td>
+								<td>Majedie Institutional Trust</td>
+								<td>A</td>
+								<td>GBP</td>
+								<td>Acc</td>
+								<td><a href="#">Majedie Institutional Trust A KIID</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+
+			<div class="row wpg-bottom-container">
+				<div class="col-xs-12 col-md-8">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus pulvinar scelerisque. Maecenas pharetra ac augue et aliquet. Nullam auctor ligula varius quam aliquam tempus. Mauris a aliquet sem, vel suscipit libero. Morbi ultricies mattis semper. Mauris luctus diam augue, eget gravida orci iaculis at. </p>
+				</div>
+			</div>
+
 		</div>
 	</div>
 
@@ -987,61 +1103,135 @@
 
 <hr class="wpg-separator">
 
-<div class="module-demo">
+<div class="module-full-width-horizontal-2-blocks-with-post-block-with-twitter-post">
 	<div class="container">
 
 		<div class="row" data-wpg-equal-height-wrap="min-height">
-			<!-- .col-xs-	.col-sm-	.col-md-	.col-lg-	.col-xl- -->
+
 			<div class="col-xs-12 col-sm-4">
-				<div class="wpg-red-block wpg-demo-block" style="background-color: red;" data-wpg-equal-height-item>
+				<div class="wpg-post-box wpg-bg-white" style="background-color: #fefffe; color: #000;" data-wpg-equal-height-item>
+					<p class="wpg-post-box_tag">Equity</p>
+					<h3><a href="#">MAJEDIE ASSET MANAGEMENT SCOOPS FIVE INDUSTRY AWARDS</a></h3>
+					<p class="wpg-post-box_date">12 / 11/ 2005</p>
+					<div class="wpg-post-box_main-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet condi mentum diam.</p>
+					</div>
 					
-					<h2>Simulate select examples</h2>
-
-					<select class="wpg-plugin-select">
-						<option value="http://majedie-dev-local.kurtosysweb.com/about-us/">About us</option>
-						<option value="2">Option 2</option>
-						<option>Option 3</option>
-						<option value="4" selected="selected">Option 4</option>
-						<option value="5">Option 5</option>
-						<option value="6">Option 6</option>
-						<option value="7">Option 7</option>
-						<option value="8">Option 8</option>
-						<option value="9">Option 9</option>
-						<option value="10">Option 10</option>
-					</select>
-
-					<select class="wpg-plugin-select">
-						<option value="1">example 1</option>
-						<option value="2">example 2</option>
-						<option value="3">example 3</option>
-						<option value="4">example 4</option>
-						<option value="5">example 5</option>
-						<option value="6" selected="selected">example 6</option>
-					</select>
-
-					<select class="wpg-plugin-select">
-						<option value="1">one</option>
-						<option value="2">two</option>
-						<option value="3">three</option>
-						<option value="4">four</option>
-					</select>
-
-					<h2>Simple Paragraph</h2>
-					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p>
 				</div>
 			</div>
+
 			<div class="col-xs-12 col-sm-4">
-				<div class="wpg-red-block wpg-demo-block" style="background-color: lime;" data-wpg-equal-height-item>
-					<h2>Simple Paragraph</h2>
-					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				<div class="wpg-post-box wpg-bg-white" style="background-color: #fefffe; color: #000;" data-wpg-equal-height-item>
+					<p class="wpg-post-box_tag">Equity</p>
+					<h3><a href="#">MAJEDIE NAMED ACTIVE MANAGER OF THE YEAR</a></h3>
+					<p class="wpg-post-box_date">12 / 11/ 2005</p>
+					<div class="wpg-post-box_main-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet condimentum diam. Lorem ipsum dolor sit amet.</p>
+					</div>
+					
 				</div>
 			</div>
+
 			<div class="col-xs-12 col-sm-4">
-				<div class="wpg-red-block wpg-demo-block" style="background-color: yellow;" data-wpg-equal-height-item>
-					<h2>Simple Paragraph</h2>
-					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				<div class="wpg-post-box wpg-bg-orange-twitter" style="background-color: #dd6e1d; color: #fff;" data-wpg-equal-height-item>
+					<p class="wpg-post-box_tag">Social</p>
+					<i class="fa fa-twitter"></i>
+					
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet condi mentum diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas nulla ac vestibulum hendrerit.</p>
+					<p><a href="http://www.ghjjjd.com">http://www.ghjjjd.com</a></p>
+				
 				</div>
 			</div>
+
+		</div>
+
+
+	</div>
+</div>
+
+<hr class="wpg-separator">
+
+<div class="module-full-width-search-field-title">
+	<div class="container">
+		<h2>Search Results</h2>
+		<div class="wpg-search-form">
+			<form role="search"  method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<input type="submit" value="<?php echo esc_attr_x( 'Search', 'submit button' ); ?>"><input type="text" placeholder="Search" value="<?php echo get_search_query(); ?>" name="s">
+			</form>
+		</div>
+	</div>
+</div>
+
+<hr class="wpg-separator">
+
+<div class="module-full-width-search-results-pagination">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-8">
+				<?php for($i=1; $i<9; $i++) { ?>
+				<div class="wpg-short-post">
+					<h3><a href="#"><?php echo $i; ?>. Majedie Global Equity and Global Focus mark first anniversary</a></h3>
+					<p>... the investment boutique, today announced that its Global Equity and GlobalFocus Funds (“the Funds”) have each passed their first anniversary.   The GlobalEquity Fund aims to produce a total return in excess of the MSCI All ...</p>
+				</div>
+				<?php } ?>
+
+				<div class="pagination">
+					<!--<a href="#">PREV</a>-->
+					<div class="numbered">
+						<span class="page-numbers current">1</span>
+						<a class="page-numbers" href="http://stalis-dev.mayk.media/news-centre/page/2/">2</a>
+					</div>
+					<a href="#">NEXT</a>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+
+</div>
+
+<hr class="wpg-separator">
+
+<div class="module-full-width-funds-info">
+	<div class="wpg-container-tabels">
+
+		<div class="container">
+
+			<div class="wpg-table-wrap-outset">
+				<div class="wpg-table-wrap">
+					<table>
+						<caption>Our Funds</caption>
+						<thead>
+							<tr>
+								<th>FUND</th>
+								<th>UK EQUITY<br>FUND</th>
+								<th>UK INCOME<br>FUND</th>
+								<th>UK FOCUS<br>FUND</th>
+								<th>GLOABL EQUITY<gr>FUND</th>
+								<th>GLOABL EQUITY<gr>FUND</th>
+								<th>US EQUITY<br>FUND</th>
+							</tr>
+						</thead>
+						<tbody>
+							<?php for($i=0; $i<20; $i++) { ?>
+							<tr>
+								<th><?php echo (($i%2)?"Aegon Wrap":"Barclays Stockbrokers"); ?></th>
+								<td><i class="fa fa-check"></i></td>
+								<td><i class="fa fa-check"></i></td>
+								<td><i class="fa fa-check"></i></td>
+								<td><i class="fa fa-times"></i></td>
+								<td><i class="fa fa-times"></i></td>
+								<td><i class="fa fa-check"></i></td>
+							</tr>
+							<?php } ?>
+							
+						</tbody>
+					</table>
+				</div>
+			</div>
+
 		</div>
 
 	</div>
@@ -1049,4 +1239,9 @@
 
 <hr class="wpg-separator">
 
+<!-- .col-xs-	.col-sm-	.col-md-	.col-lg-	.col-xl- -->
+<!--
+data-wpg-equal-height-wrap="min-height"
+data-wpg-equal-height-item
+-->
 <?php get_footer(); ?> 

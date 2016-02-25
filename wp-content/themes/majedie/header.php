@@ -6,6 +6,7 @@
 		<meta name="robots" content="noindex, nofollow">
 		<title><?php wp_title('|', true, 'right'); ?></title>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<?php wp_head(); ?>
 	</head>
@@ -38,7 +39,7 @@
 					<nav>
 						<ul class="wpg-other-menu">
 							<li><a href="#">Majlq Login</a></li>
-							<li><input type="submit" value="Submit" class="wpg-ico-search"><input type="search" placeholder="Search"></li>
+							<li><form role="search"  method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>"><input type="submit" value="<?php echo esc_attr_x( 'Search', 'submit button' ); ?>" class="wpg-ico-search"><input type="search" placeholder="Search" value="<?php echo get_search_query(); ?>" name="s"></form></li>
 						</ul>
 						<?php wp_nav_menu( array( 'container' => fasle, 'menu' => 'main', 'menu_class' => 'wpg-main-menu' ) ); ?>
 					</nav>

@@ -1,17 +1,5 @@
 @import "wpg-variables";
-$background-main-header: #9d948a;
-@mixin placeholder {
-  ::-webkit-input-placeholder {@content}
-  :-moz-placeholder           {@content}
-  ::-moz-placeholder          {@content}
-  :-ms-input-placeholder      {@content}  
-}
-@mixin transition($transition...) {
-    -moz-transition:    $transition;
-    -o-transition:      $transition;
-    -webkit-transition: $transition;
-    transition:         $transition;
-}
+
 .wpg-ico-search {
 	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAANCAMAAABIK2QJAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAC6UExURQAAAP////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////IcJMEAAAA+dFJOUwCrt8TRERh52DI6oZYDwD1r2ytDrtbHHkiB0MmnNS2iQcuEi3xPWtyajXKdQMhdGQisrz7lbZXSJWcMpksdUROucAAAAHJJREFUCNdFyVcWgkAQBdEizoxZzKJiBMxZMe1/WyLO0fq6/RoY9kZdP+iTVpFi4KqxDKFWLX8WZpGiLvg2X2J72iuLRktbrWm2tTcmHbOYcWedcUp5J+V2f7iDa9iFaSxPSfbOicniaFz49bre/sfz8QYwUAepzgxIewAAAABJRU5ErkJggg==");
 	//background-image: url('data:image/svg+xml;utf8,<svg ...> ... </svg>');
