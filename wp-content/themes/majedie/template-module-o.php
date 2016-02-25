@@ -1394,11 +1394,15 @@
     		data-cycle-timeout="0"
     		data-cycle-speed="600"
     		data-cycle-manual-speed="300"
+    		data-cycle-swipe="true"
+    		data-cycle-swipe-fx="scrollHorz"
+    		data-cycle-auto-height="container"
 			data-cycle-slides="> div"
 			data-cycle-pager=".pager-mfw3twptst-<?php echo $idUniqid; ?>"
 		>
 			<?php for($i=0; $i<3; $i++) { ?>
-			<div data-cycle-pager-template="<div class='col-xs-4'><div class='pager-mfw3twptst-item' data-wpg-equal-height-item><img src='<?php echo get_template_directory_uri(); ?>/assets/images/person-1.png' alt='x'><h3><?php echo (($i==0)?'Adrian Brass':'Rhiannon Collis Lorem Ipsum Blah Blah'); ?></h3><p class='wpg-job-title'>Job Title</p></div></div>">
+			<?php /* tu trzeba dociac obrazek w atrybucie data: 301x355px */ ?>
+			<div data-cycle-pager-template="<div class='col-xs-4'><div class='pager-mfw3twptst-item' data-wpg-equal-height-item><img src='<?php echo get_template_directory_uri(); ?>/assets/images/person-1.png' alt='x'><h3>Adrian Brass</h3><p class='wpg-job-title'>Job Title</p></div></div>">
 				<div class="row">
 					<div class="col-xs-12 col-md-10">
 						<h3>Adrian Brass</h3>
@@ -1416,7 +1420,77 @@
 <hr class="wpg-separator">
 
 
+<div class="module-full-width-fund-overview">
+	<div class="container">
+		<form>
+			<select class="wpg-plugin-select">
+				<option value="1">Fund</option>
+				<option value="2">Option 2</option>
+				<option value="4">Option 3</option>
+				<option value="4">Option 4</option>
+				<option value="5">Option 5</option>
+				<option value="6">Option 6</option>
+				<option value="7">Option 7</option>
+				<option value="8">Option 8</option>
+				<option value="9">Option 9</option>
+				<option value="10">Option 10</option>
+			</select>
+			<select class="wpg-plugin-select">
+				<option value="1">Fund Domicile</option>
+				<option value="2">Option 2</option>
+				<option value="4">Option 3</option>
+				<option value="4">Option 4</option>
+				<option value="5">Option 5</option>
+				<option value="6">Option 6</option>
+				<option value="7">Option 7</option>
+				<option value="8">Option 8</option>
+				<option value="9">Option 9</option>
+				<option value="10">Option 10</option>
+			</select>
+			<select class="wpg-plugin-select">
+				<option value="1">Share Class</option>
+				<option value="2">Option 2</option>
+				<option value="4">Option 3</option>
+				<option value="4">Option 4</option>
+				<option value="5">Option 5</option>
+				<option value="6">Option 6</option>
+				<option value="7">Option 7</option>
+				<option value="8">Option 8</option>
+				<option value="9">Option 9</option>
+				<option value="10">Option 10</option>
+			</select>					
+			<select class="wpg-plugin-select">
+				<option value="1">Acc / Inc</option>
+				<option value="2">Option 2</option>
+				<option value="4">Option 3</option>
+				<option value="4">Option 4</option>
+				<option value="5">Option 5</option>
+				<option value="6">Option 6</option>
+				<option value="7">Option 7</option>
+				<option value="8">Option 8</option>
+				<option value="9">Option 9</option>
+				<option value="10">Option 10</option>
+			</select>
+			<select class="wpg-plugin-select">
+				<option value="1">Currency</option>
+				<option value="2">Option 2</option>
+				<option value="4">Option 3</option>
+				<option value="4">Option 4</option>
+				<option value="5">Option 5</option>
+				<option value="6">Option 6</option>
+				<option value="7">Option 7</option>
+				<option value="8">Option 8</option>
+				<option value="9">Option 9</option>
+				<option value="10">Option 10</option>
+			</select>
+			
+			<input type="submit" name="wpg-submit-example1" class="btn-1" value="Apply">
+		</form>
+	</div>
 
+</div>
+
+<hr class="wpg-separator">
 
 
 <!-- .col-xs-	.col-sm-	.col-md-	.col-lg-	.col-xl- -->
