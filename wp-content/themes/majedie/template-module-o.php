@@ -1380,43 +1380,6 @@
 
 </div>
 
-
-<hr class="wpg-separator">
-
-<div class="module-full-width-3-tabs-with-photo-title-subtitle-text">
-	<?php $idUniqid=uniqid(); ?>
-	<div class="container">
-		<div class="row pager-mfw3twptst pager-mfw3twptst-<?php echo $idUniqid; ?>" data-wpg-equal-height-wrap="height"></div>
-		
-		<div 
-			class="cycle-slideshow wpg-main-slides-persons"
-			data-cycle-fx="scrollHorz"
-    		data-cycle-timeout="0"
-    		data-cycle-speed="600"
-    		data-cycle-manual-speed="300"
-    		data-cycle-swipe="true"
-    		data-cycle-swipe-fx="scrollHorz"
-    		data-cycle-auto-height="container"
-			data-cycle-slides="> div"
-			data-cycle-pager=".pager-mfw3twptst-<?php echo $idUniqid; ?>"
-		>
-			<?php for($i=0; $i<3; $i++) { ?>
-			<?php /* tu trzeba dociac obrazek w atrybucie data: 301x355px */ ?>
-			<div data-cycle-pager-template="<div class='col-xs-4'><div class='pager-mfw3twptst-item' data-wpg-equal-height-item><img src='<?php echo get_template_directory_uri(); ?>/assets/images/person-1.png' alt='x'><h3>Adrian Brass</h3><p class='wpg-job-title'>Job Title</p></div></div>">
-				<div class="row">
-					<div class="col-xs-12 col-md-10">
-						<h3>Adrian Brass</h3>
-						<p class="wpg-job-title">Job Title</p>
-						<p>Adrian Brass is a fund manager and analyst with 20 years’ investment experience in international equity markets. Adrian is responsible for lead managing the US Equity Fund and co-managing both the Global Equity and the Global Focus funds. Before joining Majedie in 2014, Adrian was a Fund Manager at Fidelity, where he managed US equity funds including the America Fund for six years, growing total assets to over $8bn. Previously he managed a global consumer sector fund from 2006. Prior to that he managed various global equity funds at Investec Asset Management, a firm he joined in 2000 from Schroders, where he was a UK and then pan-European analyst. Adrian joined Schroders in 1995. He holds a Bachelor of Sciences degree in Economics &amp; Politics from the University of Bristol and is a CFA charter holder.</p>
-					</div>
-				</div>
-			</div>
-			<?php } ?>
-		</div>
-
-	</div>
-</div>
-
 <hr class="wpg-separator">
 
 
@@ -1489,6 +1452,44 @@
 	</div>
 
 </div>
+
+<hr class="wpg-separator">
+
+<div class="module-full-width-3-tabs-with-photo-title-subtitle-text">
+	<?php $idUniqid=uniqid(); ?>
+	<div class="container">
+		<div class="row pager-mfw3twptst pager-mfw3twptst-<?php echo $idUniqid; ?>" data-wpg-equal-height-wrap="height"></div>
+		
+		<div 
+			class="cycle-slideshow wpg-main-slides-persons"
+			data-cycle-fx="scrollHorz"
+    		data-cycle-timeout="0"
+    		data-cycle-speed="600"
+    		data-cycle-manual-speed="300"
+    		data-cycle-swipe="true"
+    		data-cycle-swipe-fx="scrollHorz"
+    		data-cycle-auto-height="container"
+			data-cycle-slides="> div"
+			data-cycle-pager=".pager-mfw3twptst-<?php echo $idUniqid; ?>"
+		>
+			<?php for($i=0; $i<3; $i++) { ?>
+			<?php /* tu trzeba dociac obrazek w atrybucie data: 301x355px */ ?>
+			<div data-cycle-pager-template="<div class='col-xs-4'><div class='pager-mfw3twptst-item' data-wpg-equal-height-item><img src='<?php echo get_template_directory_uri(); ?>/assets/images/person-1.png' alt='x'><h3>Adrian Brass</h3><p class='wpg-job-title'>Job Title</p></div></div>">
+				<div class="row">
+					<div class="col-xs-12 col-md-10">
+						<h3>Adrian Brass</h3>
+						<p class="wpg-job-title">Job Title</p>
+						<p>Adrian Brass is a fund manager and analyst with 20 years’ investment experience in international equity markets. Adrian is responsible for lead managing the US Equity Fund and co-managing both the Global Equity and the Global Focus funds. Before joining Majedie in 2014, Adrian was a Fund Manager at Fidelity, where he managed US equity funds including the America Fund for six years, growing total assets to over $8bn. Previously he managed a global consumer sector fund from 2006. Prior to that he managed various global equity funds at Investec Asset Management, a firm he joined in 2000 from Schroders, where he was a UK and then pan-European analyst. Adrian joined Schroders in 1995. He holds a Bachelor of Sciences degree in Economics &amp; Politics from the University of Bristol and is a CFA charter holder.</p>
+					</div>
+				</div>
+			</div>
+			<?php } ?>
+		</div>
+
+	</div>
+</div>
+
+
 
 <hr class="wpg-separator">
 
