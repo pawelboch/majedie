@@ -1717,6 +1717,90 @@
 
 
 
+.module-full-width-3-tabs-with-photo-title-subtitle-text {
+	padding: (60-($grid-gutter-width/2)) 0;
+	.pager-mfw3twptst {
+		> div {
+			margin-bottom: 60px;
+		}
+		.pager-mfw3twptst-item {
+			position: relative;
+			background-color: #fff;
+			padding: 15px 15px 20px;
+			margin: $grid-gutter-width/2 0 0;
+			cursor: pointer;
+			opacity: .4;
+			@include transition(all 300ms ease-in-out);
+			img {
+				width: 100%;
+				height: auto;
+			}
+			h3 {
+				font-size: 21px;
+				font-family: Avenir-Medium, Arial, Helvetica, sans-serif;
+				text-transform: uppercase;
+				padding: 10px 10px 0 10px;
+				margin: 0;
+			}
+			.wpg-job-title {
+				font-size: 15px;
+				margin: 0;
+				color: #aaa;
+				padding: 0 10px;
+			}
+		}
+		.cycle-pager-active .pager-mfw3twptst-item:after {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: -60px;
+			left: 50%;
+			margin-left: -25px;
+			z-index: 600;
+
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 25px 25px 25px;
+			border-color: transparent transparent #ffffff transparent;
+		}
+		.cycle-pager-active .pager-mfw3twptst-item {
+			opacity: 1;
+			box-shadow: 0 0 5px rgba(0,0,0,.28);
+		}
+	}
+	.wpg-main-slides-persons {
+
+		width: 100%;
+		> div {
+			width: 100%;
+			padding: 45px 30px;
+			background: #fff;
+			background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+			background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+			background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+			h3 {
+				font-size: 21px;
+				font-family: Avenir-Medium, Arial, Helvetica, sans-serif;
+				text-transform: uppercase;
+				margin: 0;
+			}
+			.wpg-job-title {
+				font-size: 15px;
+				margin: 0;
+				color: #aaa;
+			}
+		}
+	}
+
+
+}
+
+
+
+
+
+
 
 
 
@@ -1843,10 +1927,11 @@
 
 
 
-	[data-wpg-equal-height-item] {
+	[data-wpg-equal-height-item][data-wpg-equal-height-item-smartphone-remove-height] {
 		height: auto !important;
 		min-height: 10px !important;
 	}
+
 	.module-full-width-left-title-right-text {
 		h2, p {
 			text-align: center;
@@ -1935,4 +2020,21 @@
 			font-size: 40px;
 		}
 	}
+
+
+	.module-full-width-3-tabs-with-photo-title-subtitle-text {
+		.pager-mfw3twptst {
+			.pager-mfw3twptst-item {
+				h3 {
+					font-size: 15px;
+					padding: 10px 0;
+				}
+				.wpg-job-title {
+					font-size: 12px;
+					padding: 0;
+				}
+			}
+		}
+	}
+
 }

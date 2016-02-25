@@ -11,7 +11,7 @@
 		<div class="row" data-wpg-equal-height-wrap="min-height">
 			<!-- .col-xs-	.col-sm-	.col-md-	.col-lg-	.col-xl- -->
 			<div class="col-xs-12 col-sm-4">
-				<div class="wpg-red-block wpg-demo-block" style="background-color: red;" data-wpg-equal-height-item>
+				<div class="wpg-red-block wpg-demo-block" style="background-color: red;" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					
 					<h2>Simulate select examples</h2>
 
@@ -49,13 +49,13 @@
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-4">
-				<div class="wpg-red-block wpg-demo-block" style="background-color: lime;" data-wpg-equal-height-item>
+				<div class="wpg-red-block wpg-demo-block" style="background-color: lime;" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<h2>Simple Paragraph</h2>
 					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-4">
-				<div class="wpg-red-block wpg-demo-block" style="background-color: yellow;" data-wpg-equal-height-item>
+				<div class="wpg-red-block wpg-demo-block" style="background-color: yellow;" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<h2>Simple Paragraph</h2>
 					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 				</div>
@@ -75,7 +75,7 @@
 
 		<div class="row" data-wpg-equal-height-wrap="height">
 			<!-- .col-xs-	.col-sm-	.col-md-	.col-lg-	.col-xl- -->
-			<div class="col-xs-12 col-sm-8 col-lg-6 pull-xs-left" data-wpg-equal-height-item>
+			<div class="col-xs-12 col-sm-8 col-lg-6 pull-xs-left" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 
 				<div class="span-table wpg-100p">
 					<div class="span-table-cell vertical-align-middle">
@@ -91,7 +91,7 @@
 				</div>
 
 			</div>
-			<div class="col-xs-12 col-sm-4 col-lg-6 pull-xs-left" data-wpg-equal-height-item>
+			<div class="col-xs-12 col-sm-4 col-lg-6 pull-xs-left" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 
 				<div class="span-table wpg-100p">
 					<div class="span-table-cell vertical-align-bottom text-xs-center">
@@ -115,7 +115,7 @@
 
 		<div class="row" data-wpg-equal-height-wrap="height">
 			<!-- .col-xs-	.col-sm-	.col-md-	.col-lg-	.col-xl- -->
-			<div class="col-xs-12 col-sm-8 col-lg-6 pull-xs-right" data-wpg-equal-height-item>
+			<div class="col-xs-12 col-sm-8 col-lg-6 pull-xs-right" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 
 				<div class="span-table wpg-100p">
 					<div class="span-table-cell vertical-align-middle">
@@ -131,7 +131,7 @@
 				</div>
 
 			</div>
-			<div class="col-xs-12 col-sm-4 col-lg-6 pull-xs-left" data-wpg-equal-height-item>
+			<div class="col-xs-12 col-sm-4 col-lg-6 pull-xs-left" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 
 				<div class="span-table wpg-100p">
 					<div class="span-table-cell vertical-align-middle text-xs-center">
@@ -153,11 +153,11 @@
 		<div class="row" data-wpg-equal-height-wrap="height">
 			
 			<div class="col-xs-12 col-sm-6 col-lg-6 pull-xs-right">
-				<a href="#" class="wpg-block wpg-image-bg" style="background-image: url(http://majedie-dev.kurtosysdev.com/wp-content/uploads/2016/02/sample2.jpg);" data-wpg-equal-height-item></a>
+				<a href="#" class="wpg-block wpg-image-bg" style="background-image: url(http://majedie-dev.kurtosysdev.com/wp-content/uploads/2016/02/sample2.jpg);" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height></a>
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-lg-6 pull-xs-left wpg-container-text">
-				<div class="span-table" data-wpg-equal-height-item>
+				<div class="span-table" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<div class="span-table-cell vertical-align-middle">
 						<h2><a href="#">Investment Approach</a></h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus odio quis pharetra feugiat. Aliquam in purus facilisis, maximus sem sed, efficitur mauris. Morbi interdum bibendum mauris sed pretium. Morbi in tincidunt mauris. </p>
@@ -177,11 +177,11 @@
 		<div class="row" data-wpg-equal-height-wrap="height">
 			
 			<div class="col-xs-12 col-sm-6 col-lg-6 pull-xs-left">
-				<a href="#" class="wpg-block wpg-image-bg" style="background-image: url(http://majedie-dev.kurtosysdev.com/wp-content/uploads/2016/02/sample2.jpg);" data-wpg-equal-height-item></a>
+				<a href="#" class="wpg-block wpg-image-bg" style="background-image: url(http://majedie-dev.kurtosysdev.com/wp-content/uploads/2016/02/sample2.jpg);" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height></a>
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-lg-6 pull-xs-right wpg-container-text">
-				<div class="span-table" data-wpg-equal-height-item>
+				<div class="span-table" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<div class="span-table-cell vertical-align-middle">
 						<h2><a href="#">Investment Approach</a></h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus odio quis pharetra feugiat. Aliquam in purus facilisis, maximus sem sed, efficitur mauris. Morbi interdum bibendum mauris sed pretium. Morbi in tincidunt mauris. </p>
@@ -268,7 +268,7 @@
 
 		<div class="row" data-wpg-equal-height-wrap="min-height">
 			<div class="col-xs-12 col-sm-6">
-				<div class="wpg-red-block span-table" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/cloud-big-fs8.png)" data-wpg-equal-height-item>
+				<div class="wpg-red-block span-table" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/cloud-big-fs8.png)" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<div class="span-table-row">
 						<div class="span-table-cell vertical-align-top">
 							<h2><img src="<?php echo get_template_directory_uri(); ?>/assets/images/cloud-fs8.png" alt="x"><span>Maj<strong>IQ</strong></span></h2>
@@ -284,7 +284,7 @@
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6">
-				<div class="wpg-blue-block span-table" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/one-fs8.png)" data-wpg-equal-height-item>
+				<div class="wpg-blue-block span-table" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/one-fs8.png)" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<div class="span-table-row">
 						<div class="span-table-cell vertical-align-bottom">
 							<p>We have one clear Aim:<br>Simply to make money<br>for our Clients</p>
@@ -401,7 +401,7 @@
 		<div class="row" data-wpg-equal-height-wrap="height">
 			
 			<div class="col-xs-12 col-md-6 col-lg-4 wpg-col wpg-col-classic">
-				<div style="background-color: #fff;" data-wpg-equal-height-item>
+				<div style="background-color: #fff;" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<div class="wpg-inside-bg" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/example-1.jpg);"></div>
 					<div class="wpg-post-box">
 						<p class="wpg-post-box_tag">Equity</p>
@@ -415,7 +415,7 @@
 			</div>
 
 			<div class="col-xs-12 col-md-6 col-lg-4 wpg-col wpg-col-classic">
-				<div style="background-color: #fff;" data-wpg-equal-height-item>
+				<div style="background-color: #fff;" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<div class="wpg-inside-bg" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/example-1.jpg);"></div>
 					<div class="wpg-post-box">
 						<p class="wpg-post-box_tag">Equity</p>
@@ -429,7 +429,7 @@
 			</div>
 
 
-			<div class="col-xs-12 col-md-12 col-lg-4 wpg-col wpg-col-special-1" data-wpg-equal-height-item>
+			<div class="col-xs-12 col-md-12 col-lg-4 wpg-col wpg-col-special-1" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 				
 				<div class="span-table wpg-post-box-cols" style="height: 100%">
 					<div class="span-table-row">
@@ -595,21 +595,21 @@
 		
 		<div class="row" data-wpg-equal-height-wrap="min-height">
 			<div class="col-xs-12 col-sm-4">
-				<div class="wpg-inset-col" style="background-color: #355274;" data-wpg-equal-height-item>
+				<div class="wpg-inset-col" style="background-color: #355274;" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/w-pound-fs8.png" alt="x">
 					<h3>A range of platforms</h3>
 					<p>Fund platforms are services that enable investors to buy and often hold their investments online all in one place, with a degree of flexibility to switch investments around as their lives change without having to keep paying high charges for buying and selling them. They allow you to buy and sell investments simply online (sometimes at a discounted rate) and hold funds from a variety of fund managers in one place. Please browse the list and select your preferred platform from the list here</p>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-4">
-				<div class="wpg-inset-col" style="background-color: #d44451;" data-wpg-equal-height-item>
+				<div class="wpg-inset-col" style="background-color: #d44451;" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/w-hands-fs8.png" alt="x">
 					<h3>A financial adviser</h3>
 					<p>If you would like professional financial advice, there is an industry of qualified and experienced financial advisers who will be able to assess your needs and advise whether our funds are an appropriate investment choice for you.</p>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-4">
-				<div class="wpg-inset-col" style="background-color: #dc6e26;" data-wpg-equal-height-item>
+				<div class="wpg-inset-col" style="background-color: #dc6e26;" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/w-cel-fs8.png" alt="x">
 					<h3>Execution-only brokers</h3>
 					<p>Execution-only brokers offer a simple and cost-effective way of investing without advice. Please call BNY Mellon on +44 (0)344 892 0974. </p>
@@ -630,14 +630,14 @@
 
 		<div class="row" data-wpg-equal-height-wrap="min-height">
 			<div class="col-xs-12 col-sm-6">
-				<div class="wpg-inset-col" style="background-color: #fff;" data-wpg-equal-height-item>
+				<div class="wpg-inset-col" style="background-color: #fff;" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<h2>Instituional Pathway</h2>
 					<p>10 Old Bailey<br>London<br>EC4M 7NG</p>
 					<p>+44 (0)20 7618 3900<br><a href="mailto:info@majedie.com">info@majedie.com</a></p>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6">
-				<div class="wpg-inset-col" style="background-color: #fff;" data-wpg-equal-height-item>
+				<div class="wpg-inset-col" style="background-color: #fff;" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<h2>Private Individual Pathway</h2>
 					<p>One of the ways in which we are able to keep our fees low is by encouraging investors to use fund platforms and financial advisers that have well-developed systems for investment transactions. There are many ways to invest with us listed below, you should look to your own circumstances – and take independent advice, if need be - before buying or selling any investment.  Good advice is worth paying for.</p>
 					<p>Our fees are listed in full detail <a href="#">here</a></p>
@@ -1109,7 +1109,7 @@
 		<div class="row" data-wpg-equal-height-wrap="min-height">
 
 			<div class="col-xs-12 col-sm-4">
-				<div class="wpg-post-box wpg-bg-white" style="background-color: #fefffe; color: #000;" data-wpg-equal-height-item>
+				<div class="wpg-post-box wpg-bg-white" style="background-color: #fefffe; color: #000;" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<p class="wpg-post-box_tag">Equity</p>
 					<h3><a href="#">MAJEDIE ASSET MANAGEMENT SCOOPS FIVE INDUSTRY AWARDS</a></h3>
 					<p class="wpg-post-box_date">12 / 11/ 2005</p>
@@ -1121,7 +1121,7 @@
 			</div>
 
 			<div class="col-xs-12 col-sm-4">
-				<div class="wpg-post-box wpg-bg-white" style="background-color: #fefffe; color: #000;" data-wpg-equal-height-item>
+				<div class="wpg-post-box wpg-bg-white" style="background-color: #fefffe; color: #000;" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<p class="wpg-post-box_tag">Equity</p>
 					<h3><a href="#">MAJEDIE NAMED ACTIVE MANAGER OF THE YEAR</a></h3>
 					<p class="wpg-post-box_date">12 / 11/ 2005</p>
@@ -1133,7 +1133,7 @@
 			</div>
 
 			<div class="col-xs-12 col-sm-4">
-				<div class="wpg-post-box wpg-bg-orange-twitter" style="background-color: #dd6e1d; color: #fff;" data-wpg-equal-height-item>
+				<div class="wpg-post-box wpg-bg-orange-twitter" style="background-color: #dd6e1d; color: #fff;" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<p class="wpg-post-box_tag">Social</p>
 					<i class="fa fa-twitter"></i>
 					
@@ -1381,9 +1381,37 @@
 </div>
 
 
+<hr class="wpg-separator">
 
+<div class="module-full-width-3-tabs-with-photo-title-subtitle-text">
+	<?php $idUniqid=uniqid(); ?>
+	<div class="container">
+		<div class="row pager-mfw3twptst pager-mfw3twptst-<?php echo $idUniqid; ?>" data-wpg-equal-height-wrap="height"></div>
+		
+		<div 
+			class="cycle-slideshow wpg-main-slides-persons"
+			data-cycle-fx="scrollHorz"
+    		data-cycle-timeout="0"
+    		data-cycle-speed="600"
+    		data-cycle-manual-speed="300"
+			data-cycle-slides="> div"
+			data-cycle-pager=".pager-mfw3twptst-<?php echo $idUniqid; ?>"
+		>
+			<?php for($i=0; $i<3; $i++) { ?>
+			<div data-cycle-pager-template="<div class='col-xs-4'><div class='pager-mfw3twptst-item' data-wpg-equal-height-item><img src='<?php echo get_template_directory_uri(); ?>/assets/images/person-1.png' alt='x'><h3><?php echo (($i==0)?'Adrian Brass':'Rhiannon Collis Lorem Ipsum Blah Blah'); ?></h3><p class='wpg-job-title'>Job Title</p></div></div>">
+				<div class="row">
+					<div class="col-xs-12 col-md-10">
+						<h3>Adrian Brass</h3>
+						<p class="wpg-job-title">Job Title</p>
+						<p>Adrian Brass is a fund manager and analyst with 20 years’ investment experience in international equity markets. Adrian is responsible for lead managing the US Equity Fund and co-managing both the Global Equity and the Global Focus funds. Before joining Majedie in 2014, Adrian was a Fund Manager at Fidelity, where he managed US equity funds including the America Fund for six years, growing total assets to over $8bn. Previously he managed a global consumer sector fund from 2006. Prior to that he managed various global equity funds at Investec Asset Management, a firm he joined in 2000 from Schroders, where he was a UK and then pan-European analyst. Adrian joined Schroders in 1995. He holds a Bachelor of Sciences degree in Economics &amp; Politics from the University of Bristol and is a CFA charter holder.</p>
+					</div>
+				</div>
+			</div>
+			<?php } ?>
+		</div>
 
-
+	</div>
+</div>
 
 <hr class="wpg-separator">
 
@@ -1394,6 +1422,6 @@
 <!-- .col-xs-	.col-sm-	.col-md-	.col-lg-	.col-xl- -->
 <!--
 data-wpg-equal-height-wrap="min-height"
-data-wpg-equal-height-item
+data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height
 -->
 <?php get_footer(); ?> 
