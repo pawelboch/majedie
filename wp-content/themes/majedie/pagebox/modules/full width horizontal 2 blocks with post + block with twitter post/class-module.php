@@ -52,13 +52,22 @@ class Module extends Abstract_Module {
 			// minimum and maximum percent width that module fits in
 			// WPGeeks_Forms
 			'fields'      => array(
-				array(
-					'type'        => 'text',
-					'group'       => __( 'General', 'pagebox' ),
-					'name'        => 'title',
-					'label'       => __( 'Title', 'pagebox' ),
-					'description' => __( 'Main module title', 'pagebox' ),
-				),
+				
+                  array(
+                                         'type'        => 'post',
+                                        'name'        => 'post1',
+                                        'group'		  => __('Post1', 'pagebox'),
+                                        'label'       => __( 'Post 1', 'pagebox' ),
+                                        'description' => __( 'Choose post 1 to display', 'pagebox' ),
+                                ),
+
+                    array(
+                                         'type'        => 'post',
+                                        'name'        => 'post2',
+                                        'group'		  => __('Post2', 'pagebox'),
+                                        'label'       => __( 'Post 2', 'pagebox' ),
+                                        'description' => __( 'Choose post 1 to display', 'pagebox' ),
+                                ),
 
 				array(
 					'type'        => 'colorpicker',

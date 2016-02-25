@@ -53,20 +53,14 @@ class Module extends Abstract_Module {
 			// WPGeeks_Forms
 			'fields'      => array(
 				array(
-					'type'        => 'text',
+					'type'        => 'editor',
 					'group'       => __( 'General', 'pagebox' ),
-					'name'        => 'title',
-					'label'       => __( 'Title', 'pagebox' ),
-					'description' => __( 'Main module title', 'pagebox' ),
-				),
-
-				array(
-					'type'        => 'colorpicker',
-					'group'		    => __( 'Design', 'pagebox' ),
-					'name'        => 'button_font_color',
-					'label'       => __( 'Button font color', 'pagebox' ),
+					'name'        => 'editor',
+					'label'       => __( 'Editor', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
 				),
+
+				
 			)
 		);
 	}

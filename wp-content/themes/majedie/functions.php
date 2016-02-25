@@ -44,3 +44,46 @@ function wppn_setup() {
 		'primary' => __( 'Primary Menu', 'theme' ),
 	) );
 }
+
+
+function majadie_get_the_excerpt( $post_id = 0 ) {
+	$post_id = $post_id ? $post_id : get_the_ID();
+
+	$post = get_post( $post_id );
+
+	if ( 'post' !== $post->post_type ) {
+		return $post->post_excerpt;
+	}
+
+	$sections = get_post_meta( $post->ID, 'pagebox_modules', true );
+
+	if ( empty( $sections ) ) {
+		return $post->post_excerpt;
+	}
+
+	foreach ( $sections as $id => $modules ) {
+		foreach ( $modules as $module ) {
+			$module_decode = json_decode( stripslashes( $module ) );
+
+			if ( ! $module_decode ) {
+				$module_decode = json_decode($module);
+			}
+
+			if ( 'full_width_content' === $module_decode->slug ) {
+				$content = empty( $module_decode->settings->excerpt )
+					? strip_tags( $module_decode->settings->content )
+					: strip_tags( $module_decode->settings->excerpt );
+
+				break 2;
+			}
+		}
+	}
+
+	if ( isset( $content ) ){
+		return $content;
+	} else {
+		return $post->post_excerpt;
+	}
+
+	return '';
+}

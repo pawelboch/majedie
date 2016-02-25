@@ -1,3 +1,9 @@
-<div class="container-fluid module_full_width_content">
+<div class="col-xs-12 col-md-8">
 
-</div>
+				<?php if($this->get('editor') != '') {
+						
+			echo $this->get('editor') ;
+						
+						} ?>
+
+			</div>
