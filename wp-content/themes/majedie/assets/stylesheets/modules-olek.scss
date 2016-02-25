@@ -1463,7 +1463,7 @@
 		}
 		.wpg-table-wrap {
 			padding: 30px 0;
-			//min-width: 920px;
+			min-width: 800px;
 
 			thead th:nth-child(1) {
 				width: 200px;
@@ -1554,6 +1554,165 @@
 }
 
 
+
+
+
+
+.module-full-width-funds-prices {
+	.wpg-selects-funds-literature {
+		padding: 10px 0;
+		background-color: #675c50;
+		color: #fff;
+		line-height: 115%;
+		select, option {
+			color: #000;
+		}
+		.wpg-plugin-select-simulate {
+			margin-right: 50px;
+			position: relative;
+			width: auto;
+			float: left;
+			.wpg-plugin-select-simulate-selection {
+				strong {
+					font-weight: 400;
+				}
+				font-size: 15px;
+				cursor: pointer;
+				padding: 10px 0;
+			}
+			.wpg-plugin-select-simulate-selection:after {
+				font: normal normal normal 21px/1 FontAwesome;
+				content: "\f107";
+				display: inline-block;
+				margin-left: 10px;
+				color: #b3aea8;
+				position: relative;
+				top: 2px;
+			}
+			.wpg-plugin-select-simulate-options {
+				position: absolute;
+				top: 100%;
+				left: 0;
+				z-index: 600;
+				box-shadow: 0 0 5px rgba(0,0,0,.28);
+				max-height: 192px;
+				overflow-y: auto;
+				overflow-x: hidden;
+			}
+			.wpg-plugin-select-simulate-option {
+				background-color: #f9f9f9;
+				color: #000;
+				cursor: pointer;
+				padding: 8px 10px;
+				min-width: 160px;
+				font-size: 15px;
+			}
+			.wpg-plugin-select-simulate-option:hover {
+				background-color: #eee;
+			}
+			.wpg-plugin-select-simulate-option-active,
+			.wpg-plugin-select-simulate-option-active:hover {
+				background-color: #3e3831;
+				color: #fff;
+			}
+		}
+		.btn-1 {
+			margin-top: 0;
+			float: right;
+		}
+
+	}
+	.wpg-container-tabels {
+		padding: 60px 0;
+		.wpg-table-wrap-outset {
+			overflow-x: auto;
+			box-shadow: 0 0 5px rgba(0,0,0,.28);
+			background-color: #fff;
+			margin-top: 35px;
+			width: 100%;
+		}
+		.wpg-table-wrap-outset:first-child {
+			margin-top: 0;
+		}
+		.wpg-table-wrap {
+			padding: 30px 0;
+			thead th:nth-child(1) {
+				min-width: 170px;
+			}
+			p {
+				font-size: 15px;
+			}
+			table {
+				border-collapse: separate;
+				border-spacing: 0 6px;
+				width: 100%;
+				padding: 0 30px;
+				table-layout: auto;
+			}
+			caption, 
+			thead th {
+				color: #fff;
+				text-align: left;
+				font-weight: 400;
+				font-family: Avenir-Light, Arial, Helvetica, sans-serif;
+				font-size: 14px;
+				text-transform: uppercase;
+			}
+			caption {
+			    caption-side: top;
+			    background-color: #675c50;
+			    padding: 10px 15px;
+			    margin: 0 30px;
+			}
+			thead th {
+			    background-color: #dc6f26;
+			    padding: 10px 10px 10px 15px;
+			    text-align: center;
+			}
+			thead th:last-child {
+				padding-right: 15px;
+			}
+			thead th:first-child {
+				text-align: left;
+			}
+			tbody td,
+			tbody th {
+				background-color: #e4e2dd;
+				color: #000;
+				font-size: 15px;
+				padding: 10px 10px 10px 15px;
+				text-align: center;
+			}
+			tbody td:last-child {
+				padding-right: 15px;
+			}
+			tbody td:first-child,
+			tbody th:first-child {
+				text-align: left;
+			}
+			tbody tr:nth-child(even) td,
+			tbody tr:nth-child(even) th {
+				background-color: #efeeed;
+			}
+			a {
+				color: #2b4d7a;
+				text-decoration: underline;
+			}
+
+		}
+		.wpg-bottom-container {
+			margin-top: 35px;
+			padding: 15px;
+			p {
+				color: #818181;
+				font-size: 14px;
+			}
+		}
+		
+
+	}
+
+}
 
 
 

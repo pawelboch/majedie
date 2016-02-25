@@ -1237,7 +1237,159 @@
 	</div>
 </div>
 
+
+
+
+
+
+
+
 <hr class="wpg-separator">
+
+
+
+
+
+
+
+
+
+<div class="module-full-width-funds-prices">
+
+	<div class="wpg-selects-funds-literature">
+		<div class="container">
+			
+			<form>
+				<select class="wpg-plugin-select">
+					<option value="1">Fund</option>
+					<option value="2">Option 2</option>
+					<option value="4">Option 3</option>
+					<option value="4">Option 4</option>
+					<option value="5">Option 5</option>
+					<option value="6">Option 6</option>
+					<option value="7">Option 7</option>
+					<option value="8">Option 8</option>
+					<option value="9">Option 9</option>
+					<option value="10">Option 10</option>
+				</select>
+				<select class="wpg-plugin-select">
+					<option value="1">Fund Domicile</option>
+					<option value="2">Option 2</option>
+					<option value="4">Option 3</option>
+					<option value="4">Option 4</option>
+					<option value="5">Option 5</option>
+					<option value="6">Option 6</option>
+					<option value="7">Option 7</option>
+					<option value="8">Option 8</option>
+					<option value="9">Option 9</option>
+					<option value="10">Option 10</option>
+				</select>
+				<select class="wpg-plugin-select">
+					<option value="1">Share Class</option>
+					<option value="2">Option 2</option>
+					<option value="4">Option 3</option>
+					<option value="4">Option 4</option>
+					<option value="5">Option 5</option>
+					<option value="6">Option 6</option>
+					<option value="7">Option 7</option>
+					<option value="8">Option 8</option>
+					<option value="9">Option 9</option>
+					<option value="10">Option 10</option>
+				</select>					
+				<select class="wpg-plugin-select">
+					<option value="1">Acc / Inc</option>
+					<option value="2">Option 2</option>
+					<option value="4">Option 3</option>
+					<option value="4">Option 4</option>
+					<option value="5">Option 5</option>
+					<option value="6">Option 6</option>
+					<option value="7">Option 7</option>
+					<option value="8">Option 8</option>
+					<option value="9">Option 9</option>
+					<option value="10">Option 10</option>
+				</select>
+				<select class="wpg-plugin-select">
+					<option value="1">Currency</option>
+					<option value="2">Option 2</option>
+					<option value="4">Option 3</option>
+					<option value="4">Option 4</option>
+					<option value="5">Option 5</option>
+					<option value="6">Option 6</option>
+					<option value="7">Option 7</option>
+					<option value="8">Option 8</option>
+					<option value="9">Option 9</option>
+					<option value="10">Option 10</option>
+				</select>
+				
+				<input type="submit" name="wpg-submit-example1" class="btn-1" value="Apply">
+			</form>
+		</div>
+	</div>
+
+	<div class="wpg-container-tabels">
+		<div class="container">
+			
+			<div class="wpg-table-wrap-outset">
+				<div class="wpg-table-wrap">
+					<table>
+						<thead>
+							<tr>
+								<th>Fund</th>
+								<th>Fund<br>DOMICILE</th>
+								<th>SHARE<br>CLASS</th>
+								<th>ACC/INC</th>
+								<th>ISN</th>
+								<th>CURRENCY</th>
+								<th>PRICE</th>
+								<th>PRICE<br>SWING</th>
+								<th>PRICE<br>DATE</th>
+								<th>VALUATION<br>POINT</th>
+							</tr>
+						</thead>
+						<tbody>
+							<?php for($i=0; $i<10; $i++) { ?>
+							<tr>
+								<td>Global Equity Fund</td>
+								<td>UK</td>
+								<td>A</td>
+								<td>Acc</td>
+								<td>GB00BN31T816</td>
+								<td>USd</td>
+								<td>100.16</td>
+								<td>None</td>
+								<td>2 Nov 2015</td>
+								<td>Noon</td>
+							</tr>
+							<?php } ?>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="wpg-bottom-container">
+				<div class="col-xs-12">
+					<p>* The UK-domiciled funds, and the Ireland-domiciled UK Equity, UK Income, US Equity funds, operate on a single swinging price basis. The prices for each fund are swung up / down whenever there are net inflows / outflows of over £250,000 - or £1,000,000 in the case of the UK-domiciled UK Equity Fund. The current swing rates for the funds are as follows (quoted as bid / offer spreads): Global Equity Fund 0.08% / 0.10%, Global Focus Fund 0.08% / 0.15%, US Equity Fund 0.05% / 0.05%, UK Equity Fund 0.15% / 0.60%, UK Focus Fund 0.15% / 0.55%, UK Income Fund 0.20% / 0.50%, Tortoise Fund 0.10% / 0.15%, UK Smaller Companies 0.95% / 1.25%, Majedie Institutional Trust 0.15% / 0.60%.</p>
+
+					<p>The Ireland-domiciled Tortoise fund operates on a NAV pricing basis, where an anti-dilution levy of 0.10% applied to net redemptions of over £1,000,000.  If triggered, details of the levy shall be contained on the contract note.</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+</div>
+
+
+
+
+
+
+<hr class="wpg-separator">
+
+
+
+
 
 <!-- .col-xs-	.col-sm-	.col-md-	.col-lg-	.col-xl- -->
 <!--
