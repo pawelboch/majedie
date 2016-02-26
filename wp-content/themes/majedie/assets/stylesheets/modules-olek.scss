@@ -421,9 +421,14 @@
 	h2 + p {
 		margin: 10px 0 0 0;
 	}
-	.btn-2 {
-		margin-top: 30px;
-	}
+    .btn-2 {
+        margin-top: 30px;
+        text-transform: uppercase;
+    }
+    .btn-1 {
+        text-transform: uppercase;
+    }
+    
 	.wpg-plugin-select-simulate {
 		position: relative;
 		margin-top: 10px;
@@ -2127,7 +2132,42 @@
 
 /*** MODULE ***/
 .module-full-width-timeline {
-	
+	.wpg-timeline-design {
+		> div {
+			display: table;
+			width: auto;
+			border-spacing: 20px;
+			table-layout: fixed;
+			margin: 0 auto;
+
+			> div {
+				background-color: #fff;
+				font-size: 15px;
+				margin: 0 10px;
+				max-width: 174px;
+				display: table-cell;
+				vertical-align: middle;
+				vertical-align: top;
+				padding: 10px;
+				h3 {
+					font-family: Georgia;
+					color: #355274;
+					font-size: 15px;
+					line-height: 160%;
+				}
+				p {
+					font-size: 15px;
+					color: #000;
+					margin: 0;
+				}
+			}
+		} 
+		.wpg-timeline-design-top {
+
+		}
+		wpg-timeline-design-bottom {
+		}
+	}
 }
 @media screen and (max-width: map-get($grid-breakpoints, xl) ) { //~1200px
 
