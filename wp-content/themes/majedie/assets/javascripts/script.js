@@ -158,18 +158,17 @@ jQuery(window).load(function(){ wpgHeight100pWindow(jQuery); });
 			$bottom=$(".wpg-timeline-design-bottom");
 		for(var i=0, iLength=$wpgTimeline.find("> li").length; i<iLength; i++)
 		{
-			if(i%2) {
-				$bottom.append("<div>" + $wpgTimeline.find("> li").eq(i).html() + "</div>");
-			}
-			else
+			if(i<9)
 			{
-				$top.append("<div>" + $wpgTimeline.find("> li").eq(i).html() + "</div>");
+				if(i%2) {
+					$bottom.append("<div>" + $wpgTimeline.find("> li").eq(i).html() + "</div>");
+				}
+				else
+				{
+					$top.append("<div>" + $wpgTimeline.find("> li").eq(i).html() + "</div>");
+				}
 			}
 		}
 	}
 })(jQuery);
 /* end module timeline */
-
-jQuery(window).scroll(function(){
-	console.log(jQuery(window).scrollTop());
-});
