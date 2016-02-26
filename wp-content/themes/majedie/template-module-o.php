@@ -1489,10 +1489,148 @@
 	</div>
 </div>
 
+<hr class="wpg-separator">
 
+<div class="module-full-width-top-post-header-with-category-title-date">
+	<span class="wpg-half-background" style="background-color: #9d948a;"></span>
+	<div class="container">
+		<div class="wpg-baner-outset" style="background-color: #fff;">
+			<div class="wpg-baner" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/example-5.jpg);">
+				<p class="wpg-fund">Fund</p>
+				<h1>MAJEDIE LIMITS UK INCOME FUND CAPACITY</h1>
+				<p class="wpg-date">12 / 11/ 2005</p>
+			</div>
+		</div>
+	</div>
+</div>
 
 <hr class="wpg-separator">
 
+<div class="module-full-width-post-content">
+	<div class="container">
+		<div class="wpg-main-content-article" style="background-color: #fff;">
+			<div class="row">
+				<div class="col-xs-12 col-sm-3">
+					<div class="wpg-inset-col wpg-sidebar">
+						<div class="wpg-box-name">
+							<h3>Joe Bloggs</h3>
+							<p>Asset Manager</p>
+						</div>
+						<div class="wpg-box-date">
+							<p>Published on:</p>
+							<p>28.02.2014</p>
+						</div>
+						<div class="wpg-box-options-post clearfix">
+
+							<div class="pull-xs-left wpg-share"><a href="#"><i class="fa fa-share-alt"></i>Share</a></div>
+							<div class="pull-xs-left wpg-print"><a href="#"><i class="fa fa-print"></i> Print</a></div>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-9">
+					<div class="wpg-inset-col wpg-main-content">
+						<div class="wpg-large-font-size">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices, eros a aliquet lacinia, mauris metus vehicula magna, et facilisis purus lectus ac arcu. Vestibulum laoreet nibh id hendrerit elementum. Nunc consequat lorem ipsum, iaculis congue nulla vestibulum vel. Sed sollicitudin erat et lectus interdum, sed vestibulum massa cursus. Praesent eu pretium lectus, sit amet semper elit. Sed orci metus, ultricies lacinia eros eu, dignissim pharetra velit. In hac habitasse platea dictumst. Praesent non orci leo.</p>
+						</div>
+						<p>Curabitur vestibulum semper quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculusmus. Sed rhoncus mauris ut lacus commodo, a tempus lectus scelerisque. Morbi max imus enim at nunc vehicula venenatis. Curabitur blandit porttitor lectus, quis tristique turpis rutrum a.  Aliquam bibendum congue tempor. Donec fermentum libero ut facilisis bibendum. Fusce vehicula vesti bulum urna at efficitur. In venenatis nulla diam, vel consectetur ante tristique in. Maecenas id justo vitae ligula finibus venenatis. Donec condimentum rutrum urna, id vehicula leo iaculis eget. Praesent vel lorem nec quam gravida luctus accumsan at dolor. Nullam cursus ex eu felis sagitti.</p>
+
+						<div class="span-table wpg-jknc">
+							<div class="span-table-cell vertical-align-top wpg-lstcx">
+								<p>Curabitur vestibulum semper quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridic mauris ut lacus commodo, a tempus lectus scelerisque. imus enim at nunc vehicula venenatis.</p>
+							</div>
+							<div class="span-table-cell vertical-align-middle wpg-lstc">
+								<div class="wpg-special-cols clearfix">
+									<div class="col-xs-5 wpg-large-text">
+										<p>92%</p>
+									</div>
+									<div class="col-xs-7 wpg-normal-text">
+										<p>Curabitur vestibulum semper quam. Cum nascetur ridiculusmus. </p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<p>Donec fermentum libero ut facilisis bibendum. Fusce vehicula vestibulum urna at efficitur. In venenatis nulla diam, vel consectetur ante tristique in. Maecenas id justo vitae ligula finibus venenatis. Donec condimentum rutrum urna, id vehicula leo iaculis eget. Praesent vel lorem nec quam gravida luctus accumsan at dolor. Nullam cursus ex eu felis sagittis, vel gravida ex laoreet.</p>
+
+						<p>Curabitur vestibulum semper quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculusmus. Sed rhoncus mauris ut lacus commodo, a tempus lectus scelerisque. Morbi maximus enim at nunc vehicula venenatis. Curabitur blandit porttitor lectus, quis tristique turpis rutrum a. Aliquam bibendum congue tempor. Donec fermentum libero ut facilisis bibendum. Fusce vehicula vestibulum urna at efficitur. In venenatis nulla diam, vel consectetur ante tristique in. Maecenas id justo vitae ligula finibus venenatis. Donec condimentum rutrum urna, id vehicula leo iaculis eget. Praesent vel lorem nec quam gravida luctus accumsan at dolor. Nullam cursus ex eu felis sagittis.</p>
+
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<hr class="wpg-separator">
+
+<div class="module-full-width-2-blocks-with-title-paragraph">
+	<div class="container">
+		<div class="row" data-wpg-equal-height-wrap="min-height">
+			<div class="col-xs-12 col-sm-6">
+				<div class="wpg-inset-col" style="background-color: #dd6e1d;" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
+					<h2>For further information please contact:</h2>
+					<p>CNC<br>James Madsen<br>020 3219 8812<br>james.madsen@cnc-communications.com</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<div class="wpg-inset-col" style="background-color: #9d948a;" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
+					<h2>Notes to editors</h2>
+					<p>Majedie Asset Management, established in 2002, is an independent investment boutique that actively manages equities for institutional investors, wealth managers and endowments across a range of UK and Global strategies. Assets under management total approximately £11bn ($17bn).</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<hr class="wpg-separator">
+
+<div class="module-full-width-timeline">
+	<div class="container">
+		<ul class="wpg-timeline">
+			<li>
+				<h3>14/10/2015</h3>
+				<p>Majedie limits UK Income Fund capacity</p>
+			</li>
+			<li>
+				<h3>10/09/2015</h3>
+				<p>Majedie named Active Manager of the Year</p>
+			</li>
+			<li>
+				<h3>13/07/2015</h3>
+				<p>Majedie Asset Management scoops five industry awards</p>
+			</li>
+			<li>
+				<h3>09/07/2015</h3>
+				<p>Majedie US Equity Fund reaches $100m AUM on first anniversary</p>
+			</li>
+			<li>
+				<h3>02/07/2015</h3>
+				<p>Majedie Global Equity and Global Focus mark first anniversary</p>
+			</li>
+			<li>
+				<h3>21/05/2015</h3>
+				<p>Majedie Asset Management wins Active UK Equities Award</p>
+			</li>
+			<li>
+				<h3>03/03/2015</h3>
+				<p>Majedie Asset Management wins two fund performance awards</p>
+			</li>
+			<li>
+				<h3>22/01/2015</h3>
+				<p>Majedie US Equity Fund races out of the traps</p>
+			</li>
+			<li>
+				<h3>14/01/2015</h3>
+				<p>Majedie UK Income Fund marks third anniversary at the top</p>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<hr class="wpg-separator">
 
 <!-- .col-xs-	.col-sm-	.col-md-	.col-lg-	.col-xl- -->
 <!--
