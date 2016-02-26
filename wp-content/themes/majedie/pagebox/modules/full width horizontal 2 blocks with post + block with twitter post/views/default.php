@@ -39,14 +39,74 @@ $the_query = new WP_Query( $args ); ?>
 	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
 			<div class="col-xs-12 col-sm-4">
-				<div class="wpg-post-box wpg-bg-white" style="background-color: #fefffe; color: #000;" data-wpg-equal-height-item>
-					<p class="wpg-post-box_tag"><?php the_category(', ') ?></p>
-					<h3><a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a></h3>
-					<p class="wpg-post-box_date"><?php echo the_date('d/m/Y'); ?></p>
+				<div class="wpg-post-box wpg-bg-white" style="
+<?php	if($this->get('post1_background_color')) {
+		echo 'background-color: ' . $this->get('post1_background_color') . ';';
+				}
+			;?>
+" data-wpg-equal-height-item>
+				
+						<?php if($post1) { ;?>
+					<p class="wpg-post-box_tag"
+						<?php if($this->get('post1_category_color') || $this->get('post1_category_size') != '') {
+							echo 'style=" ';
+							if($this->get('post1_category_size') != '') {
+								echo 'font-size: ' . $this->get('post1_category_size') . 'px;';
+							}
+							if($this->get('post1_category_color') != '') {
+								echo 'color: ' . $this->get('post1_category_color') . ';';
+							}
+							echo '"';
+						} ;?>
+						><?php the_category(', ') ?></p>
+						<?php } ;?>
+					<h3>
+						<?php if($post1) { ;?>
+					<a href="<?php echo get_permalink(); ?>"
+						<?php if($this->get('post1_title_color') || $this->get('post1_title_size') != '') {
+							echo 'style=" ';
+							if($this->get('post1_title_size') != '') {
+								echo 'font-size: ' . $this->get('post1_title_size') . 'px;';
+							}
+							if($this->get('post1_title_color') != '') {
+								echo 'color: ' . $this->get('post1_title_color') . ';';
+							}
+							echo '"';
+						} ;?>
+						><?php echo get_the_title(); ?></a>
+						<?php } ;?>
+					</h3>
+					<?php if($post1) { ;?>
+					<p class="wpg-post-box_date"
+						<?php if($this->get('post1_date_color') || $this->get('post1_date_size') != '') {
+							echo 'style=" ';
+							if($this->get('post1_date_size') != '') {
+								echo 'font-size: ' . $this->get('post1_date_size') . 'px;';
+							}
+							if($this->get('post1_date_color') != '') {
+								echo 'color: ' . $this->get('post1_date_color') . ';';
+							}
+							echo '"';
+						} ;?>
+						><?php echo the_date('d/m/Y'); ?></p>
+						<?php } ;?>
 					<div class="wpg-post-box_main-content">
-					<p>	
-					<?php echo majadie_get_the_excerpt( $post_id = 0 ); ?>
-					</p>
+				
+						<?php if($post1) { ;?>
+					<p
+						<?php if($this->get('post1_paragraph_color') || $this->get('post1_paragraph_size') != '') {
+							echo 'style=" ';
+							if($this->get('post1_paragraph_size') != '') {
+								echo 'font-size: ' . $this->get('post1_paragraph_size') . 'px;';
+							}
+							if($this->get('post1_paragraph_color') != '') {
+								echo 'color: ' . $this->get('post1_paragraph_color') . ';';
+							}
+							echo '"';
+						} ;?>
+						><?php 
+						echo get_the_excerpt(); ?></p>
+						<?php } ;?>
 					</div>
 					
 				</div>
@@ -73,14 +133,73 @@ $the_query = new WP_Query( $args ); ?>
 			<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
 					<div class="col-xs-12 col-sm-4">
-						<div class="wpg-post-box wpg-bg-white" style="background-color: #fefffe; color: #000;" data-wpg-equal-height-item>
-							<p class="wpg-post-box_tag"><?php the_category(', ') ?></p>
-							<h3><a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a></h3>
-							<p class="wpg-post-box_date"><?php echo the_date('d/m/Y'); ?></p>
+						<div class="wpg-post-box wpg-bg-white" style="
+<?php	if($this->get('post2_background_color')) {
+		echo 'background-color: ' . $this->get('post2_background_color') . ';';
+				}
+			;?>
+" data-wpg-equal-height-item>
+							
+								<?php if($post2) { ;?>
+					<p class="wpg-post-box_tag"
+						<?php if($this->get('post2_category_color') || $this->get('post2_category_size') != '') {
+							echo 'style=" ';
+							if($this->get('post2_category_size') != '') {
+								echo 'font-size: ' . $this->get('post2_category_size') . 'px;';
+							}
+							if($this->get('post2_category_color') != '') {
+								echo 'color: ' . $this->get('post2_category_color') . ';';
+							}
+							echo '"';
+						} ;?>
+						><?php the_category(', ') ?></p>
+						<?php } ;?>
+							<h3>
+						<?php if($post2) { ;?>
+					<a href="<?php echo get_permalink(); ?>"
+						<?php if($this->get('post2_title_color') || $this->get('post2_title_size') != '') {
+							echo 'style=" ';
+							if($this->get('post2_title_size') != '') {
+								echo 'font-size: ' . $this->get('post2_title_size') . 'px;';
+							}
+							if($this->get('post2_title_color') != '') {
+								echo 'color: ' . $this->get('post2_title_color') . ';';
+							}
+							echo '"';
+						} ;?>
+						><?php echo get_the_title(); ?></a>
+						<?php } ;?>
+					</h3>
+							<?php if($post2) { ;?>
+					<p class="wpg-post-box_date"
+						<?php if($this->get('post2_date_color') || $this->get('post2_date_size') != '') {
+							echo 'style=" ';
+							if($this->get('post2_date_size') != '') {
+								echo 'font-size: ' . $this->get('post2_date_size') . 'px;';
+							}
+							if($this->get('post2_date_color') != '') {
+								echo 'color: ' . $this->get('post2_date_color') . ';';
+							}
+							echo '"';
+						} ;?>
+						><?php echo the_date('d/m/Y'); ?></p>
+						<?php } ;?>
 							<div class="wpg-post-box_main-content">
-							<p>	
-								<?php echo majadie_get_the_excerpt( $post_id = 0 ); ?>
-							</p>
+							<?php if($post2) { ;?>
+					<p
+						<?php if($this->get('post2_paragraph_color') || $this->get('post2_paragraph_size') != '') {
+							echo 'style=" ';
+							if($this->get('post2_paragraph_size') != '') {
+								echo 'font-size: ' . $this->get('post2_paragraph_size') . 'px;';
+							}
+							if($this->get('post2_paragraph_color') != '') {
+								echo 'color: ' . $this->get('post2_paragraph_color') . ';';
+							}
+							echo '"';
+						} ;?>
+						><?php 
+						echo get_the_excerpt(); ?></p>
+						<?php } ;?>
 							</div>
 							
 						</div>
@@ -99,7 +218,7 @@ $the_query = new WP_Query( $args ); ?>
 
 
 			<div class="col-xs-12 col-sm-4">
-				<div class="wpg-post-box wpg-bg-orange-twitter" style="background-color: #dd6e1d; color: #fff;" data-wpg-equal-height-item>
+				<div class="wpg-post-box wpg-bg-orange-twitter" style="background-color: #dd6e1d; color: #fff;" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<p class="wpg-post-box_tag">Social</p>
 					<i class="fa fa-twitter"></i>
 					

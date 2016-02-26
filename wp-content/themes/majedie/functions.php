@@ -1,5 +1,13 @@
 <?php
 
+
+
+
+add_image_size( 'team', 301, 355 );
+
+
+// Register the three useful image sizes for use in Add Media modal
+
 function theme_enqueue_style() {
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/stylesheets/bootstrap/bootstrap-grid.css', array(), false, false ); 
 	wp_enqueue_style( 'normalize', get_template_directory_uri() . '/assets/stylesheets/normalize.css', array(), false, false ); 

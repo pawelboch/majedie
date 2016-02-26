@@ -52,21 +52,58 @@ class Module extends Abstract_Module {
 			// minimum and maximum percent width that module fits in
 			// WPGeeks_Forms
 			'fields'      => array(
-				array(
+
+
+							array(
+					'type'        => 'repeater',
+					'group'		  => __( 'General', 'pagebox' ),
+					'name'        => 'teams',
+					'description' => __( 'Add team member', 'pagebox' ),
+					'labels'       => array(
+						'singular' => __('Team', 'pagebox'),
+						'plural' => __('Teams', 'pagebox')
+					),
+					'buttons' => array(
+						'add' => __('Add team member', 'pagebox'),
+						'remove' => __('Remove team member', 'pagebox')
+					),
+					'fields' => array(
+						array(
+							'type'        => 'image',
+							'group'		  => __( 'General', 'pagebox' ),
+							'name'        => 'image',
+							'label'       => __( 'Add Logo image', 'pagebox' ),
+							'description' => __( '', 'pagebox' )
+						),
+						array(
 					'type'        => 'text',
 					'group'       => __( 'General', 'pagebox' ),
 					'name'        => 'title',
 					'label'       => __( 'Title', 'pagebox' ),
-					'description' => __( 'Main module title', 'pagebox' ),
-				),
-
-				array(
-					'type'        => 'colorpicker',
-					'group'		    => __( 'Design', 'pagebox' ),
-					'name'        => 'button_font_color',
-					'label'       => __( 'Button font color', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
 				),
+
+						array(
+					'type'        => 'text',
+					'group'       => __( 'General', 'pagebox' ),
+					'name'        => 'bottom_title',
+					'label'       => __( 'Bottom Title', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+
+						array(
+					'type'        => 'editor',
+					'group'       => __( 'General', 'pagebox' ),
+					'name'        => 'editor',
+					'label'       => __( 'Text', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+
+
+				
+					)
+				),
+				
 			)
 		);
 	}

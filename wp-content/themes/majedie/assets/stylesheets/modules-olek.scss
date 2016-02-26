@@ -414,15 +414,19 @@
 	}
 
 
-	p {
+	.text {
 		font-size: 15px;
 		margin: 15px 0 0 0;
 	}
-	h2 + p {
+	h2 + .text {
 		margin: 10px 0 0 0;
 	}
 	.btn-2 {
 		margin-top: 30px;
+		text-transform: uppercase;
+	}
+	.btn-1 {
+		text-transform: uppercase;
 	}
 	.wpg-plugin-select-simulate {
 		position: relative;
