@@ -149,14 +149,11 @@ jQuery(window).load(function(){ wpgHeight100pWindow(jQuery); });
 
 
 /* module timeline */
-jQuery(window).ready(function($){  
-
-});
 (function($){
 	if($(".module-full-width-timeline").length>0)
 	{
 		var $wpgTimeline=$(".wpg-timeline");
-		$wpgTimeline.hide().after("<div class='wpg-timeline-design'><div class='wpg-timeline-design-top'></div><div class='wpg-timeline-design-bottom'></div></div>");
+		$wpgTimeline.after("<div class='wpg-timeline-design'><div class='wpg-timeline-design-top'></div><hr><div class='wpg-timeline-design-bottom'></div></div>");
 		var $top=$(".wpg-timeline-design-top"),
 			$bottom=$(".wpg-timeline-design-bottom");
 		for(var i=0, iLength=$wpgTimeline.find("> li").length; i<iLength; i++)
@@ -172,3 +169,7 @@ jQuery(window).ready(function($){
 	}
 })(jQuery);
 /* end module timeline */
+
+jQuery(window).scroll(function(){
+	console.log(jQuery(window).scrollTop());
+});
