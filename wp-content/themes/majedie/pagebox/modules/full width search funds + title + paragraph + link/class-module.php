@@ -59,6 +59,42 @@ class Module extends Abstract_Module {
 					'label'       => __( 'Title', 'pagebox' ),
 					'description' => __( 'Main module title', 'pagebox' ),
 				),
+				array(
+					'type'        => 'editor',
+					'group'       => __( 'General', 'pagebox' ),
+					'name'        => 'text',
+					'label'       => __( 'Text', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'text',
+					'group'       => __( 'General', 'pagebox' ),
+					'name'        => 'button_text',
+					'label'       => __( 'Button text', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'cpt',
+					'group'       => __( 'General', 'pagebox' ),
+					'name'        => 'button_url',
+					'post_type'		=> array('page'),
+					'label'       => __( 'Button URL', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'text',
+					'group'       => __( 'General', 'pagebox' ),
+					'name'        => 'fund_form_title',
+					'label'       => __( 'Fund form title', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'text',
+					'group'       => __( 'General', 'pagebox' ),
+					'name'        => 'fund_form_button_text',
+					'label'       => __( 'Fund form button text', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
 
 				array(
 					'type'        => 'colorpicker',

@@ -3,13 +3,14 @@
 
 		<div class="span-table">
 			<div class="span-table-cell vertical-align-middle wpg-first-block">
-				<h2>Prices</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet condimentum diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas nulla ac vestibulum hendrerit.<p> 
-				<p>Donec sit amet condimentum diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas nulla ac vestibulum hendrerit.</p>
-				<a href="#" class="btn-2">SEE PRICES</a>
+				<h2><?php echo $this->get('title') ;?></h2>
+				<div class="text">
+					<?php echo $this->get('text') ;?>
+				</div>
+				<a href="<?php echo $this->get('button_url') ;?>" class="btn-2"><?php echo $this->get('button_text') ;?></a>
 			</div>
 			<div class="span-table-cell vertical-align-middle wpg-second-block">
-				<h2>Search Prices</h2>
+				<h2><?php echo $this->get('fund_form_title') ;?></h2>
 				<form method="get" action="/">
 					<select class="wpg-plugin-select">
 						<option value="1">Fund</option>
@@ -44,7 +45,7 @@
 						<option value="5">Option 5</option>
 						<option value="6">Option 6</option>
 					</select>
-					<input class="btn-1" type="submit" name="search-funds" value="SEARCH FUNDS">
+					<button class="btn-1" type="submit" name="search-funds" value=""><?php echo $this->get('fund_form_button_text') ;?></button>
 				</form>
 				
 			</div>
