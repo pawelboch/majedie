@@ -54,17 +54,83 @@ class Module extends Abstract_Module {
 			'fields'      => array(
 				array(
 					'type'        => 'text',
-					'group'       => __( 'General', 'pagebox' ),
-					'name'        => 'title',
+					'group'       => __( 'Block 1', 'pagebox' ),
+					'name'        => 'title1',
+					'label'       => __( 'Title', 'pagebox' ),
+					'description' => __( 'Main module title', 'pagebox' ),
+				),
+				array(
+					'type'        => 'editor',
+					'group'       => __( 'Block 1', 'pagebox' ),
+					'name'        => 'editor1',
+					'label'       => __( 'Paragraph', 'pagebox' ),
+					'description' => __( 'Main module title', 'pagebox' ),
+				),
+
+				array(
+					'type'        => 'text',
+					'group'       => __( 'Block 2', 'pagebox' ),
+					'name'        => 'title2',
 					'label'       => __( 'Title', 'pagebox' ),
 					'description' => __( 'Main module title', 'pagebox' ),
 				),
 
 				array(
+					'type'        => 'editor',
+					'group'       => __( 'Block 2', 'pagebox' ),
+					'name'        => 'editor2',
+					'label'       => __( 'Paragraph', 'pagebox' ),
+					'description' => __( 'Main module title', 'pagebox' ),
+				),
+
+			
+				array(
 					'type'        => 'colorpicker',
 					'group'		    => __( 'Design', 'pagebox' ),
-					'name'        => 'button_font_color',
-					'label'       => __( 'Button font color', 'pagebox' ),
+					'name'        => 'title1_background_color',
+					'label'       => __( 'Block 1 background color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+
+	array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'title1_font_color',
+					'label'       => __( 'Title 1 font color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+
+				array(
+					'type'        => 'number',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'title1_size',
+					'label'       => __( 'Title 1 size', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+
+
+
+				array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'title2_background_color',
+					'label'       => __( 'Block 2 background color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+
+	array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'title2_font_color',
+					'label'       => __( 'Title 2 font color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+
+				array(
+					'type'        => 'number',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'title2_size',
+					'label'       => __( 'Title 2 size', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
 				),
 			)
