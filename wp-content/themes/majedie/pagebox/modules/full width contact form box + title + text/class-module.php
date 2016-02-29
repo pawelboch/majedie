@@ -68,7 +68,7 @@ class Module extends Abstract_Module {
 					'description' => __( '', 'pagebox' ),
 				),
 
-array(
+				array(
 					'type'        => 'colorpicker',
 					'group'		    => __( 'Design', 'pagebox' ),
 					'name'        => 'background_color',
