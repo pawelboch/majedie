@@ -19,6 +19,16 @@ pixelperfect.init( {
 })(jQuery);
 /* end menu mobile */
 
+/* menu mobile fund */
+(function($){
+	var bw=$(".wpg-fund-menu-inset .wpg-mobile-menu");
+	bw.click(function(e){
+		$(this).next().toggleClass("wpg-mobile-menu-active");
+		e.preventDefault();
+	});
+})(jQuery);
+/* end menu mobile fund */
+
 
 /* plugin select */
 (function($){

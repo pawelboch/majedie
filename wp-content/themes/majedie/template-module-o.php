@@ -266,7 +266,7 @@
 <div class="module-two-blocks-with-logo-title-button-background-image">
 	<div class="container container-corrected">
 
-		<div class="row" data-wpg-equal-height-wrap="min-height">
+		<div class="row" data-wpg-equal-height-wrap="height">
 			<div class="col-xs-12 col-sm-6">
 				<div class="wpg-red-block span-table" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/cloud-big-fs8.png)" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<div class="span-table-row">
@@ -1691,15 +1691,19 @@
 <div class="module-full-width-fund">
 	
 	<div class="wpg-fund-menu wpg-bg-grain">
-		<div class="container">
-			<ul class="clearfix">
-				<li class="wpg-fund-menu-active"><a href="#">Overview</a></li>
-				<li><a href="#">Factsheets</a></li>
-				<li><a href="#">KIIDs</a></li>
-				<li><a href="#">Prices</a></li>
-				<li><a href="#">Charges</a></li>
-				<li><a href="#">Commentary</a></li>
-			</ul>
+		<div class="container clearfix">
+			<div class="wpg-fund-menu-inset">
+				<h2>Overview</h2>
+				<a href="#" class="wpg-mobile-menu"><i class="fa fa-chevron-down"></i></a>
+				<ul class="clearfix">
+					<li class="wpg-fund-menu-active"><a href="#">Overview</a></li>
+					<li><a href="#">Factsheets</a></li>
+					<li><a href="#">KIIDs</a></li>
+					<li><a href="#">Prices</a></li>
+					<li><a href="#">Charges</a></li>
+					<li><a href="#">Commentary</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 
@@ -1725,20 +1729,50 @@
 					<div class="wpg-box-fund">
 						<div class="wpg-header-date clearfix"><h2>The Performance</h2><p class="wpg-date">to 30th Sept 2015</p></div>
 						<p>The UK Equity Fund is our flagship UK fund, incorporating a dedicated allocation to smaller companies. It is managed by James de Uphaugh, Chris Field, Matthew Smith and Richard Staveley, with Alastair Johnston as Fund Analyst.</p>
-						[chart]
+						<div class="wpg-chart-box">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/chart-1.jpg" alt="x">
+						</div>
 					</div>
 
 					<div class="wpg-box-fund">
 						<h2>Fund managers</h2>
-						<ul>
+						<ul class="row wpg-fund-list-image-circle clearfix" data-wpg-equal-height-wrap="min-height">
 							<?php for($i=0; $i<4;$i++) { ?>
-							<li><h3>Jamesa de Uphaugh</h3><p>27 years’ investment experience</p></li>
+							<li class="col-xs-6 col-sm-4" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/example-9.jpg" alt="x">
+								<h3>Jamesa de Uphaugh</h3>
+								<p>27 years’ investment experience</p>
+							</li>
 							<?php } ?>
 						</ul>
 					</div>
 
 					<div class="wpg-box-fund">
 						<h2>Fund overview</h2>
+						<div class="wpg-tables">
+							<?php for($i=0; $i<4; $i++) { ?>
+							<div class="wpg-tables-inset">
+								<table>
+									<caption>Top 10 Holdings (absolute %)</caption>
+									<tbody>
+										<tr><th>HSBC</th><td>6.5</td></tr>
+										<tr><th>Royal Dutch Shell</th><td>4.9</td></tr>
+										<tr><th>Vodafone</th><td>4.9</td></tr>
+										<tr><th>BP</th><td>4.9</td></tr>
+										<tr><th>Barclays</th><td>3.9</td></tr>
+										<tr><th>Orange</th><td>3.1</td></tr>
+										<tr><th>Tesco</th><td>3.0</td></tr>
+										<tr><th>Royal Bank of Scotland</th><td>2.9</td></tr>
+										<tr><th>GlaxoSmithKline</th><td>2.8</td></tr>
+										<tr><th>BT</th><td>2.7</td></tr>
+									</tbody>
+								</table>
+							</div>
+							<?php } ?>
+						</div>
+
+
+
 					</div>
 
 				</div>
@@ -1747,8 +1781,10 @@
 			</div>
 			<div class="col-xs-12 col-md-4 wpg-inset-col">
 				<div class="wpg-inset-box-2">
+					
+
 					<div class="wpg-box-fund">
-						<ul>
+						<ul class="wpg-simple-list">
 							<li><a href="#">GLOBAL EQUITY FUND</a></li>
 							<li><a href="#">GLOBAL FOCUS FUND</a></li>
 							<li><a href="#">US EQUITY FUND</a></li>
@@ -1763,7 +1799,35 @@
 							<li><a href="#">PLATFORMS</a></li>
 							<li><a href="#">REDEMPTION PROCESS</a></li>
 						</ul>
-					</div>		
+					</div>	
+
+					<div class="wpg-box-fund">
+						<div class="wpg-post-box">
+							<p class="wpg-tags">Equity</p>
+							<h3><a href="#">Global American Fund</a></h3>
+							<p class="wpg-date">12 / 11/ 2005</p>
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet condimentum diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas nulla ac vestibulum hendrerit.</p>
+						</div>
+					</div>
+					
+					<div class="wpg-box-fund">
+						<div class="wpg-list-pdf">
+							<h3>Literature</h3>
+							<ul>
+								<li><a href="#">Factsheet</a></li>
+								<li><a href="#">KIID</a></li>
+								<li><a href="#">Prospectus</a></li>
+								<li><a href="#">Annual Report</a></li>
+								<li><a href="#">Semi Annual Report</a></li>
+								<li><a href="#">Application Form</a></li>
+								<li><a href="#">Dealing Form</a></li>
+								<li><a href="#">Sub Fund Form</a></li>
+								<li><a href="#">Global Supplement Form</a></li>
+							</ul>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
