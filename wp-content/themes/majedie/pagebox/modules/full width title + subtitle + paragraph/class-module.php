@@ -67,7 +67,7 @@ class Module extends Abstract_Module {
 					'description' => __( 'Main module subtitle', 'pagebox' ),
 				),
 						array(
-					'type'        => 'editor',
+					'type'        => 'textarea',
 					'group'       => __( 'General', 'pagebox' ),
 					'name'        => 'editor',
 					'label'       => __( 'Content', 'pagebox' ),
