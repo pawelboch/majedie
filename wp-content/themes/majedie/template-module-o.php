@@ -1179,7 +1179,7 @@
 					<!--<a href="#">PREV</a>-->
 					<div class="numbered">
 						<span class="page-numbers current">1</span>
-						<a class="page-numbers" href="http://stalis-dev.mayk.media/news-centre/page/2/">2</a>
+						<a class="page-numbers" href="#">2</a>
 					</div>
 					<a href="#">NEXT</a>
 				</div>
@@ -1687,6 +1687,92 @@
 </div>
 
 <hr class="wpg-separator">
+
+<div class="module-full-width-fund">
+	
+	<div class="wpg-fund-menu wpg-bg-grain">
+		<div class="container">
+			<ul class="clearfix">
+				<li class="wpg-fund-menu-active"><a href="#">Overview</a></li>
+				<li><a href="#">Factsheets</a></li>
+				<li><a href="#">KIIDs</a></li>
+				<li><a href="#">Prices</a></li>
+				<li><a href="#">Charges</a></li>
+				<li><a href="#">Commentary</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-8 wpg-inset-col">
+
+				<div class="wpg-inset-box-1">
+
+					<div class="wpg-box-fund" style="background-color: #dc6f26;">
+						<h2 style="color: #fff;">The Fund</h2>
+						<p style="color: #fff;">The UK Equity Fund is our flagship UK fund, incorporating a dedicated allocation to smaller companies. It is managed by James de Uphaugh, Chris Field, Matthew Smith and Richard Staveley, with Alastair Johnston as Fund Analyst. The Fund aims to produce a total return in excess of the FTSE All-Share Index over the long term through investment in a diversified portfolio of predominantly UK equities.</p>
+
+						<p style="color: #fff;">The strategy incorporates UCITS compliant UK domiciled and Irish domiciled OEIC funds. Since inception to 30 September 2015, the Fund (UK domiciled) has achieved a gross annualised return of 13.8%, outperforming the FTSE All-Share index by 5.0% per annum and ranking it 4th highest performer within the BNY Mellon Pooled Pension Fund universe, of 39 surviving funds. In cumulative terms, the Fund has returned 404.1% since inception in March 2003, versus the FTSE All-Share index return of 186.7%.</p>						
+					</div>
+
+					<div class="wpg-box-fund">
+						<h2>The Objective</h2>
+						<p>The UK Equity Fund is our flagship UK fund, incorporating a dedicated allocation to smaller companies. It is managed by James de Uphaugh, Chris Field, Matthew Smith and Richard Staveley, with Alastair Johnston as Fund Analyst.</p>
+					</div>
+
+
+					<div class="wpg-box-fund">
+						<div class="wpg-header-date clearfix"><h2>The Performance</h2><p class="wpg-date">to 30th Sept 2015</p></div>
+						<p>The UK Equity Fund is our flagship UK fund, incorporating a dedicated allocation to smaller companies. It is managed by James de Uphaugh, Chris Field, Matthew Smith and Richard Staveley, with Alastair Johnston as Fund Analyst.</p>
+						[chart]
+					</div>
+
+					<div class="wpg-box-fund">
+						<h2>Fund managers</h2>
+						<ul>
+							<?php for($i=0; $i<4;$i++) { ?>
+							<li><h3>Jamesa de Uphaugh</h3><p>27 years’ investment experience</p></li>
+							<?php } ?>
+						</ul>
+					</div>
+
+					<div class="wpg-box-fund">
+						<h2>Fund overview</h2>
+					</div>
+
+				</div>
+
+
+			</div>
+			<div class="col-xs-12 col-md-4 wpg-inset-col">
+				<div class="wpg-inset-box-2">
+					<div class="wpg-box-fund">
+						<ul>
+							<li><a href="#">GLOBAL EQUITY FUND</a></li>
+							<li><a href="#">GLOBAL FOCUS FUND</a></li>
+							<li><a href="#">US EQUITY FUND</a></li>
+							<li><a href="#">UK EQUITY FUND</a></li>
+							<li><a href="#">UK FOCUS FUND</a></li>
+							<li><a href="#">UK INCOME FUND</a></li>
+							<li><a href="#">UK SMALLER COMPANIES FUND</a></li>
+							<li><a href="#">TORTOISE FUND</a></li>
+							<li><a href="#">LITERATURE</a></li>
+							<li><a href="#">PRICES</a></li>
+							<li><a href="#">CHARGES</a></li>
+							<li><a href="#">PLATFORMS</a></li>
+							<li><a href="#">REDEMPTION PROCESS</a></li>
+						</ul>
+					</div>		
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<hr class="wpg-separator">
+
 <!-- .col-xs-	.col-sm-	.col-md-	.col-lg-	.col-xl- -->
 <!--
 data-wpg-equal-height-wrap="min-height"
