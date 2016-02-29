@@ -182,3 +182,7 @@ jQuery(window).load(function(){ wpgHeight100pWindow(jQuery); });
 	}
 })(jQuery);
 /* end module timeline */
+
+
+
+jQuery('.module-full-width-contact-form-box-title-text .wpcf7-radio input').after('<div class="custom-radio"></div>');
