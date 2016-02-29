@@ -95,3 +95,24 @@ function majadie_get_the_excerpt( $post_id = 0 ) {
 
 	return '';
 }
+
+function post_categories($id) {
+	$categories = get_the_category($id);
+
+	foreach ($categories as $category) {
+		echo '<a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a>';
+		break;
+	}
+}
+
+function list_categories() {
+	$categories = get_categories();
+
+	echo '<ul>';
+	foreach ($categories as $category) {
+		echo '<li>';
+		echo '<a href="#' . $category->slug . '">' . $category->name . '</a>';
+		echo '</li>';
+	}
+	echo '</ul>';
+}
