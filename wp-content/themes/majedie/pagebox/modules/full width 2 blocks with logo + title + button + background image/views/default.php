@@ -1,15 +1,12 @@
-<<<<<<< HEAD
-<div class="module-two-blocks-with-logo-title-button-background-image"
-<?php	if($this->get('background_outside_color')) {
+<div class="module-wpg module-two-blocks-with-logo-title-button-background-image"
+<?php	
+if($this->get('background_outside_color')) {
 echo 'style="';
 echo 'background-color: ' . $this->get('background_outside_color') . ';';
 echo '"';
-	}
+}
 ;?>
 >
-=======
-<div class="module-wpg module-two-blocks-with-logo-title-button-background-image">
->>>>>>> 27923e73544228a7afc2e355b8cb7f3345fcdc9c
 	<div class="container container-corrected">
 		<div class="row" data-wpg-equal-height-wrap="height">
 			<div class="col-xs-12 col-sm-6">

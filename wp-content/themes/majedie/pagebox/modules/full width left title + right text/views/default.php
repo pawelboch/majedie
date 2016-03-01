@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-<div class="module-full-width-left-title-right-text wpg-bg-grain"
-=======
 <div class="module-wpg module-full-width-left-title-right-text wpg-bg-grain"
-
->>>>>>> 27923e73544228a7afc2e355b8cb7f3345fcdc9c
 <?php	if($this->get('background_color')) {
 echo 'style="';
 echo 'background-color: ' . $this->get('background_color') . ';';

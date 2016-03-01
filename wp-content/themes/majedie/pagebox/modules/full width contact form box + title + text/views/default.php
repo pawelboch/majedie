@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-<div class="module-full-width-contact-form-box-title-text span-table"
-=======
-<div class="module-wpg module-full-width-contact-form-box-title-text span-table" style="
->>>>>>> 27923e73544228a7afc2e355b8cb7f3345fcdc9c
+<div class="module-wpg module-full-width-contact-form-box-title-text span-table"
 	<?php	if($this->get('background_color')) {
 	echo 'style="';
 	echo 'background-color: ' . $this->get('background_color') . ';';

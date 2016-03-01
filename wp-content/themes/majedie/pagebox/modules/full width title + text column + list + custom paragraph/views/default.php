@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<div class="module-full-width-title-text-column-list-custom-paragraph"
+<div class="module-wpg module-full-width-title-text-column-list-custom-paragraph"
 <?php	if($this->get('background_outside_color')) {
 echo 'style="';
 echo 'background-color: ' . $this->get('background_outside_color') . ';';
@@ -7,9 +6,6 @@ echo '"';
 	}
 ;?>
 >
-=======
-<div class="module-wpg module-full-width-title-text-column-list-custom-paragraph">
->>>>>>> 27923e73544228a7afc2e355b8cb7f3345fcdc9c
 	<div class="container">
 		<div class="wpg-container-inset">
 			<?php if($this->get('title') != '') { ;?>
