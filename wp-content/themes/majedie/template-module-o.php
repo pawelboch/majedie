@@ -170,7 +170,7 @@
 	</div>
 </div>
 
-<hr class="module-reduction" style="margin-top: -60px; margin-bottom: 0;">
+<hr class="module-reduction module-reduction-top">
 
 <div class="module-full-width-title-text-photo">
 	<div class="container">
@@ -194,7 +194,7 @@
 	</div>
 </div>
 
-<hr class="module-reduction" style="margin-top: -60px;">
+<hr class="module-reduction module-reduction-top">
 
 <div class="module-full-width-text-slider">
 	<?php $idUniqid=uniqid(); ?>

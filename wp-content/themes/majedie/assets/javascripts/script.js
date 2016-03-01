@@ -65,7 +65,8 @@ jQuery(window).resize(function(){
 });
 jQuery(window).load(function(){
 	wpgHeightPopup(jQuery);
-	if($(".module-investor-modal").length>0)
+	if(jQuery(".module-investor-modal").length>0)
+	{
 		jQuery(".module-investor-modal").fadeIn();
 		jQuery(".module-investor-modal .wpg-investor-modal").css("top",jQuery(window).scrollTop()+100);
 	}
