@@ -3,13 +3,13 @@
 ?>
 <?php get_header(); ?>
 
+<!--
 <hr class="wpg-separator">
 
 <div class="module-demo">
 	<div class="container">
 
 		<div class="row" data-wpg-equal-height-wrap="min-height">
-			<!-- .col-xs-	.col-sm-	.col-md-	.col-lg-	.col-xl- -->
 			<div class="col-xs-12 col-sm-4">
 				<div class="wpg-red-block wpg-demo-block" style="background-color: red;" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					
@@ -64,7 +64,7 @@
 
 	</div>
 </div>
-
+-->
 
 
 <hr class="wpg-separator">
@@ -170,7 +170,7 @@
 	</div>
 </div>
 
-<hr class="module-reduction" style="margin-top: -60px; margin-bottom: 0;">
+<hr class="module-reduction module-reduction-top">
 
 <div class="module-full-width-title-text-photo">
 	<div class="container">
@@ -194,7 +194,7 @@
 	</div>
 </div>
 
-<hr class="module-reduction" style="margin-top: -60px;">
+<hr class="module-reduction module-reduction-top">
 
 <div class="module-full-width-text-slider">
 	<?php $idUniqid=uniqid(); ?>

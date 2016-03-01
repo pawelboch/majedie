@@ -29,27 +29,35 @@
 })(jQuery);
 /* end menu mobile fund */
 
-/* popup 
+
+/* popup */
 (function($){
-	$("#wpg-checkbox-investor-modal").click(function(){
-		if($(this).is(':checked')) 
-		{
-			$(".wpg-button-accept").removeAttr("disabled");
-		}
-		else
-		{
-			$(".wpg-button-accept").attr("disabled","disabled");
-		}
-	});
-	$("body").on("click",".wpg-button-accept",function(){
-		$(".module-investor-modal").fadeOut();
-	});
-	$(".wpg-popup-investor-modal-close").click(function(){
-		$(".module-investor-modal").fadeOut();
-	});
+	if($(".module-investor-modal").length>0)
+	{
+		$("#wpg-checkbox-investor-modal").click(function(){
+			if($(this).is(':checked')) 
+			{
+				$(".wpg-button-accept").removeAttr("disabled");
+			}
+			else
+			{
+				$(".wpg-button-accept").attr("disabled","disabled");
+			}
+		});
+		$("body").on("click",".wpg-button-accept",function(){
+			$(".module-investor-modal").fadeOut();
+		});
+		$(".wpg-popup-investor-modal-close").click(function(){
+			$(".module-investor-modal").fadeOut();
+		});
+	}
 })(jQuery);
 var wpgHeightPopup=function($){
-	$(".module-investor-modal").css("height",$(document).height());
+	if($(".module-investor-modal").length>0)
+	{
+		$(".module-investor-modal").css("height","auto");
+		$(".module-investor-modal").css("height",$(document).height());
+	}
 };
 wpgHeightPopup(jQuery);
 jQuery(window).resize(function(){
@@ -57,10 +65,25 @@ jQuery(window).resize(function(){
 });
 jQuery(window).load(function(){
 	wpgHeightPopup(jQuery);
-	jQuery(".module-investor-modal").fadeIn();
-	jQuery(".module-investor-modal .wpg-investor-modal").css("top",jQuery(window).scrollTop()+100);
+	if(jQuery(".module-investor-modal").length>0)
+	{
+		jQuery(".module-investor-modal").fadeIn();
+		jQuery(".module-investor-modal .wpg-investor-modal").css("top",jQuery(window).scrollTop()+100);
+	}
 });
 /* end popup */
+
+
+/* blank page */
+(function($){
+	//alert($(".wpg-main-header").next().hasClass("wpg-main-footer"));
+	if($(".wpg-main-header").next().hasClass("wpg-main-footer"))
+	{
+		$(".wpg-main-header").after('<div class="module-full-width-title-subtitle-paragraph span-table" data-wpg-height-100p-window><div class="span-table-cell vertical-align-middle"><div class="container"><h2>404</h2><h3>Page not found</h3><p>The page you are looking for doesnt’t exist or another error occured. <br>Go <a href="#">back</a>, or head over to <a href="http://www.majedie.com">www.majedie.com</a> to choose another direction.</p></div></div></div>');
+	}
+})(jQuery);
+/* end blank page */
+
 
 /* plugin select */
 (function($){
@@ -175,8 +198,8 @@ var wpgHeight100pWindow=function($) {
 	if($("[data-wpg-height-100p-window]").length>0)
 	{
 		var dwh100pw=$("[data-wpg-height-100p-window]"),
-			heightHeader=$(".wpg-main-header").height(),
-			heightFooter=$(".wpg-main-footer").height(),
+			heightHeader=parseInt($(".wpg-main-header").css("height")),
+			heightFooter=parseInt($(".wpg-main-footer").css("height")),
 			heightInset=$(window).height() - heightHeader - heightFooter
 		
 		dwh100pw.css("height",heightInset);
