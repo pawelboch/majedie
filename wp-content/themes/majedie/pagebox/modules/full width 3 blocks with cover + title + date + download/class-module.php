@@ -215,17 +215,16 @@ class Module extends Abstract_Module {
 					'type'        => 'colorpicker',
 					'group'		    => __( 'Design', 'pagebox' ),
 					'name'        => 'button_color',
-					'label'       => __( 'Title color', 'pagebox' ),
+					'label'       => __( 'Button color', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
 				),
 				array(
 					'type'        => 'number',
 					'group'		    => __( 'Design', 'pagebox' ),
 					'name'        => 'button_size',
-					'label'       => __( 'Title size', 'pagebox' ),
+					'label'       => __( 'Button size', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
 				),
-
 			)
 		);
 	}
