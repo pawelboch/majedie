@@ -59,7 +59,6 @@ class Module extends Abstract_Module {
 					'label'       => __( 'Title', 'pagebox' ),
 					'description' => __( 'Main module title', 'pagebox' ),
 				),
-
 				array(
 					'type'        => 'image',
 					'group'       => __( 'First block', 'pagebox' ),
@@ -167,7 +166,7 @@ class Module extends Abstract_Module {
 				),
 						array(
 					'type'        => 'text',
-					'group'       => __( 'First block', 'pagebox' ),
+					'group'       => __( 'Second block', 'pagebox' ),
 					'name'        => 'second_button_url',
 					'label'       => __( 'Button url', 'pagebox' ),
 					'description' => __( 'Add button url', 'pagebox' ),

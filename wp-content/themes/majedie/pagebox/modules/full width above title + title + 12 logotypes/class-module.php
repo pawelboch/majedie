@@ -1,37 +1,29 @@
 <?php
 /**
- * Module class is an extension for Pagebox\Module
- * abstract class. It registeres new box into
- * Pagebox plugin
- *
- * Call to action module with slider
- */
-
+* Module class is an extension for Pagebox\Module
+* abstract class. It registeres new box into
+* Pagebox plugin
+*
+* Call to action module with slider
+*/
 namespace Majedie\Pagebox\Modules\fullWidthAboveTitleTitle12Logotypes;
-
 use \Pagebox\Modules\Module as Abstract_Module;
 use \WPGeeks_HTML;
-
 class Module extends Abstract_Module {
-
 	/**
-	 * Module constructor
-	 * @access public
-	 */
+	* Module constructor
+	* @access public
+	*/
 	public function __construct() {
-
 		parent::__construct();
-
 	}
-
 	/**
-	 * Template config
-	 * @return void
-	 */
+	* Template config
+	* @return void
+	*/
 	public function set_config() {
-
 		$this->config = array(
-			// Name of the box for plugin use. Only alphanumeric charactes 
+			// Name of the box for plugin use. Only alphanumeric charactes
 			// and underscores are allowed
 			'slug'        => 'full_width_above_title-title-12_logotypes',
 			// Human readable title of box. It will be displayed in all
@@ -66,47 +58,10 @@ class Module extends Abstract_Module {
 					'label'       => __( 'Title', 'pagebox' ),
 					'description' => __( 'Main module title', 'pagebox' ),
 				),
-
 				array(
-					'type'        => 'number',
-					'group'		    => __( 'General', 'pagebox' ),
-					'name'        => 'paragraph_size',
-					'label'       => __( 'Paragraph size', 'pagebox' ),
-					'description' => __( '', 'pagebox' ),
-				),
-				array(
-					'type'        => 'colorpicker',
-					'group'		    => __( 'General', 'pagebox' ),
-					'name'        => 'paragraph_color',
-					'label'       => __( 'Paragraph color', 'pagebox' ),
-					'description' => __( '', 'pagebox' ),
-				),
-				array(
-					'type'        => 'number',
-					'group'		    => __( 'General', 'pagebox' ),
-					'name'        => 'title_size',
-					'label'       => __( 'Title size', 'pagebox' ),
-					'description' => __( '', 'pagebox' ),
-				),
-				array(
-					'type'        => 'colorpicker',
-					'group'		    => __( 'General', 'pagebox' ),
-					'name'        => 'title_color',
-					'label'       => __( 'Title color', 'pagebox' ),
-					'description' => __( '', 'pagebox' ),
-				),
-
-
-
-
-
-
-
-
-						array(
 					'type'        => 'repeater',
-					'group'		  => __( 'Row 1', 'pagebox' ),
-					'name'        => 'logos',
+					'group'		  => __( 'General', 'pagebox' ),
+					'name'        => 'logotypes',
 					'description' => __( 'Add logo image', 'pagebox' ),
 					'labels'       => array(
 						'singular' => __('Logo', 'pagebox'),
@@ -119,139 +74,48 @@ class Module extends Abstract_Module {
 					'fields' => array(
 						array(
 							'type'        => 'image',
-							'group'		  => __( 'Row 2', 'pagebox' ),
+							'group'		  => __( 'General', 'pagebox' ),
 							'name'        => 'logo',
 							'label'       => __( 'Add Logo image', 'pagebox' ),
 							'description' => __( '', 'pagebox' )
 						),
 						array(
-					'type'        => 'text',
-					'group'       => __( 'Row 2', 'pagebox' ),
-					'name'        => 'url',
-					'label'       => __( 'Url', 'pagebox' ),
-					'description' => __( '', 'pagebox' ),
-				),
-
-				
-					)
-				),
-
-
-
-
-
-
-
-						array(
-					'type'        => 'repeater',
-					'group'		  => __( 'Row 2', 'pagebox' ),
-					'name'        => 'llogos',
-					'description' => __( 'Add logo image', 'pagebox' ),
-					'labels'       => array(
-						'singular' => __('Llogo', 'pagebox'),
-						'plural' => __('Llogos', 'pagebox')
-					),
-					'buttons' => array(
-						'add' => __('Add logo', 'pagebox'),
-						'remove' => __('Remove logo', 'pagebox')
-					),
-					'fields' => array(
-						array(
-							'type'        => 'image',
-							'group'		  => __( 'Row 2', 'pagebox' ),
-							'name'        => 'llogo',
-							'label'       => __( 'Add Logo image', 'pagebox' ),
-							'description' => __( '', 'pagebox' )
+							'type'        => 'text',
+							'group'       => __( 'General', 'pagebox' ),
+							'name'        => 'url',
+							'label'       => __( 'Url', 'pagebox' ),
+							'description' => __( '', 'pagebox' ),
 						),
-						array(
-					'type'        => 'text',
-					'group'       => __( 'Row 2', 'pagebox' ),
-					'name'        => 'uurl',
-					'label'       => __( 'Url', 'pagebox' ),
-					'description' => __( '', 'pagebox' ),
-				),
-
-				
 					)
 				),
-
-
-
-
-
-
-									array(
-					'type'        => 'repeater',
-					'group'		  => __( 'Row 3', 'pagebox' ),
-					'name'        => 'lllogos',
-					'description' => __( 'Add logo image', 'pagebox' ),
-					'labels'       => array(
-						'singular' => __('Lllogo', 'pagebox'),
-						'plural' => __('Lllogos', 'pagebox')
-					),
-					'buttons' => array(
-						'add' => __('Add logo', 'pagebox'),
-						'remove' => __('Remove logo', 'pagebox')
-					),
-					'fields' => array(
-						array(
-							'type'        => 'image',
-							'group'		  => __( 'Row 3', 'pagebox' ),
-							'name'        => 'lllogo',
-							'label'       => __( 'Add Logo image', 'pagebox' ),
-							'description' => __( '', 'pagebox' )
-						),
-						array(
-					'type'        => 'text',
-					'group'       => __( 'Row 3', 'pagebox' ),
-					'name'        => 'uuurl',
-					'label'       => __( 'Url', 'pagebox' ),
+				array(
+					'type'        => 'number',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'paragraph_size',
+					'label'       => __( 'Paragraph size', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
 				),
-
-				
-					)
-				),
-
-
-
-
-
-
-									array(
-					'type'        => 'repeater',
-					'group'		  => __( 'Row 4', 'pagebox' ),
-					'name'        => 'llllogos',
-					'description' => __( 'Add logo image', 'pagebox' ),
-					'labels'       => array(
-						'singular' => __('Llllogo', 'pagebox'),
-						'plural' => __('Llllogos', 'pagebox')
-					),
-					'buttons' => array(
-						'add' => __('Add logo', 'pagebox'),
-						'remove' => __('Remove logo', 'pagebox')
-					),
-					'fields' => array(
-						array(
-							'type'        => 'image',
-							'group'		  => __( 'Row 4', 'pagebox' ),
-							'name'        => 'llllogo',
-							'label'       => __( 'Add Logo image', 'pagebox' ),
-							'description' => __( '', 'pagebox' )
-						),
-						array(
-					'type'        => 'text',
-					'group'       => __( 'Row 4', 'pagebox' ),
-					'name'        => 'uuuurl',
-					'label'       => __( 'Url', 'pagebox' ),
+				array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'paragraph_color',
+					'label'       => __( 'Paragraph color', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
 				),
-
-				
-					)
+				array(
+					'type'        => 'number',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'title_size',
+					'label'       => __( 'Title size', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
 				),
-
-				
+				array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'title_color',
+					'label'       => __( 'Title color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
 			)
 		);
 	}

@@ -59,11 +59,18 @@ class Module extends Abstract_Module {
 					'label'       => __( 'Title', 'pagebox' ),
 					'description' => __( 'Main module title', 'pagebox' ),
 				),
-
 				array(
 					'type'        => 'editor',
 					'group'       => __( 'General', 'pagebox' ),
 					'name'        => 'editor',
+					'label'       => __( 'Editor', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'cpt',
+					'group'       => __( 'General', 'pagebox' ),
+					'post_type'  	=> 'wpcf7_contact_form',
+					'name'        => 'contact_form',
 					'label'       => __( 'Editor', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
 				),
