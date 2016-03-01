@@ -1,11 +1,11 @@
 'use strict';
 
 
-/* pixel perefect developer */
-// pixelperfect.init( { 
-//     image: "http://majedie-dev.kurtosysdev.com/wp-content/themes/majedie/assets/images/www.png",
-//     opacity: 1,
-// } );
+/* pixel perefect developer 
+ pixelperfect.init( { 
+     image: "http://majedie-dev.kurtosysdev.com/wp-content/themes/majedie/assets/images/www.png",
+     opacity: 1,
+ } );
 /* end pixel perefect developer */
 
 
@@ -211,8 +211,6 @@ jQuery(window).load(function(){ wpgHeight100pWindow(jQuery); });
 /* end block height 100% window */
 
 
-
-
 /* module timeline */
 (function($){
 	if($(".module-full-width-timeline").length>0)
@@ -239,5 +237,8 @@ jQuery(window).load(function(){ wpgHeight100pWindow(jQuery); });
 /* end module timeline */
 
 
-
-jQuery('.module-full-width-contact-form-box-title-text .wpcf7-radio input').after('<div class="custom-radio"></div>');
+/* contact */
+(function($){
+	$('.module-full-width-contact-form-box-title-text .wpcf7-radio input').after('<div class="custom-radio"></div>');
+})(jQuery);
+/* end contact */
