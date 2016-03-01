@@ -213,6 +213,14 @@ class Module extends Abstract_Module {
 					'label'       => __( 'Button font color', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
 				),
+
+				array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Other design', 'pagebox' ),
+					'name'        => 'background_outside_color',
+					'label'       => __( 'Background outside color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
 			)
 		);
 	}

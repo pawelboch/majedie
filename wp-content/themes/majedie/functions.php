@@ -116,3 +116,12 @@ function list_categories() {
 	}
 	echo '</ul>';
 }
+
+function login_to_view_site() {
+	if(!is_user_logged_in()) {
+		$current_url = urlencode("//$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+    wp_redirect( home_url()."/wp-login.php?redirect_to=".$current_url);
+    die();
+	}
+}
+add_action('wp', 'login_to_view_site');

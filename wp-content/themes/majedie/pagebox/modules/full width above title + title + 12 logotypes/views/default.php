@@ -1,7 +1,10 @@
 <div class="module-full-width-above-title-title-12-logotypes"
-	<?php if($this->get('title') == '') {
-		echo 'style="padding-top: 0px;"';
-	}else{echo 'style="padding-bottom: 0px;"';}?>
+	<?php	if($this->get('background_color')) {
+	echo 'style="';
+	echo 'background-color: ' . $this->get('background_color') . ';';
+	echo '"';
+	}
+	;?>
 	>
 	<div class="container">
 		<?php if($this->get('paragraph') != '') { ;?>
@@ -35,12 +38,12 @@
 		<div class="row">
 			<?php foreach ($this->get('logotypes') as $logotype) { ?>
 			<div class="col-md-2">
-				<?php 
+				<?php
 				if($logotype->url != '') {
 					echo '<a target="_blank" href="' . $logotype->url . '">';
-				};
-				echo '<img src="' . wp_get_attachment_url($logotype->logo) . '"/>';
-				if($logotype->url != '') {
+						};
+						echo '<img src="' . wp_get_attachment_url($logotype->logo) . '"/>';
+						if($logotype->url != '') {
 					echo '</a>';
 				};
 				?>

@@ -1,4 +1,11 @@
-<div class="module-full-width-title-text-column-list-custom-paragraph">
+<div class="module-full-width-title-text-column-list-custom-paragraph"
+<?php	if($this->get('background_outside_color')) {
+echo 'style="';
+echo 'background-color: ' . $this->get('background_outside_color') . ';';
+echo '"';
+	}
+;?>
+>
 	<div class="container">
 		<div class="wpg-container-inset">
 			<?php if($this->get('title') != '') { ;?>

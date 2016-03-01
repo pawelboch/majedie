@@ -1,4 +1,11 @@
-<div class="module-two-blocks-with-logo-title-button-background-image">
+<div class="module-two-blocks-with-logo-title-button-background-image"
+<?php	if($this->get('background_outside_color')) {
+echo 'style="';
+echo 'background-color: ' . $this->get('background_outside_color') . ';';
+echo '"';
+	}
+;?>
+>
 	<div class="container container-corrected">
 		<div class="row" data-wpg-equal-height-wrap="height">
 			<div class="col-xs-12 col-sm-6">

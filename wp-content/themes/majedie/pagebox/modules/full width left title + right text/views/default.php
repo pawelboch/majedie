@@ -1,5 +1,4 @@
 <div class="module-full-width-left-title-right-text wpg-bg-grain"
-
 <?php	if($this->get('background_color')) {
 echo 'style="';
 echo 'background-color: ' . $this->get('background_color') . ';';

@@ -1,11 +1,12 @@
-<div class="module-full-width-contact-form-box-title-text span-table" style="
+<div class="module-full-width-contact-form-box-title-text span-table"
 	<?php	if($this->get('background_color')) {
-		echo 'background-color: ' . $this->get('background_color') . ';';
-				}
+	echo 'style="';
+	echo 'background-color: ' . $this->get('background_color') . ';';
+	echo '"';
+	}
 	;?>
-	" data-wpg-height-100p-window>
+	data-wpg-height-100p-window>
 	<div class="span-table-cell vertical-align-middle">
-		
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-6">
@@ -21,13 +22,15 @@
 						}
 						echo '"';
 					} ;?>
-					><?php echo $this->get('title') ;?></h1>
+					>
+					<?php echo $this->get('title') ;?>
+					</h1>
 					<?php } ;?>
-					<?php if($this->get('editor') != '') {
-						
-					echo $this->get('editor') ;
-						
-					} ?>
+					<?php
+					if($this->get('editor') != '') {
+						echo $this->get('editor') ;
+					};
+					?>
 				</div>
 				<div class="col-xs-12 col-md-6">
 					<?php echo do_shortcode('[contact-form-7 id="' . $this->get('contact_form') . '"]'); ?>
