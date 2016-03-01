@@ -2,10 +2,10 @@
 
 
 /* pixel perefect developer */
-pixelperfect.init( { 
-    image: "http://majedie-dev.kurtosysdev.com/wp-content/themes/majedie/assets/images/www.png",
-    opacity: 1,
-} );
+// pixelperfect.init( { 
+//     image: "http://majedie-dev.kurtosysdev.com/wp-content/themes/majedie/assets/images/www.png",
+//     opacity: 1,
+// } );
 /* end pixel perefect developer */
 
 
