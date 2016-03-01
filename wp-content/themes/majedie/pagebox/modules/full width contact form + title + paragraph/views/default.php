@@ -1,4 +1,4 @@
-<div class="module-full-width-contact-form-title-paragraph"
+<div class="module-wpg module-full-width-contact-form-title-paragraph"
 <?php 
 if($this->get('background_color') != '') {
 	echo 'style=" ';

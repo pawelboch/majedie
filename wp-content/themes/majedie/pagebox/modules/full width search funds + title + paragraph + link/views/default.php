@@ -1,4 +1,4 @@
-<div class="module-full-width-search-funds-title-paragraph-link"
+<div class="module-wpg module-full-width-search-funds-title-paragraph-link"
 <?php	if($this->get('background_outer_color')) {
 echo 'style="';
 echo 'background-color: ' . $this->get('background_outer_color') . ';';

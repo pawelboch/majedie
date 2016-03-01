@@ -1,5 +1,5 @@
 
-<div class="module-full-width-image-title-icons-paragraph-link" <?php 
+<div class="module-wpg module-full-width-image-title-icons-paragraph-link" <?php 
 	if($this->get('background_color')) {
 		echo 'style="';
 		echo 'background-color: ' . $this->get('background_color') . ';';
@@ -20,7 +20,7 @@
 					}
 					;?>
 
-			 " data-wpg-equal-height-item><!-- wersja z obrazkiem po lewej estronie zamiast klasy pull-xs-left  ma miec pull-xs-right -->
+			 " data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height><!-- wersja z obrazkiem po lewej estronie zamiast klasy pull-xs-left  ma miec pull-xs-right -->
 
 				<div class="span-table wpg-100p">
 					<div class="span-table-cell vertical-align-middle">
@@ -104,7 +104,7 @@
 					}
 					;?>
 
-			 " data-wpg-equal-height-item><!-- wersja z obrazkiem po lewej estronie zamiast klasy pull-xs-right  ma miec pull-xs-left -->
+			 " data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height><!-- wersja z obrazkiem po lewej estronie zamiast klasy pull-xs-right  ma miec pull-xs-left -->
 
 				<div class="span-table wpg-100p">
 					<!-- tu ma byc do wyboru obrazek u dolu krawedzi ma miec klase: vertical-align-bottom, obarazek wycentrowany w pionie ma miec klase vertical-align-middle -->

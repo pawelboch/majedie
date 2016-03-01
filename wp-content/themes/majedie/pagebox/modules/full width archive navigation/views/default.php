@@ -1,4 +1,4 @@
-<div class="module-full-width-archive-navigation" style="
+<div class="module-wpg module-full-width-archive-navigation" style="
 <?php	if($this->get('background_color')) {
 		echo 'background-color: ' . $this->get('background_color') . ';';
 				}

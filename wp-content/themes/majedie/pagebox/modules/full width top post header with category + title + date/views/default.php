@@ -1,4 +1,4 @@
-<div class="module-full-width-top-post-header-with-category-title-date">
+<div class="module-wpg module-full-width-top-post-header-with-category-title-date">
 	<span class="wpg-half-background" style="background-color: #9d948a;"></span>
 	<div class="container">
 		<div class="wpg-baner-outset" style="background-color: #fff;">

@@ -1,4 +1,4 @@
-<div class="module-full-width-fund-content">
+<div class="module-wpg module-full-width-fund-content">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-8 wpg-inset-col">

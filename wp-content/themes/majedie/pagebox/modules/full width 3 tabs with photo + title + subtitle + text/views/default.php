@@ -1,4 +1,4 @@
-<div class="module-full-width-3-tabs-with-photo-title-subtitle-text">
+<div class="module-wpg module-full-width-3-tabs-with-photo-title-subtitle-text">
 	<?php $idUniqid=uniqid(); ?>
 	<div class="container">
 		<div class="row pager-mfw3twptst pager-mfw3twptst-<?php echo $idUniqid; ?>" data-wpg-equal-height-wrap="height"></div>

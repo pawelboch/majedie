@@ -1,4 +1,4 @@
-<div class="module-full-width-funds-literature">
+<div class="module-wpg module-full-width-funds-literature">
 
 	<div class="wpg-selects-funds-literature">
 		<div class="container">

@@ -1,4 +1,4 @@
-<div class="module-full-width-3-blocks-with-icon-title-text" style="
+<div class="module-wpg module-full-width-3-blocks-with-icon-title-text" style="
 				<?php	if($this->get('background')) {
 		echo 'background-color: ' . $this->get('background') . ';';
 				}
@@ -27,7 +27,7 @@
 		echo 'background-color: ' . $this->get('background_color_row1') . ';';
 				}
 			;?>
-				" data-wpg-equal-height-item>
+				" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<?php if (wp_get_attachment_url($this->get('image_row1')) != ''):?>
 							<img src="<?php echo wp_get_attachment_url($this->get('image_row1')) ;?>" alt="<?php echo $this->get('title_row1') ;?>">
 						<?php endif ?>
@@ -63,7 +63,7 @@
 		echo 'background-color: ' . $this->get('background_color_row2') . ';';
 				}
 			;?>
-				" data-wpg-equal-height-item>
+				" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<?php if (wp_get_attachment_url($this->get('image_row2')) != ''):?>
 							<img src="<?php echo wp_get_attachment_url($this->get('image_row2')) ;?>" alt="<?php echo $this->get('title_row2') ;?>">
 						<?php endif ?>
@@ -99,7 +99,7 @@
 		echo 'background-color: ' . $this->get('background_color_row3') . ';';
 				}
 			;?>
-				" data-wpg-equal-height-item>
+				" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<?php if (wp_get_attachment_url($this->get('image_row3')) != ''):?>
 							<img src="<?php echo wp_get_attachment_url($this->get('image_row3')) ;?>" alt="<?php echo $this->get('title_row3') ;?>">
 						<?php endif ?>

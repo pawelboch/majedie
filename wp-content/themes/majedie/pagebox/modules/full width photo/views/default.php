@@ -1,4 +1,4 @@
-<div class="container-fluid module-full_width_photo">
+<div class="module-wpg container-fluid module-full_width_photo">
 	<div class="inner"
 	<?php if($this->get('image') != '') {
 		echo 'style=" ';

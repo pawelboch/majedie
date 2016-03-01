@@ -1,4 +1,4 @@
-<div class="module-full-width-text-slider"
+<div class="module-wpg module-full-width-text-slider"
 <?php 
 if($this->get('outside_background_color') != '') {
 	echo 'style=" ';

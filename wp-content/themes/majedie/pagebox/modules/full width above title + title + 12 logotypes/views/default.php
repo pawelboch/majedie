@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="module-full-width-above-title-title-12-logotypes"
 	<?php	if($this->get('background_color')) {
 	echo 'style="';
@@ -5,6 +6,12 @@
 	echo '"';
 	}
 	;?>
+=======
+<div class="module-wpg module-full-width-above-title-title-12-logotypes"
+	<?php if($this->get('title') == '') {
+		echo 'style="padding-top: 0px;"';
+	}else{echo 'style="padding-bottom: 0px;"';}?>
+>>>>>>> 27923e73544228a7afc2e355b8cb7f3345fcdc9c
 	>
 	<div class="container">
 		<?php if($this->get('paragraph') != '') { ;?>
