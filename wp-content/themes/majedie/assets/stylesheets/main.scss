@@ -65,6 +65,9 @@ input {
 input[type=radio] {
 	-webkit-appearance: radio !important;
 }
+input[type=checkbox] {
+	-webkit-appearance: checkbox !important;
+}
 .container-fluid {
 	padding: 0px;
 }

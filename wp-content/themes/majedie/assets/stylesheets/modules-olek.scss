@@ -69,7 +69,30 @@
 .span-24 { width: 100%; }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* modules */
+
+.module-reduction {
+	height: 0;
+	overflow: hidden;
+	width: 100%;
+	display: block;
+	border: none;
+}
 
 .module-full-width-image-title-icons-paragraph-link {
     background-color: #9d948a;
@@ -2730,6 +2753,172 @@
 /*** END MODULE ***/
 
 
+
+
+
+
+
+
+/*** MODULE ***/
+.module-investor-modal {
+	display: none;
+	background-color: rgba(0,0,0,.6);
+	position: absolute;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	.wpg-investor-modal {
+		max-width: 885px;
+		margin-right: auto;
+		margin-left: auto;
+		background-color: #fff;
+		padding: 30px 35px 60px;
+		position: relative;
+		h2 {
+			border-bottom: 1px solid #000;
+			padding-bottom: 25px;
+		}
+		h3 {
+			font-size: 30px;
+			margin-top: 45px;
+			text-transform: uppercase;
+			padding-left: 10px;
+		}
+		.wpg-investor-modal-lists {
+			margin-top: 45px;
+			ul {
+				padding: 0;
+				margin: 0 0 52px 0;
+				list-style-type: none;
+				> li {
+					font-size: 19px;
+					border-bottom: 1px solid #ccc;
+					a {
+						display: block;
+						padding: 15px 52px 15px 10px;
+						color: #d3d3d3;
+						position: relative;
+					}
+					a:hover {
+						text-decoration: none;
+						color: #000;
+					}
+				}
+				> li.sub-menu {
+					> a:after {
+						content: "\f105";
+						font: normal normal normal 18px/1 FontAwesome;
+						position: absolute;
+						right: 30px;
+						top: 50%;
+						margin-top: -8px;
+					}
+					> a {
+						color: #000;
+					}
+				}
+				> li:first-child {
+					border-top: 1px solid #ccc;
+				}
+			}
+		}
+		.wpg-disclaimer {
+			border: 1px solid #ccc;
+			height: 195px;
+			overflow-y: auto;
+			.wpg-disclaimer-inset {
+				padding: 20px 60px 20px 20px;
+				h4 {
+					font-family: Avenir-Medium;
+					font-size: 15px;
+					color: #000;
+				}
+				p {
+					font-family: "Open Sans";
+					font-size: 14px;
+					font-weight: 600;
+					color: #787878;
+				}
+			}
+		}
+		.wpg-popup-investor-modal-close {
+			position: absolute;
+			right: 10px;
+			top: 10px;
+			cursor: pointer;
+			font-size: 20px;
+			color: #6d6e71;
+			line-height: 100%;
+		}
+		.wpg-inputs {
+			text-align: right;
+			margin-top: 40px;
+			label {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 30px;
+				font-family: "Open Sans";
+				font-size: 14px;
+				padding: 6px 0;
+				margin-bottom: 0;
+				a {
+					text-decoration: underline;
+					color: #000;
+				}
+			}
+			label:before {
+				content: "";
+				display: inline-block;
+				width: 18px;
+				height: 18px;
+				border: 1px solid #ccc;
+				border-radius: 1px;
+				background-color: #fff;
+				vertical-align: middle;
+				margin-right: 6px;
+			}
+			input[type=checkbox] {
+				display: none;
+			}
+			input[type=checkbox]:checked + label:before {
+				background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAADUExURQAAAKd6PdoAAAALSURBVAjXY2DABwAAHgABboVHMgAAAABJRU5ErkJggg==");
+				background-position: 50% 50%;
+				background-repeat: no-repeat;
+			}
+			input[type=button] {
+				vertical-align: middle;
+				margin-top: 0;
+			}
+			input[type=button][disabled] {
+				color: #ccc !important;
+				border-color: #ccc !important;
+			}
+		}
+	}
+}
+@media screen and (max-width: map-get($grid-breakpoints, xl) ) { //~1200px
+
+}
+@media screen and (max-width: map-get($grid-breakpoints, lg) ) { //~992px
+
+}
+@media screen and (max-width: map-get($grid-breakpoints, md) ) { //~768px
+
+}
+@media screen and (max-width: map-get($grid-breakpoints, sm) ) { //~544px
+	.module-investor-modal .wpg-inputs {
+		text-align: left !important;
+	}
+	.module-investor-modal .wpg-investor-modal .wpg-disclaimer .wpg-disclaimer-inset {
+		padding-right: 30px;
+	}
+}
+/*** END MODULE ***/
+	input[type="radio"]:checked + label:before {
+		background: #000;
+	}
 
 
 
