@@ -19,6 +19,7 @@
 })(jQuery);
 /* end menu mobile */
 
+
 /* menu mobile fund */
 (function($){
 	var bw=$(".wpg-fund-menu-inset .wpg-mobile-menu");
