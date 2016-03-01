@@ -1,5 +1,5 @@
 
-<div class="module-full-width-2-blocks-with-title-text">
+<div class="module-wpg module-full-width-2-blocks-with-title-text">
 	<div class="container">
 
 		<div class="row" data-wpg-equal-height-wrap="min-height">
@@ -9,7 +9,7 @@
 		echo 'background-color: ' . $this->get('row1_background') . ';';
 				}
 			;?>
-				" data-wpg-equal-height-item>
+				" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<?php if($this->get('title1') != '') { ;?>
 						<h2
 						<?php if($this->get('title1_size') || $this->get('title1_font_color') != '') {
@@ -37,7 +37,7 @@
 		echo 'background-color: ' . $this->get('row2_background') . ';';
 				}
 			;?>
-				" data-wpg-equal-height-item>
+				" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<?php if($this->get('title2') != '') { ;?>
 						<h2
 						<?php if($this->get('title2_size') || $this->get('title2_font_color') != '') {

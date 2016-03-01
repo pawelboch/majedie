@@ -1,4 +1,4 @@
-<div class="module-full-width-2-blocks-with-title-paragraph">
+<div class="module-wpg module-full-width-2-blocks-with-title-paragraph">
 	<div class="container">
 		<div class="row" data-wpg-equal-height-wrap="min-height">
 			<div class="col-xs-12 col-sm-6">

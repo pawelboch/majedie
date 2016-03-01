@@ -1,4 +1,4 @@
-<div class="container-fluid module_full_width_title-subtitle-3blocks_with_image-title-paragraph"
+<div class="module-wpg container-fluid module_full_width_title-subtitle-3blocks_with_image-title-paragraph"
 <?php 
 if($this->get('background_color') != '') {
 	echo 'style=" ';

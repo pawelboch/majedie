@@ -1,4 +1,4 @@
-<div class="module-full-width-title-text-column-list-custom-paragraph">
+<div class="module-wpg module-full-width-title-text-column-list-custom-paragraph">
 	<div class="container">
 		<div class="wpg-container-inset">
 			<?php if($this->get('title') != '') { ;?>

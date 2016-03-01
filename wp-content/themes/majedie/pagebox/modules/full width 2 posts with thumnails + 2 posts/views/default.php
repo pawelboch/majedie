@@ -5,7 +5,7 @@ $post_3 = $this->get('third_post');
 $post_4 = $this->get('fourth_post');
 
 ;?>
-<div class="module-full-width-2-posts-with-thumnails-2-posts">
+<div class="module-wpg module-full-width-2-posts-with-thumnails-2-posts">
 	<div class="container">
 		<h2><?php echo $this->get('title') ;?></h2>
 		<div class="wpg-filter">
@@ -18,7 +18,7 @@ $post_4 = $this->get('fourth_post');
 		<div class="row" data-wpg-equal-height-wrap="height">
 			
 			<div class="col-xs-12 col-md-6 col-lg-4 wpg-col wpg-col-classic">
-				<div style="background-color: #fff;" data-wpg-equal-height-item>
+				<div style="background-color: #fff;" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<div class="wpg-inside-bg" style="background-image: url(<?php echo wp_get_attachment_url(get_post_thumbnail_id($post_1)) ;?>);"></div>
 					<div class="wpg-post-box">
 						<p class="wpg-post-box_tag">
@@ -34,7 +34,7 @@ $post_4 = $this->get('fourth_post');
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-6 col-lg-4 wpg-col wpg-col-classic">
-				<div style="background-color: #fff;" data-wpg-equal-height-item>
+				<div style="background-color: #fff;" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<div class="wpg-inside-bg" style="background-image: url(<?php echo wp_get_attachment_url(get_post_thumbnail_id($post_2)) ;?>);"></div>
 					<div class="wpg-post-box">
 						<p class="wpg-post-box_tag">
@@ -49,7 +49,7 @@ $post_4 = $this->get('fourth_post');
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-md-12 col-lg-4 wpg-col wpg-col-special-1" data-wpg-equal-height-item>
+			<div class="col-xs-12 col-md-12 col-lg-4 wpg-col wpg-col-special-1" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 				
 				<div class="span-table wpg-post-box-cols" style="height: 100%">
 					<div class="span-table-row">

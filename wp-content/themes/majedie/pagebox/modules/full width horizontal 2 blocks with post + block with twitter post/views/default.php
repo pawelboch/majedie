@@ -1,4 +1,4 @@
-<div class="module-full-width-horizontal-2-blocks-with-post-block-with-twitter-post">
+<div class="module-wpg module-full-width-horizontal-2-blocks-with-post-block-with-twitter-post">
 
 <?php
 $post1 = $this->get('post1');

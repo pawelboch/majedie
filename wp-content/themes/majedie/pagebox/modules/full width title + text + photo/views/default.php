@@ -1,7 +1,7 @@
 <?php
 $background_inside_color = $this->get('block_inside_color');
 ?>
-<div class="module-full-width-title-text-photo"
+<div class="module-wpg module-full-width-title-text-photo"
 	<?php
 		if($this->get('block_outside_color')) {
 			echo 'style="';
@@ -22,7 +22,7 @@ $background_inside_color = $this->get('block_inside_color');
 				}
 				;?>
 				">
-				<a href="<?php echo get_permalink($this->get('link')) ;?>" class="wpg-block wpg-image-bg" style="background-image: url(<?php echo wp_get_attachment_url($this->get('image'));?>);" data-wpg-equal-height-item></a>
+				<a href="<?php echo get_permalink($this->get('link')) ;?>" class="wpg-block wpg-image-bg" style="background-image: url(<?php echo wp_get_attachment_url($this->get('image'));?>);" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height></a>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-lg-6 wpg-container-text
 				<?php
@@ -41,7 +41,7 @@ $background_inside_color = $this->get('block_inside_color');
 						}
 				;?>
 				>
-				<div class="span-table" data-wpg-equal-height-item>
+				<div class="span-table" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<div class="span-table-cell vertical-align-middle">
 						<h2>
 						<a href="<?php echo get_permalink($this->get('link')) ;?>"

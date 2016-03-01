@@ -1,4 +1,4 @@
-<div class="module-full-width-fund-overview">
+<div class="module-wpg module-full-width-fund-overview">
 	<div class="container">
 		<form>
 			<select class="wpg-plugin-select" style="display: none;">

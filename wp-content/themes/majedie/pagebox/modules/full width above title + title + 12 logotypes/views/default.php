@@ -1,4 +1,4 @@
-<div class="module-full-width-above-title-title-12-logotypes"
+<div class="module-wpg module-full-width-above-title-title-12-logotypes"
 	<?php if($this->get('title') == '') {
 		echo 'style="padding-top: 0px;"';
 	}else{echo 'style="padding-bottom: 0px;"';}?>

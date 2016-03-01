@@ -1,4 +1,4 @@
-<div class="module-full-width-title-subtitle-paragraph span-table" style="
+<div class="module-wpg module-full-width-title-subtitle-paragraph span-table" style="
 	<?php	if($this->get('background_color')) {
 		echo 'background-color: ' . $this->get('background_color') . ';';
 				}

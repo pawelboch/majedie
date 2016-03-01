@@ -1,4 +1,4 @@
-<div class="module-full-width-title-paragraph-background-image" style="
+<div class="module-wpg module-full-width-title-paragraph-background-image" style="
 <?php	if($this->get('ou_background_color')) {
 		echo 'background-color: ' . $this->get('ou_background_color') . ';';
 				}

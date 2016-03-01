@@ -1,4 +1,4 @@
-<div class="module-two-blocks-with-logo-title-button-background-image">
+<div class="module-wpg module-two-blocks-with-logo-title-button-background-image">
 	<div class="container container-corrected">
 		<div class="row" data-wpg-equal-height-wrap="height">
 			<div class="col-xs-12">
@@ -14,7 +14,7 @@
 					echo 'background-color: ' . $this->get('first_background_color') . ';';
 					}
 					;?>
-					" data-wpg-equal-height-item>
+					" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<div class="span-table-row">
 						<div class="span-table-cell vertical-align-top">
 							<h2>

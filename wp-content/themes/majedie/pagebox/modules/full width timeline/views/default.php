@@ -1,4 +1,4 @@
-<div class="module-full-width-timeline">
+<div class="module-wpg module-full-width-timeline">
 	<div class="container">
 		<ul class="wpg-timeline">
 			<li>
