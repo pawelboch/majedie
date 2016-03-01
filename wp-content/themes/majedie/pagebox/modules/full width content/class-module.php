@@ -59,8 +59,13 @@ class Module extends Abstract_Module {
 					'label'       => __( 'Editor', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
 				),
-
-				
+				array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'background_color',
+					'label'       => __( 'Background color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
 			)
 		);
 	}
