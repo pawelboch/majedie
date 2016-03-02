@@ -52,12 +52,29 @@ class Module extends Abstract_Module {
 			// minimum and maximum percent width that module fits in
 			// WPGeeks_Forms
 			'fields'      => array(
-				array(
-					'type'        => 'text',
-					'group'       => __( 'General', 'pagebox' ),
-					'name'        => 'title',
-					'label'       => __( 'Title', 'pagebox' ),
-					'description' => __( 'Main module title', 'pagebox' ),
+						array(
+					'type'            => 'repeater',
+					'group'           => __( 'General', 'pagebox' ),
+					'name'            => 'blocks',
+					'description'     => __( 'Blocks', 'pagebox' ),
+					'labels'          => array(
+						'singular'      => __('Block', 'pagebox'),
+						'plural'        => __('Blocks', 'pagebox')
+					),
+					'buttons'         => array(
+						'add'           => __('Add post', 'pagebox'),
+						'remove'        => __('Remove post', 'pagebox')
+					),
+					'fields'          => array(
+						array(
+							'type'        => 'post',
+							'group'		    => __( 'General', 'pagebox' ),
+							'name'        => 'post',
+							'label'       => __( 'Post', 'pagebox' ),
+							'description' => __( 'Choose post', 'pagebox' )
+						),
+				
+					)
 				),
 
 				array(
