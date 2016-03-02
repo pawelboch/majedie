@@ -135,7 +135,6 @@
 
 .module_full_width_post_prev-next_buttons .inner {
   background-color: #f4f3f2;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.28);
   padding: 10px; }
 .module_full_width_post_prev-next_buttons ul {
   display: table;
@@ -152,5 +151,43 @@
         font-size: 26px;
         margin: -4px 6px 0;
         vertical-align: middle; }
+
+.article-section {
+  position: relative;
+  display: inline-block; }
+  .article-section .inner-section {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.28);
+    margin: 40px 0 60px;
+    position: relative;
+    display: inline-block; }
+    .article-section .inner-section .module-wpg {
+      padding: 0; }
+  .article-section .top-bg {
+    background-color: #9d948a;
+    content: "";
+    display: block;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+    .article-section .top-bg::before {
+      background-color: #9d948a;
+      content: "";
+      height: 250px;
+      left: -1000px;
+      position: absolute;
+      top: 0;
+      width: 1000px; }
+    .article-section .top-bg::after {
+      background-color: #9d948a;
+      content: "";
+      display: block;
+      height: 250px;
+      position: absolute;
+      right: -1000px;
+      top: 0;
+      width: 1000px; }
+  .article-section .module-wpg .container {
+    padding: 0; }
 
 /*# sourceMappingURL=modules-wojtek.css.map */

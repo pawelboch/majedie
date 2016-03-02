@@ -12,7 +12,7 @@ $author_id=$post->post_author;
 			;?>
 			">
 			<div class="row">
-				<div class="col-xs-12 col-sm-3">
+				<div class="col-xs-12 col-sm-3 left-side">
 					<div class="wpg-inset-col wpg-sidebar">
 						<div class="wpg-box-name">
 							<h3
@@ -51,7 +51,7 @@ $author_id=$post->post_author;
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-9">
+				<div class="col-xs-12 col-sm-9 right-side">
 					<div class="wpg-inset-col wpg-main-content">
 						<?php if($this->get('editor') != '') {
 						echo $this->get('editor') ;

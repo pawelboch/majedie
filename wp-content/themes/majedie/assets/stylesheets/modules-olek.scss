@@ -1753,7 +1753,6 @@
 			top: 100%;
 			left: 0;
 			z-index: 600;
-			box-shadow: 0 0 5px rgba(0,0,0,.28);
 			max-height: 192px;
 			overflow-y: auto;
 			overflow-x: hidden;
@@ -2823,20 +2822,11 @@
 
 	padding: 40px 0 60px;
 	position: relative;
-	.wpg-half-background {
-		position: absolute;
-		top: 0;
-		right: 0;
-		left: 0;
-		height: 50%;
-		z-index: 1;
-	}
 	.wpg-baner-outset {
 		position: relative;
 		z-index: 2;
 		padding: 15px;
 		background-color: #fff;
-		box-shadow: 0 0 5px rgba(0,0,0,.28);
 
 		.wpg-baner {
 			position: relative;
@@ -2910,7 +2900,6 @@
 	padding: 60px 0;
 
 	.wpg-main-content-article {
-		box-shadow: 0 0 5px rgba(0,0,0,.28);
 		background-color: #fff;
 		padding: 15px 30px 30px;
 		.wpg-inset-col {
@@ -3051,12 +3040,21 @@
 /*** MODULE 34 ***/
 .module-full-width-2-blocks-with-title-paragraph {
 	padding: (60-($grid-gutter-width/2)) 0;
+	.col-1 {
+		.wpg-inset-col {
+			background-color: #dd6e1d;
+		}
+	}
+	.col-2 {
+		.wpg-inset-col {
+			background-color: #9D948A;
+		}
+	}
 	.container > .row > div {
 		margin-top: $grid-gutter-width/2;
 		margin-bottom: $grid-gutter-width/2;
 	}
 	.wpg-inset-col {
-		background-color: #000;
 		color: #fff;
 		padding: 20px;
 	}

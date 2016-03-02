@@ -125,3 +125,22 @@ function login_to_view_site() {
 	}
 }
 add_action('wp', 'login_to_view_site');
+
+add_filter( 'image_size_names_choose', 'my_custom_sizes' );
+
+function my_custom_sizes( $sizes ) {
+    return array_merge( $sizes, array(
+        'your-custom-size' => __('Your Custom Size Name'),
+    ) );
+}
+
+
+add_theme_support( 'post-thumbnails' );
+
+add_image_size( 'left-to-right', 100, 100 );
+add_filter( 'image_size_names_choose', 'wpshout_custom_sizes' );
+function wpshout_custom_sizes( $sizes ) {
+    return array_merge( $sizes, array(
+        'left-to-right' => __( 'From left to right' ),
+    ) );
+}

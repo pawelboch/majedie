@@ -24,8 +24,8 @@
 			<div class="col-xs-12 col-sm-4">
 				<div class="wpg-post-box wpg-bg-white" style="
 					<?php	if($this->get('post1_background_color')) {
-						echo 'background-color: ' . $this->get('post1_background_color') . ';';
-								}
+					echo 'background-color: ' . $this->get('post1_background_color') . ';';
+							}
 					;?>
 					" data-wpg-equal-height-item>
 					<?php if($post1) { ;?>
@@ -73,7 +73,6 @@
 					><?php echo the_date('d/m/Y'); ?></p>
 					<?php } ;?>
 					<div class="wpg-post-box_main-content">
-						
 						<?php if($post1) { ;?>
 						<p
 							<?php if($this->get('post1_paragraph_color') || $this->get('post1_paragraph_size') != '') {
@@ -87,7 +86,7 @@
 								echo '"';
 							} ;?>
 							><?php
-						echo get_the_excerpt(); ?></p>
+						echo wp_trim_words(get_the_excerpt(), 18) ?></p>
 						<?php } ;?>
 					</div>
 				</div>
@@ -107,8 +106,8 @@
 			<div class="col-xs-12 col-sm-4">
 				<div class="wpg-post-box wpg-bg-white" style="
 					<?php	if($this->get('post2_background_color')) {
-						echo 'background-color: ' . $this->get('post2_background_color') . ';';
-								}
+					echo 'background-color: ' . $this->get('post2_background_color') . ';';
+							}
 					;?>
 					" data-wpg-equal-height-item>
 					<?php if($post2) { ;?>
@@ -169,7 +168,7 @@
 								echo '"';
 							} ;?>
 							><?php
-						echo get_the_excerpt(); ?></p>
+						echo wp_trim_words(get_the_excerpt(), 18) ?></p>
 						<?php } ;?>
 					</div>
 				</div>
