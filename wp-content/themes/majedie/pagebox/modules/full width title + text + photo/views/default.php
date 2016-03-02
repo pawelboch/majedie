@@ -40,7 +40,9 @@ $background_inside_color = $this->get('block_inside_color');
 							echo '"';
 						}
 				;?>
-				>
+			>
+				<span class="wpg-arrow wpg-arrow-horizontal"></span>
+				<span class="wpg-arrow wpg-arrow-vertical"></span>
 				<div class="span-table" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<div class="span-table-cell vertical-align-middle">
 						<h2>

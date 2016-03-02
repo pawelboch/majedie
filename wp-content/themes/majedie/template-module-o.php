@@ -157,6 +157,8 @@
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-lg-6 pull-xs-left wpg-container-text">
+				<span class="wpg-arrow wpg-arrow-horizontal"></span>
+				<span class="wpg-arrow wpg-arrow-vertical"></span>
 				<div class="span-table" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<div class="span-table-cell vertical-align-middle">
 						<h2><a href="#">Investment Approach</a></h2>
@@ -181,6 +183,8 @@
 			</div>
 
 			<div class="col-xs-12 col-sm-6 col-lg-6 pull-xs-right wpg-container-text">
+				<span class="wpg-arrow wpg-arrow-horizontal"></span>
+				<span class="wpg-arrow wpg-arrow-vertical"></span>
 				<div class="span-table" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<div class="span-table-cell vertical-align-middle">
 						<h2><a href="#">Investment Approach</a></h2>

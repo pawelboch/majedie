@@ -2,47 +2,64 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-8">
-								<div class="wpg-short-post">
-					<h3><a href="#">1. Majedie Global Equity and Global Focus mark first anniversary</a></h3>
-					<p>... the investment boutique, today announced that its&nbsp;Global&nbsp;Equity and&nbsp;GlobalFocus Funds (“the Funds”) have each passed their first anniversary.&nbsp;&nbsp; The&nbsp;GlobalEquity Fund aims to produce a total return in excess of the MSCI All ...</p>
+			
+
+
+
+				<?php if (have_posts()) : ?>
+
+							<?php 	
+						
+						 $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+                        $args = array(
+
+                            'orderby'          => 'date',
+                            'order'            => 'DESC',
+                            'paged' => $paged,
+
+
+						);
+						$custom_query = new WP_Query ( $query_args );
+							?>
+
+				<?php while (have_posts()) : the_post(); ?>
+
+
+				<div class="wpg-short-post">
+					<h3><a href="#"><?php echo $i; ?><?php echo get_the_title(); ?></a></h3>
+					<p><?php echo get_excerpt(); ?></p>
 				</div>
-								<div class="wpg-short-post">
-					<h3><a href="#">2. Majedie Global Equity and Global Focus mark first anniversary</a></h3>
-					<p>... the investment boutique, today announced that its&nbsp;Global&nbsp;Equity and&nbsp;GlobalFocus Funds (“the Funds”) have each passed their first anniversary.&nbsp;&nbsp; The&nbsp;GlobalEquity Fund aims to produce a total return in excess of the MSCI All ...</p>
-				</div>
-								<div class="wpg-short-post">
-					<h3><a href="#">3. Majedie Global Equity and Global Focus mark first anniversary</a></h3>
-					<p>... the investment boutique, today announced that its&nbsp;Global&nbsp;Equity and&nbsp;GlobalFocus Funds (“the Funds”) have each passed their first anniversary.&nbsp;&nbsp; The&nbsp;GlobalEquity Fund aims to produce a total return in excess of the MSCI All ...</p>
-				</div>
-								<div class="wpg-short-post">
-					<h3><a href="#">4. Majedie Global Equity and Global Focus mark first anniversary</a></h3>
-					<p>... the investment boutique, today announced that its&nbsp;Global&nbsp;Equity and&nbsp;GlobalFocus Funds (“the Funds”) have each passed their first anniversary.&nbsp;&nbsp; The&nbsp;GlobalEquity Fund aims to produce a total return in excess of the MSCI All ...</p>
-				</div>
-								<div class="wpg-short-post">
-					<h3><a href="#">5. Majedie Global Equity and Global Focus mark first anniversary</a></h3>
-					<p>... the investment boutique, today announced that its&nbsp;Global&nbsp;Equity and&nbsp;GlobalFocus Funds (“the Funds”) have each passed their first anniversary.&nbsp;&nbsp; The&nbsp;GlobalEquity Fund aims to produce a total return in excess of the MSCI All ...</p>
-				</div>
-								<div class="wpg-short-post">
-					<h3><a href="#">6. Majedie Global Equity and Global Focus mark first anniversary</a></h3>
-					<p>... the investment boutique, today announced that its&nbsp;Global&nbsp;Equity and&nbsp;GlobalFocus Funds (“the Funds”) have each passed their first anniversary.&nbsp;&nbsp; The&nbsp;GlobalEquity Fund aims to produce a total return in excess of the MSCI All ...</p>
-				</div>
-								<div class="wpg-short-post">
-					<h3><a href="#">7. Majedie Global Equity and Global Focus mark first anniversary</a></h3>
-					<p>... the investment boutique, today announced that its&nbsp;Global&nbsp;Equity and&nbsp;GlobalFocus Funds (“the Funds”) have each passed their first anniversary.&nbsp;&nbsp; The&nbsp;GlobalEquity Fund aims to produce a total return in excess of the MSCI All ...</p>
-				</div>
-								<div class="wpg-short-post">
-					<h3><a href="#">8. Majedie Global Equity and Global Focus mark first anniversary</a></h3>
-					<p>... the investment boutique, today announced that its&nbsp;Global&nbsp;Equity and&nbsp;GlobalFocus Funds (“the Funds”) have each passed their first anniversary.&nbsp;&nbsp; The&nbsp;GlobalEquity Fund aims to produce a total return in excess of the MSCI All ...</p>
-				</div>
+
+					<?php endwhile; ?>
+			
+
+
+			<?php else : ?>
+
+				<h2 class="center">No posts found. Try a different search?</h2>
 				
-				<div class="pagination">
-					<!--<a href="#">PREV</a>-->
-					<div class="numbered">
-						<span class="page-numbers current">1</span>
-						<a href="#" class="page-numbers">2</a>
-					</div>
-					<a href="#">NEXT</a>
-				</div>
+
+			<?php endif; ?>
+
+
+                       <div class="pagination">
+
+<?php $pagination = array(
+
+
+	'prev_next'          => true,
+	'prev_text'          => __('PREV'),
+	'next_text'          => __('NEXT'),
+
+); ?>
+
+                           
+                            
+                             <div class="numbered">
+                                <?php echo paginate_links($pagination ); ?>
+                            </div>
+                            
+                        </div>
 
 			</div>
 		</div>
