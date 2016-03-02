@@ -1509,6 +1509,17 @@
 
 /*** MODULE 19 ***/
 .module-full-width-contact-form-box-title-text {
+	.wpcf7-form-control > div > div {
+		max-width: 100%;
+		margin-top: 15px;
+		iframe {
+			max-width: 100%;
+		}
+	}
+	.wpg-x-recaptcha {
+		max-width: 100%;
+		overflow: hidden;
+	}
 	padding: (60-($grid-gutter-width/2)) 0;
 	background-color: #9d948a;
 	color: #fff;
@@ -1600,7 +1611,15 @@
 	}
 }
 @media screen and (max-width: map-get($grid-breakpoints, xl) ) { //~1200px
-
+	.module-full-width-contact-form-box-title-text {
+		.wpg-x-recaptcha {
+			width: 180px !important;
+			border-radius: 5px;
+			iframe {
+				border-radius: 5px !important;
+			}
+		}
+	}
 }
 @media screen and (max-width: map-get($grid-breakpoints, lg) ) { //~992px
 
