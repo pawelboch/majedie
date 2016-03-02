@@ -1,4 +1,4 @@
-<div class="module_full_width_post_prev-next_buttons"
+<div class="module-wpg module_full_width_post_prev-next_buttons"
 	<?php
 	if($this->get('background_outside_color')) {
 		echo 'style="';
@@ -14,17 +14,17 @@
 					<ul class="navigation">
 						<li class="prev-post">
 							<a href="<?php echo get_permalink(get_adjacent_post(false,'',false)); ?>"
-							<?php if($this->get('button_size') || $this->get('button_color') != '') {
-								echo 'style=" ';
-								if($this->get('button_size') != '') {
-									echo 'font-size: ' . $this->get('button_size') . 'px;';
-								}
-								if($this->get('button_color') != '') {
-									echo 'color: ' . $this->get('button_color') . ';';
-								}
-								echo '"';
-							} ;?>
-							>
+								<?php if($this->get('button_size') || $this->get('button_color') != '') {
+									echo 'style=" ';
+									if($this->get('button_size') != '') {
+										echo 'font-size: ' . $this->get('button_size') . 'px;';
+									}
+									if($this->get('button_color') != '') {
+										echo 'color: ' . $this->get('button_color') . ';';
+									}
+									echo '"';
+								} ;?>
+								>
 								<i class="fa fa-angle-left"></i>
 								<?php
 								if($this->get('prev_text') == '') {
@@ -37,17 +37,17 @@
 						</li>
 						<li class="next-post">
 							<a href="<?php echo get_permalink(get_adjacent_post(false,'',true)); ?>"
-							<?php if($this->get('button_size') || $this->get('button_color') != '') {
-								echo 'style=" ';
-								if($this->get('button_size') != '') {
-									echo 'font-size: ' . $this->get('button_size') . 'px;';
-								}
-								if($this->get('button_color') != '') {
-									echo 'color: ' . $this->get('button_color') . ';';
-								}
-								echo '"';
-							} ;?>
-							>
+								<?php if($this->get('button_size') || $this->get('button_color') != '') {
+									echo 'style=" ';
+									if($this->get('button_size') != '') {
+										echo 'font-size: ' . $this->get('button_size') . 'px;';
+									}
+									if($this->get('button_color') != '') {
+										echo 'color: ' . $this->get('button_color') . ';';
+									}
+									echo '"';
+								} ;?>
+								>
 								<?php
 								if($this->get('next_text') == '') {
 									echo 'Next';

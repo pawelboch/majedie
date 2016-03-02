@@ -1,9 +1,12 @@
-<div class="module-wpg module-full-width-title-subtitle-paragraph span-table" style="
-	<?php	if($this->get('background_color')) {
+<div class="module-wpg module-full-width-title-subtitle-paragraph span-table"
+	<?php
+	if($this->get('background_color')) {
+		echo 'style="';
 		echo 'background-color: ' . $this->get('background_color') . ';';
-				}
+		echo '"';
+	}
 	;?>
-	" data-wpg-height-100p-window>
+	data-wpg-height-100p-window>
 	<div class="span-table-cell vertical-align-middle">
 		<div class="container">
 			<?php if($this->get('title') != '') { ;?>
@@ -35,12 +38,11 @@
 			} ;?>
 			><?php echo $this->get('subtitle') ;?></h3>
 			<?php } ;?>
-			
 			<?php if($this->get('editor') != '') {
 			echo '<p>';
 			echo $this->get('editor') ;
 			echo '</p>';
-			} ?>
+			}; ?>
 		</div>
 	</div>
 </div>

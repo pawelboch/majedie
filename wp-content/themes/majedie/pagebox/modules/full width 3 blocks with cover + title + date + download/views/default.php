@@ -1,4 +1,4 @@
-<div class="module-full-width-3-blocks-with-cover-title-date-download"
+<div class="module-wpg module-full-width-3-blocks-with-cover-title-date-download"
 	<?php
 	if($this->get('background_outside_color')) {
 		echo 'style="';

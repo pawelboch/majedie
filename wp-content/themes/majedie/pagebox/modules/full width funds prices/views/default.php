@@ -1,4 +1,4 @@
-<div class="module-full-width-funds-prices">
+<div class="module-wpg module-full-width-funds-prices">
 
 	<div class="wpg-container-tabels">
 		<div class="container">

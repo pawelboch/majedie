@@ -34,13 +34,13 @@ $background_inside_color = $this->get('block_inside_color');
 				;?>
 				"
 				<?php
-						if($this->get('block_inside_color')) {
-							echo 'style="';
-							echo 'background-color: ' . $this->get('block_inside_color') . ';';
-							echo '"';
-						}
+				if($this->get('block_inside_color')) {
+					echo 'style="';
+					echo 'background-color: ' . $this->get('block_inside_color') . ';';
+					echo '"';
+				}
 				;?>
-			>
+				>
 				<span class="wpg-arrow wpg-arrow-horizontal"></span>
 				<span class="wpg-arrow wpg-arrow-vertical"></span>
 				<div class="span-table" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
@@ -62,7 +62,6 @@ $background_inside_color = $this->get('block_inside_color');
 							<?php echo $this->get('title') ;?>
 						</a>
 						</h2>
-						
 						<?php if($this->get('text') != '') { ;?>
 						<div
 							<?php if($this->get('text_size') || $this->get('text_color') != '') {
@@ -77,7 +76,6 @@ $background_inside_color = $this->get('block_inside_color');
 							} ;?>
 						><?php echo $this->get('text') ;?></div>
 						<?php } ;?>
-						
 					</div>
 				</div>
 			</div>

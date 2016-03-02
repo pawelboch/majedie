@@ -1,22 +1,21 @@
 <div class="module-wpg module-full-width-search-funds-title-paragraph-link"
-<?php	if($this->get('background_outer_color')) {
-echo 'style="';
-echo 'background-color: ' . $this->get('background_outer_color') . ';';
-echo '"';
+	<?php	if($this->get('background_outer_color')) {
+	echo 'style="';
+	echo 'background-color: ' . $this->get('background_outer_color') . ';';
+	echo '"';
 	}
-;?>
->
+	;?>
+	>
 	<div class="container">
-
 		<div class="span-table">
 			<div class="span-table-cell vertical-align-middle wpg-first-block"
-			<?php	if($this->get('background_inner_color')) {
-			echo 'style="';
-			echo 'background-color: ' . $this->get('background_inner_color') . ';';
-			echo '"';
+				<?php	if($this->get('background_inner_color')) {
+				echo 'style="';
+				echo 'background-color: ' . $this->get('background_inner_color') . ';';
+				echo '"';
 				}
-			;?>
-			>
+				;?>
+				>
 				<h2
 				<?php if($this->get('title_size') || $this->get('title_color') != '') {
 					echo 'style=" ';
@@ -30,41 +29,41 @@ echo '"';
 				} ;?>
 				><?php echo $this->get('title') ;?></h2>
 				<p class="text"
-				<?php if($this->get('text_size') || $this->get('text_color') != '') {
-					echo 'style=" ';
-					if($this->get('text_size') != '') {
-						echo 'font-size: ' . $this->get('text_size') . 'px;';
-					}
-					if($this->get('text_color') != '') {
-						echo 'color: ' . $this->get('text_color') . ';';
-					}
-					echo '"';
-				} ;?>
-				>
-				<?php echo $this->get('text') ;?>
+					<?php if($this->get('text_size') || $this->get('text_color') != '') {
+						echo 'style=" ';
+						if($this->get('text_size') != '') {
+							echo 'font-size: ' . $this->get('text_size') . 'px;';
+						}
+						if($this->get('text_color') != '') {
+							echo 'color: ' . $this->get('text_color') . ';';
+						}
+						echo '"';
+					} ;?>
+					>
+					<?php echo $this->get('text') ;?>
 				</p>
 				<a href="<?php echo $this->get('button_url') ;?>" class="btn-2"
-				<?php if($this->get('button_size') || $this->get('button_color') != '') {
-					echo 'style=" ';
-					if($this->get('button_size') != '') {
-						echo 'font-size: ' . $this->get('button_size') . 'px;';
-					}
-					if($this->get('button_color') != '') {
-						echo 'color: ' . $this->get('button_color') . ';';
-						echo 'border-color: ' . $this->get('button_color') . ';';
-					}
-					echo '"';
-				} ;?>
+					<?php if($this->get('button_size') || $this->get('button_color') != '') {
+						echo 'style=" ';
+						if($this->get('button_size') != '') {
+							echo 'font-size: ' . $this->get('button_size') . 'px;';
+						}
+						if($this->get('button_color') != '') {
+							echo 'color: ' . $this->get('button_color') . ';';
+							echo 'border-color: ' . $this->get('button_color') . ';';
+						}
+						echo '"';
+					} ;?>
 				><?php echo $this->get('button_text') ;?></a>
 			</div>
 			<div class="span-table-cell vertical-align-middle wpg-second-block"
-			<?php	if($this->get('background_right_block_color')) {
-			echo 'style="';
-			echo 'background-color: ' . $this->get('background_right_block_color') . ';';
-			echo '"';
+				<?php	if($this->get('background_right_block_color')) {
+				echo 'style="';
+				echo 'background-color: ' . $this->get('background_right_block_color') . ';';
+				echo '"';
 				}
-			;?>
-			>
+				;?>
+				>
 				<h2
 				<?php if($this->get('fund_form_title_size') || $this->get('fund_form_title_color') != '') {
 					echo 'style=" ';
@@ -128,7 +127,6 @@ echo '"';
 				
 			</div>
 		</div>
-
 	</div>
 </div>
 <?php	if($this->get('background_right_block_color')) {
@@ -137,5 +135,5 @@ echo '.module-full-width-search-funds-title-paragraph-link .wpg-second-block::be
 echo 'border-color: transparent ' . $this->get('background_right_block_color') . ' transparent transparent;';
 echo '}';
 echo '</style>';
-			}
+}
 ;?>

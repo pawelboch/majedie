@@ -4,7 +4,7 @@ $p1 = $post1->post;
 $post2 = $this->get('post2');
 $p2 = $post2->post;
 ?>
-<div class="module-full-width-vertical-2-blocks-with-post-block-with-twitter-post">
+<div class="module-wpg module-full-width-vertical-2-blocks-with-post-block-with-twitter-post">
 	<?php
 	$args = array(
 	'post_type' => 'post',
@@ -14,7 +14,6 @@ $p2 = $post2->post;
 	'post_type' => 'post',
 	'p'  =>  $p2,
 	);
-	
 	$the_query = new WP_Query( $args ); ?>
 	<?php if ( $the_query->have_posts() ) : ?>
 	<!-- POST 1 -->

@@ -1,10 +1,12 @@
-<div class="module-wpg module-full-width-content" style="
+<div class="module-wpg module-full-width-content"
 	<?php
 	if($this->get('background_color')) {
+		echo 'style="';
 		echo 'background-color: ' . $this->get('background_color') . ';';
+		echo '"';
 	}
 	;?>
-	">
+	>
 	<div class="container">
 		<div class="col-md-12">
 			<div class="text">

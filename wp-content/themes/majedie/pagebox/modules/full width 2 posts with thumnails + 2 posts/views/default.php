@@ -3,7 +3,6 @@ $post_1 = $this->get('first_post');
 $post_2 = $this->get('second_post');
 $post_3 = $this->get('third_post');
 $post_4 = $this->get('fourth_post');
-
 ;?>
 <div class="module-wpg module-full-width-2-posts-with-thumnails-2-posts">
 	<div class="container">

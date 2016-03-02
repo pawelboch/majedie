@@ -2,7 +2,7 @@
 global $post;
 $author_id=$post->post_author;
 ?>
-<div class="module-full-width-post-content">
+<div class="module-wpg module-full-width-post-content">
 	<div class="container">
 		<div class="wpg-main-content-article" style="
 			<?php
@@ -27,9 +27,7 @@ $author_id=$post->post_author;
 								}
 								echo '"';
 							} ;?>
-							>
-							<?php  echo  the_author_meta( 'display_name', $author_id ); ?>
-							</h3>
+							><?php echo the_author_meta( 'display_name', $author_id ); ?></h3>
 							<p
 								<?php if($this->get('author_role_size') || $this->get('author_role_color') != '') {
 									echo 'style=" ';
@@ -45,7 +43,7 @@ $author_id=$post->post_author;
 						</div>
 						<div class="wpg-box-date">
 							<p>Published on:</p>
-							<p><?php echo get_the_date('d/m/Y'); ?></p>
+							<p class="date"><?php echo get_the_date('d/m/Y'); ?></p>
 						</div>
 						<div class="wpg-box-options-post clearfix">
 							<div class="pull-xs-left wpg-share"><a href="#"><i class="fa fa-share-alt"></i>Share</a></div>

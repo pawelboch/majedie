@@ -13,7 +13,6 @@
 					<div class="wpg-video-box">
 						<iframe height="281" frameborder="0" width="500" allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" src="https://player.vimeo.com/video/47111178?color=999999&amp;title=0&amp;byline=0&amp;portrait=0"></iframe>
 					</div>
-
 					<div class="wpg-inset-box-again">
 						<p>
 							For more information, please contact Mark Hepburn<br>
@@ -24,7 +23,6 @@
 						<p>For documentation relating to the US Equity Fund, please click <a href="#">here</a>.</p>
 					</div>
 				</div>
-
 			</div>
 			<div class="col-xs-12 col-md-4 wpg-inset-col">
 				<div class="wpg-inset-box-2">
