@@ -1,15 +1,16 @@
 <div class="module-wpg module-full-width-above-title-title-12-logotypes"
 	<?php
 	if($this->get('background_color')) {
-	echo 'style="';
-	echo 'background-color: ' . $this->get('background_color') . ';';
-	if($this->get('title') == '') {
-		echo 'style="padding-top: 0px;"';
-	} else {
-		echo 'style="padding-bottom: 0px;"';
+		echo 'style="';
+		echo 'background-color: ' . $this->get('background_color') . ';';
+		if($this->get('title') == '') {
+			echo 'style="padding-top: 0px;"';
+		} else {
+			echo 'style="padding-bottom: 0px;"';
+		}
 	}
-	}
-	echo '"';
+	else {
+		echo '"';
 	}
 	;?>
 	>
