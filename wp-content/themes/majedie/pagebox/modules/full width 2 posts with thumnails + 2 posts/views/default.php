@@ -19,7 +19,7 @@ $post_4 = $this->get('fourth_post');
 			
 			<div class="col-xs-12 col-md-6 col-lg-4 wpg-col wpg-col-classic">
 				<div style="background-color: #fff;" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
-					<div class="wpg-inside-bg" style="background-image: url(<?php echo wp_get_attachment_url(get_post_thumbnail_id($post_1)) ;?>);"></div>
+					<a href="<?php echo get_permalink($post_1) ;?>" class="wpg-inside-bg" style="background-image: url(<?php echo wp_get_attachment_url(get_post_thumbnail_id($post_1)) ;?>);"></a>
 					<div class="wpg-post-box">
 						<p class="wpg-post-box_tag">
 							<?php post_categories($post_1) ;?>
@@ -35,7 +35,7 @@ $post_4 = $this->get('fourth_post');
 			</div>
 			<div class="col-xs-12 col-md-6 col-lg-4 wpg-col wpg-col-classic">
 				<div style="background-color: #fff;" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
-					<div class="wpg-inside-bg" style="background-image: url(<?php echo wp_get_attachment_url(get_post_thumbnail_id($post_2)) ;?>);"></div>
+					<a href="<?php echo get_permalink($post_1) ;?>" class="wpg-inside-bg" style="background-image: url(<?php echo wp_get_attachment_url(get_post_thumbnail_id($post_2)) ;?>);"></a>
 					<div class="wpg-post-box">
 						<p class="wpg-post-box_tag">
 							<?php post_categories($post_2) ;?>

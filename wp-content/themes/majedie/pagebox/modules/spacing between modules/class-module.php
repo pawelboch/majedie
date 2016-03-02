@@ -7,7 +7,7 @@
  * Call to action module with slider
  */
 
-namespace Majedie\Pagebox\Modules\spaceReduction;
+namespace Majedie\Pagebox\Modules\spacingBetweenModules;
 
 use \Pagebox\Modules\Module as Abstract_Module;
 use \WPGeeks_HTML;
@@ -33,10 +33,10 @@ class Module extends Abstract_Module {
 		$this->config = array(
 			// Name of the box for plugin use. Only alphanumeric charactes 
 			// and underscores are allowed
-			'slug'        => 'space_reduction',
+			'slug'        => 'spacing_between_modules',
 			// Human readable title of box. It will be displayed in all
 			// backend functionalities
-			'title'       => __(  'space reduction', 'pagebox_blocks' ),
+			'title'       => __(  'Spacing between modules', 'pagebox_blocks' ),
 			// Short description about what box outputs. It will be displayed
 			// below the title in new box modal window.
 			'description' => __(  '', 'pagebox_blocks' ),
@@ -59,8 +59,10 @@ class Module extends Abstract_Module {
 					'group'		    => __( 'Design', 'pagebox' ),
 					'name'        => 'space_reduction',
 					'options' => array(
+						'module-reduction-none' => 'No space',
 						'module-reduction-top' => 'Space reduction top',
-						'module-reduction-bottom' => 'Space reduction bottom'
+						'module-reduction-bottom' => 'Space reduction bottom',
+						'module-reduction-border-separate' => 'Border separate'
 					),
 					'label'       => __( 'Space reduction', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),

@@ -104,6 +104,16 @@
 		height: auto !important;
 		min-height: 10px !important;
 	}
+	.module-wpg {
+		padding-top: 15px !important;
+		padding-bottom: 15px !important;
+	}
+	.module-reduction-top {
+		margin-top: -15px !important;
+	}
+	.module-reduction-bottom {
+		margin-bottom: -15px !important;
+	}
 
 }
 /** END GLOABL BREAKPOINTS **/
@@ -127,12 +137,17 @@
 	width: 100%;
 	display: block;
 	border: none;
+	margin: 0;
 }
 .module-reduction-top {
 	margin-top: -60px;
 }
 .module-reduction-bottom {
 	margin-bottom: -60px;
+}
+.module-reduction-border-separate {
+	height: 1px;
+	background-color: black;
 }
 @media screen and (max-width: map-get($grid-breakpoints, xl) ) { //~1200px
 
@@ -216,6 +231,11 @@
 	    h1 {
 			font-size: 40px;
 		}
+	    .vertical-align-bottom {
+			img {
+				margin: 0 0 -15px 0;
+			}
+	    }
 	}
 }
 /*** END MODULE 2 ***/
@@ -774,6 +794,7 @@
 		height: 250px;
 		background-size: cover;
 		background-repeat: no-repeat;
+		display: block;
 	}
 	.wpg-post-box {
 		padding: 20px;
@@ -1699,7 +1720,7 @@
 
 /*** MODULE 22 ***/
 .module-full-width-archive-navigation {
-	padding: 10px 0;
+	padding: 10px 0 !important;
 	background-color: #675c50;
 	color: #fff;
 	line-height: 115%;
@@ -1844,6 +1865,7 @@
 
 /*** MODULE 24 ***/
 .module-full-width-funds-literature {
+	padding-top: 0 !important;
 	.wpg-selects-funds-literature {
 		padding: 10px 0;
 		background-color: #675c50;
@@ -2382,6 +2404,7 @@
 
 /*** MODULE 29 ***/
 .module-full-width-funds-prices {
+	padding-top: 0 !important;
 	.wpg-selects-funds-literature {
 		padding: 10px 0;
 		background-color: #675c50;
@@ -2677,7 +2700,7 @@
 
 /*** MODULE 31 ***/
 .module-full-width-fund-overview {
-	padding: 10px 0;
+	padding: 10px 0 !important;
 	background-color: #675c50;
 	color: #fff;
 	line-height: 115%;
@@ -3343,6 +3366,7 @@
 /*** MODULE 37 ***/
 .module-full-width-fund {
 	padding: 0 0 (60-($grid-gutter-width/2)) 0;
+	padding-top: 0 !important;
 	.wpg-fund-menu {
 		background-color: #e1e1e1;
 		margin-bottom: 40px;
