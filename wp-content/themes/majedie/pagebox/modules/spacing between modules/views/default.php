@@ -1,0 +1,1 @@
+<hr class="module-reduction <?php echo $this->get('space_reduction'); ?>">

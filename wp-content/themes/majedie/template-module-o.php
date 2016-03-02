@@ -6,7 +6,7 @@
 <!--
 <hr class="wpg-separator">
 
-<div class="module-demo">
+<div class="module-wpg module-demo">
 	<div class="container">
 
 		<div class="row" data-wpg-equal-height-wrap="min-height">
@@ -69,7 +69,7 @@
 
 <hr class="wpg-separator">
 
-<div class="module-full-width-image-title-icons-paragraph-link">
+<div class="module-wpg module-full-width-image-title-icons-paragraph-link">
 	<div class="container">
 		
 
@@ -109,7 +109,7 @@
 <hr class="wpg-separator">
 
 
-<div class="module-full-width-image-title-icons-paragraph-link">
+<div class="module-wpg module-full-width-image-title-icons-paragraph-link">
 	<div class="container">
 		
 
@@ -148,7 +148,7 @@
 
 <hr class="wpg-separator">
 
-<div class="module-full-width-title-text-photo">
+<div class="module-wpg module-full-width-title-text-photo">
 	<div class="container">
 		<div class="row" data-wpg-equal-height-wrap="height">
 			
@@ -172,7 +172,7 @@
 
 <hr class="module-reduction module-reduction-top">
 
-<div class="module-full-width-title-text-photo">
+<div class="module-wpg module-full-width-title-text-photo">
 	<div class="container">
 		<div class="row" data-wpg-equal-height-wrap="height">
 			
@@ -196,7 +196,7 @@
 
 <hr class="module-reduction module-reduction-top">
 
-<div class="module-full-width-text-slider">
+<div class="module-wpg module-full-width-text-slider">
 	<?php $idUniqid=uniqid(); ?>
 	<div class="container">
 		<p>Majedie was founded by a team from Mercury Asset Management with a clear aim: </p>
@@ -232,7 +232,7 @@
 
 <hr class="wpg-separator">
 
-<div class="module-full-width-contact-form-title-paragraph">
+<div class="module-wpg module-full-width-contact-form-title-paragraph">
 	<div class="container">
 		<div>
 			<h2>Contact Us</h2>
@@ -262,7 +262,7 @@
 <hr class="wpg-separator">
 
 <!-- Module two blocks with logo + title + button + background image (MajiQ and About Us) -->
-<div class="module-two-blocks-with-logo-title-button-background-image">
+<div class="module-wpg module-two-blocks-with-logo-title-button-background-image">
 	<div class="container container-corrected">
 
 		<div class="row" data-wpg-equal-height-wrap="height">
@@ -314,7 +314,7 @@
 
 <hr class="wpg-separator">
 
-<div class="module-full-width-left-title-right-text wpg-bg-grain">
+<div class="module-wpg module-full-width-left-title-right-text wpg-bg-grain">
 	<div class="container">
 		<div class="wpg-container-inset">
 			<h2>£11bn</h2>
@@ -335,7 +335,7 @@
 
 <hr class="wpg-separator">
 
-<div class="module-full-width-search-funds-title-paragraph-link">
+<div class="module-wpg module-full-width-search-funds-title-paragraph-link">
 	<div class="container">
 
 		<div class="span-table">
@@ -392,7 +392,7 @@
 
 <hr class="wpg-separator">
 
-<div class="module-full-width-2-posts-with-thumnails-2-posts">
+<div class="module-wpg module-full-width-2-posts-with-thumnails-2-posts">
 	<div class="container">
 		<h2>News &amp; Insights</h2>
 		<p class="wpg-filter-topic">Filter Topic</p>
@@ -401,7 +401,7 @@
 			
 			<div class="col-xs-12 col-md-6 col-lg-4 wpg-col wpg-col-classic">
 				<div style="background-color: #fff;" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
-					<div class="wpg-inside-bg" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/example-1.jpg);"></div>
+					<a href="#" class="wpg-inside-bg" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/example-1.jpg);"></a>
 					<div class="wpg-post-box">
 						<p class="wpg-post-box_tag">Equity</p>
 						<h3><a href="#">Global American Fund</a></h3>
@@ -415,7 +415,7 @@
 
 			<div class="col-xs-12 col-md-6 col-lg-4 wpg-col wpg-col-classic">
 				<div style="background-color: #fff;" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
-					<div class="wpg-inside-bg" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/example-1.jpg);"></div>
+					<a href="#" class="wpg-inside-bg" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/example-1.jpg);"></a>
 					<div class="wpg-post-box">
 						<p class="wpg-post-box_tag">Equity</p>
 						<h3><a href="#">Global American Fund</a></h3>
@@ -468,7 +468,7 @@
 
 <hr class="wpg-separator">
 
-<div class="module-full-width-above-title-title-12-logotypes">
+<div class="module-wpg module-full-width-above-title-title-12-logotypes">
 	<div class="container">
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Proin maximus odio quis pharetra feugiat.</p>
 		<h2>Awards</h2>
@@ -493,7 +493,7 @@
 <hr class="wpg-separator">
 
 
-<div class="module-full-width-title-text-column-list-custom-paragraph">
+<div class="module-wpg module-full-width-title-text-column-list-custom-paragraph">
 	<div class="container">
 		<div class="wpg-container-inset">
 			<h2>OUR CHARITIES</h2>
@@ -561,7 +561,7 @@
 
 
 
-<div class="module-full-width-title-subtitle-paragraph span-table" data-wpg-height-100p-window>
+<div class="module-wpg module-full-width-title-subtitle-paragraph span-table" data-wpg-height-100p-window>
 	<div class="span-table-cell vertical-align-middle">
 		<div class="container">
 			<h2>404</h2>
@@ -573,7 +573,7 @@
 
 <hr class="wpg-separator">
 
-<div class="module-full-width-title-paragraph-background-image">
+<div class="module-wpg module-full-width-title-paragraph-background-image">
 	<div class="container">
 		<div class="wpg-container-inset" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/toortl.jpg);">
 			<div class="row">
@@ -588,7 +588,7 @@
 
 <hr class="wpg-separator">
 
-<div class="module-full-width-3-blocks-with-icon-title-text">
+<div class="module-wpg module-full-width-3-blocks-with-icon-title-text">
 	<div class="container">
 		<h2>3 ways to invest</h2>
 		
@@ -624,7 +624,7 @@
 <hr class="wpg-separator">
 
 
-<div class="module-full-width-2-blocks-with-title-text">
+<div class="module-wpg module-full-width-2-blocks-with-title-text">
 	<div class="container">
 
 		<div class="row" data-wpg-equal-height-wrap="min-height">
@@ -656,7 +656,7 @@
 
 <hr class="wpg-separator">
 
-<div class="module-full-width-contact-form-box-title-text span-table" data-wpg-height-100p-window>
+<div class="module-wpg module-full-width-contact-form-box-title-text span-table" data-wpg-height-100p-window>
 	<div class="span-table-cell vertical-align-middle">
 		
 		<div class="container">
@@ -753,7 +753,7 @@
 
 <hr class="wpg-separator">
 
-<div class="module-full-width-title">
+<div class="module-wpg module-full-width-title">
 	<div class="container">
 		<h1>Privacy</h1>
 	</div>
@@ -762,7 +762,7 @@
 
 <hr class="wpg-separator">
 
-<div class="module-full-width-content">
+<div class="module-wpg module-full-width-content">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-8">
@@ -874,7 +874,7 @@
 <hr class="wpg-separator">
 
 
-<div class="module-full-width-archive-navigation">
+<div class="module-wpg module-full-width-archive-navigation">
 	<div class="container">
 		<select class="wpg-plugin-select" onchange="document.location.href=this.options[this.selectedIndex].value;">
 			<option value="http://majedie-dev-local.kurtosysweb.com/Archive-2015/">Archive 2015</option>
@@ -899,7 +899,7 @@
 
 <hr class="wpg-separator">
 
-<div class="module-full-width-3-blocks-with-cover-title-date-download">
+<div class="module-wpg module-full-width-3-blocks-with-cover-title-date-download">
 	<div class="container">
 		<div class="row">
 			<?php for($i=0; $i<5; $i++) { ?>
@@ -923,7 +923,7 @@
 <hr class="wpg-separator">
 
 
-<div class="module-full-width-funds-literature">
+<div class="module-wpg module-full-width-funds-literature">
 
 	<div class="wpg-selects-funds-literature">
 		<div class="container">
@@ -1102,7 +1102,7 @@
 
 <hr class="wpg-separator">
 
-<div class="module-full-width-horizontal-2-blocks-with-post-block-with-twitter-post">
+<div class="module-wpg module-full-width-horizontal-2-blocks-with-post-block-with-twitter-post">
 	<div class="container">
 
 		<div class="row" data-wpg-equal-height-wrap="min-height">
@@ -1150,7 +1150,7 @@
 
 <hr class="wpg-separator">
 
-<div class="module-full-width-search-field-title">
+<div class="module-wpg module-full-width-search-field-title">
 	<div class="container">
 		<h2>Search Results</h2>
 		<div class="wpg-search-form">
@@ -1163,7 +1163,7 @@
 
 <hr class="wpg-separator">
 
-<div class="module-full-width-search-results-pagination">
+<div class="module-wpg module-full-width-search-results-pagination">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-8">
@@ -1193,7 +1193,7 @@
 
 <hr class="wpg-separator">
 
-<div class="module-full-width-funds-info">
+<div class="module-wpg module-full-width-funds-info">
 	<div class="wpg-container-tabels">
 
 		<div class="container">
@@ -1253,7 +1253,7 @@
 
 
 
-<div class="module-full-width-funds-prices">
+<div class="module-wpg module-full-width-funds-prices">
 
 	<div class="wpg-selects-funds-literature">
 		<div class="container">
@@ -1382,7 +1382,7 @@
 <hr class="wpg-separator">
 
 
-<div class="module-full-width-fund-overview">
+<div class="module-wpg module-full-width-fund-overview">
 	<div class="container">
 		<form>
 			<select class="wpg-plugin-select">
@@ -1454,7 +1454,7 @@
 
 <hr class="wpg-separator">
 
-<div class="module-full-width-3-tabs-with-photo-title-subtitle-text">
+<div class="module-wpg module-full-width-3-tabs-with-photo-title-subtitle-text">
 	<?php $idUniqid=uniqid(); ?>
 	<div class="container">
 		<div class="row pager-mfw3twptst pager-mfw3twptst-<?php echo $idUniqid; ?>" data-wpg-equal-height-wrap="height"></div>
@@ -1490,7 +1490,7 @@
 
 <hr class="wpg-separator">
 
-<div class="module-full-width-top-post-header-with-category-title-date">
+<div class="module-wpg module-full-width-top-post-header-with-category-title-date">
 	<span class="wpg-half-background" style="background-color: #9d948a;"></span>
 	<div class="container">
 		<div class="wpg-baner-outset" style="background-color: #fff;">
@@ -1505,7 +1505,7 @@
 
 <hr class="wpg-separator">
 
-<div class="module-full-width-post-content">
+<div class="module-wpg module-full-width-post-content">
 	<div class="container">
 		<div class="wpg-main-content-article" style="background-color: #fff;">
 			<div class="row">
@@ -1565,7 +1565,7 @@
 
 <hr class="wpg-separator">
 
-<div class="module-full-width-2-blocks-with-title-paragraph">
+<div class="module-wpg module-full-width-2-blocks-with-title-paragraph">
 	<div class="container">
 		<div class="row" data-wpg-equal-height-wrap="min-height">
 			<div class="col-xs-12 col-sm-6">
@@ -1586,7 +1586,7 @@
 
 <hr class="wpg-separator">
 
-<div class="module-full-width-timeline">
+<div class="module-wpg module-full-width-timeline">
 	<div class="container">
 		<ul class="wpg-timeline">
 			<li>
@@ -1631,7 +1631,7 @@
 
 <hr class="wpg-separator">
 
-<div class="module-full-width-fund-content">
+<div class="module-wpg module-full-width-fund-content">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-8 wpg-inset-col">
@@ -1687,7 +1687,7 @@
 
 <hr class="wpg-separator">
 
-<div class="module-full-width-fund">
+<div class="module-wpg module-full-width-fund">
 	
 	<div class="wpg-fund-menu wpg-bg-grain">
 		<div class="container clearfix">
@@ -1837,7 +1837,7 @@
 <hr class="wpg-separator">
 
 
-<div class="module-investor-modal">
+<div class="module-wpg module-investor-modal">
 	<div class="container">
 		<div class="wpg-investor-modal">
 			<i class="fa fa-times wpg-popup-investor-modal-close"></i>

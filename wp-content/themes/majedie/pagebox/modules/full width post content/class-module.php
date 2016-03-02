@@ -53,18 +53,48 @@ class Module extends Abstract_Module {
 			// WPGeeks_Forms
 			'fields'      => array(
 				array(
-					'type'        => 'text',
+					'type'        => 'editor',
 					'group'       => __( 'General', 'pagebox' ),
-					'name'        => 'title',
-					'label'       => __( 'Title', 'pagebox' ),
-					'description' => __( 'Main module title', 'pagebox' ),
+					'name'        => 'editor',
+					'label'       => __( 'Content', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
 				),
 
 				array(
 					'type'        => 'colorpicker',
 					'group'		    => __( 'Design', 'pagebox' ),
-					'name'        => 'button_font_color',
-					'label'       => __( 'Button font color', 'pagebox' ),
+					'name'        => 'background_color',
+					'label'       => __( 'Background color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+
+				
+				array(
+					'type'        => 'number',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'author_name_size',
+					'label'       => __( 'Author font size', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'author_name_color',
+					'label'       => __( 'Author name color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'number',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'author_role_size',
+					'label'       => __( 'Author role size', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'author_role_color',
+					'label'       => __( 'Author role color', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
 				),
 			)
