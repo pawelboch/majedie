@@ -55,16 +55,37 @@ class Module extends Abstract_Module {
 				array(
 					'type'        => 'text',
 					'group'       => __( 'General', 'pagebox' ),
-					'name'        => 'title',
-					'label'       => __( 'Title', 'pagebox' ),
+					'name'        => 'prev_text',
+					'label'       => __( '"Prev button" text', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'text',
+					'group'       => __( 'General', 'pagebox' ),
+					'name'        => 'next_text',
+					'label'       => __( '"Next button" text', 'pagebox' ),
 					'description' => __( 'Main module title', 'pagebox' ),
 				),
 
 				array(
 					'type'        => 'colorpicker',
 					'group'		    => __( 'Design', 'pagebox' ),
-					'name'        => 'button_font_color',
-					'label'       => __( 'Button font color', 'pagebox' ),
+					'name'        => 'background_outside_color',
+					'label'       => __( 'Background outside color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'button_color',
+					'label'       => __( 'Button text color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'number',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'button_size',
+					'label'       => __( 'Button text size', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
 				),
 			)
