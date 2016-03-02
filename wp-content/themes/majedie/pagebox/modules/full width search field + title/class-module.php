@@ -61,12 +61,50 @@ class Module extends Abstract_Module {
 				),
 
 				array(
-					'type'        => 'colorpicker',
-					'group'		    => __( 'Design', 'pagebox' ),
-					'name'        => 'button_font_color',
-					'label'       => __( 'Button font color', 'pagebox' ),
+					'type'        => 'text',
+					'group'       => __( 'General', 'pagebox' ),
+					'name'        => 'placeholder',
+					'label'       => __( 'Placeholder', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
 				),
+
+				array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'background_color',
+					'label'       => __( 'Background color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+
+				array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'title_color',
+					'label'       => __( 'Title font color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'number',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'title_size',
+					'label'       => __( 'Title size', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'placeholder_color',
+					'label'       => __( 'Placeholder color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'number',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'placeholder_size',
+					'label'       => __( 'Placeholder size', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+
 			)
 		);
 	}
