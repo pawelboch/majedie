@@ -77,11 +77,35 @@ class Module extends Abstract_Module {
 					)
 				),
 
+			array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'date_color',
+					'label'       => __( 'Date color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+
+				array(
+					'type'        => 'number',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'date_size',
+					'label'       => __( 'Date size', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+
 				array(
 					'type'        => 'colorpicker',
 					'group'		    => __( 'Design', 'pagebox' ),
-					'name'        => 'button_font_color',
-					'label'       => __( 'Button font color', 'pagebox' ),
+					'name'        => 'paragraph_color',
+					'label'       => __( 'Paragraph color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+
+				array(
+					'type'        => 'number',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'paragraph_size',
+					'label'       => __( 'Paragraph size', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
 				),
 			)
