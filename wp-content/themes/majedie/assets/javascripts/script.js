@@ -265,9 +265,16 @@ jQuery(window).load(function(){ wpgHeight100pWindow(jQuery); });
 /* toggle class for news module menu */
 
 (function($){
-	jQuery('.module-full-width-2-posts-with-thumnails-2-posts .wpg-filter-topic').click(function() {
-		jQuery('.module-full-width-2-posts-with-thumnails-2-posts .wpg-filter-topic-menu').toggleClass('opened');
+	var moduleClass = jQuery('.module-full-width-2-posts-with-thumnails-2-posts');
+
+	moduleClass.find('.wpg-filter-topic').click(function() {
+		moduleClass.find('.wpg-filter-topic-menu').toggleClass('opened');
 	});
+
+	jQuery('document').click(function() {
+		moduleClass.find('.wpg-filter-topic-menu').not('.module-full-width-2-posts-with-thumnails-2-posts .wpg-filter-topic-menu').removeClass('opened');
+	})
+
 })(jQuery);
 
 /* end toggle class for news module menu */
