@@ -236,18 +236,23 @@ jQuery(window).load(function(){ wpgHeight100pWindow(jQuery); });
 /* left-to-right attachment size */
 
 (function($){
-	var articleLeftSide = $('.module-full-width-post-content .left-side').outerWidth();
-	var articleRightSide = $('.module-full-width-post-content .right-side').outerWidth();
-	var articleWidth = $('.wpg-main-content-article').outerWidth();
-	var articleLeftToRightPhoto = $('.module-full-width-post-content .size-left-to-right');
-	var leftPadding = (parseInt($('.module-full-width-post-content .right-side').css('padding-left')) + parseInt($('.wpg-main-content-article').css('padding-left')));
+	function articleLeftToRightImage() {
+		var articleLeftSide = $('.module-full-width-post-content .left-side').outerWidth();
+		var articleRightSide = $('.module-full-width-post-content .right-side').outerWidth();
+		var articleWidth = $('.wpg-main-content-article').outerWidth();
+		var articleLeftToRightPhoto = $('.module-full-width-post-content .size-left-to-right');
+		var leftPadding = (parseInt($('.module-full-width-post-content .right-side').css('padding-left')) + parseInt($('.wpg-main-content-article').css('padding-left')));
 
-	articleLeftToRightPhoto.removeAttr('height');
-	articleLeftToRightPhoto.attr('width', articleWidth);
+		articleLeftToRightPhoto.removeAttr('height');
+		articleLeftToRightPhoto.attr('width', articleWidth);
+		
+		articleLeftToRightPhoto.css('margin-left', ((articleLeftSide + leftPadding) * -1));
 
-	articleLeftToRightPhoto.css('margin-left', ((articleLeftSide + leftPadding) * -1));
+		$('.module-full-width-post-content img').removeAttr('height');
+	}
 
-	$('.module-full-width-post-content img').removeAttr('height');
+	$(document).ready(articleLeftToRightImage);
+	$(window).resize(articleLeftToRightImage);
 
 })(jQuery);
 
@@ -255,3 +260,28 @@ jQuery(window).load(function(){ wpgHeight100pWindow(jQuery); });
 
 
 /* end left-to-right attachment size */
+
+
+/* toggle class for news module menu */
+
+(function($){
+	jQuery('.module-full-width-2-posts-with-thumnails-2-posts .wpg-filter-topic').click(function() {
+		jQuery('.module-full-width-2-posts-with-thumnails-2-posts .wpg-filter-topic-menu').toggleClass('opened');
+	});
+})(jQuery);
+
+/* end toggle class for news module menu */
+
+
+/* jQuery Ajax posts */
+
+(function($){
+	function ajaxLoadPosts() {
+
+	}
+
+	$(document).ready(ajaxLoadPosts);
+
+})(jQuery);
+
+/* end jQuery Ajax posts */
