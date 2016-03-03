@@ -3130,6 +3130,7 @@
 /*** MODULE 34 ***/
 .module-full-width-2-blocks-with-title-paragraph {
 	padding: (60-($grid-gutter-width/2)) 0;
+	/*
 	.col-1 {
 		.wpg-inset-col {
 			background-color: #dd6e1d;
@@ -3139,6 +3140,13 @@
 		.wpg-inset-col {
 			background-color: #9D948A;
 		}
+	}
+	*/
+	div:nth-child(odd) > .wpg-inset-col {
+		background-color: #dd6e1d;
+	}
+	div:nth-child(even) > .wpg-inset-col {
+		background-color: #9D948A;
 	}
 	.container > .row > div {
 		margin-top: $grid-gutter-width/2;
