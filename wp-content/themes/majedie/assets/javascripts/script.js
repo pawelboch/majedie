@@ -265,15 +265,20 @@ jQuery(window).load(function(){ wpgHeight100pWindow(jQuery); });
 /* toggle class for news module menu */
 
 (function($){
-	var moduleClass = jQuery('.module-full-width-2-posts-with-thumnails-2-posts');
+	var moduleClass = $('.module-full-width-2-posts-with-thumnails-2-posts');
 
-	moduleClass.find('.wpg-filter-topic').click(function() {
-		moduleClass.find('.wpg-filter-topic-menu').toggleClass('opened');
-	});
-
-	jQuery('document').click(function() {
-		moduleClass.find('.wpg-filter-topic-menu').not('.module-full-width-2-posts-with-thumnails-2-posts .wpg-filter-topic-menu').removeClass('opened');
+	$('.wpg-filter-topic').click(function(e) { //button click class name is myDiv
+	 e.stopPropagation();
 	})
+
+	$(function(){
+		moduleClass.find('.wpg-filter-topic').click(function() {
+			moduleClass.find('.wpg-filter-topic-menu').toggleClass('opened');
+		});
+	});
+	$(document).click(function(){  
+		$('.wpg-filter-topic-menu').removeClass('opened'); //hide the button
+	});
 
 })(jQuery);
 
