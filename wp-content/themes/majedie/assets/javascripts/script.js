@@ -74,18 +74,6 @@ jQuery(window).load(function(){
 });
 /* end popup */
 
-
-/* blank page */
-(function($){
-	//alert($(".wpg-main-header").next().hasClass("wpg-main-footer"));
-	if($(".wpg-main-header").next().hasClass("wpg-main-footer"))
-	{
-		$(".wpg-main-header").after('<div class="module-full-width-title-subtitle-paragraph span-table" data-wpg-height-100p-window><div class="span-table-cell vertical-align-middle"><div class="container"><h2>404</h2><h3>Page not found</h3><p>The page you are looking for doesnt’t exist or another error occured. <br>Go <a href="#">back</a>, or head over to <a href="http://www.majedie.com">www.majedie.com</a> to choose another direction.</p></div></div></div>');
-	}
-})(jQuery);
-/* end blank page */
-
-
 /* plugin select */
 (function($){
 	if($(".wpg-plugin-select").length>0)
