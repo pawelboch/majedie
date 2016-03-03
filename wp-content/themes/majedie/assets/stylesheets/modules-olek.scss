@@ -1006,12 +1006,47 @@
 	.wpg-container-text {
 		background-color: #fff;
 	}
+
+	.wpg-arrow {
+		display: block;
+		position: absolute;
+		top: 50%;
+		margin-top: -25px;
+		width: 0;
+		height: 0;
+		border-style: solid;	
+	}
+	.pull-xs-left.wpg-container-text {
+		.wpg-arrow.wpg-arrow-horizontal {
+			border-width: 25px 0 25px 25px;
+			border-color: transparent transparent transparent #fff;	
+			right: -25px;		
+		}
+		.wpg-arrow.wpg-arrow-vertical {
+			display: none;
+		}
+	}
+	.pull-xs-right.wpg-container-text {
+		.wpg-arrow.wpg-arrow-horizontal {
+			border-width: 25px 25px 25px 0;
+			border-color: transparent #fff transparent transparent;
+			left: -25px;
+		}	
+		.wpg-arrow.wpg-arrow-vertical {
+			display: none;
+		}	
+	}
+
+	/*
 	.wpg-container-text:before {
 		content: '';
 		display: block;
 		position: absolute;
 		top: 50%;
 		margin-top: -25px;
+		width: 0;
+		height: 0;
+		border-style: solid;	
 	}
 	.pull-xs-left.wpg-container-text:before {
 		width: 0;
@@ -1029,6 +1064,7 @@
 		border-color: transparent #fff transparent transparent;
 		left: -25px;
 	}
+	*/
 }
 @media screen and (max-width: map-get($grid-breakpoints, xl) ) { //~1200px
 
@@ -1041,15 +1077,48 @@
 }
 @media screen and (max-width: map-get($grid-breakpoints, sm) ) { //~544px
 	.module-full-width-title-text-photo {
+		/*
 		.wpg-container-text:before {
 			display: none;
 		}
+		*/
 		.wpg-image-bg {
 			min-height: 288px !important;
 		}
+
+		.wpg-arrow {
+			top: -25px;
+			margin-top: 0;
+			left: 50%;
+			margin-left: -25px;
+		}
+		.pull-xs-left.wpg-container-text {
+			.wpg-arrow.wpg-arrow-horizontal {
+				display: none;	
+			}
+			.wpg-arrow.wpg-arrow-vertical {
+				display: block;
+				border-style: solid;
+				border-width: 0 25px 25px 25px;
+				border-color: transparent transparent #fff transparent;
+			}
+		}
+		.pull-xs-right.wpg-container-text {
+			.wpg-arrow.wpg-arrow-horizontal {
+				display: none;
+			}	
+			.wpg-arrow.wpg-arrow-vertical {
+				display: block;
+				border-style: solid;
+				border-width: 0 25px 25px 25px;
+				border-color: transparent transparent #fff transparent;
+			}	
+		}
 	}
+
 }
 /*** END MODULE 10 ***/
+
 
 
 
@@ -1441,6 +1510,19 @@
 
 /*** MODULE 19 ***/
 .module-full-width-contact-form-box-title-text {
+	.wpcf7-form-control > div > div {
+		max-width: 100%;
+		margin-top: 15px;
+		iframe {
+			max-width: 100%;
+			border-radius: 4px;
+		}
+	}
+	.wpg-x-recaptcha {
+		max-width: 100%;
+		overflow: hidden;
+	}
+
 	padding: (60-($grid-gutter-width/2)) 0;
 	background-color: #9d948a;
 	color: #fff;
@@ -1532,7 +1614,15 @@
 	}
 }
 @media screen and (max-width: map-get($grid-breakpoints, xl) ) { //~1200px
-
+	.module-full-width-contact-form-box-title-text {
+		.wpg-x-recaptcha {
+			width: 180px !important;
+			border-radius: 5px;
+			iframe {
+				border-radius: 5px !important;
+			}
+		}
+	}
 }
 @media screen and (max-width: map-get($grid-breakpoints, lg) ) { //~992px
 
