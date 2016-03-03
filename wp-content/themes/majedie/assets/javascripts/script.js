@@ -243,3 +243,27 @@ jQuery(window).load(function(){ wpgHeight100pWindow(jQuery); });
 	$('.module-full-width-contact-form-box-title-text .wpcf7-radio input').after('<div class="custom-radio"></div>');
 })(jQuery);
 /* end contact */
+
+
+/* left-to-right attachment size */
+
+(function($){
+	var articleLeftSide = $('.module-full-width-post-content .left-side').outerWidth();
+	var articleRightSide = $('.module-full-width-post-content .right-side').outerWidth();
+	var articleWidth = $('.wpg-main-content-article').outerWidth();
+	var articleLeftToRightPhoto = $('.module-full-width-post-content .size-left-to-right');
+	var leftPadding = (parseInt($('.module-full-width-post-content .right-side').css('padding-left')) + parseInt($('.wpg-main-content-article').css('padding-left')));
+
+	articleLeftToRightPhoto.removeAttr('height');
+	articleLeftToRightPhoto.attr('width', articleWidth);
+
+	articleLeftToRightPhoto.css('margin-left', ((articleLeftSide + leftPadding) * -1));
+
+	$('.module-full-width-post-content img').removeAttr('height');
+
+})(jQuery);
+
+
+
+
+/* end left-to-right attachment size */
