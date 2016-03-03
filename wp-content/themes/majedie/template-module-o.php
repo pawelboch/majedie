@@ -3,7 +3,7 @@
 ?>
 <?php get_header(); ?>
 
-<!--
+
 <hr class="wpg-separator">
 
 <div class="module-wpg module-demo">
@@ -64,7 +64,7 @@
 
 	</div>
 </div>
--->
+
 
 
 <hr class="wpg-separator">
