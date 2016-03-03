@@ -4,7 +4,7 @@
 			<div class="col-xs-12">
 				<div class="wpg-red-block span-table"
 					<?php
-					if($this->get('first_background_image') || $this->get('first_background_color')) != '' {
+					if($this->get('first_background_image') || $this->get('first_background_color') != '') {
 						echo 'style="';
 						if($this->get('first_background_image')) {
 							echo 'background-image: url( ' . wp_get_attachment_url($this->get("first_background_image"));
