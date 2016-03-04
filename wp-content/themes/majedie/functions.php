@@ -1,7 +1,6 @@
 <?php
 
-
-
+require_once 'functions-csv-uploader.php';
 
 add_image_size( 'team', 301, 355 );
 
