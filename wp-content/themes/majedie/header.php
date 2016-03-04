@@ -41,7 +41,7 @@
 							<li><a href="#">MajlQ Login</a></li>
 							<li><form role="search"  method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>"><input type="submit" value="<?php echo esc_attr_x( 'Search', 'submit button' ); ?>" class="wpg-ico-search"><input type="search" placeholder="Search" value="<?php echo get_search_query(); ?>" name="s"></form></li>
 						</ul>
-						<?php wp_nav_menu( array( 'container' => fasle, 'menu' => 'main', 'menu_class' => 'wpg-main-menu' ) ); ?>
+						<?php wp_nav_menu( array( 'container' => false, 'menu' => 'main', 'menu_class' => 'wpg-main-menu' ) ); ?>
 					</nav>
 				</div>
 

@@ -10,7 +10,15 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="inner">
+				<div class="inner"
+				<?php
+				if($this->get('background_inside_color')) {
+					echo 'style="';
+					echo 'background-color: ' . $this->get('background_inside_color') . ';';
+					echo '"';
+				}
+				;?>
+				>
 					<ul class="navigation">
 						<li class="prev-post">
 							<a href="<?php echo get_permalink(get_adjacent_post(false,'',false)); ?>"
