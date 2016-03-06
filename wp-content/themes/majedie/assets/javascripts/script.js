@@ -309,9 +309,9 @@ jQuery(window).load(function(){ wpgHeight100pWindow(jQuery); });
 	function arrowMenuParent() {
 		$('.menu-item-has-children').append('<i class="fa fa-angle-down arrow"></i>');
 
-		$('.menu-item-has-children').click(function() {
-			$('.menu-item-has-children').not(this).find('.sub-menu').removeClass('opened');
-			$(this).find('.sub-menu').toggleClass('opened');
+		$('.menu-item-has-children .arrow').click(function() {
+			$('.menu-item-has-children .arrow').not(this).parent().find('.sub-menu').removeClass('opened');
+			$(this).parent().find('.sub-menu').toggleClass('opened');
 		});
 
 	}
