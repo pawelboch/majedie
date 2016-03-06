@@ -262,7 +262,12 @@ jQuery(window).load(function(){ wpgHeight100pWindow(jQuery); });
 /* end left-to-right attachment size */
 
 
-/* toggle class for news module menu */
+/* toggle class for news module menu */	function arrowMenuParent() {
+		$('.menu-item-has-children').append('<i class="fa fa-angle-down"></i>');
+		$('.menu-item-has-children').click(function() {
+			$(this).find('.sub-menu').toggleClass('opened');
+		});
+	}
 
 (function($){
 	var moduleClass = $('.module-full-width-2-posts-with-thumnails-2-posts');
@@ -297,3 +302,19 @@ jQuery(window).load(function(){ wpgHeight100pWindow(jQuery); });
 })(jQuery);
 
 /* end jQuery Ajax posts */
+
+
+
+(function($){
+	function arrowMenuParent() {
+		$('.menu-item-has-children').append('<i class="fa fa-angle-down arrow"></i>');
+
+		$('.menu-item-has-children').click(function() {
+			$('.menu-item-has-children').not(this).find('.sub-menu').removeClass('opened');
+			$(this).find('.sub-menu').toggleClass('opened');
+		});
+
+	}
+
+	$(document).ready(arrowMenuParent);
+})(jQuery);
