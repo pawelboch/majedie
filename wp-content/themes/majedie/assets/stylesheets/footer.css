@@ -1,2 +1,53 @@
-.wpg-main-footer{color:#fff;background-color:#5e5953;padding:12px 0}.wpg-main-footer p{margin:0;padding:0;font-size:13px}.wpg-main-footer .wpg-socials-ico{float:right;list-style-type:none}.wpg-main-footer .wpg-socials-ico{margin-top:4px;margin-bottom:0;padding:0 0 0 0}.wpg-main-footer .wpg-socials-ico li{display:inline-block;font-size:12px}.wpg-main-footer .wpg-socials-ico li a{display:inline-block;color:#fff;width:25px;height:25px;line-height:25px;text-align:center;background-color:#000}.wpg-main-footer .wpg-socials-ico .wpg-social-ico-facebook a{background-color:#507abc}.wpg-main-footer .wpg-socials-ico .wpg-social-ico-linkedin a{background-color:#8ec3d5}.wpg-main-footer .wpg-socials-ico .wpg-social-ico-twitter a{background-color:#63c9ed}.wpg-main-footer .wpg-socials-ico .wpg-social-ico-y-play a{background-color:#f06260}.wpg-main-footer .wpg-socials-ico span{display:none}@media screen and (max-width: 800px){.wpg-main-footer .wpg-socials-ico{padding-bottom:15px}}
+.wpg-main-footer {
+  color: #fff;
+  background-color: #5e5953;
+  padding: 12px 0;
+  position: relative; }
+  .wpg-main-footer .footer-nav {
+    margin: 14px 0 0;
+    padding: 0; }
+    .wpg-main-footer .footer-nav li {
+      border-right: 1px solid #6e6963;
+      display: inline-block;
+      float: left;
+      list-style: outside none none;
+      margin: 0 10px 0 0;
+      padding: 0 10px 0 0; }
+  .wpg-main-footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 13px; }
+  .wpg-main-footer .wpg-socials-ico {
+    float: right;
+    list-style-type: none; }
+  .wpg-main-footer .wpg-socials-ico {
+    margin-top: 4px;
+    margin-bottom: 0;
+    padding: 0 0 0 0; }
+    .wpg-main-footer .wpg-socials-ico li {
+      display: inline-block;
+      font-size: 12px; }
+      .wpg-main-footer .wpg-socials-ico li a {
+        display: inline-block;
+        color: #fff;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        background-color: #000; }
+    .wpg-main-footer .wpg-socials-ico .wpg-social-ico-facebook a {
+      background-color: #507abc; }
+    .wpg-main-footer .wpg-socials-ico .wpg-social-ico-linkedin a {
+      background-color: #8ec3d5; }
+    .wpg-main-footer .wpg-socials-ico .wpg-social-ico-twitter a {
+      background-color: #63c9ed; }
+    .wpg-main-footer .wpg-socials-ico .wpg-social-ico-y-play a {
+      background-color: #f06260; }
+    .wpg-main-footer .wpg-socials-ico span {
+      display: none; }
+
+@media screen and (max-width: 800px) {
+  .wpg-main-footer .wpg-socials-ico {
+    padding-bottom: 15px; } }
+
 /*# sourceMappingURL=footer.css.map */

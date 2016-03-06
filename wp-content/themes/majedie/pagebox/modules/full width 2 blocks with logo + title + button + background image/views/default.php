@@ -9,15 +9,21 @@
 	>
 	<div class="container container-corrected">
 		<div class="row" data-wpg-equal-height-wrap="height">
-			<div class="col-xs-12 col-sm-6">
+			<div class="col-xs-12
+				<?php
+				if($this->get('second_title') == '' && $this->get('second_button') == '' && $this->get('second_button_url') == '' && $this->get('second_background_image') == '') {
+					echo 'col-sm-12';
+				} else {
+					echo 'col-sm-6';
+				}
+				;?>
+				">
 				<div class="wpg-red-block span-table" style="
 					<?php	if($this->get('first_background_image')) {
 					echo 'background-image: url( ' . wp_get_attachment_url($this->get("first_background_image"));
 					echo ');';
 					}
 					;?>
-					
-					
 					<?php	if($this->get('first_background_color')) {
 					echo 'background-color: ' . $this->get('first_background_color') . ';';
 					}
@@ -83,6 +89,10 @@
 					</div>
 				</div>
 			</div>
+			<?php
+			if($this->get('second_title') == '' && $this->get('second_button') == '' && $this->get('second_button_url') == '' && $this->get('second_background_image') == '') { 
+			} else {
+			;?>
 			<div class="col-xs-12 col-sm-6">
 				<div class="wpg-blue-block span-table" style="
 					<?php	if($this->get('second_background_image')) {
@@ -130,6 +140,7 @@
 					</div>
 				</div>
 			</div>
+			<?php } ;?>
 		</div>
 	</div>
 </div>

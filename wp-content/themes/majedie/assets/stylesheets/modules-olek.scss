@@ -209,7 +209,7 @@
 		}
 	}
 	p {
-		margin: 15px 0 0 0;
+		margin: 10px 0 0 0;
 		//max-width: 400px;
 		font-size: 15px;
 	}
@@ -443,7 +443,10 @@
 		background-repeat: no-repeat;
 		background-size: auto auto;	
 		h2 {
-			font-size: 40px;
+			font-family: Avenir-Light;
+			font-size: 50px;
+			line-height: 1.1em;
+			margin: 0 0 8px;
 			strong {
 				font-family: Avenir-Black, Arial, Helvetica, sans-serif;
 				font-weight: 400;
@@ -452,7 +455,6 @@
 				display: inline-block;
 				vertical-align: bottom;
 				position: relative;
-				bottom: -5px;
 			}
 			img {
 				vertical-align: bottom;
@@ -461,7 +463,6 @@
 		}
 		p {
 			font-size: 25px;
-			line-height: 120%;
 			margin: 0;
 		}
 	}
@@ -481,7 +482,7 @@
 	.wpg-red-block,
 	.wpg-blue-block {
 		color: #fff;
-		padding: 40px 30px 25px;
+		padding: 30px 30px 25px;
 		//height: 285px;
 		margin: 15px 0;
 	}
@@ -1387,6 +1388,15 @@
 .module-full-width-3-blocks-with-icon-title-text {
 	padding: 60px 0 (60-($grid-gutter-width/2)) 0;
 	text-align: center;
+	.col-1 .wpg-inset-col {
+		background-color: #365373;
+	}
+	.col-2 .wpg-inset-col {
+		background-color: #D24452;
+	}
+	.col-3 .wpg-inset-col {
+		background-color: #DD6D25;
+	}
 	h2 {
 		font-size: 30px;
 		text-transform: uppercase;
@@ -1394,14 +1404,14 @@
 	}
 	h3 {
 		font-size: 20px;
-		margin-top: 20px;
+		margin-top: 8px;
 		text-transform: uppercase;
 	}
 	.row {
 		margin-top: 25px;
 	}
 	.wpg-inset-col {
-		padding: 50px 30px 30px;
+		padding: 30px;
 		background-color: #000;
 		color: #fff;
 		margin: $grid-gutter-width/2 0;
@@ -1688,7 +1698,7 @@
 	h1, h2, h3, h4, h5, h6 {
 		font-family: Georgia, "Times New Roman", Times, serif;
 		font-weight: 700;
-		margin: 15px 0 0 0;
+		margin: 30px 0 15px 0;
 	}
 	h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
 		margin-top: 0;
@@ -1718,6 +1728,9 @@
 	}
 	p {
 		font-size: 15px;
+	}
+	a {
+		text-decoration: underline;
 	}
 	strong {
 		font-weight: 700;

@@ -154,11 +154,13 @@
 
 .article-section {
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  width: 100%; }
   .article-section .inner-section {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.28);
     margin: 40px 0 60px;
     position: relative;
+    width: 100%;
     display: inline-block; }
     .article-section .inner-section .module-wpg {
       padding: 0; }
@@ -166,7 +168,7 @@
     background-color: #9d948a;
     content: "";
     display: block;
-    height: 40px;
+    height: 250px;
     position: absolute;
     top: 0;
     width: 100%; }
