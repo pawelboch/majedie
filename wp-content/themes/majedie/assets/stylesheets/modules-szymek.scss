@@ -108,6 +108,30 @@
         }
     }
 }
+
+.module-full-width-list-with-links {
+    ul {
+        background-color: #fff;
+        padding: 20px;
+
+        li {
+            list-style: none;
+            color: #a6a6a6;
+            text-transform: uppercase;
+            line-height: 30px;
+            font-family: Avenir-Light;
+
+            a{
+                &:hover {
+                    text-decoration: none;
+                    color: #000;
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+
+}
 @media screen and (max-width: map-get($grid-breakpoints, xl) ) { //~1200px
 
 }

@@ -82,6 +82,20 @@
       .fund-managers .container ul li p {
         margin-top: 5px; }
 
+.module-full-width-list-with-links ul {
+  background-color: #fff;
+  padding: 20px; }
+  .module-full-width-list-with-links ul li {
+    list-style: none;
+    color: #a6a6a6;
+    text-transform: uppercase;
+    line-height: 30px;
+    font-family: Avenir-Light; }
+    .module-full-width-list-with-links ul li a:hover {
+      text-decoration: none;
+      color: #000;
+      font-weight: 900; }
+
 /*** END MODULE BY SZYMEK 1 ***/
 /*** END BY SZYMEK ***/
 
