@@ -1,16 +1,8 @@
-<div class="module-wpg module-full-width-list-with-links"
-	<?php
-	if($this->get('background_color')) {
-		echo 'style="';
-		echo 'background-color: ' . $this->get('background_color') . ';';
-		echo '"';
-	}
-	;?>
-	>
+<div class="module-wpg module-full-width-list-with-links">
 	<div class="container">
-		<?php if($this->get('links')->{0}->icon != '') { ;?>
+
 		<ul>
-			<?php foreach ($links as $link) { ;?>
+			<?php foreach ($this->get('links') as $link) { ;?>
 			<li>
 				<a
 					<?php if($this->get('link_size') || $this->get('link_color') != '') {
@@ -29,7 +21,6 @@
 			</li>
 			<?php } ;?>
 		</ul>
-		<?php } ;?>
+	
 	</div>
-</div>
 </div>
