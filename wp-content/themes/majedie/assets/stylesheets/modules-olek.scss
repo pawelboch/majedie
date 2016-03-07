@@ -164,6 +164,31 @@
         margin-top: 3px;
     }
 }
+.module-fund-box-nav-menu {
+    background-color: #e1e1e1;
+    margin-bottom: 40px;
+    min-height: 62px;
+    ul {
+        font-family: Avenir-Book, Arial, Helvetica, sans-serif;
+        list-style: none;
+        margin-bottom:0;
+        li {
+            float: left;
+            &.wpg-fund-menu-active {
+                a {
+                    background-color: rgba(0, 0, 0, 0.1);
+                    color: #fff !important;
+                }
+            }
+            a {
+                display: inline-block;
+                padding: 20px;
+                font-weight: 700;
+                vertical-align: top;
+            }
+        }
+    }
+}
 @media screen and (max-width: map-get($grid-breakpoints, xl) ) { //~1200px
 
 }
@@ -4059,9 +4084,85 @@
 	.wpg-item-person-description {
 		display: none;
 	}
-	img {
-		max-width: 100%;
-		height: auto;
+
+
+
+	padding: (60-($grid-gutter-width/2)) 0;
+	.wpg-items-persons {
+		> div {
+			margin-bottom: 10px;
+		}
+		> div.cycle-pager-active {
+			margin-bottom: 60px;
+		}
+		.pager-mfw3twptst-item {
+			position: relative;
+			background-color: #fff;
+			padding: 15px 15px 20px;
+			margin: $grid-gutter-width/2 0 0;
+			cursor: pointer;
+			opacity: .4;
+			@include transition(all 300ms ease-in-out);
+			img {
+				width: 100%;
+				height: auto;
+			}
+			h3 {
+				font-size: 21px;
+				font-family: Avenir-Medium, Arial, Helvetica, sans-serif;
+				text-transform: uppercase;
+				padding: 10px 10px 0 10px;
+				margin: 0;
+			}
+			.wpg-job-title {
+				font-size: 15px;
+				margin: 0;
+				color: #aaa;
+				padding: 0 10px;
+			}
+		}
+		.cycle-pager-active .pager-mfw3twptst-item:after {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: -60px;
+			left: 50%;
+			margin-left: -25px;
+			z-index: 600;
+
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 25px 25px 25px;
+			border-color: transparent transparent #ffffff transparent;
+		}
+		.cycle-pager-active .pager-mfw3twptst-item {
+			opacity: 1;
+			box-shadow: 0 0 5px rgba(0,0,0,.28);
+		}
+	}
+	.wpg-items-person-show {
+		overflow: hidden;
+		width: 100%;
+		> div {
+			width: 100%;
+			padding: 45px 30px;
+			background: #fff;
+			background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+			background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+			background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+			h3 {
+				font-size: 21px;
+				font-family: Avenir-Medium, Arial, Helvetica, sans-serif;
+				text-transform: uppercase;
+				margin: 0;
+			}
+			.wpg-job-title {
+				font-size: 15px;
+				margin: 0;
+				color: #aaa;
+			}
+		}
 	}
 }
 @media screen and (max-width: map-get($grid-breakpoints, xl) ) { //~1200px
@@ -4074,7 +4175,11 @@
 
 }
 @media screen and (max-width: map-get($grid-breakpoints, sm) ) { //~544px
-
+	.module-full-width-many-tabs-with-photo-title-subtitle-text {
+		.wpg-items-person-show {
+			display: none !important;
+		}
+	}
 }
 /*** END MODULE 39 ***/
 
