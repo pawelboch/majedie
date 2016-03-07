@@ -359,7 +359,7 @@ jQuery(document).ready(function(){
 			{
 				if(!($(".wpg-items-person-show").eq(i).hasClass("wpg-active-dropdown")))
 				{
-					$(".wpg-items-person-show").eq(i).slideUp().html("");
+					$(".wpg-items-person-show").eq(i).slideUp(200).html("");
 				}
 
 			}

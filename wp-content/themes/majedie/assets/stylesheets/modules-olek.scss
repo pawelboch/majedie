@@ -4228,7 +4228,8 @@
 				width: 100%;
 				height: auto;
 			}
-			h3 {
+			h3, 
+			h4 {
 				font-size: 21px;
 				font-family: Avenir-Medium, Arial, Helvetica, sans-serif;
 				text-transform: uppercase;
@@ -4268,12 +4269,13 @@
 		width: 100%;
 		> div {
 			width: 100%;
+
 			padding: 45px 30px;
 			background: #fff;
 			background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 			background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
 			background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-			h3 {
+			h3, h4 {
 				font-size: 21px;
 				font-family: Avenir-Medium, Arial, Helvetica, sans-serif;
 				text-transform: uppercase;
@@ -4283,6 +4285,9 @@
 				font-size: 15px;
 				margin: 0;
 				color: #aaa;
+			}
+			> div {
+				max-width: 83.33333%;
 			}
 		}
 	}
