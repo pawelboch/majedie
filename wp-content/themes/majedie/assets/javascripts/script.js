@@ -339,30 +339,32 @@ jQuery(document).ready(function(){
 
 /* .module-full-width-many-tabs-with-photo-title-subtitle-text */
 (function($){
+	var timeoutAnimateScroll=setTimeout(function(){},300);
 	if($(".module-full-width-many-tabs-with-photo-title-subtitle-text").length>0)
 	{
 		$(".wpg-items-person-show").hide().html("");
 		$(".wpg-item-person").click(function(){
+			clearTimeout(timeoutAnimateScroll);
 			$(".wpg-item-person").removeClass("cycle-pager-active");
 			$(this).addClass("cycle-pager-active");
+
+			$(".wpg-items-person-show").removeClass("wpg-active-dropdown");
+			$(this).nextAll(".wpg-items-person-show").first().addClass("wpg-active-dropdown");
 			for(var i=0, iLength=$(".wpg-items-person-show").length; i<iLength; i++)
 			{
-				//if(i==(Math.ceil($(this).nextAll(".wpg-items-person-show").first().index()/3)-1))
-				//{
-				//	$(".wpg-items-person-show").eq(i).slideUp().html("");
-				//}
-				//if($(".wpg-items-person-show").eq(i).css("display")=="none") $(".wpg-items-person-show").eq(i).slideUp().html("");
-				//else $(".wpg-items-person-show").eq(i).hide().html("");
+				if(!($(".wpg-items-person-show").eq(i).hasClass("wpg-active-dropdown")))
+				{
+					$(".wpg-items-person-show").eq(i).slideUp().html("");
+				}
+
 			}
-			/*
-			var that=$(this);
-			$(".wpg-items-person-show").slideUp(300,function(){
-				$(".wpg-items-person-show").html("");
-				that.nextAll(".wpg-items-person-show").first().html( that.find(".wpg-item-person-description").html() ).slideDown();
-			});
-			*/
-			$(".wpg-items-person-show").hide().html("");
-			$(this).nextAll(".wpg-items-person-show").first().html( '<div>' + $(this).find(".wpg-item-person-description").html() + "</div>" ).slideDown();
+			var indexItemPos=$(".wpg-item-person").index($(this));
+			$(this).nextAll(".wpg-items-person-show").first().html( '<div>' + $(this).find(".wpg-item-person-description").html() + "</div>" ).slideDown(300,function(){});
+
+			timeoutAnimateScroll=setTimeout(function(){
+				$('html, body').animate({scrollTop:$('.wpg-item-person').eq(indexItemPos).position().top}, 200);
+			},400);
+		
 			
 
 		});
