@@ -77,6 +77,13 @@ class Module extends Abstract_Module {
 				array(
 					'type'        => 'colorpicker',
 					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'background_inside_color',
+					'label'       => __( 'Background outside color', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
+				array(
+					'type'        => 'colorpicker',
+					'group'		    => __( 'Design', 'pagebox' ),
 					'name'        => 'button_color',
 					'label'       => __( 'Button text color', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),

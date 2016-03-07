@@ -2,6 +2,19 @@
 	color: #fff;
 	background-color: #5e5953;
 	padding: 12px 0;
+	position: relative;
+	.footer-nav {
+		margin: 14px 0 0;
+		padding: 0;
+		li {
+			border-right: 1px solid #6e6963;
+			display: inline-block;
+			float: left;
+			list-style: outside none none;
+			margin: 0 10px 0 0;
+			padding: 0 10px 0 0;
+		}
+	}
 	p {
 		margin: 0;
 		padding: 0;

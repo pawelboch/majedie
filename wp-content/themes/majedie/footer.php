@@ -11,10 +11,19 @@
 					</ul>
 				</div>
 				<div class="col-xs-12 col-sm-7 col-md-8">
-					<p>&copy; MAJEDIE ASSET MANAGEMENT LTD 2015 Registered in England no. 04446767, VAT no. GB882408116<br>Authorised and regulated by the Financial Conduct Authority</p>	
+					<p>MAJEDIE ASSET MANAGEMENT LTD 2015 Registered in England no. 04446767, VAT no. GB882408116<br>Authorised and regulated by the Financial Conduct Authority</p>	
+				</div>
+				<div class="col-md-12">
+					<ul class="footer-nav">
+						<li><a href="<?php echo esc_url(home_url('/disclaimer')) ;?>">Disclaimer</a></li>
+						<li><a href="<?php echo esc_url(home_url('/sitemap')) ;?>">Sitemap</a></li>
+						<li><a href="<?php echo esc_url(home_url('/privacy')) ;?>">Privacy</a></li>
+						<li><a href="<?php echo esc_url(home_url('/accessibility')) ;?>">Accessibility</a></li>
+						<li><a href="<?php echo esc_url(home_url('/disclousure')) ;?>">Disclousure</a></li>
+						<li><a href="<?php echo esc_url(home_url('/frc-stewardship-code')) ;?>">FRC Stewardship Code</a></li>
+					</ul>
 				</div>
 			</div>			
-			
 		</div>
 	</footer>
 	<?php wp_footer(); ?>

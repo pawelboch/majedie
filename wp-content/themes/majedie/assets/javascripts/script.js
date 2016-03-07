@@ -262,7 +262,12 @@ jQuery(window).load(function(){ wpgHeight100pWindow(jQuery); });
 /* end left-to-right attachment size */
 
 
-/* toggle class for news module menu */
+/* toggle class for news module menu */	function arrowMenuParent() {
+		$('.menu-item-has-children').append('<i class="fa fa-angle-down"></i>');
+		$('.menu-item-has-children').click(function() {
+			$(this).find('.sub-menu').toggleClass('opened');
+		});
+	}
 
 (function($){
 	var moduleClass = $('.module-full-width-2-posts-with-thumnails-2-posts');
@@ -284,7 +289,23 @@ jQuery(window).load(function(){ wpgHeight100pWindow(jQuery); });
 
 /* end toggle class for news module menu */
 
+/* Team module toggle */
 
+jQuery(document).ready(function(){
+	jQuery('.meet-the-team .team-header').removeClass('active');
+	var first = jQuery('.meet-the-team .team-header').first();
+	first.addClass('active');
+	first.next().show();
+
+	jQuery('.meet-the-team .team-header').click(function(){
+		jQuery('.meet-the-team .team-header').removeClass('active');
+		jQuery(this).addClass('active');
+		jQuery('.meet-the-team .team-body').hide();
+		jQuery(this).next().show();
+	});
+});
+
+/* Team module toggle end*/
 /* jQuery Ajax posts */
 
 (function($){
@@ -297,3 +318,19 @@ jQuery(window).load(function(){ wpgHeight100pWindow(jQuery); });
 })(jQuery);
 
 /* end jQuery Ajax posts */
+
+
+
+(function($){
+	function arrowMenuParent() {
+		$('.menu-item-has-children').append('<i class="fa fa-angle-down arrow"></i>');
+
+		$('.menu-item-has-children .arrow').click(function() {
+			$('.menu-item-has-children .arrow').not(this).parent().find('.sub-menu').removeClass('opened');
+			$(this).parent().find('.sub-menu').toggleClass('opened');
+		});
+
+	}
+
+	$(document).ready(arrowMenuParent);
+})(jQuery);
