@@ -341,9 +341,30 @@ jQuery(document).ready(function(){
 (function($){
 	if($(".module-full-width-many-tabs-with-photo-title-subtitle-text").length>0)
 	{
+		$(".wpg-items-person-show").hide().html("");
 		$(".wpg-item-person").click(function(){
-			$(".wpg-items-person-show").slideUp().html("");
-			$(this).nextAll(".wpg-items-person-show").first().html($(this).find(".wpg-item-person-description").html()).slideDown();
+			$(".wpg-item-person").removeClass("cycle-pager-active");
+			$(this).addClass("cycle-pager-active");
+			for(var i=0, iLength=$(".wpg-items-person-show").length; i<iLength; i++)
+			{
+				//if(i==(Math.ceil($(this).nextAll(".wpg-items-person-show").first().index()/3)-1))
+				//{
+				//	$(".wpg-items-person-show").eq(i).slideUp().html("");
+				//}
+				//if($(".wpg-items-person-show").eq(i).css("display")=="none") $(".wpg-items-person-show").eq(i).slideUp().html("");
+				//else $(".wpg-items-person-show").eq(i).hide().html("");
+			}
+			/*
+			var that=$(this);
+			$(".wpg-items-person-show").slideUp(300,function(){
+				$(".wpg-items-person-show").html("");
+				that.nextAll(".wpg-items-person-show").first().html( that.find(".wpg-item-person-description").html() ).slideDown();
+			});
+			*/
+			$(".wpg-items-person-show").hide().html("");
+			$(this).nextAll(".wpg-items-person-show").first().html( '<div>' + $(this).find(".wpg-item-person-description").html() + "</div>" ).slideDown();
+			
+
 		});
 	}
 })(jQuery);
