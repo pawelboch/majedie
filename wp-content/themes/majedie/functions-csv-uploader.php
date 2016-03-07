@@ -210,8 +210,6 @@ if ( ! class_exists( 'Majedie_CSV_Uploader' ) ) {
 					);
 				}
 			}
-
-			//$results = $wpdb->get_results( 'SELECT * FROM ' . $table_name, ARRAY_A );
 		}
 
 		public function process() {
@@ -310,3 +308,51 @@ if ( ! class_exists( 'Majedie_CSV_Uploader' ) ) {
  * Run Majedie_CSV_Uploader
  */
 new Majedie_CSV_Uploader;
+
+function majedie_get_prices_filters() {
+	global $wpdb;
+
+	$table_name = $wpdb->prefix . 'majedie_csv';
+
+	$results = $wpdb->get_results( "
+	SELECT `fund-name`, `domicile`, `share-class`, `type`, UPPER(`currency`)
+	FROM {$table_name}
+	ORDER BY `fund-name`", ARRAY_A );
+
+	array_unshift( $results, null );
+	$results = call_user_func_array( 'array_map', $results );
+
+	foreach( $results as &$array ) {
+		$array = array_unique( $array );
+	}
+
+	return $results;
+}
+
+function majedie_get_prices_table() {
+	global $wpdb;
+
+	$table_name = $wpdb->prefix . 'majedie_csv';
+
+	$where = '';
+	$filters = array();
+	if( isset( $_GET['f'] )) {
+		$f = $_GET['f'];
+		if( ! empty( $f['name'] )) $filters[] = '`fund-name` LIKE \'' . esc_sql( $f['name'] ) . '\'';
+		if( ! empty( $f['domicile'] )) $filters[] = '`domicile` LIKE \'' . esc_sql( $f['domicile'] ) . '\'';
+		if( ! empty( $f['share_class'] )) $filters[] = '`share-class` LIKE \'' . esc_sql( $f['share_class'] ) . '\'';
+		if( ! empty( $f['acc_inc'] )) $filters[] = '`type` LIKE \'' . esc_sql( $f['acc_inc'] ) . '\'';
+		if( ! empty( $f['currency'] )) $filters[] = '`currency` LIKE \'' . esc_sql( $f['currency'] ) . '\'';
+	}
+
+	if( count( $filters ) ) {
+		$where = ' WHERE ' . implode( ' AND ', $filters ) . ' ';
+	}
+
+	$results = $wpdb->get_results( "
+	SELECT `fund-name`, `domicile`, `share-class`, `type`, `isin`, `currency`, `nav`, `price-swing`, `navdate`, `time`
+	FROM {$table_name}{$where}
+	ORDER BY `fund-name`", OBJECT );
+
+	return $results;
+}

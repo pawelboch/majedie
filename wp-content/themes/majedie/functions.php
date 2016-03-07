@@ -2,7 +2,8 @@
 
 require_once 'functions-csv-uploader.php';
 
-add_image_size( 'team', 301, 355 );
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'team', 301, 355, true );
 
 
 // Register the three useful image sizes for use in Add Media modal
@@ -26,7 +27,8 @@ function theme_enqueue_script() {
 	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/javascripts/jquery/dist/jquery.min.js', array(), false, true );
 	wp_enqueue_script( 'prefixfree', get_template_directory_uri() . '/assets/javascripts/vendor/prefixfree/prefixfree.min.js', array(), false, true );
 	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/assets/javascripts/vendor/modernizr/modernizr.js', array(), false, false );
-	wp_enqueue_script( 'pixelperfect-js', get_template_directory_uri() . '/assets/javascripts/pixelperfect/src/pixel-perfect.js' , array(), false, true); 
+	wp_enqueue_script( 'pixelperfect-js', get_template_directory_uri() . '/assets/javascripts/pixelperfect/src/pixel-perfect.js' , array(), false, true);
+	wp_enqueue_script( 'tablesorter', get_template_directory_uri() . '/assets/javascripts/jquery.tablesorter.min.js' , array('jquery'), false, true);
 
 	wp_enqueue_script( 'cycle2', get_template_directory_uri() . '/assets/javascripts/cycle2/jquery.cycle2.min.js', false, false, true );
 	wp_enqueue_script( 'cycle2-carousel', get_template_directory_uri() . '/assets/javascripts/cycle2/jquery.cycle2.carousel.js', false, false, true );
@@ -44,7 +46,7 @@ function theme_enqueue_script() {
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_style' );
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_script' );
 
-add_theme_support( 'post-thumbnails' ); 
+//add_theme_support( 'post-thumbnails' );
 
 add_action( 'after_setup_theme', 'wppn_setup' );
 function wppn_setup() {  

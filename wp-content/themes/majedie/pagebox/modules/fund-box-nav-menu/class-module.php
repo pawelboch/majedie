@@ -53,11 +53,35 @@ class Module extends Abstract_Module {
 			// WPGeeks_Forms
 			'fields'      => array(
 				array(
-					'type'        => 'hidden',
-					'group'		    => __( 'General', 'pagebox' ),
-					'name'        => 'menu',
-					'label'       => __( 'Menu', 'pagebox' ),
-					'description' => __( 'Add menu', 'pagebox' ),
+					'type'        => 'repeater',
+					'group'		  => __( 'General', 'pagebox' ),
+					'name'        => 'menu-items',
+					'description' => __( 'Add menu link', 'pagebox' ),
+					'labels'       => array(
+						'singular' => __('Link', 'pagebox'),
+						'plural' => __('Links', 'pagebox')
+					),
+					'buttons' => array(
+						'add' => __('Add menu link', 'pagebox'),
+						'remove' => __('Remove menu link', 'pagebox')
+					),
+					'fields' => array(
+						array(
+							'type'        => 'text',
+							'group'		    => __( 'General', 'pagebox' ),
+							'name'        => 'link_text',
+							'label'       => __( 'Link title', 'pagebox' ),
+							'description' => __( 'Link title', 'pagebox' ),
+						),
+						array(
+							'type'        => 'text',
+							'group'		    => __( 'General', 'pagebox' ),
+							'name'        => 'link_url',
+							'label'       => __( 'Link URL', 'pagebox' ),
+							'description' => __( 'Link URL', 'pagebox' ),
+						),
+					),
+
 				),
 			)
 		);
