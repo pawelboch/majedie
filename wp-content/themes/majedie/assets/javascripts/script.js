@@ -289,9 +289,26 @@ jQuery(window).load(function(){ wpgHeight100pWindow(jQuery); });
 
 /* end toggle class for news module menu */
 
+/* Team module toggle */
+
+jQuery(document).ready(function(){
+	jQuery('.meet-the-team .team-header').removeClass('active');
+	var first = jQuery('.meet-the-team .team-header').first();
+	first.addClass('active');
+	first.next().show();
+
+	jQuery('.meet-the-team .team-header').click(function(){
+		jQuery('.meet-the-team .team-header').removeClass('active');
+		jQuery(this).addClass('active');
+		jQuery('.meet-the-team .team-body').hide();
+		jQuery(this).next().show();
+	});
+});
+
+/* Team module toggle end*/
+
 
 /* jQuery Ajax posts */
-
 (function($){
 	function ajaxLoadPosts() {
 
@@ -300,11 +317,10 @@ jQuery(window).load(function(){ wpgHeight100pWindow(jQuery); });
 	$(document).ready(ajaxLoadPosts);
 
 })(jQuery);
-
 /* end jQuery Ajax posts */
 
 
-
+/* decription script */
 (function($){
 	function arrowMenuParent() {
 		$('.menu-item-has-children').append('<i class="fa fa-angle-down arrow"></i>');
@@ -318,3 +334,17 @@ jQuery(window).load(function(){ wpgHeight100pWindow(jQuery); });
 
 	$(document).ready(arrowMenuParent);
 })(jQuery);
+/* end decription script */
+
+
+/* .module-full-width-many-tabs-with-photo-title-subtitle-text */
+(function($){
+	if($(".module-full-width-many-tabs-with-photo-title-subtitle-text").length>0)
+	{
+		$(".wpg-item-person").click(function(){
+			$(".wpg-items-person-show").slideUp().html("");
+			$(this).nextAll(".wpg-items-person-show").first().html($(this).find(".wpg-item-person-description").html()).slideDown();
+		});
+	}
+})(jQuery);
+/* end .module-full-width-many-tabs-with-photo-title-subtitle-text */

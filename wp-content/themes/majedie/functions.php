@@ -143,3 +143,93 @@ function wpshout_custom_sizes( $sizes ) {
         'left-to-right' => __( 'From left to right' ),
     ) );
 }
+
+
+/**
+ * Add team taxonomy - Team Departmen and Team Web Departmen
+ */
+function team_taxonomy() {
+	register_taxonomy(
+		't_category',  //The name of the taxonomy. Name should be in slug form (must not contain capital letters or spaces).
+		'team',   		 //post type name
+		$team_category = array(
+			'hierarchical' 		=> true,
+			'label' 			=> 'Team Department',  //Display name
+			'query_var' 		=> true,
+			'rewrite'			=> array(
+				'slug' 			=> 'Team', // This controls the base slug that will display before each term
+				'with_front' 	=> false // Don't display the category base before
+			)
+		)
+	);
+}
+add_action( 'init', 'team_taxonomy', 1);
+
+
+/**
+ * Add custom post type 'Team'
+ */
+add_action( 'init', 'create_team_member_type', 1 );
+function create_team_member_type() {
+	register_post_type( 'team_member',
+		array(
+			'labels' => array(
+				'name' => __( 'Team' ),
+				'singular_name' => __( 'Team' )
+			),
+			'taxonomies' => array('t_category','t_category_web'),
+			'public' => false,
+			'show_ui'            => true,
+			'show_in_menu'       => true,
+			'publicly_queryable' => false,
+			'supports'    => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' )
+		)
+	);
+}
+
+/**
+ * Add custom post type 'Fund'
+ */
+add_action( 'init', 'create_fund_type', 1 );
+function create_fund_type() {
+	$labels = array(
+		'name'                  => 'Funds',
+		'singular_name'         => 'Fund',
+		'menu_name'             => 'Funds',
+		'name_admin_bar'        => 'Funds',
+		'parent_item_colon'     => 'Parent Item:',
+		'all_items'             => 'All Items',
+		'add_new_item'          => 'Add New Item',
+		'add_new'               => 'Add New',
+		'new_item'              => 'New Item',
+		'edit_item'             => 'Edit Item',
+		'update_item'           => 'Update Item',
+		'view_item'             => 'View Item',
+		'search_items'          => 'Search Item',
+		'not_found'             => 'Not found',
+		'not_found_in_trash'    => 'Not found in Trash',
+		'items_list'            => 'Items list',
+		'items_list_navigation' => 'Items list navigation',
+		'filter_items_list'     => 'Filter items list',
+	);
+	$args = array(
+		'label'                 => 'Fund',
+		'description'           => 'Fund pages',
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'custom-fields' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+
+	register_post_type( 'fund',$args );
+}
