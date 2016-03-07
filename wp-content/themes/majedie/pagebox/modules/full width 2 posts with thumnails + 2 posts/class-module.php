@@ -61,35 +61,42 @@ class Module extends Abstract_Module {
 				),
 				array(
 					'type'        => 'cpt',
-					'group'       => __( 'General', 'pagebox' ),
+					'group'       => __( 'First post', 'pagebox' ),
 					'name'        => 'first_post',
 					'label'       => __( 'First post', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
 				),
 				array(
 					'type'        => 'cpt',
-					'group'       => __( 'General', 'pagebox' ),
+					'group'       => __( 'Second post', 'pagebox' ),
 					'name'        => 'second_post',
 					'label'       => __( 'Second post', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
 				),
 				array(
 					'type'        => 'cpt',
-					'group'       => __( 'General', 'pagebox' ),
+					'group'       => __( 'Third post', 'pagebox' ),
 					'name'        => 'third_post',
 					'label'       => __( 'Third post', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
 				),
 				array(
 					'type'        => 'cpt',
-					'group'       => __( 'General', 'pagebox' ),
+					'group'       => __( 'Fourth post', 'pagebox' ),
 					'name'        => 'fourth_post',
 					'label'       => __( 'Fourth post', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
 				),
 
 
-
+				array(
+					'type'        => 'switch',
+					'group'		    => __( 'Design', 'pagebox' ),
+					'name'        => 'hide_filter',
+					'option'      => 'no',
+					'label'       => __( 'Hide filter select menu', 'pagebox' ),
+					'description' => __( '', 'pagebox' ),
+				),
 				array(
 					'type'        => 'colorpicker',
 					'group'		    => __( 'Design', 'pagebox' ),

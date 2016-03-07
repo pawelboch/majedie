@@ -128,66 +128,67 @@
 
 
 
+<<<<<<< HEAD
 /*** BY SZYMEK ***/
 
 /*** MODULE BY SZYMEK 1 ***/
 .module-fund-box-content {
-    color: #000;
-    padding: 40px 30px;
-    margin-bottom: 25px;
-    h2 {
-        font-size: 30px;
-        text-transform: uppercase;
-        font-family: Avenir-Book, Arial, Helvetica, sans-serif;
-        line-height: 105%;
-    }
+	color: #000;
+	padding: 40px 30px;
+	margin-bottom: 25px;
+	h2 {
+		font-size: 30px;
+		text-transform: uppercase;
+		font-family: Avenir-Book, Arial, Helvetica, sans-serif;
+		line-height: 105%;
+	}
 }
 .module-fund-box-post {
-    background-color: #fff;
-    color: #000;
-    padding: 30px 20px;
-    margin-top: 12.5px;
-    margin-bottom: 25px;
-    .wpg-tags {
-        font-size: 15px;
-        color: #dd6e1d;
-        margin-bottom: 3px;
-    }
-    h3 {
-        font-family: Avenir-Medium, Arial, Helvetica, sans-serif;
-        font-size: 21px;
-        text-transform: uppercase;
-    }
-    .wpg-date {
-        font-size: 15px;
-        color: #aaa;
-        margin-top: 3px;
-    }
+	background-color: #fff;
+	color: #000;
+	padding: 30px 20px;
+	margin-top: 12.5px;
+	margin-bottom: 25px;
+	.wpg-tags {
+		font-size: 15px;
+		color: #dd6e1d;
+		margin-bottom: 3px;
+	}
+	h3 {
+		font-family: Avenir-Medium, Arial, Helvetica, sans-serif;
+		font-size: 21px;
+		text-transform: uppercase;
+	}
+	.wpg-date {
+		font-size: 15px;
+		color: #aaa;
+		margin-top: 3px;
+	}
 }
 .module-fund-box-nav-menu {
-    background-color: #e1e1e1;
-    margin-bottom: 40px;
-    min-height: 62px;
-    ul {
-        font-family: Avenir-Book, Arial, Helvetica, sans-serif;
-        list-style: none;
-        margin-bottom:0;
-        li {
-            float: left;
-            &.wpg-fund-menu-active {
-                a {
-                    background-color: rgba(0, 0, 0, 0.1);
-                    color: #fff !important;
-                }
-            }
-            a {
-                display: inline-block;
-                padding: 20px;
-                font-weight: 700;
-                vertical-align: top;
-            }
-        }
-    }
+	background-color: #e1e1e1;
+	margin-bottom: 40px;
+	min-height: 62px;
+	ul {
+		font-family: Avenir-Book, Arial, Helvetica, sans-serif;
+		list-style: none;
+		margin-bottom:0;
+		li {
+			float: left;
+			&.wpg-fund-menu-active {
+				a {
+					background-color: rgba(0, 0, 0, 0.1);
+					color: #fff !important;
+				}
+			}
+			a {
+				display: inline-block;
+				padding: 20px;
+				font-weight: 700;
+				vertical-align: top;
+			}
+		}
+	}
 }
 @media screen and (max-width: map-get($grid-breakpoints, xl) ) { //~1200px
 
@@ -204,8 +205,9 @@
 
 
 /*** END MODULE BY SZYMEK 1 ***/
+=======
+>>>>>>> 0e577e81d7faf28cf168b6512b682c124d5e0ab8
 
-/*** END BY SZYMEK ***/
 
 
 
@@ -255,9 +257,9 @@
 		table-layout: auto;
 	}
 	h1 {
-    font-family: avenir-light,Arial,Helvetica,sans-serif;
-    font-size: 50px;
-    text-transform: uppercase;
+	font-family: avenir-light,Arial,Helvetica,sans-serif;
+	font-size: 50px;
+	text-transform: uppercase;
 	}
 	img {
 		max-width: 100%;
@@ -1234,7 +1236,131 @@
 
 
 
+/*** MODULE 10a ***/
+.module-full-width-post-with-category-title-date-paragraph {
+	padding: 60px 0;
+	.row {
+		margin: 0;
+		> div {
+			padding: 0;
+			> div,
+			.wpg-image-bg {
+				padding: 30px;
+			}
+			.wpg-image-bg {
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: 50% 50%;
+			}
+		}
+	}
+	.post-category {
+		color: #dd6e1d;
+		margin: 0 0 8px;
+	}
+	.post-date {
+		color: #aaa;
+		margin: 0 0 15px;
+	}
+	.wpg-image-bg {
+		min-height: 386px !important;
+	}
+	h2 {
+		font-size: 40px;
+		text-transform: uppercase;
+		a:hover {
+			text-decoration: none;
+		}
+	}
+	p {
+		font-size: 15px;
+	}
+	.wpg-container-text {
+		background-color: #fff;
+	}
 
+	.wpg-arrow {
+		display: block;
+		position: absolute;
+		top: 50%;
+		margin-top: -25px;
+		width: 0;
+		height: 0;
+		border-style: solid;	
+	}
+	.pull-xs-left.wpg-container-text {
+		.wpg-arrow.wpg-arrow-horizontal {
+			border-width: 25px 0 25px 25px;
+			border-color: transparent transparent transparent #fff;	
+			right: -25px;		
+		}
+		.wpg-arrow.wpg-arrow-vertical {
+			display: none;
+		}
+	}
+	.pull-xs-right.wpg-container-text {
+		.wpg-arrow.wpg-arrow-horizontal {
+			border-width: 25px 25px 25px 0;
+			border-color: transparent #fff transparent transparent;
+			left: -25px;
+		}	
+		.wpg-arrow.wpg-arrow-vertical {
+			display: none;
+		}	
+	}
+}
+@media screen and (max-width: map-get($grid-breakpoints, xl) ) { //~1200px
+
+}
+@media screen and (max-width: map-get($grid-breakpoints, lg) ) { //~992px
+
+}
+@media screen and (max-width: map-get($grid-breakpoints, md) ) { //~768px
+
+}
+@media screen and (max-width: map-get($grid-breakpoints, sm) ) { //~544px
+	.module-full-width-post-with-category-title-date-paragraph {
+		/*
+		.wpg-container-text:before {
+			display: none;
+		}
+		*/
+		.wpg-image-bg {
+			min-height: 288px !important;
+		}
+
+		.wpg-arrow {
+			top: -25px;
+			margin-top: 0;
+			left: 50%;
+			margin-left: -25px;
+		}
+		.pull-xs-left.wpg-container-text {
+			.wpg-arrow.wpg-arrow-horizontal {
+				display: none;	
+			}
+			.wpg-arrow.wpg-arrow-vertical {
+				display: block;
+				border-style: solid;
+				border-width: 0 25px 25px 25px;
+				border-color: transparent transparent #fff transparent;
+			}
+		}
+		.pull-xs-right.wpg-container-text {
+			.wpg-arrow.wpg-arrow-horizontal {
+				display: none;
+			}	
+			.wpg-arrow.wpg-arrow-vertical {
+				display: block;
+				border-style: solid;
+				border-width: 0 25px 25px 25px;
+				border-color: transparent transparent #fff transparent;
+			}	
+		}
+	}
+
+}
+/*** END MODULE 10a ***/
 
 
 
