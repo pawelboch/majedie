@@ -376,3 +376,4 @@ jQuery(document).ready(function(){
 	}
 })(jQuery);
 /* end .module-full-width-many-tabs-with-photo-title-subtitle-text */
+
