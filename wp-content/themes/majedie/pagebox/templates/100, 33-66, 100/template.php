@@ -1,26 +1,25 @@
 <div class="main-container">
-	<div class="top-container">
-		<?php foreach ($this->get_variable( 'top_modules' ) as $module): ?>
-		<?php $module->display(); ?>
-		<?php endforeach ?>
-	</div>
-	<div class="middle-container">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8">
-					<?php foreach ($this->get_variable( 'left-first_modules' ) as $module): ?>
-					<?php $module->display(); ?>
-					<?php endforeach ?>
-				</div>
-				<div class="col-md-4">
-					<?php foreach ($this->get_variable( 'right-first_modules' ) as $module): ?>
-					<?php $module->display(); ?>
-					<?php endforeach ?>
-				</div>
+	<div class="main-container">
+				<?php foreach ($this->get_variable( 'top_modules' ) as $module): ?>
+				<?php $module->display(); ?>
+				<?php endforeach ?>
+			</div>
+	<div class="container top">
+		<div class="row">
+	
+			<div class="col-sm-4">
+				<?php foreach ($this->get_variable( 'left_modules' ) as $module): ?>
+				<?php $module->display(); ?>
+				<?php endforeach ?>
+			</div>
+			<div class="col-sm-8">
+				<?php foreach ($this->get_variable( 'right_modules' ) as $module): ?>
+				<?php $module->display(); ?>
+				<?php endforeach ?>
 			</div>
 		</div>
 	</div>
-	<div class="bottom-container">
+	<div class="bottom">
 		<?php foreach ($this->get_variable( 'bottom_modules' ) as $module): ?>
 		<?php $module->display(); ?>
 		<?php endforeach ?>

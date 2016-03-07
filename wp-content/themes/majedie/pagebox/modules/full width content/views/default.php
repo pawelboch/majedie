@@ -8,7 +8,7 @@
 	;?>
 	>
 	<div class="container">
-		<div class="col-xs-12 col-md-8">
+		<div class="col-xs-12">
 			<div class="text">
 				<?php if($this->get('editor') != '') {
 					echo $this->get('editor') ;
