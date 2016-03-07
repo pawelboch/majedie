@@ -19,6 +19,11 @@
 })(jQuery);
 /* end menu mobile */
 
+/* menu mobile fund */
+(function($){
+	$('.tablesorter' ).tablesorter();
+})(jQuery);
+/* end menu mobile fund */
 
 /* menu mobile fund */
 (function($){

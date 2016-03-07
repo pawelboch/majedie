@@ -10,7 +10,7 @@
 
 			<div class="wpg-table-wrap-outset">
 				<div class="wpg-table-wrap">
-					<table>
+					<table class="tablesorter">
 						<thead>
 						<tr>
 							<th>FUND</th>
