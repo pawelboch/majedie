@@ -10,12 +10,12 @@
 				'order'            => 'DESC',
 				'paged' => $paged,
 				);
-				$custom_query = new WP_Query ( $query_args );
+				$custom_query = new WP_Query ( $args );
 				?>
 				<?php while (have_posts()) : the_post(); ?>
 				<div class="wpg-short-post">
-					<h3><a href="<?php echo get_the_permalink(); ?>"><?php echo $i; ?><?php echo get_the_title(); ?></a></h3>
-					<p><?php echo wp_trim_words(get_post($post)->post_content, 20, '') ;?></p>
+					<h3><a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></a></h3>
+					<p><?php echo get_the_excerpt(); ?></p>
 				</div>
 				<?php endwhile; ?>
 				

@@ -16,6 +16,7 @@ function theme_enqueue_style() {
 	wp_enqueue_style( 'footer', get_template_directory_uri() . '/assets/stylesheets/footer.css', array(), false, false ); 
 	wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/stylesheets/main.css', array(), false, false ); 
 	wp_enqueue_style( 'modules-wojtek', get_template_directory_uri() . '/assets/stylesheets/modules-wojtek.css', array(), false, false ); 
+	wp_enqueue_style( 'modules-szymek', get_template_directory_uri() . '/assets/stylesheets/modules-szymek.css', array(), false, false ); 
 	wp_enqueue_style( 'modules-olek', get_template_directory_uri() . '/assets/stylesheets/modules-olek.css', array(), false, false ); 
 	
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', array(), false, false ); 
