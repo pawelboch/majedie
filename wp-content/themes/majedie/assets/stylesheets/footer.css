@@ -1,9 +1,6 @@
 .wpg-main-footer {
   color: #fff;
   background-color: #5e5953;
-<<<<<<< HEAD
-  padding: 12px 0; }
-=======
   padding: 12px 0;
   position: relative; }
   .wpg-main-footer .footer-nav {
@@ -16,7 +13,6 @@
       list-style: outside none none;
       margin: 0 10px 0 0;
       padding: 0 10px 0 0; }
->>>>>>> f2c33f3addcf2243f7e852569c6aec987b469321
   .wpg-main-footer p {
     margin: 0;
     padding: 0;

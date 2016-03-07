@@ -162,7 +162,8 @@
   .module-full-width-image-title-icons-paragraph-link .span-table {
     table-layout: auto; }
   .module-full-width-image-title-icons-paragraph-link h1 {
-    font-size: 48px;
+    font-family: avenir-light,Arial,Helvetica,sans-serif;
+    font-size: 50px;
     text-transform: uppercase; }
   .module-full-width-image-title-icons-paragraph-link img {
     max-width: 100%;
@@ -187,7 +188,7 @@
       .module-full-width-image-title-icons-paragraph-link .wpg-social-icons li span {
         display: none; }
   .module-full-width-image-title-icons-paragraph-link p {
-    margin: 15px 0 0 0;
+    margin: 10px 0 0 0;
     font-size: 15px; }
   .module-full-width-image-title-icons-paragraph-link .btn-1 {
     margin-top: 30px; }
@@ -328,21 +329,22 @@
     background-repeat: no-repeat;
     background-size: auto auto; }
     .module-two-blocks-with-logo-title-button-background-image .wpg-red-block h2 {
-      font-size: 40px; }
+      font-family: Avenir-Light;
+      font-size: 50px;
+      line-height: 1.1em;
+      margin: 0 0 8px; }
       .module-two-blocks-with-logo-title-button-background-image .wpg-red-block h2 strong {
         font-family: Avenir-Black, Arial, Helvetica, sans-serif;
         font-weight: 400; }
       .module-two-blocks-with-logo-title-button-background-image .wpg-red-block h2 span {
         display: inline-block;
         vertical-align: bottom;
-        position: relative;
-        bottom: -5px; }
+        position: relative; }
       .module-two-blocks-with-logo-title-button-background-image .wpg-red-block h2 img {
         vertical-align: bottom;
         margin-right: 10px; }
     .module-two-blocks-with-logo-title-button-background-image .wpg-red-block p {
       font-size: 25px;
-      line-height: 120%;
       margin: 0; }
   .module-two-blocks-with-logo-title-button-background-image .wpg-blue-block {
     background-color: #355274;
@@ -358,7 +360,7 @@
   .module-two-blocks-with-logo-title-button-background-image .wpg-red-block,
   .module-two-blocks-with-logo-title-button-background-image .wpg-blue-block {
     color: #fff;
-    padding: 40px 30px 25px;
+    padding: 30px 30px 25px;
     margin: 15px 0; }
   .module-two-blocks-with-logo-title-button-background-image .btn-1 {
     margin-top: 30px;
@@ -892,18 +894,24 @@
 .module-full-width-3-blocks-with-icon-title-text {
   padding: 60px 0 50px 0;
   text-align: center; }
+  .module-full-width-3-blocks-with-icon-title-text .col-1 .wpg-inset-col {
+    background-color: #365373; }
+  .module-full-width-3-blocks-with-icon-title-text .col-2 .wpg-inset-col {
+    background-color: #D24452; }
+  .module-full-width-3-blocks-with-icon-title-text .col-3 .wpg-inset-col {
+    background-color: #DD6D25; }
   .module-full-width-3-blocks-with-icon-title-text h2 {
     font-size: 30px;
     text-transform: uppercase;
     font-family: Avenir-Medium, Arial, Helvetica, sans-serif; }
   .module-full-width-3-blocks-with-icon-title-text h3 {
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 8px;
     text-transform: uppercase; }
   .module-full-width-3-blocks-with-icon-title-text .row {
     margin-top: 25px; }
   .module-full-width-3-blocks-with-icon-title-text .wpg-inset-col {
-    padding: 50px 30px 30px;
+    padding: 30px;
     background-color: #000;
     color: #fff;
     margin: 10px 0; }
@@ -1046,7 +1054,7 @@
   .module-full-width-content h1, .module-full-width-content h2, .module-full-width-content h3, .module-full-width-content h4, .module-full-width-content h5, .module-full-width-content h6 {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-weight: 700;
-    margin: 15px 0 0 0; }
+    margin: 30px 0 15px 0; }
   .module-full-width-content h1:first-child, .module-full-width-content h2:first-child, .module-full-width-content h3:first-child, .module-full-width-content h4:first-child, .module-full-width-content h5:first-child, .module-full-width-content h6:first-child {
     margin-top: 0; }
   .module-full-width-content h1 + p, .module-full-width-content h2 + p, .module-full-width-content h3 + p, .module-full-width-content h4 + p, .module-full-width-content h5 + p, .module-full-width-content h6 + p,
@@ -1067,6 +1075,8 @@
     font-size: 10px; }
   .module-full-width-content p {
     font-size: 15px; }
+  .module-full-width-content a {
+    text-decoration: underline; }
   .module-full-width-content strong {
     font-weight: 700; }
   .module-full-width-content hr {
