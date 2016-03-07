@@ -247,6 +247,14 @@ if ( ! class_exists( 'Majedie_CSV_Uploader' ) ) {
 			}
 		}
 
+		public function showTable() {
+			global $wpdb;
+			$table_name = $wpdb->prefix . 'majedie_csv';
+			$results = $wpdb->get_results( "SELECT * FROM {$table_name};", ARRAY_A );
+
+			d( $results );
+		}
+
 		public function menuPage() { ?>
 			<div class="wrap">
 				<h1>CSV Uploader</h1>
@@ -298,6 +306,10 @@ if ( ! class_exists( 'Majedie_CSV_Uploader' ) ) {
 						       value="Upload and save">
 					</p>
 				</form>
+
+				<div style="width:100%;overflow:auto">
+					<?php $this->showTable(); ?>
+				</div>
 			</div>
 		<?php }
 
@@ -355,4 +367,37 @@ function majedie_get_prices_table() {
 	ORDER BY `fund-name`", OBJECT );
 
 	return $results;
+}
+
+function majedie_get_charges_table() {
+	global $wpdb;
+
+	$table_name = $wpdb->prefix . 'majedie_csv';
+
+	$where = '';
+	$filters = array();
+	if( isset( $_GET['f'] )) {
+		$f = $_GET['f'];
+		if( ! empty( $f['name'] )) $filters[] = '`fund-name` LIKE \'' . esc_sql( $f['name'] ) . '\'';
+		if( ! empty( $f['domicile'] )) $filters[] = '`domicile` LIKE \'' . esc_sql( $f['domicile'] ) . '\'';
+		if( ! empty( $f['share_class'] )) $filters[] = '`share-class` LIKE \'' . esc_sql( $f['share_class'] ) . '\'';
+		if( ! empty( $f['acc_inc'] )) $filters[] = '`type` LIKE \'' . esc_sql( $f['acc_inc'] ) . '\'';
+		if( ! empty( $f['currency'] )) $filters[] = '`currency` LIKE \'' . esc_sql( $f['currency'] ) . '\'';
+	}
+
+	if( count( $filters ) ) {
+		$where = ' WHERE ' . implode( ' AND ', $filters ) . ' ';
+	}
+
+	$results = $wpdb->get_results( "
+	SELECT `umbrella`, `fund-name`, `share-class`, `currency`, `type`, `ongoing-charge`, `amc`, `admin-cost-charge`, `perf-fee`, `entry-charge`, `taxes`, `trade-ex`, `research`, `pricing-basis`, `dilution-rates`
+	FROM {$table_name}{$where}
+	ORDER BY `umbrella` DESC, `fund-name` ASC", OBJECT );
+
+	$groups = array();
+	foreach( $results as $row ) {
+		$groups[ $row->umbrella ][] = $row;
+	}
+
+	return $groups;
 }

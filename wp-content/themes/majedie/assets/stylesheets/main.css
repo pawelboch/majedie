@@ -100,10 +100,29 @@ ul li ul {
   max-height: 400px;
   max-width: 100%; }
 
+<<<<<<< HEAD
 .container .container {
   padding: 0; }
 
 td, th {
   line-height: 1.6em; }
+=======
+.tablesorter thead tr > th {
+  cursor: pointer; }
+  .tablesorter thead tr > th.headerSortDown::after, .tablesorter thead tr > th.headerSortUp::after {
+    display: inline-block;
+    content: "";
+    width: 0;
+    height: 0;
+    margin: 0 6px;
+    border-left: solid 6px transparent;
+    border-right: solid 6px transparent; }
+  .tablesorter thead tr > th.headerSortUp::after {
+    border-top: solid 8px #fff;
+    border-bottom: 0; }
+  .tablesorter thead tr > th.headerSortDown::after {
+    border-top: 0;
+    border-bottom: solid 8px #fff; }
+>>>>>>> 964152c4bc615ecfb806b422d21deefccf2c0751
 
 /*# sourceMappingURL=main.css.map */
