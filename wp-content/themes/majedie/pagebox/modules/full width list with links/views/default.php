@@ -1,6 +1,4 @@
 <div class="module-wpg module-full-width-list-with-links">
-	<div class="container">
-
 		<ul>
 			<?php foreach ($this->get('links') as $link) { ;?>
 			<li>
@@ -21,6 +19,4 @@
 			</li>
 			<?php } ;?>
 		</ul>
-	
-	</div>
 </div>
