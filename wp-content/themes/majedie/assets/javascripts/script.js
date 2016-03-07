@@ -289,7 +289,23 @@ jQuery(window).load(function(){ wpgHeight100pWindow(jQuery); });
 
 /* end toggle class for news module menu */
 
+/* Team module toggle */
 
+jQuery(document).ready(function(){
+	jQuery('.meet-the-team .team-header').removeClass('active');
+	var first = jQuery('.meet-the-team .team-header').first();
+	first.addClass('active');
+	first.next().show();
+
+	jQuery('.meet-the-team .team-header').click(function(){
+		jQuery('.meet-the-team .team-header').removeClass('active');
+		jQuery(this).addClass('active');
+		jQuery('.meet-the-team .team-body').hide();
+		jQuery(this).next().show();
+	});
+});
+
+/* Team module toggle end*/
 /* jQuery Ajax posts */
 
 (function($){
