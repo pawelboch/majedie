@@ -1,0 +1,61 @@
+Institutional Access,Retail Access,Sedol,Strategy,Domicile,Share Class,Type,ISIN,Currency,Price Currency,Time,Nav,Navdate,Price Swing *,Ongoing Charge,AMC,Admin Cost Charge,Perf Fee,Entry Charge,Taxes,Trade Ex,Research,Pricing Basis,Dilution Rates
+y,n,3328389,UK Equity Fund,UK,A,Acc,GB0033283895,GBP,GBPence,Noon,401.21,20160211,Up,1.52,1.5,0.02,N/A,0,0.14,0.04,0.04,Single Swing,0.15 / 0.60
+y,n,3273069,UK Equity Fund,UK,B,Acc,GB0032730698,GBP,GBPence,Noon,459.05,20160211,Up,0.03,0,0.03,N/A,0,0.14,0.04,0.04,Single Swing,0.15 / 0.60
+y,n,B7F1244,UK Equity Fund,UK,A,Inc,GB00B7F12442,GBP,GBPence,Noon,374.71,20160211,Up,1.52,1.5,0.02,N/A,0,0.14,0.04,0.04,Single Swing,0.15 / 0.60
+y,y,B88NK73,UK Equity Fund,UK,X,Acc,GB00B88NK732,GBP,GBPence,Noon,125.04,20160211,Up,0.77,0.75,0.02,N/A,0,0.14,0.04,0.04,Single Swing,0.15 / 0.60
+y,y,B8BH0R2,UK Equity Fund,UK,X,Inc,GB00B8BH0R25,GBP,GBPence,Noon,115.1,20160211,Up,0.77,0.75,0.02,N/A,0,0.14,0.04,0.04,Single Swing,0.15 / 0.60
+y,n,BBT3J65,UK Equity Fund,UK,B,Inc,GB00BBT3J657,GBP,GBPence,Noon,426.62,20160211,Up,0.03,0,0.03,N/A,0,0.14,0.04,0.04,Single Swing,0.15 / 0.60
+y,n,BSL7D62,UK Equity Fund,Ireland,B,Acc,IE00BSL7D622,USD,USD,Noon,0.8096,20160211,None,1.65,1.5,0.15,N/A,0,0.37,0.02,0.02,Dilution Levy,0.15 / 0.60
+y,y,BH65MY5,UK Equity Fund,Ireland,Z,Acc,IE00BH65MY57,GBP,GBP,Noon,0.8737,20160211,None,0.15,0,0.15,N/A,0,0.37,0.02,0.02,Dilution Levy,0.15 / 0.60
+y,y,BH65MZ6,UK Equity Fund,Ireland,Z,Inc,IE00BH65MZ64,GBP,GBP,Noon,0.8338,20160211,None,0.9,0.75,0.15,N/A,0,0.37,0.02,0.02,Dilution Levy,0.15 / 0.60
+y,n,BW0DL87,UK Equity Fund,Ireland,A,Acc,IE00BW0DL879,GBP,GBP,Noon,0.8244,20160211,None,1.65,1.5,0.15,N/A,0,0.37,0.02,0.02,Dilution Levy,0.15 / 0.60
+y,n,3354726,UK Focus Fund,UK,A,Acc,GB0033547265,GBP,GBPence,Noon,476.84,20160211,None,2.03,2,0.03,N/A,0,0.32,0.09,0.08,Single Swing,0.15 / 0.55
+y,n,3354737,UK Focus Fund,UK,B,Acc,GB0033547372,GBP,GBPence,Noon,596.62,20160211,None,0.03,0,0.03,N/A,0,0.32,0.09,0.08,Single Swing,0.15 / 0.55
+y,y,B7S3QT0,UK Focus Fund,UK,X,Acc,GB00B7S3QT06,GBP,GBPence,Noon,132.92,20160211,None,1.53,1.5,0.03,N/A,0,0.32,0.09,0.08,Single Swing,0.15 / 0.55
+y,y,B845051,UK Focus Fund,UK,X,Inc,GB00B8450512,GBP,GBPence,Noon,125.52,20160211,None,1.53,1.5,0.03,N/A,0,0.32,0.09,0.08,Single Swing,0.15 / 0.55
+y,n,B7FRND8,UK Income Fund,UK,A,Inc,GB00B7FRND86,GBP,GBPence,Noon,138.54,20160211,Up,1.53,1.5,0.03,N/A,0,0.23,0.08,0.07,Single Swing,0.20 / 0.50
+y,n,B7FRNF0,UK Income Fund,UK,B,Acc,GB00B7FRNF01,GBP,GBPence,Noon,167.58,20160211,Up,1.03,1,0.03,N/A,0,0.23,0.08,0.07,Single Swing,0.20 / 0.50
+y,y,B83QP49,UK Income Fund,UK,X,Acc,GB00B83QP495,GBP,GBPence,Noon,146.72,20160211,Up,0.78,0.75,0.03,N/A,0,0.23,0.08,0.07,Single Swing,0.20 / 0.50
+y,y,B7XCNP7,UK Income Fund,UK,X,Inc,GB00B7XCNP79,GBP,GBPence,Noon,127.84,20160211,Up,0.78,0.75,0.03,N/A,0,0.23,0.08,0.07,Single Swing,0.20 / 0.50
+y,n,3397572,UK Smaller Companies Fund,UK,A,Acc,GB0033975722,GBP,GBPence,Noon,239.44,20160211,None,1.03,1,0.03,N/A,0,0.08,0.01,0.03,Single Swing,0.95 / 1.25
+y,n,3397583,UK Smaller Companies Fund,UK,B,Acc,GB0033975839,GBP,GBPence,Noon,264.97,20160211,None,0.03,0,0.03,N/A,0,0.08,0.01,0.03,Single Swing,0.95 / 1.25
+y,n,B6Q8SG1,Tortoise Fund,UK,A,Acc,GB00B6Q8SG18,GBP,GBP,"C.O.B., NY",2.0097,20160210,None,2.57,2.5,0.07,N/A,0,0.33,0.2,0.15,Single Swing,0.10 / 0.15
+y,n,B79FF32,Tortoise Fund,UK,B,Acc,GB00B79FF323,GBP,GBP,"C.O.B., NY",2.2664,20160210,None,0.07,0,0.07,N/A,0,0.33,0.2,0.15,Single Swing,0.10 / 0.15
+y,y,B7M54C1,Tortoise Fund,UK,C,Acc,GB00B7M54C16,GBP,GBP,"C.O.B., NY",1.6619,20160210,None,1.57,1.5,0.07,Yes,0,0.33,0.2,0.15,Single Swing,0.10 / 0.15
+y,y,B7T2265,Tortoise Fund,UK,H,Acc,GB00B7T22657,USD,USD,"C.O.B., NY",2.3861,20160210,None,1.57,1.5,0.07,Yes,0,0.33,0.2,0.15,Single Swing,0.10 / 0.15
+y,y,B7RL0S2,Tortoise Fund,UK,I,Acc,GB00B7RL0S24,EUR,EUR,"C.O.B., NY",2.1171,20160210,None,1.57,1.5,0.07,Yes,0,0.33,0.2,0.15,Single Swing,0.10 / 0.15
+y,n,B240WY7,Tortoise Fund,Ireland,A,Acc,IE00B240WY77,GBP,GBP,"C.O.B., NY",2.103054,20160210,N/A,1.09,1,0.09,N/A,0.00 *,0.31,0.22,0.15,Dilution Levy,0.10 / 0.15
+y,n,B240WZ8,Tortoise Fund,Ireland,B,Acc,IE00B240WZ84,GBP,GBP,"C.O.B., NY",2.241306,20160210,N/A,0.09,0,0.09,N/A,0.00 *,0.31,0.22,0.15,Dilution Levy,0.10 / 0.15
+y,y,B3CQKZ1,Tortoise Fund,Ireland,C,Acc,IE00B3CQKZ16,GBP,GBP,"C.O.B., NY",1.692548,20160210,N/A,1.59,1.5,0.09,Yes,0.00 *,0.31,0.22,0.15,Dilution Levy,0.10 / 0.15
+y,y,B4MNRG9,Tortoise Fund,Ireland,D,Acc,IE00B4MNRG95,GBP,GBP,"C.O.B., NY",1.684308,20160210,N/A,1.59,1.5,0.09,Yes,0.00 *,0.31,0.22,0.15,Dilution Levy,0.10 / 0.15
+y,y,B4JQ460,Tortoise Fund,Ireland,E,Acc,IE00B4JQ4601,GBP,GBP,"C.O.B., NY",1.663168,20160210,N/A,1.59,1.5,0.09,Yes,0.00 *,0.31,0.22,0.15,Dilution Levy,0.10 / 0.15
+y,y,B4JQ4Y8,Tortoise Fund,Ireland,F,Acc,IE00B4JQ4Y87,GBP,GBP,"C.O.B., NY",1.666891,20160210,N/A,1.59,1.5,0.09,Yes,0.00 *,0.31,0.22,0.15,Dilution Levy,0.10 / 0.15
+y,y,B51FHZ2,Tortoise Fund,Ireland,G,Acc,IE00B51FHZ28,GBP,GBP,"C.O.B., NY",1.671341,20160210,N/A,1.59,1.5,0.09,Yes,0.00 *,0.31,0.22,0.15,Dilution Levy,0.10 / 0.15
+y,y,B3R27F3,Tortoise Fund,Ireland,H,Acc,IE00B3R27F32,USD,USD,"C.O.B., NY",2.38334,20160210,N/A,1.59,1.5,0.09,Yes,0.00 *,0.31,0.22,0.15,Dilution Levy,0.10 / 0.15
+y,y,B3W6GN1,Tortoise Fund,Ireland,I,Acc,IE00B3W6GN15,EUR,EUR,"C.O.B., NY",2.131462,20160210,N/A,1.59,1.5,0.09,Yes,0.00 *,0.31,0.22,0.15,Dilution Levy,0.10 / 0.15
+y,y,BG49LB2,Tortoise Fund,Ireland,Z,Inc,IE00BG49LB24,GBP,GBP,"C.O.B., NY",1.029085,20160210,N/A,1.59,1.5,0.09,Yes,0.00 *,0.31,0.22,0.15,Dilution Levy,0.10 / 0.15
+y,y,BG49LC3,Tortoise Fund,Ireland,Z,Acc,IE00BG49LC31,USD,USD,"C.O.B., NY",0.954518,20160210,N/A,1.59,1.5,0.09,Yes,0.00 *,0.31,0.22,0.15,Dilution Levy,0.10 / 0.15
+y,y,BG49LD4,Tortoise Fund,Ireland,Z,Acc,IE00BG49LD48,EUR,EUR,"C.O.B., NY",0.840974,20160210,N/A,1.59,1.5,0.09,Yes,0.00 *,0.31,0.22,0.15,Dilution Levy,0.10 / 0.15
+y,n,BD6L0F2,Majedie Institutional Trust Fund,UK,A,Acc,GB00BD6L0F23,GBP,GBP,Noon,8.9155,20160211,None,1.58,1.5,0.08,N/A,0,0.15,0.05,0.03,Single Swing,0.15 / 0.60
+y,y,BD6L0G3,Majedie Institutional Trust Fund,UK,B,Acc,GB00BD6L0G30,GBP,GBP,Noon,8.9969,20160211,None,0.08,0,0.08,N/A,0,0.15,0.05,0.03,Single Swing,0.15 / 0.60
+y,y,BYZ4J52,Majedie Institutional Trust Fund,UK,X,Inc,GB00BYZ4J528,GBP,GBP,Noon,9.2196,20160211,None,0.83,0.75,0.08,N/A,0,0.15,0.05,0.03,Single Swing,0.15 / 0.60
+y,n,BNGWXX4,US Equity Fund,Ireland,A,Acc,IE00BNGWXX42,USD,USD,"C.O.B., NY",0.9881,20160210,None,1.6,1.5,0.1,N/A,0,0,0.08,0.02,Dilution Levy,0.05 / 0.05
+y,n,BNGWXW3,US Equity Fund,Ireland,A,Acc,IE00BNGWXW35,GBP,GBP,"C.O.B., NY",1.1622,20160210,None,1.6,1.5,0.1,N/A,0,0,0.08,0.02,Dilution Levy,0.05 / 0.05
+y,n,BNGWXZ6,US Equity Fund,Ireland,B,Acc,IE00BNGWXZ65,USD,USD,"C.O.B., NY",1.0124,20160210,None,0.1,0,0.1,N/A,0,0,0.08,0.02,Dilution Levy,0.05 / 0.05
+y,n,BNGWXY5,US Equity Fund,Ireland,B,Acc,IE00BNGWXY58,GBP,GBP,"C.O.B., NY",1.1909,20160210,None,0.1,0,0.1,N/A,0,0,0.08,0.02,Dilution Levy,0.05 / 0.05
+y,y,BNGWY19,US Equity Fund,Ireland,Z,Acc,IE00BNGWY190,USD,USD,"C.O.B., NY",1,20160210,None,0.85,0.75,0.1,N/A,0,0,0.08,0.02,Dilution Levy,0.05 / 0.05
+y,y,BNGWY08,US Equity Fund,Ireland,Z,Acc,IE00BNGWY083,GBP,GBP,"C.O.B., NY",1.1765,20160210,None,0.85,0.75,0.1,N/A,0,0,0.08,0.02,Dilution Levy,0.05 / 0.05
+y,n,BN31T70,Global Equity Fund,UK,A,Acc,GB00BN31T709,GBP,GBPence,Noon,100.37,20160211,None,1.61,1.5,0.11,N/A,0,0.06,0.03,0.01,Single Swing,0.08 / 0.10
+y,n,BN31T81,Global Equity Fund,UK,A,Acc,GB00BN31T816,USD,USd,Noon,84.95,20160211,None,1.61,1.5,0.11,N/A,0,0.06,0.03,0.01,Single Swing,0.08 / 0.10
+y,n,BN31T92,Global Equity Fund,UK,B,Acc,GB00BN31T923,GBP,GBPence,Noon,102.83,20160211,None,0.11,0,0.11,N/A,0,0.06,0.03,0.01,Single Swing,0.08 / 0.10
+y,n,BN31TB4,Global Equity Fund,UK,B,Acc,GB00BN31TB48,USD,USd,Noon,87.03,20160211,None,0.11,0,0.11,N/A,0,0.06,0.03,0.01,Single Swing,0.08 / 0.10
+y,y,BN31TC5,Global Equity Fund,UK,X,Acc,GB00BN31TC54,GBP,GBPence,Noon,101.6,20160211,None,0.86,0.75,0.11,N/A,0,0.06,0.03,0.01,Single Swing,0.08 / 0.10
+y,y,BN31TD6,Global Equity Fund,UK,X,Acc,GB00BN31TD61,USD,USd,Noon,85.98,20160211,None,0.86,0.75,0.11,N/A,0,0.06,0.03,0.01,Single Swing,0.08 / 0.10
+y,n,BN31TF8,Global Focus Fund,UK,A,Acc,GB00BN31TF85,GBP,GBPence,Noon,102.4,20160211,None,1.87,1.75,0.12,N/A,0,0.11,0.01,0.02,Single Swing,0.08 / 0.15
+y,n,BN31TG9,Global Focus Fund,UK,A,Acc,GB00BN31TG92,USD,USd,Noon,86.64,20160211,None,1.87,1.75,0.12,N/A,0,0.11,0.01,0.02,Single Swing,0.08 / 0.15
+y,n,BN31TH0,Global Focus Fund,UK,B,Acc,GB00BN31TH00,GBP,GBPence,Noon,105.32,20160211,None,0.12,0,0.12,N/A,0,0.11,0.01,0.02,Single Swing,0.08 / 0.15
+y,n,BN31TJ2,Global Focus Fund,UK,B,Acc,GB00BN31TJ24,USd,USd,Noon,89.13,20160211,None,0.12,0,0.12,N/A,0,0.11,0.01,0.02,Single Swing,0.08 / 0.15
+y,y,BN31TK3,Global Focus Fund,UK,X,Acc,GB00BN31TK39,GBP,GBPence,Noon,103.63,20160211,None,1.12,1,0.12,N/A,0,0.11,0.01,0.02,Single Swing,0.08 / 0.15
+y,y,BN31TL4,Global Focus Fund,UK,X,Acc,GB00BN31TL46,USd,USd,Noon,87.7,20160211,None,1.12,1,0.12,N/A,0,0.11,0.01,0.02,Single Swing,0.08 / 0.15
+y,y,BSTLNK0,UK Income Fund,Ireland,Z,Acc,IE00BSTLNK00,GBP,GBP,Noon,0.9189,20160211,None,0.9,0.75,0.15,N/A,0,^,^,^,Dilution Levy,0.20 / 0.50
+y,y,BSTLNL1,UK Income Fund,Ireland,Z,Inc,IE00BSTLNL17,GBP,GBP,Noon,0.8879,20160211,None,0.9,0.75,0.15,N/A,0,^,^,^,Dilution Levy,0.20 / 0.50
