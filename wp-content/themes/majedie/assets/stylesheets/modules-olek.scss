@@ -1058,7 +1058,7 @@
 
 
 /*** MODULE 10 ***/
-.module-full-width-title-text-photo {
+.module-full-width-title-text-photo, .module-full-width-post-with-category-title-date-paragraph {
 	padding: 60px 0;
 	.row {
 		margin: 0;
@@ -1162,7 +1162,7 @@
 
 }
 @media screen and (max-width: map-get($grid-breakpoints, sm) ) { //~544px
-	.module-full-width-title-text-photo {
+	.module-full-width-title-text-photo, .module-full-width-post-with-category-title-date-paragraph {
 		/*
 		.wpg-container-text:before {
 			display: none;
