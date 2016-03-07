@@ -306,8 +306,9 @@ jQuery(document).ready(function(){
 });
 
 /* Team module toggle end*/
-/* jQuery Ajax posts */
 
+
+/* jQuery Ajax posts */
 (function($){
 	function ajaxLoadPosts() {
 
@@ -316,11 +317,10 @@ jQuery(document).ready(function(){
 	$(document).ready(ajaxLoadPosts);
 
 })(jQuery);
-
 /* end jQuery Ajax posts */
 
 
-
+/* decription script */
 (function($){
 	function arrowMenuParent() {
 		$('.menu-item-has-children').append('<i class="fa fa-angle-down arrow"></i>');
@@ -334,3 +334,17 @@ jQuery(document).ready(function(){
 
 	$(document).ready(arrowMenuParent);
 })(jQuery);
+/* end decription script */
+
+
+/* .module-full-width-many-tabs-with-photo-title-subtitle-text */
+(function($){
+	if($(".module-full-width-many-tabs-with-photo-title-subtitle-text").length>0)
+	{
+		$(".wpg-item-person").click(function(){
+			$(".wpg-items-person-show").slideUp().html("");
+			$(this).nextAll(".wpg-items-person-show").first().html($(this).find(".wpg-item-person-description").html()).slideDown();
+		});
+	}
+})(jQuery);
+/* end .module-full-width-many-tabs-with-photo-title-subtitle-text */
