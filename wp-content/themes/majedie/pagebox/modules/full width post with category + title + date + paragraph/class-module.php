@@ -7,7 +7,7 @@
  * Call to action module with slider
  */
 
-namespace Majedie\Pagebox\Modules\fullWidthTitleTextPhoto;
+namespace Majedie\Pagebox\Modules\fullWidthPostWithCategoryTitleDateParagraph;
 
 use \Pagebox\Modules\Module as Abstract_Module;
 use \WPGeeks_HTML;
@@ -33,10 +33,10 @@ class Module extends Abstract_Module {
 		$this->config = array(
 			// Name of the box for plugin use. Only alphanumeric charactes 
 			// and underscores are allowed
-			'slug'        => 'full_width_title-text-photo',
+			'slug'        => 'full_width_post_with_category-title-date-paragraph',
 			// Human readable title of box. It will be displayed in all
 			// backend functionalities
-			'title'       => __(  'Article Boxes - text', 'pagebox_blocks' ),
+			'title'       => __(  'Article Boxes - post', 'pagebox_blocks' ),
 			// Short description about what box outputs. It will be displayed
 			// below the title in new box modal window.
 			'description' => __(  '', 'pagebox_blocks' ),
@@ -53,32 +53,11 @@ class Module extends Abstract_Module {
 			// WPGeeks_Forms
 			'fields'      => array(
 				array(
-					'type'        => 'text',
-					'group'       => __( 'General', 'pagebox' ),
-					'name'        => 'title',
-					'label'       => __( 'Title', 'pagebox' ),
-					'description' => __( '', 'pagebox' ),
-				),
-				array(
-					'type'        => 'editor',
-					'group'       => __( 'General', 'pagebox' ),
-					'name'        => 'text',
-					'label'       => __( 'Text', 'pagebox' ),
-					'description' => __( '', 'pagebox' ),
-				),
-				array(
 					'type'        => 'cpt',
 					'group'       => __( 'General', 'pagebox' ),
-					'name'        => 'link',
+					'name'        => 'post',
 					'post_type'   => array('post'),
 					'label'       => __( 'Link to post', 'pagebox' ),
-					'description' => __( '', 'pagebox' ),
-				),
-				array(
-					'type'        => 'image',
-					'group'       => __( 'General', 'pagebox' ),
-					'name'        => 'image',
-					'label'       => __( 'Image', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),
 				),
 

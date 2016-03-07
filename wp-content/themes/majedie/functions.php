@@ -2,7 +2,8 @@
 
 require_once 'functions-csv-uploader.php';
 
-add_image_size( 'team', 301, 355 );
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'team', 301, 355, true );
 
 
 // Register the three useful image sizes for use in Add Media modal
@@ -16,6 +17,7 @@ function theme_enqueue_style() {
 	wp_enqueue_style( 'footer', get_template_directory_uri() . '/assets/stylesheets/footer.css', array(), false, false ); 
 	wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/stylesheets/main.css', array(), false, false ); 
 	wp_enqueue_style( 'modules-wojtek', get_template_directory_uri() . '/assets/stylesheets/modules-wojtek.css', array(), false, false ); 
+	wp_enqueue_style( 'modules-szymek', get_template_directory_uri() . '/assets/stylesheets/modules-szymek.css', array(), false, false ); 
 	wp_enqueue_style( 'modules-olek', get_template_directory_uri() . '/assets/stylesheets/modules-olek.css', array(), false, false ); 
 	
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', array(), false, false ); 
@@ -43,7 +45,7 @@ function theme_enqueue_script() {
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_style' );
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_script' );
 
-add_theme_support( 'post-thumbnails' ); 
+//add_theme_support( 'post-thumbnails' );
 
 add_action( 'after_setup_theme', 'wppn_setup' );
 function wppn_setup() {  

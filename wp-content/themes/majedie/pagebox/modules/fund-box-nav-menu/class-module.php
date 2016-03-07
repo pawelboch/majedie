@@ -7,7 +7,7 @@
  * Call to action module with slider
  */
 
-namespace Majedie\Pagebox\Modules\clearModule;
+namespace Majedie\Pagebox\Modules\fundBoxNavMenu;
 
 use \Pagebox\Modules\Module as Abstract_Module;
 use \WPGeeks_HTML;
@@ -33,13 +33,13 @@ class Module extends Abstract_Module {
 		$this->config = array(
 			// Name of the box for plugin use. Only alphanumeric charactes 
 			// and underscores are allowed
-			'slug'        => 'clear_module',
+			'slug'        => 'fund_box_nav_menu',
 			// Human readable title of box. It will be displayed in all
 			// backend functionalities
-			'title'       => __(  'Clear module', 'pagebox_blocks' ),
+			'title'       => __(  'Fund box horizontal menu', 'pagebox_blocks' ),
 			// Short description about what box outputs. It will be displayed
 			// below the title in new box modal window.
-			'description' => __(  '', 'pagebox_blocks' ),
+			'description' => __(  'Add horizontal menu', 'pagebox_blocks' ),
 			// Elements with higher priority will be displayed earlier in
 			// new box modal window
 			'priority'    => 1,
@@ -53,19 +53,35 @@ class Module extends Abstract_Module {
 			// WPGeeks_Forms
 			'fields'      => array(
 				array(
-					'type'        => 'text',
-					'group'       => __( 'General', 'pagebox' ),
-					'name'        => 'title',
-					'label'       => __( 'Title', 'pagebox' ),
-					'description' => __( 'Main module title', 'pagebox' ),
-				),
+					'type'        => 'repeater',
+					'group'		  => __( 'General', 'pagebox' ),
+					'name'        => 'menu-items',
+					'description' => __( 'Add menu link', 'pagebox' ),
+					'labels'       => array(
+						'singular' => __('Link', 'pagebox'),
+						'plural' => __('Links', 'pagebox')
+					),
+					'buttons' => array(
+						'add' => __('Add menu link', 'pagebox'),
+						'remove' => __('Remove menu link', 'pagebox')
+					),
+					'fields' => array(
+						array(
+							'type'        => 'text',
+							'group'		    => __( 'General', 'pagebox' ),
+							'name'        => 'link_text',
+							'label'       => __( 'Link title', 'pagebox' ),
+							'description' => __( 'Link title', 'pagebox' ),
+						),
+						array(
+							'type'        => 'text',
+							'group'		    => __( 'General', 'pagebox' ),
+							'name'        => 'link_url',
+							'label'       => __( 'Link URL', 'pagebox' ),
+							'description' => __( 'Link URL', 'pagebox' ),
+						),
+					),
 
-				array(
-					'type'        => 'colorpicker',
-					'group'		    => __( 'Design', 'pagebox' ),
-					'name'        => 'button_font_color',
-					'label'       => __( 'Button font color', 'pagebox' ),
-					'description' => __( '', 'pagebox' ),
 				),
 			)
 		);

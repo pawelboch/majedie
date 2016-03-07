@@ -1,20 +1,18 @@
 <?php
 /**
- * 100, 66-33, 33-33-33, 100 template class file
+ * Full width example template
  *
- * 
+ * Contains one general full width section
  *
- * @author Pagebox Generator
- *
- * @package pagebox/templates
+ * @package pagebox/examples/templates
  */
 
-namespace Pagebox\Templates;
+namespace Pagebox\Examples\Templates;
 
 use \WPG_Pagebox;
 use Pagebox\Templates\Template as Template_Abstract;
 
-class Template4 extends Template_Abstract {
+class Template6 extends Template_Abstract {
 
 	/**
 	 * Template constructor
@@ -38,24 +36,24 @@ class Template4 extends Template_Abstract {
 		 */
 		$sections = array(
 			'top' => array( // template slug
-				'label' => 'top', // label
+				'label' => __( 'Top', 'pagebox' ), // label
 				'size'  => 100, // size in %
-				'limit' => -1 // limit of modules which can be added to this section. 0 for no limit.
+				'limit' => 0 // limit of modules which can be added to this section. 0 for no limit. @todo
 			),
-			'left-first' => array( // template slug
-				'label' => 'left-first', // label
-				'size'  => 66, // size in %
-				'limit' => -1 // limit of modules which can be added to this section. 0 for no limit.
-			),
-			'right-first' => array( // template slug
-				'label' => 'right-first', // label
+			'left' => array( // template slug
+				'label' => __( 'Left side', 'pagebox' ), // label
 				'size'  => 33, // size in %
-				'limit' => -1 // limit of modules which can be added to this section. 0 for no limit.
+				'limit' => 0 // limit of modules which can be added to this section. 0 for no limit. @todo
+			),
+			'right' => array( // template slug
+				'label' => __( 'Right side', 'pagebox' ), // label
+				'size'  => 66, // size in %
+				'limit' => 0 // limit of modules which can be added to this section. 0 for no limit. @todo
 			),
 			'bottom' => array( // template slug
-				'label' => 'bottom', // label
+				'label' => __( 'Bottom', 'pagebox' ), // label
 				'size'  => 100, // size in %
-				'limit' => -1 // limit of modules which can be added to this section. 0 for no limit.
+				'limit' => 0 // limit of modules which can be added to this section. 0 for no limit. @todo
 			)
 		);
 
@@ -65,11 +63,11 @@ class Template4 extends Template_Abstract {
 		 * @var config
 		 */
 		$this->config = array( 
-			'name'        => '100, 66-33, 100', // human readable name of template
-			'description' => '100, 66-33, 100', // human readable description of template
+			'name'        => __( '100, 33-66, 100', 'pagebox' ), // human readable name of template
+			'description' => __( '', 'pagebox' ), // human readable description of template
 			'sections'    => $sections
 		);
 
 	}
-	
+
 }
