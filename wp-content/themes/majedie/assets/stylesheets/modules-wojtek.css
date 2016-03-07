@@ -353,7 +353,6 @@
     font-family: Avenir-Book, Arial, Helvetica, sans-serif;
     line-height: 105%; }
 
-/*** MODULE 41 ***/
 /*** MODULE 28 ***/
 .module-full-width-table {
   padding: 60px 0; }
@@ -426,6 +425,23 @@
     margin-top: 35px; }
 
 /*** END MODULE 28 ***/
-/*** END MODULE 41 ***/
+/*** MODULE 42 ***/
+.module-side-menu {
+  padding: 60px 0; }
+  .module-side-menu .tg_simple {
+    background-color: #fff;
+    padding: 20px; }
+    .module-side-menu .tg_simple li {
+      list-style: none;
+      color: #a6a6a6;
+      text-transform: uppercase;
+      line-height: 30px;
+      font-family: Avenir-Light, Arial, Helvetica, sans-serif; }
+      .module-side-menu .tg_simple li a:hover {
+        text-decoration: none;
+        color: #000;
+        font-family: Avenir-Bold, Arial, Helvetica, sans-serif; }
+
+/*** END MODULE 42 ***/
 
 /*# sourceMappingURL=modules-wojtek.css.map */

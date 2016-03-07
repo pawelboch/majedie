@@ -495,9 +495,6 @@
 }
 
 
-/*** MODULE 41 ***/
-
-
 /*** MODULE 28 ***/
 .module-full-width-table {
 	padding: 60px 0;
@@ -611,4 +608,26 @@
 /*** END MODULE 28 ***/
 
 
-/*** END MODULE 41 ***/
+/*** MODULE 42 ***/
+
+.module-side-menu {
+  padding: 60px 0;
+	.tg_simple{
+		background-color: #fff;
+		padding:20px;
+		li{
+			list-style: none;
+			color: #a6a6a6;
+			text-transform: uppercase;
+			line-height: 30px;
+			font-family: Avenir-Light, Arial, Helvetica, sans-serif;
+			a:hover{
+				text-decoration: none;
+				color: #000;
+				font-family: Avenir-Bold, Arial, Helvetica, sans-serif;
+			}
+		}
+	}
+}
+
+/*** END MODULE 42 ***/
