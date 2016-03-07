@@ -185,7 +185,6 @@
         vertical-align: top; }
 
 /*** END MODULE BY SZYMEK 1 ***/
-/*** END BY SZYMEK ***/
 /*** MODULE 1 ***/
 .module-reduction {
   height: 0;
@@ -1428,7 +1427,7 @@
         border-collapse: separate;
         border-spacing: 0 6px;
         width: 100%;
-        padding: 0 30px; }
+        padding: 0 20px; }
       .module-full-width-funds-literature .wpg-container-tabels .wpg-table-wrap caption,
       .module-full-width-funds-literature .wpg-container-tabels .wpg-table-wrap thead th {
         color: #fff;
