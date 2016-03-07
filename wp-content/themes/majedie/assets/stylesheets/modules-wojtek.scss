@@ -493,3 +493,122 @@
         
     }
 }
+
+
+/*** MODULE 41 ***/
+
+
+/*** MODULE 28 ***/
+.module-full-width-table {
+	padding: 60px 0;
+	.wpg-container-tabels {
+		.wpg-table-wrap-outset {
+			overflow-x: auto;
+			box-shadow: 0 0 5px rgba(0,0,0,.28);
+			background-color: #fff;
+			width: 100%;
+		}
+		.wpg-table-wrap {
+			padding: 30px 0;
+
+			thead th:nth-child(1) {
+				width: 140px;
+			}
+			p {
+				font-size: 15px;
+			}
+			table {
+				border-collapse: separate;
+				border-spacing: 0 6px;
+				width: 100%;
+				padding: 0 30px;
+				table-layout: fixed;
+
+				.fa.fa-check,
+				.fa.fa-times {
+					display: inline-block;
+					width: 20px;
+					height: 20px;
+					background: #000;
+					text-align: center;
+					line-height: 20px;
+					color: #f1efed;
+					vertical-align: middle;
+					border-radius: 100%;
+					font-size: 14px;
+				}
+				.fa.fa-check {
+					background: #86bd46;
+				}
+
+				.fa.fa-times {
+					background: #d34451;
+				}
+				
+			}
+			caption, 
+			thead th {
+				color: #fff;
+				font-weight: 400;
+				font-family: Avenir-Light, Arial, Helvetica, sans-serif;
+				font-size: 14px;
+				text-transform: uppercase;
+			}
+			caption {
+				caption-side: top;
+				background-color: #675c50;
+				padding: 10px 15px;
+				margin: 0 30px;
+			}
+			thead th {
+				background-color: #dc6f26;
+				padding: 15px;
+				text-align: center;
+			}
+			thead th:first-child {
+			}
+			tbody td, 
+			tbody th {
+				background-color: #e4e2dd;
+				color: #000;
+				font-size: 15px;
+				font-weight: 400;
+				padding: 10px 15px;
+				text-align: center;
+			}
+			tbody th {
+				text-align: left;
+			}
+			tbody tr:nth-child(even) td,
+			tbody tr:nth-child(even) th {
+				background-color: #efeeed;
+			}
+			a {
+				color: #2b4d7a;
+				text-decoration: underline;
+			}
+
+		}
+		.wpg-bottom-container {
+			margin-top: 35px;
+		}
+		
+
+	}
+}
+@media screen and (max-width: map-get($grid-breakpoints, xl) ) { //~1200px
+
+}
+@media screen and (max-width: map-get($grid-breakpoints, lg) ) { //~992px
+
+}
+@media screen and (max-width: map-get($grid-breakpoints, md) ) { //~768px
+
+}
+@media screen and (max-width: map-get($grid-breakpoints, sm) ) { //~544px
+
+}
+/*** END MODULE 28 ***/
+
+
+/*** END MODULE 41 ***/

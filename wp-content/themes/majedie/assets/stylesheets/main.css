@@ -100,4 +100,10 @@ ul li ul {
   max-height: 400px;
   max-width: 100%; }
 
+.container .container {
+  padding: 0; }
+
+td, th {
+  line-height: 1.6em; }
+
 /*# sourceMappingURL=main.css.map */
