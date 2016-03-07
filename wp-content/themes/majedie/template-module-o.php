@@ -1494,6 +1494,19 @@
 
 <hr class="wpg-separator">
 
+<div class="module-wpg module-full-width-many-tabs-with-photo-title-subtitle-text">
+	<?php $idUniqid=uniqid(); ?>
+	<div class="container">
+		<div class="row">
+		<?php for($i=0; $i<3; $i++) { ?>
+
+		<?php } ?>
+		</div>
+	</div>
+</div>
+
+<hr class="wpg-separator">
+
 <div class="module-wpg module-full-width-top-post-header-with-category-title-date">
 	<span class="wpg-half-background" style="background-color: #9d948a;"></span>
 	<div class="container">
