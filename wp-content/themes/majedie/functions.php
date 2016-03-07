@@ -143,3 +143,46 @@ function wpshout_custom_sizes( $sizes ) {
         'left-to-right' => __( 'From left to right' ),
     ) );
 }
+
+
+/**
+ * Add team taxonomy - Team Departmen and Team Web Departmen
+ */
+function team_taxonomy() {
+	register_taxonomy(
+		't_category',  //The name of the taxonomy. Name should be in slug form (must not contain capital letters or spaces).
+		'team',   		 //post type name
+		$team_category = array(
+			'hierarchical' 		=> true,
+			'label' 			=> 'Team Department',  //Display name
+			'query_var' 		=> true,
+			'rewrite'			=> array(
+				'slug' 			=> 'Team', // This controls the base slug that will display before each term
+				'with_front' 	=> false // Don't display the category base before
+			)
+		)
+	);
+}
+add_action( 'init', 'team_taxonomy', 1);
+
+
+/**
+ * Add custom post type 'Team'
+ */
+add_action( 'init', 'create_team_member_type', 1 );
+function create_team_member_type() {
+	register_post_type( 'team_member',
+		array(
+			'labels' => array(
+				'name' => __( 'Team' ),
+				'singular_name' => __( 'Team' )
+			),
+			'taxonomies' => array('t_category','t_category_web'),
+			'public' => false,
+			'show_ui'            => true,
+			'show_in_menu'       => true,
+			'publicly_queryable' => false,
+			'supports'    => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' )
+		)
+	);
+}
