@@ -362,7 +362,7 @@ jQuery(document).ready(function(){
 			});
 			*/
 			$(".wpg-items-person-show").hide().html("");
-			$(this).nextAll(".wpg-items-person-show").first().html( '<div><h3>' + $(this).find("h3").html() + '</h3><p class="wpg-job-title">' + $(this).find(".wpg-job-title").html() + '</p>' + $(this).find(".wpg-item-person-description").html() + "</div>" ).slideDown();
+			$(this).nextAll(".wpg-items-person-show").first().html( '<div>' + $(this).find(".wpg-item-person-description").html() + "</div>" ).slideDown();
 			
 
 		});

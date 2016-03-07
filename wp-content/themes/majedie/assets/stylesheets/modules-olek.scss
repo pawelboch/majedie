@@ -4141,7 +4141,8 @@
 			box-shadow: 0 0 5px rgba(0,0,0,.28);
 		}
 	}
-	.wpg-items-person-show {
+	.wpg-items-person-show,
+	.wpg-item-person-description {
 		overflow: hidden;
 		width: 100%;
 		> div {
@@ -4178,6 +4179,17 @@
 	.module-full-width-many-tabs-with-photo-title-subtitle-text {
 		.wpg-items-person-show {
 			display: none !important;
+		}
+		.cycle-pager-active .wpg-item-person-description {
+			display: block !important;
+			margin-top: 60px !important;
+		}
+		.wpg-item-person {
+			margin-left: auto;
+			margin-right: auto;
+			float: none;
+			max-width: 351px;
+			margin-bottom: 15px !important;
 		}
 	}
 }

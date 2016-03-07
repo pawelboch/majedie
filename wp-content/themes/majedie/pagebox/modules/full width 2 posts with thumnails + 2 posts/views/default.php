@@ -48,6 +48,7 @@ $post_4 = $this->get('fourth_post');
 					</div>
 				</div>
 			</div>
+
 			<div class="col-xs-12 col-md-12 col-lg-4 wpg-col wpg-col-special-1" data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 				
 				<div class="span-table wpg-post-box-cols" style="height: 100%">
@@ -67,8 +68,8 @@ $post_4 = $this->get('fourth_post');
 						</div>
 					</div>
 					<div class="span-table-row">
-						<div class="span-table-cell wpg-post-box-corrected-1-outset vertical-align-top">
-							<div class="wpg-post-box wpg-post-box-corrected-1" style="background-color: #fff;">
+						<div class="span-table-cell wpg-post-box-corrected-2-outset vertical-align-bottom">
+							<div class="wpg-post-box wpg-post-box-corrected-2" style="background-color: #fff;">
 								<p class="wpg-post-box_tag">
 									<?php post_categories($post_4) ;?>
 								</p>

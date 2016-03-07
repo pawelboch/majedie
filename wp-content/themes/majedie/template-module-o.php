@@ -1499,12 +1499,16 @@
 	<div class="container">
 		<div class="row wpg-items-persons">
 			<?php for($i=1; $i<11; $i++) { ?>
-			<div class='col-xs-4 wpg-item-person'>
+			<div class='col-xs-12 col-sm-4 wpg-item-person'>
 				<div class='pager-mfw3twptst-item'>
 					<img src='<?php echo get_template_directory_uri(); ?>/assets/images/person-1.png' alt='x'>
 					<h3>Adrian Brass</h3>
 					<p class='wpg-job-title'>Job Title</p>
-					<div class="wpg-item-person-description">
+				</div>
+				<div class="wpg-item-person-description">
+					<div>
+						<h3>Adrian Brass</h3>
+						<p class='wpg-job-title'>Job Title</p>					
 						<p><?php echo $i; ?> - Adrian Brass is a fund manager and analyst with 20 years’ investment experience in international equity markets. Adrian is responsible for lead managing the US Equity Fund and co-managing both the Global Equity and the Global Focus funds. Before joining Majedie in 2014, Adrian was a Fund Manager at Fidelity, where he managed US equity funds including the America Fund for six years, growing total assets to over $8bn. Previously he managed a global consumer sector fund from 2006. Prior to that he managed various global equity funds at Investec Asset Management, a firm he joined in 2000 from Schroders, where he was a UK and then pan-European analyst. Adrian joined Schroders in 1995. He holds a Bachelor of Sciences degree in Economics &amp; Politics from the University of Bristol and is a CFA charter holder.</p>
 					</div>
 				</div>
