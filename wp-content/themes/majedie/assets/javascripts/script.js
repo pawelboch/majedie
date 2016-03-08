@@ -371,15 +371,6 @@ jQuery(window).resize(function(){
 	if($(".module-full-width-many-tabs-with-photo-title-subtitle-text").length>0)
 	{
 		resizeFullwsa($);
-		/*
-		var zblSep='<div class="col-xs-12 wpg-items-person-show wpg-clear-both"></div>';
-		for(var i=1, iLength=($(".wpg-item-person").length+1); i<iLength; i++) {
-			//if((i%3) == 0 ) $(".wpg-item-person").eq((i-1)).after(zblSep);
-			//if((i%2)==0) $(".wpg-item-person").eq((i-1)).after(zblSep);
-		}
-		$(".wpg-items-persons").append(zblSep);
-		*/
-
 
 		
 		$(".wpg-items-person-show").hide().html("");
@@ -411,13 +402,3 @@ jQuery(window).resize(function(){
 })(jQuery);
 
 /* end .module-full-width-many-tabs-with-photo-title-subtitle-text */
-
-/* blank page 
-(function($){
-	//alert($(".wpg-main-header").next().hasClass("wpg-main-footer"));
-	if($(".wpg-main-header").next().hasClass("wpg-main-footer"))
-	{
-		$(".wpg-main-header").after('<div class="module-full-width-title-subtitle-paragraph span-table" data-wpg-height-100p-window><div class="span-table-cell vertical-align-middle"><div class="container"><h2>404</h2><h3>Page not found</h3><p>The page you are looking for doesntâ€™t exist or another error occured. <br>Go <a href="#">back</a>, or head over to <a href="http://www.majedie.com">www.majedie.com</a> to choose another direction.</p></div></div></div>');
-	}
-})(jQuery);
-/* end blank page */
