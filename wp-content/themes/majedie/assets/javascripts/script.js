@@ -138,7 +138,7 @@ jQuery(window).load(function(){
 			$(this).parent().slideToggle(speedAnimate);
 				
 			var dataValue=String($(this).data("value"));
-			if (dataValue.indexOf("http://") == 0 || dataValue.indexOf("https://") == 0)
+			if (dataValue.indexOf("http://") == 0 || dataValue.indexOf("https://") == 0 || dataValue.indexOf("?") == 0)
 			{
 				document.location.href=dataValue;
 			}
@@ -347,6 +347,13 @@ jQuery(document).ready(function(){
 	var timeoutAnimateScroll=setTimeout(function(){},300);
 	if($(".module-full-width-many-tabs-with-photo-title-subtitle-text").length>0)
 	{
+
+		for(var i=0, iLength=$(".wpg-items-persons > div").length; i<iLength; i++) {
+			//if(i%3) 
+		}
+
+
+		/*
 		$(".wpg-items-person-show").hide().html("");
 		$(".wpg-item-person").click(function(){
 			clearTimeout(timeoutAnimateScroll);
@@ -369,10 +376,9 @@ jQuery(document).ready(function(){
 			timeoutAnimateScroll=setTimeout(function(){
 				$('html, body').animate({scrollTop:$('.wpg-item-person').eq(indexItemPos).position().top}, 200);
 			},400);
-		
-			
 
 		});
+		*/
 	}
 })(jQuery);
 /* end .module-full-width-many-tabs-with-photo-title-subtitle-text */
