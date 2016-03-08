@@ -15,6 +15,19 @@
 					
 					<h2>Simulate select examples</h2>
 
+					<select>
+						<option value="http://majedie-dev-local.kurtosysweb.com/about-us/">About us</option>
+						<option value="2">Option 2</option>
+						<option>Option 3</option>
+						<option value="4" selected="selected">Option 4</option>
+						<option value="5">Option 5</option>
+						<option value="6">Option 6</option>
+						<option value="7">Option 7</option>
+						<option value="8">Option 8</option>
+						<option value="9">Option 9</option>
+						<option value="10">Option 10</option>
+					</select>
+
 					<select class="wpg-plugin-select">
 						<option value="http://majedie-dev-local.kurtosysweb.com/about-us/">About us</option>
 						<option value="2">Option 2</option>

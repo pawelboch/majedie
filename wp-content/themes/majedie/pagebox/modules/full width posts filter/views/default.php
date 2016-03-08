@@ -17,12 +17,18 @@
 			<option value=""><?php echo esc_attr( __( 'Filter topic' ) ); ?></option>
 			<?php  
 				$categories = get_categories();
-
+				foreach ($categories as $category) {
+					echo '<option value="?category=' . $category->name . '">';
+					echo $category->name;
+					echo '</option>';
+				}
+				/*
 				foreach ($categories as $category) {
 					echo '<li><a href="?category=' . $category->name . '">';
 					echo $category->name;
 					echo '</a></li>';
 				}
+				*/
 			;?>
 		</select>
 		<select class="wpg-plugin-select" onchange="document.location.href=this.options[this.selectedIndex].value;">
