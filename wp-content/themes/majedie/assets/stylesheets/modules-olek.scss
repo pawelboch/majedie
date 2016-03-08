@@ -862,7 +862,7 @@
 
 
 /*** MODULE 9 ***/
-.module-full-width-2-posts-with-thumnails-2-posts {
+.module-full-width-2-posts-with-thumnails-2-posts, .archive-post {
 	padding-top: 60px;
 	padding-bottom: 50px;
 	p,h3 {
@@ -985,11 +985,12 @@
 	}
 }
 
+
 @media screen and (max-width: map-get($grid-breakpoints, xl) ) { //~1200px
 
 }
 @media screen and (max-width: map-get($grid-breakpoints, lg) ) { //~992px
-	.module-full-width-2-posts-with-thumnails-2-posts {
+	.module-full-width-2-posts-with-thumnails-2-posts, .archive-post {
 		.wpg-post-box-cols > .span-table-row {
 			display: table-cell;
 			width: 50% !important;
@@ -1016,7 +1017,7 @@
 
 }
 @media screen and (max-width: map-get($grid-breakpoints, sm) ) { //~544px
-	.module-full-width-2-posts-with-thumnails-2-posts {
+	.module-full-width-2-posts-with-thumnails-2-posts, .archive-post {
 		.wpg-post-box-corrected-1-outset,
 		.wpg-post-box-corrected-2-outset {
 			padding: 0 !important;

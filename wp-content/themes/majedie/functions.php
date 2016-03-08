@@ -240,3 +240,15 @@ function create_fund_type() {
 
 	register_post_type( 'fund',$args );
 }
+
+/*
+* Archive pre get posts
+*/
+
+function archivePreGetPosts($archive_query) {
+	if(is_archive()) {
+		$archive_query->set('posts_per_page', 3);
+		return;
+	};
+}
+add_action('pre_get_posts', 'archivePreGetPosts');
