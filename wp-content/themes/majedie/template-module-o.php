@@ -1526,9 +1526,7 @@
 					</div>
 				</div>
 			</div>
-			<?php if(($i % 3) == 0){ ?><div class="col-xs-12 wpg-items-person-show wpg-clear-both"></div><?php } ?>
 			<?php } ?>
-			<div class="col-xs-12 wpg-items-person-show wpg-clear-both"></div>
 		</div>
 	</div>
 </div>

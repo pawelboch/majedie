@@ -348,12 +348,14 @@ jQuery(document).ready(function(){
 	if($(".module-full-width-many-tabs-with-photo-title-subtitle-text").length>0)
 	{
 
-		for(var i=0, iLength=$(".wpg-items-persons > div").length; i<iLength; i++) {
-			//if(i%3) 
+		var zblSep='<div class="col-xs-12 wpg-items-person-show wpg-clear-both"></div>';
+		for(var i=1, iLength=($(".wpg-item-person").length+1); i<iLength; i++) {
+			if((i%3) == 0 ) $(".wpg-item-person").eq((i-1)).after(zblSep);
 		}
+		$(".wpg-items-persons").append(zblSep);
 
 
-		/*
+		
 		$(".wpg-items-person-show").hide().html("");
 		$(".wpg-item-person").click(function(){
 			clearTimeout(timeoutAnimateScroll);
@@ -378,7 +380,7 @@ jQuery(document).ready(function(){
 			},400);
 
 		});
-		*/
+		
 	}
 })(jQuery);
 /* end .module-full-width-many-tabs-with-photo-title-subtitle-text */
