@@ -115,7 +115,7 @@
 							<td><i class="fa fa-check"></i></td>
 							<td><i class="fa fa-check"></i></td>
 							<td><i class="fa fa-times"></i></td>
-							</tr><tr><th><i class="fa fa-times"></i>via</th>
+							</tr><tr><th>Novia</th>
 							<td><i class="fa fa-check"></i></td>
 							<td><i class="fa fa-check"></i></td>
 							<td><i class="fa fa-times"></i></td>
