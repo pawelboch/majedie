@@ -4456,7 +4456,9 @@
 
 }
 @media screen and (max-width: map-get($grid-breakpoints, md) ) { //~768px
-
+	.module-full-width-many-tabs-with-photo-title-subtitle-text {
+		overflow: hidden;
+	}
 }
 @media screen and (max-width: map-get($grid-breakpoints, sm) ) { //~544px
 	.module-full-width-many-tabs-with-photo-title-subtitle-text {
