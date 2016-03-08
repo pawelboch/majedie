@@ -119,6 +119,8 @@ function list_categories() {
 	echo '</ul>';
 }
 
+
+/*
 function login_to_view_site() {
 	if(!is_user_logged_in()) {
 		$current_url = urlencode("//$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
@@ -127,6 +129,8 @@ function login_to_view_site() {
 	}
 }
 add_action('wp', 'login_to_view_site');
+*/
+
 
 add_filter( 'image_size_names_choose', 'my_custom_sizes' );
 
