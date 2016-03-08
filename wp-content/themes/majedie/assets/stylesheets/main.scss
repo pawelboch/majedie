@@ -30,11 +30,13 @@
     url('../fonts/Avenir-Black.woff') format('woff'), url('../fonts/Avenir-Black.ttf')  format('truetype'), url('../fonts/Avenir-Black.svg#Avenir-Black') format('svg');
 }
 
-body, html, #wpg-main-container-page  {
-	height: 100%;
+body,
+html,
+#wpg-main-container-page {
+    height: 100%;
 }
 .wpg-main-container-page-content {
-	height: 100%;
+    height: 100%;
 }
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -158,10 +160,59 @@ th {
         }
     }
 }
-.archive-post {
-    padding-bottom: 10px;
-    padding-top: 10px;
+.archive-posts-list {
+    .archive-post {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 .main-container .archive-posts-list {
     padding: 50px 0;
+}
+.pagination {
+    font-family: 'Roboto',sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 40px;
+    padding: 30px 0 0;
+    border-top: 1px solid #919191;
+    a,
+    span {
+        line-height: 38px;
+        display: block;
+        float: left;
+        height: 38px;
+        text-align: center;
+        color: #919191;
+        border: 1px solid #919191;
+    }
+    .numbered {
+        display: block;
+        float: left;
+        a,
+        span {
+            width: 38px;
+            height: 38px;
+            border-left: none;
+        }
+        a:first-child,
+        span:first-child {
+            border-left: 1px solid #919191;
+        }
+        .next,
+        .prev {
+            width: auto;
+            padding: 0 10px;
+        }
+    }
+    > a {
+        padding: 0 15px;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    .page-numbers.current {
+        color: #fff;
+        background: #355274;
+    }
 }

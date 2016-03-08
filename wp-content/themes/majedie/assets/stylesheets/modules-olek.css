@@ -1709,37 +1709,6 @@
       margin: 10px 0 0; }
   .module-full-width-search-results-pagination .wpg-short-post:first-child {
     margin-top: 0; }
-  .module-full-width-search-results-pagination .pagination {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    font-size: 13px;
-    padding: 30px 0 0;
-    margin-top: 40px;
-    border-top: 1px solid #919191; }
-    .module-full-width-search-results-pagination .pagination a, .module-full-width-search-results-pagination .pagination span {
-      float: left;
-      display: block;
-      height: 38px;
-      border: 1px solid #919191;
-      text-align: center;
-      line-height: 38px;
-      color: #919191; }
-    .module-full-width-search-results-pagination .pagination .numbered {
-      float: left;
-      display: block; }
-      .module-full-width-search-results-pagination .pagination .numbered a, .module-full-width-search-results-pagination .pagination .numbered span {
-        width: 38px;
-        height: 38px;
-        border-left: none; }
-      .module-full-width-search-results-pagination .pagination .numbered a:first-child, .module-full-width-search-results-pagination .pagination .numbered span:first-child {
-        border-left: 1px solid #919191; }
-    .module-full-width-search-results-pagination .pagination > a {
-      padding: 0 15px; }
-    .module-full-width-search-results-pagination .pagination a:hover {
-      text-decoration: none; }
-    .module-full-width-search-results-pagination .pagination .page-numbers.current {
-      background: #355274;
-      color: #fff; }
 
 /*** END MODULE 27 ***/
 /*** MODULE 28 ***/

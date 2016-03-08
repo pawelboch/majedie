@@ -2,7 +2,7 @@
 <div class="top-container">
 	<div class="module-wpg module-full-width-title">
 		<div class="container">
-			<h1><?php single_cat_title() ;?></h1>
+			<h1><?php the_archive_title('') ;?></h1>
 		</div>
 	</div>
 </div>
@@ -11,14 +11,8 @@
 		<div class="container">
 			<div class="row" data-wpg-equal-height-wrap="height">
 				<?php
-				$paged = get_query_var('paged') ? get_query_var('paged') : 1;
-				$args = array(
-					'post_type'              => 'post',
-					'paged'                  => $paged
-				);
-				$archive_query = new WP_Query($args);
-				if ($archive_query->have_posts()) {
-				while ($archive_query->have_posts()) : $archive_query->the_post();
+				if (have_posts()) {
+				while ( have_posts() ) : the_post();
 				$post_id = $post->ID;
 				;?>
 				<div class="col-xs-12 col-md-6 col-lg-4 wpg-col wpg-col-classic archive-post">
@@ -38,7 +32,7 @@
 					</div>
 				</div>
 				<?php
-							endwhile;
+				endwhile;
 				wp_reset_query();
 				;?>
 				<?php } else { ?>
@@ -47,11 +41,11 @@
 					<p>Sorry, but nothing matched your search criteria. Please try again with some different keywords.</p>
 				</div>
 				<?php } ;?>
+				<?php if($wp_query->max_num_pages >= 2) { ;?>
 				<div class="col-md-12">
 					<div class="pagination">
 						<?php $pagination = array(
 							'prev_next'          => true,
-								'total'	             => $archive_query->max_num_pages,
 							'prev_text'          => __('PREV'),
 							'next_text'          => __('NEXT'),
 						); ?>
@@ -60,6 +54,7 @@
 						</div>
 					</div>
 				</div>
+				<?php } ;?>
 			</div>
 		</div>
 	</div>

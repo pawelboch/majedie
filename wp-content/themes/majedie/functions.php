@@ -113,7 +113,7 @@ function list_categories() {
 	echo '<ul>';
 	foreach ($categories as $category) {
 		echo '<li>';
-		echo '<a href="#' . $category->slug . '">' . $category->name . '</a>';
+		echo '<a href="category/' . $category->slug . '">' . $category->name . '</a>';
 		echo '</li>';
 	}
 	echo '</ul>';
@@ -245,10 +245,27 @@ function create_fund_type() {
 * Archive pre get posts
 */
 
-function archivePreGetPosts($archive_query) {
+function archivePreGetPosts($query) {
 	if(is_archive()) {
-		$archive_query->set('posts_per_page', 3);
+		$query->set('posts_per_page', 12);
 		return;
 	};
 }
 add_action('pre_get_posts', 'archivePreGetPosts');
+
+/*
+* Custom archive title
+*/
+
+add_filter( 'get_the_archive_title', function ($title) {
+  if ( is_category() ) {
+      $title = single_cat_title( '', false );
+    } elseif ( is_tag() ) {
+      $title = single_tag_title( '', false );
+ 		} elseif ( is_year() ) {
+      $title = get_the_date( _x( 'Y', '' ) );
+    } elseif ( is_author() ) {
+      $title = xget_the_author();
+    }
+  return $title;
+});

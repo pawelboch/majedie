@@ -2700,47 +2700,6 @@
 	.wpg-short-post:first-child {
 		margin-top: 0;
 	}
-	.pagination {
-		font-family: 'Roboto', sans-serif;
-		font-weight: 100;
-		font-size: 13px;
-		padding: 30px 0 0;
-		margin-top: 40px;
-		border-top: 1px solid #919191;
-		a, span {
-			float: left;
-			display: block;
-			height: 38px;
-			border: 1px solid #919191;
-			text-align: center;
-			line-height: 38px;
-			color: #919191;
-		}
-		.numbered {
-			float: left;
-			display: block;
-			a, span {
-				width: 38px;
-				height: 38px;
-				border-left: none;
-			}
-			a:first-child, span:first-child {
-				border-left: 1px solid #919191;
-			}
-		}
-		> a {
-			padding: 0 15px;
-		}
-		a:hover {
-			text-decoration: none;
-		}
-		.page-numbers.current {
-			background: #355274;
-			color: #fff;
-		}
-
-	}
-
 
 }
 @media screen and (max-width: map-get($grid-breakpoints, xl) ) { //~1200px
