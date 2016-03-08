@@ -82,7 +82,7 @@ $the_query = get_posts( $args );
 					<div>
 						<h4><?php echo $team->post_title; ?></h4>
 						<p class='wpg-job-title'><?php echo $selected_name; ?></p>					
-						<?php echo $team->post_content; ?>
+						<?php echo apply_filters( 'the_content',$team->post_content); ?>
 					</div>
 				</div>
 			</div>
