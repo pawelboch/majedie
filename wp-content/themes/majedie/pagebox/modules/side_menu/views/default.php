@@ -13,14 +13,16 @@
 .tg_simple li a:hover{
 	text-decoration: none;
 	color: #000;
-	font-weight: 900;
+	font-family: Avenir-Black;
+
 }
 .side_menu .active{
 	color:#000;
-	font-weight: 600;
+	font-family: Avenir-Black;
 }
 .side_menu{
 margin-top:60px;
+
 }
 
 .side_menu a:visited{
