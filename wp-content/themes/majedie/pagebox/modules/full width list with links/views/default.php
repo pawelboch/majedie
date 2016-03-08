@@ -1,10 +1,14 @@
 <style type="text/css" media="screen">
  .active2{
 	color:#000;
-	font-weight: 600;
+font-family: Avenir-Black;
 }	
 .module-full-width-list-with-links a:visited{
 	color:#000;
+}
+.module-full-width-list-with-links a:hover{
+	color:#000;
+	font-family: Avenir-Black;
 }
 </style>
 
