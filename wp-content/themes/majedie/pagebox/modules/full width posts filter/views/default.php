@@ -15,7 +15,7 @@
 	<div class="container">
 		<select class="wpg-plugin-select" onchange="document.location.href=this.options[this.selectedIndex].value;">
 			<option value=""><?php echo esc_attr( __( 'Filter topic' ) ); ?></option>
-			<?php  
+			<?php
 				$categories = get_categories();
 				foreach ($categories as $category) {
 					echo '<option value="' . get_category_link($category->term_id) . '">';
