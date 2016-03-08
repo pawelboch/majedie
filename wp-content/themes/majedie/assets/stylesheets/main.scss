@@ -26,13 +26,12 @@
     font-weight: normal;
     font-style: normal;
 
-<<<<<<< HEAD
-body, html, #wpg-main-container-page  {
-	height: 100%;
-=======
     src: url('../fonts/Avenir-Black.eot?#iefix') format('embedded-opentype'),  url('../fonts/Avenir-Black.otf')  format('opentype'),
     url('../fonts/Avenir-Black.woff') format('woff'), url('../fonts/Avenir-Black.ttf')  format('truetype'), url('../fonts/Avenir-Black.svg#Avenir-Black') format('svg');
->>>>>>> b7f6bff0bfd47604bb376f75f1e0e7914f04e4ef
+}
+
+body, html, #wpg-main-container-page  {
+	height: 100%;
 }
 
 body {
