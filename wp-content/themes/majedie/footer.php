@@ -1,7 +1,7 @@
 				</div><!-- .span-table-cell .vertical-align-top -->
 			</div><!-- .span-table-row -->
 
-			<div class="span-table-row">
+			<div class="span-table-row wpg-main-container-page-footer">
 				<div class="span-table-cell vertical-align-bottom">
 
 					<footer class="wpg-main-footer">

@@ -12,7 +12,7 @@
 	</head>
 	<body <?php body_class("wpg-bg-grain"); ?>>
 		<div class="span-table" id="wpg-main-container-page">
-			<div class="span-table-row">
+			<div class="span-table-row wpg-main-container-page-header">
 
 				<div class="span-table-cell vertical-align-top">
 
@@ -56,5 +56,5 @@
 				</div><!-- .span-table-cell .vertical-align-top -->
 			</div><!-- .span-table-row -->
 
-			<div class="span-table-row">
+			<div class="span-table-row wpg-main-container-page-content">
 				<div class="span-table-cell vertical-align-top">

@@ -1508,12 +1508,11 @@
 <hr class="wpg-separator">
 
 <div class="module-wpg module-full-width-many-tabs-with-photo-title-subtitle-text">
-	<?php $idUniqid=uniqid(); ?>
 	<div class="container">
-		<div class="row wpg-items-persons">
+		<div class="row wpg-items-persons" data-wpg-equal-height-wrap="height">
 			<?php for($i=1; $i<11; $i++) { ?>
-			<div class='col-xs-12 col-sm-4 wpg-item-person'>
-				<div class='pager-mfw3twptst-item'>
+			<div class='col-xs-12 col-sm-6 col-md-4 wpg-item-person'>
+				<div class='pager-mfw3twptst-item' data-wpg-equal-height-item data-wpg-equal-height-item-smartphone-remove-height>
 					<img src='<?php echo get_template_directory_uri(); ?>/assets/images/person-1.png' alt='x'>
 					<h3>Adrian Brass</h3>
 					<p class='wpg-job-title'>Job Title</p>
