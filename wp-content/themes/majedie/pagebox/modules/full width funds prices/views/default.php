@@ -13,7 +13,7 @@
 					<table class="tablesorter">
 						<thead>
 						<tr>
-							<th>FUND</th>
+							<th class="headerSortDown">FUND</th>
 							<th>FUND<br>DOMICILE</th>
 							<th>SHARE<br>CLASS</th>
 							<th>ACC/INC</th>

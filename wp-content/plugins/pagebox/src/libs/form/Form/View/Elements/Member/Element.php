@@ -1,0 +1,36 @@
+<?php
+/**
+ * Element view file for post input
+ * 
+ * @author      Pavel
+ * @package     WPGeeks
+ * @subpackage  Forms
+ */
+?>
+<table>
+	<tr class="subelement-member" data-type="member">
+		<th class="label" scope="row">
+			<label><?php _e( 'Post name', 'pagebox' ); ?></label> 
+		</th>
+		<td class="input">
+                        <?php
+				// set default value
+				if (!isset($this->values)) :
+					$this->values = '';
+				endif;
+			?>
+                        <select data-setting="member" class="make-chosen" name="<?php echo $this->getConfig( 'name' ); ?>" class="subelement" >
+                                <option value=""></option>
+				<?php foreach ($this->posts as $post): ?>
+				<option value="<?php echo $post->post_name; ?>" <?php is_numeric( $this->values ) ? selected($post->ID, $this->values) : selected($post->post_name, $this->values); ?>>
+					<?php echo $post->post_title; ?>
+				</option>
+
+				<?php endforeach;?>
+			</select>
+			<p class="description">
+				<?php _e( 'Select specific member name to display', 'pagebox' ); ?>
+			</p>
+		</td>
+	</tr>
+</table>

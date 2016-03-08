@@ -353,4 +353,95 @@
     font-family: Avenir-Book, Arial, Helvetica, sans-serif;
     line-height: 105%; }
 
+/*** MODULE 28 ***/
+.module-full-width-table {
+  padding: 60px 0; }
+  .module-full-width-table .wpg-container-tabels .wpg-table-wrap-outset {
+    overflow-x: auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.28);
+    background-color: #fff;
+    width: 100%; }
+  .module-full-width-table .wpg-container-tabels .wpg-table-wrap {
+    padding: 30px 0; }
+    .module-full-width-table .wpg-container-tabels .wpg-table-wrap thead th:nth-child(1) {
+      width: 140px; }
+    .module-full-width-table .wpg-container-tabels .wpg-table-wrap p {
+      font-size: 15px; }
+    .module-full-width-table .wpg-container-tabels .wpg-table-wrap table {
+      border-collapse: separate;
+      border-spacing: 0 6px;
+      width: 100%;
+      padding: 0 30px;
+      table-layout: fixed; }
+      .module-full-width-table .wpg-container-tabels .wpg-table-wrap table .fa.fa-check,
+      .module-full-width-table .wpg-container-tabels .wpg-table-wrap table .fa.fa-times {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: #000;
+        text-align: center;
+        line-height: 20px;
+        color: #f1efed;
+        vertical-align: middle;
+        border-radius: 100%;
+        font-size: 14px; }
+      .module-full-width-table .wpg-container-tabels .wpg-table-wrap table .fa.fa-check {
+        background: #86bd46; }
+      .module-full-width-table .wpg-container-tabels .wpg-table-wrap table .fa.fa-times {
+        background: #d34451; }
+    .module-full-width-table .wpg-container-tabels .wpg-table-wrap caption,
+    .module-full-width-table .wpg-container-tabels .wpg-table-wrap thead th {
+      color: #fff;
+      font-weight: 400;
+      font-family: Avenir-Light, Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      text-transform: uppercase; }
+    .module-full-width-table .wpg-container-tabels .wpg-table-wrap caption {
+      caption-side: top;
+      background-color: #675c50;
+      padding: 10px 15px;
+      margin: 0 30px; }
+    .module-full-width-table .wpg-container-tabels .wpg-table-wrap thead th {
+      background-color: #dc6f26;
+      padding: 15px;
+      text-align: center; }
+    .module-full-width-table .wpg-container-tabels .wpg-table-wrap tbody td,
+    .module-full-width-table .wpg-container-tabels .wpg-table-wrap tbody th {
+      background-color: #e4e2dd;
+      color: #000;
+      font-size: 15px;
+      font-weight: 400;
+      padding: 10px 15px;
+      text-align: center; }
+    .module-full-width-table .wpg-container-tabels .wpg-table-wrap tbody th {
+      text-align: left; }
+    .module-full-width-table .wpg-container-tabels .wpg-table-wrap tbody tr:nth-child(even) td,
+    .module-full-width-table .wpg-container-tabels .wpg-table-wrap tbody tr:nth-child(even) th {
+      background-color: #efeeed; }
+    .module-full-width-table .wpg-container-tabels .wpg-table-wrap a {
+      color: #2b4d7a;
+      text-decoration: underline; }
+  .module-full-width-table .wpg-container-tabels .wpg-bottom-container {
+    margin-top: 35px; }
+
+/*** END MODULE 28 ***/
+/*** MODULE 42 ***/
+.module-side-menu {
+  padding: 60px 0; }
+  .module-side-menu .tg_simple {
+    background-color: #fff;
+    padding: 20px; }
+    .module-side-menu .tg_simple li {
+      list-style: none;
+      color: #a6a6a6;
+      text-transform: uppercase;
+      line-height: 30px;
+      font-family: Avenir-Light, Arial, Helvetica, sans-serif; }
+      .module-side-menu .tg_simple li a:hover {
+        text-decoration: none;
+        color: #000;
+        font-family: Avenir-Bold, Arial, Helvetica, sans-serif; }
+
+/*** END MODULE 42 ***/
+
 /*# sourceMappingURL=modules-wojtek.css.map */

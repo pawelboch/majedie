@@ -42,7 +42,7 @@ class Module extends Abstract_Module {
 			'description' => __(  '', 'pagebox_blocks' ),
 			// Elements with higher priority will be displayed earlier in
 			// new box modal window
-			'priority'    => 1,
+			'priority'    => 0,
 			// Custom path for image file. Default image (module.jpg) should be
 			// located in the main folder of current box
 			'image'       => '',
