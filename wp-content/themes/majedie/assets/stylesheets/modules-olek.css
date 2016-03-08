@@ -1223,8 +1223,6 @@
   .module-full-width-contact-form-box-title-text .span-table-row > label,
   .module-full-width-contact-form-box-title-text .span-table-row > .wpg-label-style {
     width: 90px; }
-  .module-full-width-contact-form-box-title-text .wpcf7-not-valid-tip {
-    color: #c00; }
   .module-full-width-contact-form-box-title-text .ajax-loader {
     position: absolute;
     display: inline-block;
@@ -1233,19 +1231,6 @@
     background-color: #fff; }
   .module-full-width-contact-form-box-title-text .btn-1 {
     min-width: 150px; }
-  .module-full-width-contact-form-box-title-text .wpcf7-not-valid-tip {
-    margin: 10px 0 0;
-    padding: 4px;
-    text-align: center;
-    color: #fff;
-    border: 1px solid #4d453c;
-    background-color: #5d554c; }
-  .module-full-width-contact-form-box-title-text .wpcf7-response-output {
-    margin: 10px 0 0;
-    padding: 4px;
-    text-align: center;
-    border: 1px solid #4d453c;
-    background-color: #5d554c; }
 
 @media screen and (max-width: 1200px) {
   .module-full-width-contact-form-box-title-text .wpg-x-recaptcha {

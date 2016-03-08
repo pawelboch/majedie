@@ -1861,9 +1861,6 @@
     .span-table-row > .wpg-label-style {
         width: 90px;
     }
-    .wpcf7-not-valid-tip {
-        color: #c00;
-    }
     .ajax-loader {
         position: absolute;
         display: inline-block;
@@ -1873,21 +1870,6 @@
     }
     .btn-1 {
         min-width: 150px;
-    }
-    .wpcf7-not-valid-tip {
-        margin: 10px 0 0;
-        padding: 4px;
-        text-align: center;
-        color: #fff;
-        border: 1px solid #4d453c;
-        background-color: #5d554c;
-    }
-    .wpcf7-response-output {
-        margin: 10px 0 0;
-        padding: 4px;
-        text-align: center;
-        border: 1px solid #4d453c;
-        background-color: #5d554c;
     }
 }
 @media screen and (max-width: map-get($grid-breakpoints, xl) ) {
