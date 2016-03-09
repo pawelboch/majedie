@@ -1,28 +1,36 @@
-<div class="main-container">
-	<div class="top-container">
-		<?php foreach ($this->get_variable( 'top_modules' ) as $module): ?>
-		<?php $module->display(); ?>
-		<?php endforeach ?>
-	</div>
-	<div class="middle-container">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8">
+
+<div class="module-wpg module-full-width-fund">
+	
+	<?php foreach ($this->get_variable( 'top_modules' ) as $module): ?>
+	<?php $module->display(); ?>
+	<?php endforeach ?>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-8 wpg-inset-col">
+				<div class="wpg-inset-box-1">
 					<?php foreach ($this->get_variable( 'left-first_modules' ) as $module): ?>
 					<?php $module->display(); ?>
 					<?php endforeach ?>
 				</div>
-				<div class="col-md-4">
+			</div>
+
+			<div class="col-xs-12 col-md-4 wpg-inset-col">
+				<div class="wpg-inset-box-2">
 					<?php foreach ($this->get_variable( 'right-first_modules' ) as $module): ?>
 					<?php $module->display(); ?>
 					<?php endforeach ?>
 				</div>
 			</div>
+
+			<div class="col-xs-12 col-md-8 wpg-inset-col">
+				<div class="wpg-inset-box-1">
+					<?php foreach ($this->get_variable( 'bottom_modules' ) as $module): ?>
+					<?php $module->display(); ?>
+					<?php endforeach ?>
+				</div>
+			</div>
+
 		</div>
-	</div>
-	<div class="bottom-container">
-		<?php foreach ($this->get_variable( 'bottom_modules' ) as $module): ?>
-		<?php $module->display(); ?>
-		<?php endforeach ?>
 	</div>
 </div>
