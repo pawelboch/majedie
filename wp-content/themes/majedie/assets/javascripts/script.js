@@ -16,6 +16,29 @@
 	$wpgHamburegr.click(function(){
 		$wpgNavGroup.toggleClass("wpg-active-menu-dropdown");
 	});
+
+	$('.menu-item-has-children > a').append('<i class="fa fa-angle-down arrow"></i>');
+	$('.menu-item-has-children > a > .arrow').click(function(e) {
+		$(this).parent().next().toggleClass('opened');
+		e.preventDefault();
+	});
+	$('.wpg-main-menu > .menu-item-has-children > a > .arrow').click(function(e) {
+		if($(".wpg-hamburger").css("display")!="block")
+		{
+			$('.menu-item-has-children .arrow').not(this).parent().parent().find('.sub-menu').removeClass('opened');
+			e.preventDefault();
+		}
+	});
+	$(document).on("click","body", function(e) {
+		if (jQuery(e.target).is('.wpg-main-menu *')) return; 
+		else 
+		{
+			$('.wpg-main-menu .sub-menu').removeClass('opened');
+		} 
+	});
+	$(window).resize(function(){
+		if($(".wpg-hamburger").css("display")!="block") $('.wpg-main-menu').find('.sub-menu').removeClass('opened');
+	});
 })(jQuery);
 /* end menu mobile */
 
@@ -34,35 +57,6 @@
 	});
 })(jQuery);
 /* end menu mobile fund */
-
-/* decription script */
-(function($){
-	$('.menu-item-has-children > a').append('<i class="fa fa-angle-down arrow"></i>');
-	$('.menu-item-has-children > a > .arrow').click(function(e) {
-		$(this).parent().next().toggleClass('opened');
-		e.preventDefault();
-	});
-	$('.wpg-main-menu > .menu-item-has-children > a > .arrow').click(function(e) {
-		$('.menu-item-has-children .arrow').not(this).parent().parent().find('.sub-menu').removeClass('opened');
-		e.preventDefault();
-	});
-	/*
-	$('.menu-item-has-children > a').append('<i class="fa fa-angle-down arrow"></i>');
-
-	$('.menu-item-has-children > a .arrow').click(function() {
-		$(this).parent().next().toggleClass('opened');
-		$('.menu-item-has-children .arrow').not(this).parent().find('.sub-menu').removeClass('opened');
-	});
-	*/
-	$(document).on("click","body", function(e) {
-		if (jQuery(e.target).is('.wpg-main-menu *')) return; 
-		else 
-		{
-			$('.wpg-main-menu .sub-menu').removeClass('opened');
-		} 
-	});
-})(jQuery);
-/* end decription script */
 
 
 /* popup */
