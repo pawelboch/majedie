@@ -16,6 +16,29 @@
 	$wpgHamburegr.click(function(){
 		$wpgNavGroup.toggleClass("wpg-active-menu-dropdown");
 	});
+
+	$('.menu-item-has-children > a').append('<i class="fa fa-angle-down arrow"></i>');
+	$('.menu-item-has-children > a > .arrow').click(function(e) {
+		$(this).parent().next().toggleClass('opened');
+		e.preventDefault();
+	});
+	$('.wpg-main-menu > .menu-item-has-children > a > .arrow').click(function(e) {
+		if($(".wpg-hamburger").css("display")!="block")
+		{
+			$('.menu-item-has-children .arrow').not(this).parent().parent().find('.sub-menu').removeClass('opened');
+			e.preventDefault();
+		}
+	});
+	$(document).on("click","body", function(e) {
+		if (jQuery(e.target).is('.wpg-main-menu *')) return; 
+		else 
+		{
+			$('.wpg-main-menu .sub-menu').removeClass('opened');
+		} 
+	});
+	$(window).resize(function(){
+		if($(".wpg-hamburger").css("display")!="block") $('.wpg-main-menu').find('.sub-menu').removeClass('opened');
+	});
 })(jQuery);
 /* end menu mobile */
 
@@ -239,7 +262,6 @@ jQuery(window).load(function(){ wpgHeight100pWindow(jQuery); });
 
 
 /* left-to-right attachment size */
-
 (function($){
 	function articleLeftToRightImage() {
 		var articleLeftSide = $('.module-full-width-post-content .left-side').outerWidth();
@@ -260,19 +282,16 @@ jQuery(window).load(function(){ wpgHeight100pWindow(jQuery); });
 	$(window).resize(articleLeftToRightImage);
 
 })(jQuery);
-
-
-
-
 /* end left-to-right attachment size */
 
 
-/* toggle class for news module menu */	function arrowMenuParent() {
-		$('.menu-item-has-children').append('<i class="fa fa-angle-down"></i>');
-		$('.menu-item-has-children').click(function() {
-			$(this).find('.sub-menu').toggleClass('opened');
-		});
-	}
+/* toggle class for news module menu */
+function arrowMenuParent() {
+	$('.menu-item-has-children').append('<i class="fa fa-angle-down"></i>');
+	$('.menu-item-has-children').click(function() {
+		$(this).find('.sub-menu').toggleClass('opened');
+	});
+}
 
 (function($){
 	var moduleClass = $('.module-full-width-2-posts-with-thumnails-2-posts');
@@ -291,8 +310,8 @@ jQuery(window).load(function(){ wpgHeight100pWindow(jQuery); });
 	});
 
 })(jQuery);
-
 /* end toggle class for news module menu */
+
 
 /* Team module toggle */
 
@@ -324,22 +343,6 @@ jQuery(document).ready(function(){
 })(jQuery);
 /* end jQuery Ajax posts */
 
-
-/* decription script */
-(function($){
-	function arrowMenuParent() {
-		$('.menu-item-has-children').append('<i class="fa fa-angle-down arrow"></i>');
-
-		$('.menu-item-has-children .arrow').click(function() {
-			$('.menu-item-has-children .arrow').not(this).parent().find('.sub-menu').removeClass('opened');
-			$(this).parent().find('.sub-menu').toggleClass('opened');
-		});
-
-	}
-
-	$(document).ready(arrowMenuParent);
-})(jQuery);
-/* end decription script */
 
 
 /* .module-full-width-many-tabs-with-photo-title-subtitle-text */

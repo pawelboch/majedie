@@ -62,7 +62,9 @@ class Module extends Abstract_Module {
 						'module-reduction-none' => 'No space',
 						'module-reduction-top' => 'Space reduction top',
 						'module-reduction-bottom' => 'Space reduction bottom',
-						'module-reduction-border-separate' => 'Border separate'
+						'module-reduction-border-separate' => 'Border separate',
+						'module-add-bottom' => 'Space add bottom',
+						'module-add-top' => 'Space add top'
 					),
 					'label'       => __( 'Space reduction', 'pagebox' ),
 					'description' => __( '', 'pagebox' ),

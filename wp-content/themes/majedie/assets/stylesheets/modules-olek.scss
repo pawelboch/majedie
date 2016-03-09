@@ -266,6 +266,12 @@
 .module-reduction-bottom {
     margin-bottom: -60px;
 }
+.module-add-top {
+    margin-top: 60px;
+}
+.module-add-bottom {
+    margin-bottom: 60px;
+}
 .module-reduction-border-separate {
     height: 1px;
     background-color: black;
@@ -3945,6 +3951,7 @@
                             max-width: 100%;
                             height: auto;
                             margin-bottom: 25px;
+                            border-radius: 100%;
                         }
                         h3 {
                             font-family: Avenir-Black, Arial, Helvetica, sans-serif;

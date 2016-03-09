@@ -35,7 +35,7 @@ global $post;
 $la = get_permalink($post->ID);
 
  ?>
-<div class="side_menu">
+<div class="side_menu">xxxxxxx
 	<div class="wpg-inset-col">
 				<div class="wpg-inset-box-2">
 
