@@ -1,4 +1,8 @@
 <?php
+/**
+ * 
+ * @author Dawid Róż <dawid.roz@nurtureagency.com>
+ */
 
 class DocumentsDB {
 
@@ -211,14 +215,13 @@ class DocumentsDB {
         return (count($rows) > 0) ? $rows[0] : false;
     }
 
-    
-    
     /*
      * handleFiles()
      * Main function for handle files uploaded via Ajax. 
      * Check for file exists - and if yes, replace this without modifications taxonomies and other data in DDB_POST_TYPE_NAME post. 
      * 
      */
+
     public static function handleFiles() {
         if (!function_exists('wp_handle_upload'))
             require_once( ABSPATH . 'wp-admin/includes/file.php' );
@@ -322,6 +325,16 @@ class DocumentsDB {
         foreach ($media as $file) {
             wp_delete_attachment($file->ID);
         }
+    }
+
+    public static function addMetaboxes() {
+        function renderMetabox($post) {
+            $uploadDir = wp_upload_dir();
+            $url = $uploadDir['baseurl'] . '/' . get_post_meta($post->ID, 'filePath', true);
+            echo '<input type="text" readonly value="' . $url . '" style="width: 100%;"/>';
+        }
+
+        add_meta_box('my-meta-box-id', 'File URL', 'renderMetabox', DDB_POST_TYPE_NAME, 'normal', 'high');
     }
 
 }

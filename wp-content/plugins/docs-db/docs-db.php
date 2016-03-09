@@ -30,3 +30,5 @@ add_action('init', array('DocumentsDB', 'init'));
 add_action('admin_menu', array('DocumentsDB', 'menuInit'));
 add_action('wp_ajax_documentsdb-upload-action', array('DocumentsDB', 'handleFiles'));
 add_action('before_delete_post', array('DocumentsDB', 'deleteAssociatedMedia'));
+add_action('add_meta_boxes', array('DocumentsDB', 'addMetaboxes'));
+
