@@ -29,11 +29,15 @@
 		.sub-menu {
 			background-color: #8d847a;
 			left: 0;
-			padding: 5px;
+			//padding: 5px;
 			position: absolute;
 			top: 100%;
+			margin-top: 1px !important;
 			width: 220px;
-			display: none;
+			//display: none;
+			max-height: 0;
+			@include transition(All 400ms ease-in-out);
+			overflow: hidden;
 			z-index: 10;
 			li:hover {
 			  background-color: rgba(255, 255, 255, 0.1);
@@ -42,14 +46,19 @@
 			  padding: 0;
 				a {
 				    height: auto;
-				    line-height: 1.4em;
+				    //line-height: 1.4em;
 				    padding: 8px 12px;
 				    vertical-align: top;
 				    width: 100%;
 				}
 			}
 			&.opened {
-				display: block;
+				//display: block;
+				max-height: 1000px;
+			}
+			.sub-menu {
+				position: static;
+				background-color: rgba(255, 255, 255, 0.1);
 			}
 		}
 	}
@@ -80,8 +89,8 @@
 		width: 120px;
 	}
 	input[type=search] {
-		vertical-align: top;
-		background: $background-main-header;
+		vertical-align: middle;
+		background: transparent;
 		border: none;
 		font-size: 14px;
 		height: 13px;
@@ -89,18 +98,20 @@
 		padding: 0 5px;
 		border-left: 1px solid #fff;
 		margin-left: 4px;
+		//margin-top: 4px;
 		width: 46px;
 		overflow: hidden;
 		@include transition(width 600ms ease-in-out);
 	}
 	input[type=submit] {
-		vertical-align: top;
+		vertical-align: middle;
 		border: none;
 		background-color: transparent;
 		text-indent: -1000px;
 		width: 13px;
 		height: 13px;
 		line-height: 13px;
+		//margin-top: 4px;
 	}
 
 	.wpg-dropdown-menu {
@@ -169,19 +180,36 @@
 		}
 		li {
 			font-size: 14px;
-			padding: 8px 12px;
+			padding: 6px 12px;
 			font-weight: 300;
 			position: relative;
 			.arrow {
-				cursor: pointer;
-				float: right;
-				margin: 0 0 0 6px;
+			    cursor: pointer;
+			    float: right;
+			    margin: 0;
+			    background: transparent;
+			    width: 20px;
+			    text-align: center;
+			    height: 22px;
+			    line-height: 22px;
+			    margin-right: -12px;
+			}
+		}
+		li li {
+			.arrow {
+				margin-right: 0;
 			}
 		}
 		a {
 			display: inline-block;
-			height: 13px;
-			line-height: 13px;
+			//height: 22px;
+			//line-height: 22px;
+			vertical-align: top;
+		}
+	}
+	.wpg-main-menu {
+		a {
+			display: inline-block;
 			vertical-align: top;
 		}
 	}
@@ -223,7 +251,7 @@
 }
 
 @media screen and (max-width: 800px) {
-
+	/*
 	.wpg-main-header {
 		.wpg-other-menu,
 		.wpg-main-menu {
@@ -232,6 +260,7 @@
 			}
 		}
 	}
+	*/
 	
 }
 
@@ -261,6 +290,9 @@
 		.wpg-other-menu {
 			li {
 				border: none;
+				a, form {
+					background: rgba(0,0,0,.1);
+				}
 			}
 		}
 		.wpg-main-menu {
@@ -268,15 +300,38 @@
 				float: none;
 				a {
 					display: block;
-					padding: 6px;
+					padding: 6px 52px 6px 6px;
 					background: rgba(0,0,0,.2);
 					height: auto;
+					position: relative;
+					.arrow {
+						background-color: rgba(0,0,0,.02);
+						margin-right: 0;
+						position: absolute;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						width: 42px;
+						height: auto;
+						line-height: 42px;
+					}
 				}
 				a:hover {
 					background: rgba(0,0,0,.6);
 				}
 			}
 		}
+
+		ul {
+			a, form {
+				padding: 10px !important;
+			}
+			.sub-menu {
+				position: static;
+				width: 100%;
+			}
+		}
+
 
 		.wpg-hamburger span {
 			display: none;

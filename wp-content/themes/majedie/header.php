@@ -24,21 +24,9 @@
 								<nav>
 									<ul class="wpg-top-menu">
 										<li class="wpg-dropdown-menu"><label for="wpg-dropdown-consultant">Consultant <i class="fa fa-angle-down"></i></label>
-											<input type="checkbox" id="wpg-dropdown-consultant">
-											<ul class="sub-menu">
-												<li><a href="#">Example 1</a></li>
-												<li><a href="#">Example 2</a></li>
-												<li><a href="#">Example 3</a></li>
-											</ul>
+											<ul class="sub-menu"></ul>
 										</li>
-										<li class="wpg-dropdown-menu"><label for="wpg-dropdown-lang">United Kingdom <i class="fa fa-angle-down"></i></label>
-											<input type="checkbox" id="wpg-dropdown-lang">
-											<ul class="sub-menu">
-												<li><a href="#">French</a></li>
-												<li><a href="#">Germany</a></li>
-												<li><a href="#">Poland</a></li>
-											</ul>
-										</li>
+										<li class="wpg-dropdown-menu"><label for="wpg-dropdown-lang">United Kingdom <i class="fa fa-angle-down"></i></label></li>
 									</ul>
 								</nav>
 								<nav>
