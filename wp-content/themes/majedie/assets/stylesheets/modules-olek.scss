@@ -977,6 +977,7 @@
         padding: 0;
         color: #7e7e7e;
         border: medium none;
+        background-color: transparent;
     }
     .wpg-filter-topic:after {
         font-family: FontAwesome;
@@ -3359,6 +3360,7 @@
 @media screen and (max-width: map-get($grid-breakpoints, sm) ) {
     //~544px
     .module-full-width-top-post-header-with-category-title-date {
+    	padding-top: 0 !important;
         .wpg-baner-outset {
             .wpg-baner {
                 min-height: 268px;
@@ -3373,6 +3375,17 @@
 /*** MODULE 33 ***/
 .module-full-width-post-content {
     padding: 60px 0;
+    table {
+    	margin-top: 15px;
+		td, th {
+			padding: 5px;
+		}
+    }
+    .wpg-table-wrap {
+		overflow-x: auto;
+		//overflow-y: hidden;
+		width: 100%;
+    }
     .wpg-main-content-article {
         padding: 15px 30px 30px;
         background-color: #fff;

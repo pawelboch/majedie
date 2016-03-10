@@ -8,6 +8,8 @@
 	<div class="wpg-container-tabels">
 		<div class="container">
 
+
+			<?php if(count($rows) > 0): ?>
 			<div class="wpg-table-wrap-outset">
 				<div class="wpg-table-wrap">
 					<table class="tablesorter">
@@ -44,6 +46,10 @@
 					</table>
 				</div>
 			</div>
+
+			<?php else: ?>
+				<p class="no-results"><strong>No results</strong></p>
+			<?php endif; ?>
 
 			<div class="wpg-bottom-container">
 				<div class="col-xs-12">

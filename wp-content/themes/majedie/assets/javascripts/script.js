@@ -346,63 +346,117 @@ jQuery(document).ready(function(){
 
 
 /* .module-full-width-many-tabs-with-photo-title-subtitle-text */
+var debounce=function(fn, delay) {
+  var timer = null;
+  return function () {
+    var context = this, args = arguments;
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      fn.apply(context, args);
+    }, delay);
+  };
+}
+if(jQuery(".module-full-width-many-tabs-with-photo-title-subtitle-text").length>0)
+{
+	var scrollControler=true;
+}
+jQuery(window).scroll(function(){
+	if(jQuery(".module-full-width-many-tabs-with-photo-title-subtitle-text").length>0)
+	{
+		scrollControler=false;
+	}
+});
+jQuery(window).on('scroll', debounce(function (event) {
+	if(jQuery(".module-full-width-many-tabs-with-photo-title-subtitle-text").length>0)
+	{
+		scrollControler=true;
+	}
+}, 1000));
+
 var resizeFullwsa=function($){
-	var zblSep='<div class="col-xs-12 wpg-items-person-show wpg-clear-both"></div>';
-	$(".wpg-item-person").removeClass("cycle-pager-active");
-	$(".wpg-items-person-show").remove();
-	if($(".module-full-width-many-tabs-with-photo-title-subtitle-text").css("overflow")=="hidden")
+	if($(".module-full-width-many-tabs-with-photo-title-subtitle-text").length>0 && scrollControler)
 	{
-		for(var i=1, iLength=($(".wpg-item-person").length+1); i<iLength; i++) {
-			//if((i%3) == 0 ) $(".wpg-item-person").eq((i-1)).after(zblSep);
-			if((i%2)==0) $(".wpg-item-person").eq((i-1)).after(zblSep);
+		var zblSep='<div class="col-xs-12 wpg-items-person-show wpg-clear-both"></div>';
+		$(".wpg-item-person").removeClass("cycle-pager-active");
+		$(".wpg-items-person-show").remove();
+		if($(".module-full-width-many-tabs-with-photo-title-subtitle-text").css("overflow")=="hidden")
+		{
+			for(var i=1, iLength=($(".wpg-item-person").length+1); i<iLength; i++) {
+				//if((i%3) == 0 ) $(".wpg-item-person").eq((i-1)).after(zblSep);
+				if((i%2)==0) $(".wpg-item-person").eq((i-1)).after(zblSep);
+			}
 		}
+		else
+		{
+			for(var i=1, iLength=($(".wpg-item-person").length+1); i<iLength; i++) {
+				if((i%3) == 0 ) $(".wpg-item-person").eq((i-1)).after(zblSep);
+				//if((i%2)==0) $(".wpg-item-person").eq((i-1)).after(zblSep);
+			}	
+		}
+		$(".wpg-items-persons").append(zblSep);
 	}
-	else
-	{
-		for(var i=1, iLength=($(".wpg-item-person").length+1); i<iLength; i++) {
-			if((i%3) == 0 ) $(".wpg-item-person").eq((i-1)).after(zblSep);
-			//if((i%2)==0) $(".wpg-item-person").eq((i-1)).after(zblSep);
-		}	
-	}
-	$(".wpg-items-persons").append(zblSep);
 };
 jQuery(window).resize(function(){
-	resizeFullwsa(jQuery);
+	if(jQuery(".module-full-width-many-tabs-with-photo-title-subtitle-text").length>0)
+	{
+		resizeFullwsa(jQuery);
+	}
 });
 (function($){
-	var timeoutAnimateScroll=setTimeout(function(){},300);
-	if($(".module-full-width-many-tabs-with-photo-title-subtitle-text").length>0)
+	if(jQuery(".module-full-width-many-tabs-with-photo-title-subtitle-text").length>0)
 	{
-		resizeFullwsa($);
+		var timeoutAnimateScroll=setTimeout(function(){},300);
+		if($(".module-full-width-many-tabs-with-photo-title-subtitle-text").length>0)
+		{
+			resizeFullwsa($);
 
-		
-		$(".wpg-items-person-show").hide().html("");
-		$(".wpg-item-person").click(function(){
-			clearTimeout(timeoutAnimateScroll);
-			$(".wpg-item-person").removeClass("cycle-pager-active");
-			$(this).addClass("cycle-pager-active");
+			
+			$(".wpg-items-person-show").hide().html("");
+			$(".wpg-item-person").click(function(){
+				clearTimeout(timeoutAnimateScroll);
+				$(".wpg-item-person").removeClass("cycle-pager-active");
+				$(this).addClass("cycle-pager-active");
 
-			$(".wpg-items-person-show").removeClass("wpg-active-dropdown");
-			$(this).nextAll(".wpg-items-person-show").first().addClass("wpg-active-dropdown");
-			for(var i=0, iLength=$(".wpg-items-person-show").length; i<iLength; i++)
-			{
-				if(!($(".wpg-items-person-show").eq(i).hasClass("wpg-active-dropdown")))
+				$(".wpg-items-person-show").removeClass("wpg-active-dropdown");
+				$(this).nextAll(".wpg-items-person-show").first().addClass("wpg-active-dropdown");
+				for(var i=0, iLength=$(".wpg-items-person-show").length; i<iLength; i++)
 				{
-					$(".wpg-items-person-show").eq(i).slideUp(200).html("");
+					if(!($(".wpg-items-person-show").eq(i).hasClass("wpg-active-dropdown")))
+					{
+						$(".wpg-items-person-show").eq(i).slideUp(200).html("");
+					}
+
 				}
+				var indexItemPos=$(".wpg-item-person").index($(this));
+				$(this).nextAll(".wpg-items-person-show").first().html( '<div>' + $(this).find(".wpg-item-person-description").html() + "</div>" ).slideDown(300,function(){});
 
-			}
-			var indexItemPos=$(".wpg-item-person").index($(this));
-			$(this).nextAll(".wpg-items-person-show").first().html( '<div>' + $(this).find(".wpg-item-person-description").html() + "</div>" ).slideDown(300,function(){});
-
-			timeoutAnimateScroll=setTimeout(function(){
-				$('html, body').animate({scrollTop:$('.wpg-item-person').eq(indexItemPos).position().top}, 200);
-			},400);
-
-		});
-		
+				timeoutAnimateScroll=setTimeout(function(){
+					if($(".module-full-width-many-tabs-with-photo-title-subtitle-text").css("overflow")=="hidden") 
+					{	
+						$('html, body').animate({scrollTop:($('.wpg-item-person').eq(indexItemPos).position().top+$('.wpg-item-person').eq(indexItemPos).find(".pager-mfw3twptst-item").height()+50)}, 200);
+					}
+					else
+					{
+						$('html, body').animate({scrollTop:($('.wpg-item-person').eq(indexItemPos).nextAll(".wpg-items-person-show").first().position().top-50)}, 200);
+					}
+				},400);
+			});
+			
+		}
 	}
 })(jQuery);
+
+/* end .module-full-width-many-tabs-with-photo-title-subtitle-text */
+
+
+/* .module-full-width-post-content */
+(function($){
+	if($(".module-full-width-post-content").length>0)
+	{
+		$(".module-full-width-post-content table").wrap('<div class="wpg-table-wrap"></div>');
+	}
+})(jQuery);
+<<<<<<< HEAD
 
 /* end .module-full-width-many-tabs-with-photo-title-subtitle-text */
 
@@ -419,3 +473,6 @@ jQuery(window).resize(function(){
 })(jQuery);
 
 /* end Show/hide social links */
+=======
+/* end .module-full-width-post-content */
+>>>>>>> c00c88989c5082db446b35b31642e67b57982603

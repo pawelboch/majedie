@@ -29,7 +29,9 @@
 			
 
 
-			<?php if(count($this->get('itmes')) > 0): ?> 
+			<?php 
+			$noResults = true;
+			if(count($this->get('itmes')) > 0): ?> 
 			<?php foreach($this->get('items') as $item): ?>
 			<?php if(count($item['files']) > 0): ?> 
 			<div class="wpg-table-wrap-outset">
@@ -50,6 +52,7 @@
 						<tbody>	
 						
 						<?php foreach($item['files'] as $file): ?>
+						<?php $noResults = false; ?>
 							<tr>
 								<td><?php echo implode(";<br>", $file[0]); ?></td>
 								<td><?php echo implode(";<br>", $file[1]); ?></td>
@@ -68,6 +71,13 @@
 			<?php endif; ?>
 			<?php endforeach; ?>
 			<?php endif; ?> 
+
+			<?php if($noResults == true): ?>
+					<p class="no-results"><strong>No results</strong></p>
+			<?php endif; ?>
+
+			
+
 			<div class="row wpg-bottom-container">
 				<div class="col-xs-12 col-md-8">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus pulvinar scelerisque. Maecenas pharetra ac augue et aliquet. Nullam auctor ligula varius quam aliquam tempus. Mauris a aliquet sem, vel suscipit libero. Morbi ultricies mattis semper. Mauris luctus diam augue, eget gravida orci iaculis at. </p>
