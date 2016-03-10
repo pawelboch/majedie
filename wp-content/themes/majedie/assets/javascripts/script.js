@@ -447,3 +447,13 @@ jQuery(window).resize(function(){
 })(jQuery);
 
 /* end .module-full-width-many-tabs-with-photo-title-subtitle-text */
+
+
+/* .module-full-width-post-content */
+(function($){
+	if($(".module-full-width-post-content").length>0)
+	{
+		$(".module-full-width-post-content table").wrap('<div class="wpg-table-wrap"></div>');
+	}
+})(jQuery);
+/* end .module-full-width-post-content */

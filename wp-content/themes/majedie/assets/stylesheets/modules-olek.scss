@@ -3375,6 +3375,17 @@
 /*** MODULE 33 ***/
 .module-full-width-post-content {
     padding: 60px 0;
+    table {
+    	margin-top: 15px;
+		td, th {
+			padding: 5px;
+		}
+    }
+    .wpg-table-wrap {
+		overflow-x: auto;
+		//overflow-y: hidden;
+		width: 100%;
+    }
     .wpg-main-content-article {
         padding: 15px 30px 30px;
         background-color: #fff;
