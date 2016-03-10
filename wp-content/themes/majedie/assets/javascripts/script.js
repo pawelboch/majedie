@@ -456,7 +456,6 @@ jQuery(window).resize(function(){
 		$(".module-full-width-post-content table").wrap('<div class="wpg-table-wrap"></div>');
 	}
 })(jQuery);
-<<<<<<< HEAD
 
 /* end .module-full-width-many-tabs-with-photo-title-subtitle-text */
 
@@ -473,6 +472,4 @@ jQuery(window).resize(function(){
 })(jQuery);
 
 /* end Show/hide social links */
-=======
 /* end .module-full-width-post-content */
->>>>>>> c00c88989c5082db446b35b31642e67b57982603
