@@ -470,7 +470,6 @@ jQuery(window).resize(function(){
 })(jQuery);
 
 /* end Show/hide social links */
-<<<<<<< HEAD
 /* end .module-full-width-post-content */
 
 
@@ -485,5 +484,3 @@ jQuery(window).resize(function(){
 
 
 /* end toggle class for top menu in header */
-=======
->>>>>>> 71534936f66c989e816b8bd182622c50875cc7a1
