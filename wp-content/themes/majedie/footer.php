@@ -21,14 +21,7 @@
 							</div>	
 							<div class="row">
 								<div class="col-md-12">
-									<ul class="footer-nav">
-										<li><a href="<?php echo esc_url(home_url('/disclaimer')) ;?>">Disclaimer</a></li>
-										<li><a href="<?php echo esc_url(home_url('/sitemap')) ;?>">Sitemap</a></li>
-										<li><a href="<?php echo esc_url(home_url('/privacy')) ;?>">Privacy</a></li>
-										<li><a href="<?php echo esc_url(home_url('/accessibility')) ;?>">Accessibility</a></li>
-										<li><a href="<?php echo esc_url(home_url('/disclousure')) ;?>">Disclousure</a></li>
-										<li><a href="<?php echo esc_url(home_url('/frc-stewardship-code')) ;?>">FRC Stewardship Code</a></li>
-									</ul>
+									<?php wp_nav_menu( array( 'container' => false, 'menu' => 'footer', 'menu_class' => 'footer-nav' ) ); ?>
 								</div>
 							</div>		
 						</div>
