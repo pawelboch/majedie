@@ -473,3 +473,16 @@ jQuery(window).resize(function(){
 
 /* end Show/hide social links */
 /* end .module-full-width-post-content */
+
+
+/* toggle class for top menu in header */
+
+(function($) {
+	$('.wpg-main-header .wpg-top-menu li button').click(function() {
+		$('.wpg-main-header .wpg-top-menu li .dropdown').not(this).next('.dropdown').removeClass('opened');
+		$(this).next('.dropdown').toggleClass('opened');
+	});
+})(jQuery);
+
+
+/* end toggle class for top menu in header */

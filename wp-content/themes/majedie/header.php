@@ -23,14 +23,26 @@
 							<div class="wpg-nav-group">
 								<nav>
 									<ul class="wpg-top-menu">
-										<li class="wpg-dropdown-menu investor-type"><span>Consultant</span><button type="button"><i class="fa fa-angle-down"></i></button></li>
-										<ul class="dropdown">
-											<li>Custom 1</li>
-										</ul>
-										<li class="wpg-dropdown-menu country-type"><span>United Kingdom</span><button type="button"><i class="fa fa-angle-down"></i></button></li>
-										<ul class="dropdown">
-											<li>Custom 2</li>
-										</ul>
+										<li class="wpg-dropdown-menu investor-type"><span>Consultant</span>
+											<button type="button">
+												<i class="fa fa-angle-down"></i>
+											</button>
+											<ul class="dropdown">
+												<li><a href="">Custom 1</a></li>
+												<li><a href="">Custom 1</a></li>
+												<li><a href="">Custom 1</a></li>
+											</ul>
+										</li>
+										<li class="wpg-dropdown-menu country-type"><span>United Kingdom</span>
+											<button type="button">
+												<i class="fa fa-angle-down"></i>
+											</button>
+											<ul class="dropdown">
+												<li><a href="">Custom 2</a></li>
+												<li><a href="">Custom 2</a></li>
+												<li><a href="">Custom 2</a></li>
+											</ul>
+										</li>
 									</ul>
 								</nav>
 								<nav>

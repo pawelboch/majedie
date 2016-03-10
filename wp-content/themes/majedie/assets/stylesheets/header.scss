@@ -46,11 +46,11 @@
 			li {
 			  padding: 0;
 				a {
-				    height: auto;
-				    //line-height: 1.4em;
-				    padding: 8px 12px;
-				    vertical-align: top;
-				    width: 100%;
+					height: auto;
+					//line-height: 1.4em;
+					padding: 8px 12px;
+					vertical-align: top;
+					width: 100%;
 				}
 			}
 			&.opened {
@@ -157,13 +157,30 @@
 	.wpg-top-menu {
 		float: right;
 		margin-bottom: 18px;
-
 		> li {
 			float: left;
 		}
 		li {
 			font-size: 10px;
 			text-transform: uppercase;
+			margin: 0 20px 0 0;
+			&:last-child {
+				margin: 0px;
+			}
+			button {
+				background-color: rgba(0, 0, 0, 0);
+				border: medium none;
+				padding: 0 4px;
+				button .fa {
+					text-align: center;
+					width: 15px;
+				}
+			}
+			a {
+				display: inline-block;
+				line-height: 1.2em;
+				padding: 6px;
+			}
 		}
 		label i {
 			font-size: 12px;
@@ -172,6 +189,22 @@
 		}
 		label {
 			margin: 0 6px;
+		}
+		.dropdown {
+			background-color: #8d847a;
+			left: 0;
+			max-height: 0;
+			opacity: 0;
+			overflow: hidden;
+			position: absolute;
+			top: 100%;
+			transition: all 0.3s ease 0s;
+			width: 100px;
+			z-index: 10;
+			&.opened {
+				max-height: 200px;
+				opacity: 1;
+			}
 		}
 	}
 	.wpg-other-menu,
@@ -186,15 +219,15 @@
 			font-weight: 300;
 			position: relative;
 			.arrow {
-			    cursor: pointer;
-			    float: right;
-			    margin: 0;
-			    background: transparent;
-			    width: 20px;
-			    text-align: center;
-			    height: 22px;
-			    line-height: 22px;
-			    margin-right: -12px;
+				cursor: pointer;
+				float: right;
+				margin: 0;
+				background: transparent;
+				width: 20px;
+				text-align: center;
+				height: 22px;
+				line-height: 22px;
+				margin-right: -12px;
 			}
 		}
 		li li {
