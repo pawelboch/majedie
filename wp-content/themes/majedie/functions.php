@@ -52,6 +52,7 @@ add_action( 'after_setup_theme', 'wppn_setup' );
 function wppn_setup() {  
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'theme' ),
+		'footer' => __( 'Footer Menu', 'theme' ),
 	) );
 }
 
@@ -223,12 +224,13 @@ function create_fund_type() {
 		'label'                 => 'Fund',
 		'description'           => 'Fund pages',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'custom-fields' ),
-		'hierarchical'          => false,
+		'supports'              => array( 'title', 'editor' ),
+		'hierarchical'          => true,
 		'public'                => true,
 		'show_ui'               => true,
 		'show_in_menu'          => true,
 		'menu_position'         => 5,
+		'menu_icon'							=> 'dashicons-chart-area',
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,

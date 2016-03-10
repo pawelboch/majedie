@@ -96,7 +96,7 @@ jQuery(window).load(function(){
 	wpgHeightPopup(jQuery);
 	if(jQuery(".module-investor-modal").length>0)
 	{
-		jQuery(".module-investor-modal").fadeIn();
+		// jQuery(".module-investor-modal").fadeIn();
 		jQuery(".module-investor-modal .wpg-investor-modal").css("top",jQuery(window).scrollTop()+100);
 	}
 });
@@ -456,4 +456,23 @@ jQuery(window).resize(function(){
 		$(".module-full-width-post-content table").wrap('<div class="wpg-table-wrap"></div>');
 	}
 })(jQuery);
+<<<<<<< HEAD
+=======
+
+/* end .module-full-width-many-tabs-with-photo-title-subtitle-text */
+
+
+
+/* Show/hide social links */
+
+(function($) {
+	$('.wpg-sidebar .social-icons').hide();
+
+	$('.wpg-sidebar .wpg-share').click(function() {
+		$('.wpg-sidebar .social-icons').toggle('fast');
+	});
+})(jQuery);
+
+/* end Show/hide social links */
+>>>>>>> c4d3c29dcb3fac5249caaa01e3f5aa6d3520c1c8
 /* end .module-full-width-post-content */

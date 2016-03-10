@@ -3430,6 +3430,30 @@
             }
         }
         .wpg-sidebar {
+
+            .wpg-box-options-post {
+                .social-icons a {
+                    float: left;
+                    margin: 0 16px 0 0;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+                .social-icons a i.fa {
+                    font-size: 18px;
+                    margin: 0;
+                }
+                .social-icons {
+                    display: inline-block;
+                    margin: 10px 0 0;
+                    padding: 0;
+                }
+                button {
+                    background-color: rgba(0, 0, 0, 0);
+                    border: medium none;
+                    padding: 0;
+                }
+            }
             .wpg-box-name {
                 padding-bottom: 15px;
                 border-bottom: 1px solid #aaa;
