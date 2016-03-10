@@ -44,7 +44,6 @@
           vertical-align: top;
           width: 100%; }
       .wpg-main-header ul .sub-menu.opened {
-        max-height: 1000px;
         opacity: 1; }
       .wpg-main-header ul .sub-menu .sub-menu {
         position: static;

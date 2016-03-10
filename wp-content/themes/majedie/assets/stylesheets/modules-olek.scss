@@ -4203,17 +4203,20 @@
     z-index: 999;
     top: 0;
     right: 0;
-    left: 0;
     display: none;
+    left: 0;
     height: 100%;
     background-color: rgba(0,0,0,0.6);
+    .container:after {
+        background-color: rgba(0,0,0,0);
+    }
     .wpg-investor-modal {
         position: relative;
         max-width: 885px;
-        margin-right: auto;
-        margin-left: auto;
+        margin: 30px auto 0;
         padding: 30px 35px 60px;
         background-color: #fff;
+        color: #373a3c;
         h2 {
             padding-bottom: 25px;
             border-bottom: 1px solid #000;
