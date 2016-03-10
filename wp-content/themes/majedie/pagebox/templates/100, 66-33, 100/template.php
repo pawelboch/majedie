@@ -23,14 +23,12 @@
 				</div>
 			</div>
 
-			<div class="col-xs-12 col-md-8 wpg-inset-col">
-				<div class="wpg-inset-box-1">
-					<?php foreach ($this->get_variable( 'bottom_modules' ) as $module): ?>
-					<?php $module->display(); ?>
-					<?php endforeach ?>
-				</div>
-			</div>
-
 		</div>
+
 	</div>
+
+	<?php foreach ($this->get_variable( 'bottom_modules' ) as $module): ?>
+	<?php $module->display(); ?>
+	<?php endforeach ?>
+	
 </div>
