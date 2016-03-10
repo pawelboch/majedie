@@ -173,7 +173,7 @@ class Module extends Abstract_Module
                         3 => wp_list_pluck(wp_get_object_terms($post->ID, $termsNames[4][0]), 'name'),
                         4 => wp_list_pluck(wp_get_object_terms($post->ID, $termsNames[3][0]), 'name'),
                         5 => $uploadDir['baseurl'] . '/' . get_post_meta($post->ID, 'filePath', true),
-                        6 => $post->post_name,
+                        6 => $post->post_title,
                     );
                 }
 
