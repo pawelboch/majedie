@@ -503,11 +503,32 @@ jQuery(window).resize(function(){
 		$('.wpg-popup-investor-modal-close').click(function() {
 			$('.module-investor-modal').fadeOut('slow');
 		});
+
 		$('body').click(function(e) {
 			$('.module-investor-modal').fadeOut('slow');
 		});
+
 		$('.module-investor-modal .wpg-investor-modal').click(function(e) {
 			e.stopPropagation();
+		});
+
+		$('.wpg-investor-modal-lists ul li a').click(function(){
+			$('.wpg-investor-modal-lists ul li a').not(this).removeClass('active');
+			$(this).addClass('active');
+			if($('.wpg-investor-modal-lists ul li a').hasClass('active')) {
+				$('.wpg-disclaimer').slideDown('slow');
+				var disclaimer = $(this).attr('data-code');
+				$('.wpg-disclaimer .disclaimer').not(this).fadeOut('medium');
+				$('.wpg-disclaimer').find('.' + disclaimer).fadeIn('medium');
+			}
+		});
+
+		$('.wpg-inputs label').click(function() {
+			if(!$('#wpg-checkbox-investor-modal').is(':checked') && $('.wpg-investor-modal-lists ul li a').hasClass('active')) {
+				$('.wpg-investor-modal .wpg-button-accept').removeClass('disabled');
+			} else {
+				$('.wpg-investor-modal .wpg-button-accept').addClass('disabled');
+			}
 		});
 	}
 

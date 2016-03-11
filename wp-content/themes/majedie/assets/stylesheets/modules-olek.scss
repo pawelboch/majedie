@@ -4250,9 +4250,13 @@
                         padding: 15px 52px 15px 10px;
                         color: #d3d3d3;
                     }
+                    a.active,
+                    a.active:hover {
+                        color: #000;
+                    }
                     a:hover {
                         text-decoration: none;
-                        color: #000;
+                        color: #999;
                     }
                 }
                 > li.sub-menu {
@@ -4276,13 +4280,18 @@
         .wpg-disclaimer {
             overflow-y: auto;
             height: 195px;
+            display: none;
             border: 1px solid #ccc;
+            .disclaimer {
+                display: none;
+            }
             .wpg-disclaimer-inset {
                 padding: 20px 60px 20px 20px;
                 h4 {
                     font-family: Avenir-Medium;
                     font-size: 15px;
                     color: #000;
+                    margin: 0 0 10px;
                 }
                 p {
                     font-family: 'Open Sans';
@@ -4302,8 +4311,12 @@
             color: #6d6e71;
         }
         .wpg-inputs {
-            margin-top: 40px;
             text-align: right;
+            .btn-2.disabled {
+                border-color: #999;
+                color: #999;
+                pointer-events: none;
+            }
             label {
                 font-family: 'Open Sans';
                 font-size: 14px;

@@ -2797,9 +2797,12 @@
             display: block;
             padding: 15px 52px 15px 10px;
             color: #d3d3d3; }
+          .module-investor-modal .wpg-investor-modal .wpg-investor-modal-lists ul > li a.active,
+          .module-investor-modal .wpg-investor-modal .wpg-investor-modal-lists ul > li a.active:hover {
+            color: #000; }
           .module-investor-modal .wpg-investor-modal .wpg-investor-modal-lists ul > li a:hover {
             text-decoration: none;
-            color: #000; }
+            color: #999; }
         .module-investor-modal .wpg-investor-modal .wpg-investor-modal-lists ul > li.sub-menu > a:after {
           font: normal normal normal 18px/1 FontAwesome;
           position: absolute;
@@ -2814,13 +2817,17 @@
     .module-investor-modal .wpg-investor-modal .wpg-disclaimer {
       overflow-y: auto;
       height: 195px;
+      display: none;
       border: 1px solid #ccc; }
+      .module-investor-modal .wpg-investor-modal .wpg-disclaimer .disclaimer {
+        display: none; }
       .module-investor-modal .wpg-investor-modal .wpg-disclaimer .wpg-disclaimer-inset {
         padding: 20px 60px 20px 20px; }
         .module-investor-modal .wpg-investor-modal .wpg-disclaimer .wpg-disclaimer-inset h4 {
           font-family: Avenir-Medium;
           font-size: 15px;
-          color: #000; }
+          color: #000;
+          margin: 0 0 10px; }
         .module-investor-modal .wpg-investor-modal .wpg-disclaimer .wpg-disclaimer-inset p {
           font-family: 'Open Sans';
           font-size: 14px;
@@ -2835,8 +2842,11 @@
       cursor: pointer;
       color: #6d6e71; }
     .module-investor-modal .wpg-investor-modal .wpg-inputs {
-      margin-top: 40px;
       text-align: right; }
+      .module-investor-modal .wpg-investor-modal .wpg-inputs .btn-2.disabled {
+        border-color: #999;
+        color: #999;
+        pointer-events: none; }
       .module-investor-modal .wpg-investor-modal .wpg-inputs label {
         font-family: 'Open Sans';
         font-size: 14px;
