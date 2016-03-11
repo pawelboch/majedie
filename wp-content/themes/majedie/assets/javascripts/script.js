@@ -500,6 +500,7 @@ jQuery(window).resize(function(){
 		var pageHeight = $(document).height();
 		$('.module-investor-modal').css('height', pageHeight);
 		$('.module-investor-modal').delay(0).fadeIn('slow');
+		$('.module-investor-modal .wpg-investor-modal').css("top",jQuery(window).scrollTop()+100)
 		$('.wpg-popup-investor-modal-close').click(function() {
 			$('.module-investor-modal').fadeOut('slow');
 		});
@@ -522,6 +523,10 @@ jQuery(window).resize(function(){
 				$('.wpg-disclaimer').find('.' + disclaimer).fadeIn('medium');
 			}
 		});
+
+		if($('#wpg-checkbox-investor-modal').is(':checked')) {
+			$('#wpg-checkbox-investor-modal').prop('checked', false);
+		};
 
 		$('.wpg-inputs label').click(function() {
 			if(!$('#wpg-checkbox-investor-modal').is(':checked') && $('.wpg-investor-modal-lists ul li span').hasClass('active')) {

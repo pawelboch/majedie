@@ -29,7 +29,7 @@
 				<div class="wpg-inputs">
 					<input type="checkbox" name="" id="wpg-checkbox-investor-modal">
 					<label for="wpg-checkbox-investor-modal">Agree to <a href="<?php echo esc_url(home_url('/terms-of-use')) ;?>" target="_blank">Terms or Use</a></label>
-					<button class="wpg-button-accept btn-2 off" type="submit">ACCEPT & PROCEED</button>
+					<button class="wpg-button-accept btn-2 disabled" type="submit">ACCEPT & PROCEED</button>
 				</div>
 			</form>
 		</div>
