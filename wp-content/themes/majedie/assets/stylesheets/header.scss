@@ -55,6 +55,7 @@
 			}
 			&.opened {
 				opacity: 1;
+				max-height: 1500px;
 			}
 			.sub-menu {
 				position: static;

@@ -20,12 +20,6 @@
 	$('.menu-item-has-children > a').append('<i class="fa fa-angle-down arrow"></i>');
 	$('.menu-item-has-children > a > .arrow').click(function(e) {
 		$(this).parent().next().toggleClass('opened');
-		var parent = $(this).parent().parent();
-		var liHeight = $(this).parent().parent().find('.sub-menu li').height();
-		var liLength = $(this).parent().parent().find('.sub-menu li').length;
-		$(this).parent().parent().find('.sub-menu').css('max-height', (liHeight * liLength));
-		$('.menu-item-has-children .arrow').not(this).parent().parent().find('.sub-menu').css('max-height', '');
-
 		e.preventDefault();
 	});
 	$('.wpg-main-menu > .menu-item-has-children > a > .arrow').click(function(e) {
