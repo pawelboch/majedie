@@ -3,8 +3,10 @@
 require_once 'functions-csv-uploader.php';
 
 add_theme_support( 'post-thumbnails' );
-add_image_size( 'team', 301, 355, true );
-
+add_image_size( 'team', 302, 407, true );
+add_image_size( 'team2', 300, 300, true );
+add_image_size( 'team3', 100, 100, true );
+add_image_size( 'team4', 150, 150, true );
 
 // Register the three useful image sizes for use in Add Media modal
 
