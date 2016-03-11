@@ -4244,17 +4244,18 @@
                 > li {
                     font-size: 19px;
                     border-bottom: 1px solid #ccc;
-                    a {
+                    span {
                         position: relative;
                         display: block;
                         padding: 15px 52px 15px 10px;
                         color: #d3d3d3;
+                        cursor: pointer;
                     }
-                    a.active,
-                    a.active:hover {
+                    span.active,
+                    span.active:hover {
                         color: #000;
                     }
-                    a:hover {
+                    span:hover {
                         text-decoration: none;
                         color: #999;
                     }

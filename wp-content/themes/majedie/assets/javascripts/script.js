@@ -512,10 +512,10 @@ jQuery(window).resize(function(){
 			e.stopPropagation();
 		});
 
-		$('.wpg-investor-modal-lists ul li a').click(function(){
-			$('.wpg-investor-modal-lists ul li a').not(this).removeClass('active');
+		$('.wpg-investor-modal-lists ul li span').click(function(){
+			$('.wpg-investor-modal-lists ul li span').not(this).removeClass('active');
 			$(this).addClass('active');
-			if($('.wpg-investor-modal-lists ul li a').hasClass('active')) {
+			if($('.wpg-investor-modal-lists ul li span').hasClass('active')) {
 				$('.wpg-disclaimer').slideDown('slow');
 				var disclaimer = $(this).attr('data-code');
 				$('.wpg-disclaimer .disclaimer').not(this).fadeOut('medium');
@@ -524,7 +524,7 @@ jQuery(window).resize(function(){
 		});
 
 		$('.wpg-inputs label').click(function() {
-			if(!$('#wpg-checkbox-investor-modal').is(':checked') && $('.wpg-investor-modal-lists ul li a').hasClass('active')) {
+			if(!$('#wpg-checkbox-investor-modal').is(':checked') && $('.wpg-investor-modal-lists ul li span').hasClass('active')) {
 				$('.wpg-investor-modal .wpg-button-accept').removeClass('disabled');
 			} else {
 				$('.wpg-investor-modal .wpg-button-accept').addClass('disabled');
@@ -533,7 +533,10 @@ jQuery(window).resize(function(){
 	}
 
 	function investorModalFunctionality() {
-		
+		// $('.investor-type-form').submit(function() {
+		// 	var investorType = $('.wpg-investor-modal .wpg-investor-modal-lists ul li a.active').attr('data-code');
+		// 	console.log('investorType');
+		// });
 	}
 
 	$(document).ready(investorModalBehavior);

@@ -2792,15 +2792,16 @@
         .module-investor-modal .wpg-investor-modal .wpg-investor-modal-lists ul > li {
           font-size: 19px;
           border-bottom: 1px solid #ccc; }
-          .module-investor-modal .wpg-investor-modal .wpg-investor-modal-lists ul > li a {
+          .module-investor-modal .wpg-investor-modal .wpg-investor-modal-lists ul > li span {
             position: relative;
             display: block;
             padding: 15px 52px 15px 10px;
-            color: #d3d3d3; }
-          .module-investor-modal .wpg-investor-modal .wpg-investor-modal-lists ul > li a.active,
-          .module-investor-modal .wpg-investor-modal .wpg-investor-modal-lists ul > li a.active:hover {
+            color: #d3d3d3;
+            cursor: pointer; }
+          .module-investor-modal .wpg-investor-modal .wpg-investor-modal-lists ul > li span.active,
+          .module-investor-modal .wpg-investor-modal .wpg-investor-modal-lists ul > li span.active:hover {
             color: #000; }
-          .module-investor-modal .wpg-investor-modal .wpg-investor-modal-lists ul > li a:hover {
+          .module-investor-modal .wpg-investor-modal .wpg-investor-modal-lists ul > li span:hover {
             text-decoration: none;
             color: #999; }
         .module-investor-modal .wpg-investor-modal .wpg-investor-modal-lists ul > li.sub-menu > a:after {

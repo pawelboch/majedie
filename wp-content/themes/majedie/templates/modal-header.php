@@ -8,8 +8,8 @@
 				<div class="row wpg-investor-modal-lists">
 					<div class="col-xs-12 col-sm-6">
 						<ul class="investor-type">
-							<li><a href="#" data-code="retail">Retail Investor</a></li>
-							<li><a href="#" data-code="institutional">Instituitional Investor</a></li>
+							<li><span type="button" data-code="retail">Retail Investor</span></li>
+							<li><span type="button" data-code="institutional">Instituitional Investor</span></li>
 						</ul>
 					</div>
 					<div class="col-xs-12 col-sm-6">
@@ -27,7 +27,9 @@
 					</div>
 				</div>
 				<div class="wpg-inputs">
-					<input type="checkbox" name="wpg-checkbox-investor-modal" id="wpg-checkbox-investor-modal"><label for="wpg-checkbox-investor-modal">Agree to <a href="#" target="_blank">Terms or Use</a></label> <button class="wpg-button-accept btn-2 disabled" type="submit" >ACCEPT & PROCEED</button>
+					<input type="checkbox" name="" id="wpg-checkbox-investor-modal">
+					<label for="wpg-checkbox-investor-modal">Agree to <a href="<?php echo esc_url(home_url('/terms-of-use')) ;?>" target="_blank">Terms or Use</a></label>
+					<button class="wpg-button-accept btn-2 off" type="submit">ACCEPT & PROCEED</button>
 				</div>
 			</form>
 		</div>
