@@ -181,7 +181,7 @@
     .wpg-main-header .wpg-other-menu li,
     .wpg-main-header .wpg-main-menu li {
       font-size: 14px;
-      padding: 5px 0;
+      padding: 6px 12px;
       font-weight: 300;
       position: relative; }
       .wpg-main-header .wpg-other-menu li .arrow,
@@ -265,11 +265,13 @@
       clear: both; }
     .wpg-main-header .wpg-other-menu li {
       border: none;
+      padding: 5px 0;
       margin-right: 10px; }
       .wpg-main-header .wpg-other-menu li a, .wpg-main-header .wpg-other-menu li form {
         background: rgba(0, 0, 0, 0.1); }
     .wpg-main-header .wpg-main-menu li {
-      float: none; }
+      float: none;
+      padding: 5px 0; }
       .wpg-main-header .wpg-main-menu li a {
         display: block;
         padding: 6px 52px 6px 6px;
