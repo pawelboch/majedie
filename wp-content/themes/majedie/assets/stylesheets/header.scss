@@ -214,7 +214,7 @@
 		}
 		li {
 			font-size: 14px;
-			padding: 6px 12px;
+			padding: 5px 0;
 			font-weight: 300;
 			position: relative;
 			.arrow {
@@ -312,7 +312,7 @@
 		.wpg-nav-group.wpg-active-menu-dropdown {
 			max-height: 2500px;
 			opacity: 1;
-			padding: 9px;
+			padding: 5px 10px;
 			border-top: 1px solid #fff;
 		}
 		.wpg-top-menu,
@@ -324,6 +324,7 @@
 		.wpg-other-menu {
 			li {
 				border: none;
+				margin-right: 10px;
 				a, form {
 					background: rgba(0,0,0,.1);
 				}
