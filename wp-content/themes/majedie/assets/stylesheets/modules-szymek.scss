@@ -3,6 +3,7 @@
 
 /*** BY SZYMEK ***/
 
+
 /*** MODULE BY SZYMEK 1 ***/
 .module-fund-box-content {
     color: #000;
@@ -121,12 +122,17 @@
             line-height: 30px;
             font-family: Avenir-Light;
 
-            a{
+            a {
                 &:hover {
                     text-decoration: none;
                     color: #000;
-                    font-weight: 900;
+                    font-weight: 700;
                 }
+                &.active2 {
+					font-weight: 700;
+					color: #000;
+                }
+
             }
         }
     }

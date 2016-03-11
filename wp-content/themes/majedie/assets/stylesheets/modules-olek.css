@@ -2614,7 +2614,7 @@
             padding-top: 10px;
             padding-bottom: 10px; }
             .module-full-width-fund .wpg-inset-col .wpg-inset-box-1 .wpg-box-fund .wpg-fund-list-image-circle li img {
-              max-width: 100%;
+              width: 100%;
               height: auto;
               margin-bottom: 25px;
               border-radius: 100%; }

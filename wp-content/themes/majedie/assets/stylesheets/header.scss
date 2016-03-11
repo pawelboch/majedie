@@ -312,7 +312,7 @@
 		.wpg-nav-group.wpg-active-menu-dropdown {
 			max-height: 2500px;
 			opacity: 1;
-			padding: 9px;
+			padding: 5px 10px;
 			border-top: 1px solid #fff;
 		}
 		.wpg-top-menu,
@@ -324,6 +324,8 @@
 		.wpg-other-menu {
 			li {
 				border: none;
+				padding: 5px 0;
+				margin-right: 10px;
 				a, form {
 					background: rgba(0,0,0,.1);
 				}
@@ -332,6 +334,7 @@
 		.wpg-main-menu {
 			li {
 				float: none;
+				padding: 5px 0;
 				a {
 					display: block;
 					padding: 6px 52px 6px 6px;

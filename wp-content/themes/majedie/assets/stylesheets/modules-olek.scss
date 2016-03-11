@@ -3992,7 +3992,7 @@
                         padding-top: 10px;
                         padding-bottom: 10px;
                         img {
-                            max-width: 100%;
+                            width: 100%;
                             height: auto;
                             margin-bottom: 25px;
                             border-radius: 100%;
@@ -4015,6 +4015,7 @@
                         font-size: 15px;
                         display: inline-block;
                         width: 50%;
+                        
                         margin-top: 15px;
                         padding: 10px;
                         vertical-align: top;

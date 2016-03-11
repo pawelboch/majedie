@@ -1,18 +1,3 @@
-<style type="text/css" media="screen">
- .active2{
-	color:#000;
-font-family: Avenir-Black;
-}	
-.module-full-width-list-with-links a:visited{
-	color:#000;
-}
-.module-full-width-list-with-links a:hover{
-	color:#000;
-	font-family: Avenir-Black;
-}
-</style>
-
-
 <div class="module-wpg module-full-width-list-with-links">
 <?php 
 global $post;

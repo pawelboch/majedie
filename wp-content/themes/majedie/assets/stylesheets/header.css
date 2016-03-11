@@ -256,7 +256,7 @@
     .wpg-main-header .wpg-nav-group.wpg-active-menu-dropdown {
       max-height: 2500px;
       opacity: 1;
-      padding: 9px;
+      padding: 5px 10px;
       border-top: 1px solid #fff; }
     .wpg-main-header .wpg-top-menu,
     .wpg-main-header .wpg-other-menu,
@@ -264,11 +264,14 @@
       float: none;
       clear: both; }
     .wpg-main-header .wpg-other-menu li {
-      border: none; }
+      border: none;
+      padding: 5px 0;
+      margin-right: 10px; }
       .wpg-main-header .wpg-other-menu li a, .wpg-main-header .wpg-other-menu li form {
         background: rgba(0, 0, 0, 0.1); }
     .wpg-main-header .wpg-main-menu li {
-      float: none; }
+      float: none;
+      padding: 5px 0; }
       .wpg-main-header .wpg-main-menu li a {
         display: block;
         padding: 6px 52px 6px 6px;

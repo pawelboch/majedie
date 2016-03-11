@@ -94,7 +94,10 @@
     .module-full-width-list-with-links ul li a:hover {
       text-decoration: none;
       color: #000;
-      font-weight: 900; }
+      font-weight: 700; }
+    .module-full-width-list-with-links ul li a.active2 {
+      font-weight: 700;
+      color: #000; }
 
 /*** END MODULE BY SZYMEK 1 ***/
 /*** END BY SZYMEK ***/
