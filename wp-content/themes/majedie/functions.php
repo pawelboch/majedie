@@ -4,6 +4,7 @@ require_once 'functions-csv-uploader.php';
 
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'team', 301, 355, true );
+add_image_size( 'manager-thumbnail', 160, 160, array('center', 'top'));
 
 
 // Register the three useful image sizes for use in Add Media modal

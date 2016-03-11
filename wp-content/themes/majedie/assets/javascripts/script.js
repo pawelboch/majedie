@@ -499,7 +499,7 @@ jQuery(window).resize(function(){
 	function investorModalBehavior() {
 		var pageHeight = $(document).height();
 		$('.module-investor-modal').css('height', pageHeight);
-		$('.module-investor-modal').delay(200).fadeIn('slow');
+		$('.module-investor-modal').delay(0).fadeIn('slow');
 		$('.wpg-popup-investor-modal-close').click(function() {
 			$('.module-investor-modal').fadeOut('slow');
 		});

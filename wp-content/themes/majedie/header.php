@@ -21,41 +21,29 @@
 							<div class="wpg-nav-group">
 								<nav>
 									<ul class="wpg-top-menu">
-										<li class="wpg-dropdown-menu investor-type"><span>Consultant</span>
-										<button type="button">
-										<i class="fa fa-angle-down"></i>
-										</button>
-										<ul class="dropdown">
-											<li><a href="">Retail Investor</a></li>
-											<li><a href="">Institutional Investor</a></li>
-										</ul>
-									</li>
-									<li class="wpg-dropdown-menu country-type"><span>Country</span>
-									<button type="button">
-									<i class="fa fa-angle-down"></i>
-									</button>
-									<ul class="dropdown">
-										<li><a href="">UK</a></li>
-										<li><a href="">USA</a></li>
-										<li><a href="">Austria</a></li>
-										<li><a href="">China</a></li>
-										<li><a href="">Spain</a></li>
+										<li class="wpg-dropdown-menu investor-type"><span>Investor type</span>
+											<button type="button">
+											<i class="fa fa-angle-down"></i>
+											</button>
+											<ul class="dropdown">
+												<li><a href="">Retail Investor</a></li>
+												<li><a href="">Institutional Investor</a></li>
+											</ul>
+										</li>
 									</ul>
-								</li>
-							</ul>
-						</nav>
-						<nav>
-							<ul class="wpg-other-menu">
-								<li><a href="https://majinteractive.majedie.com/" target="_blank">MajlQ Login</a></li>
-								<li><form role="search"  method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>"><input type="submit" value="<?php echo esc_attr_x( 'Search', 'submit button' ); ?>" class="wpg-ico-search"><input type="search" placeholder="Search" value="<?php echo get_search_query(); ?>" name="s"></form></li>
-							</ul>
-							<?php wp_nav_menu( array( 'container' => false, 'menu' => 'main', 'menu_class' => 'wpg-main-menu' ) ); ?>
-						</nav>
-					</div>
-				</div>
-				<?php get_template_part('templates/modal-header') ;?>
-			</header>
-			</div><!-- .span-table-cell .vertical-align-top -->
-			</div><!-- .span-table-row -->
-			<div class="span-table-row wpg-main-container-page-content">
-				<div class="span-table-cell vertical-align-top">
+								</nav>
+								<nav>
+									<ul class="wpg-other-menu">
+										<li><a href="https://majinteractive.majedie.com/" target="_blank">MajlQ Login</a></li>
+										<li><form role="search"  method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>"><input type="submit" value="<?php echo esc_attr_x( 'Search', 'submit button' ); ?>" class="wpg-ico-search"><input type="search" placeholder="Search" value="<?php echo get_search_query(); ?>" name="s"></form></li>
+									</ul>
+									<?php wp_nav_menu( array( 'container' => false, 'menu' => 'main', 'menu_class' => 'wpg-main-menu' ) ); ?>
+								</nav>
+							</div>
+						</div>
+						<?php get_template_part('templates/modal-header') ;?>
+					</header>
+					</div><!-- .span-table-cell .vertical-align-top -->
+					</div><!-- .span-table-row -->
+					<div class="span-table-row wpg-main-container-page-content">
+						<div class="span-table-cell vertical-align-top">
