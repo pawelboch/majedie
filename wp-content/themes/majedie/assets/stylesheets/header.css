@@ -137,8 +137,7 @@
       float: left; }
     .wpg-main-header .wpg-top-menu li {
       font-size: 10px;
-      text-transform: uppercase;
-      margin: 0 20px 0 0; }
+      text-transform: uppercase; }
       .wpg-main-header .wpg-top-menu li:last-child {
         margin: 0px; }
       .wpg-main-header .wpg-top-menu li button {
@@ -151,7 +150,9 @@
       .wpg-main-header .wpg-top-menu li a {
         display: inline-block;
         line-height: 1.2em;
-        padding: 6px; }
+        padding: 8px 10px; }
+        .wpg-main-header .wpg-top-menu li a.active {
+          background-color: #7f766c; }
     .wpg-main-header .wpg-top-menu label i {
       font-size: 12px;
       display: inline-block;

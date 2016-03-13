@@ -21,13 +21,22 @@
 							<div class="wpg-nav-group">
 								<nav>
 									<ul class="wpg-top-menu">
-										<li class="wpg-dropdown-menu investor-type"><span>Investor type</span>
+										<li class="wpg-dropdown-menu investor-type">
+											<span>
+												<?php 
+												if(isset($_COOKIE['investor-type'])) {
+													echo $_COOKIE['investor-type'] . ' investor';
+												} else {
+													echo 'Investor type';
+												}
+												;?>
+											</span>
 											<button type="button">
 											<i class="fa fa-angle-down"></i>
 											</button>
 											<ul class="dropdown">
-												<li><a href="">Retail Investor</a></li>
-												<li><a href="">Institutional Investor</a></li>
+												<li><a href="<?php the_permalink() ;?>" data-code='retail'>Retail Investor</a></li>
+												<li><a href="<?php the_permalink() ;?>" data-code='institutional'>Institutional Investor</a></li>
 											</ul>
 										</li>
 									</ul>

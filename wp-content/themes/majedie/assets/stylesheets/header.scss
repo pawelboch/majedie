@@ -162,7 +162,6 @@
 		li {
 			font-size: 10px;
 			text-transform: uppercase;
-			margin: 0 20px 0 0;
 			&:last-child {
 				margin: 0px;
 			}
@@ -178,7 +177,10 @@
 			a {
 				display: inline-block;
 				line-height: 1.2em;
-				padding: 6px;
+				padding: 8px 10px;
+				&.active {
+				    background-color: #7f766c;
+				}
 			}
 		}
 		label i {
