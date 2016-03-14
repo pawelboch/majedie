@@ -1989,6 +1989,9 @@
     }
     p {
         font-size: 15px;
+        span {
+			line-height: 140%;
+        }
     }
     a {
         text-decoration: underline;
@@ -4516,7 +4519,7 @@
 
 /*** MODULE 40 ***/
 .module-video-box {
-    padding: (60-($grid-gutter-width/2)) 0;
+    padding: 60px 0;
     iframe {
         display: block;
         width: 100%;
@@ -4534,36 +4537,43 @@
 }
 @media screen and (max-width: map-get($grid-breakpoints, sm) ) {
     //~544px
+	.module-video-box {
+	    iframe {
+	        height: 240px;
+	    }
+	}
 }
 /*** END MODULE 40 ***/
 
 
-
-            .wpg-video-box {
-                margin-top: 30px;
-                iframe {
-                    display: block;
-                    width: 100%;
-                    height: 340px;
-                }
-            }
-            .wpg-inset-box-again {
-                margin-top: 30px;
-                padding: 20px;
-                color: #fff;
-                background: #dc6f26;
-                p {
-                    font-size: 20px;
-                    a {
-                        text-decoration: underline;
-                        //display: inline-block;
-                        //border-bottom: 1px solid #fff;
-                    }
-                }
-            }
-
-
-
+/*** MODULE ***/
+.module-other-classic-box {
+    padding: 60px 0;
+    .wpg-other-classic-box-inset {
+		padding: 20px;
+		p {
+			span {
+				line-height: 140%;
+			}
+			a {
+				text-decoration: underline !important;
+			}
+		}
+    }
+}
+@media screen and (max-width: map-get($grid-breakpoints, xl) ) {
+    //~1200px
+}
+@media screen and (max-width: map-get($grid-breakpoints, lg) ) {
+    //~992px
+}
+@media screen and (max-width: map-get($grid-breakpoints, md) ) {
+    //~768px
+}
+@media screen and (max-width: map-get($grid-breakpoints, sm) ) {
+    //~544px
+}
+/*** END MODULE ***/
 
 
 
