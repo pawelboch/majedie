@@ -326,9 +326,15 @@ function majedie_get_prices_filters() {
 
 	$table_name = $wpdb->prefix . 'majedie_csv';
 
+	$whereParam = '';
+	if(isset($_COOKIE['investor-type']) && $_COOKIE['investor-type'] == 'retail'){
+		$whereParams = ' WHERE(`share-class` LIKE \'' . esc_sql( 'Z' ) . '\' OR `share-class` LIKE \'' . esc_sql( 'X' ) . '\') ';
+	}
+
+
 	$results = $wpdb->get_results( "
 	SELECT `fund-name`, `domicile`, `share-class`, `type`, UPPER(`currency`)
-	FROM {$table_name}
+	FROM {$table_name} ".$whereParams."
 	ORDER BY `fund-name`", ARRAY_A );
 
 	array_unshift( $results, null );
@@ -348,6 +354,11 @@ function majedie_get_prices_table() {
 
 	$where = '';
 	$filters = array();
+
+	if(isset($_COOKIE['investor-type']) && $_COOKIE['investor-type'] == 'retail'){
+		$filters[] = '(`share-class` LIKE \'' . esc_sql( 'Z' ) . '\' OR `share-class` LIKE \'' . esc_sql( 'X' ) . '\')';
+	}
+
 	if( isset( $_GET['f'] )) {
 		$f = $_GET['f'];
 		if( ! empty( $f['name'] )) $filters[] = '`fund-name` LIKE \'' . esc_sql( $f['name'] ) . '\'';
@@ -376,6 +387,11 @@ function majedie_get_charges_table() {
 
 	$where = '';
 	$filters = array();
+
+	if(isset($_COOKIE['investor-type']) && $_COOKIE['investor-type'] == 'retail'){
+		$filters[] = '(`share-class` LIKE \'' . esc_sql( 'Z' ) . '\' OR `share-class` LIKE \'' . esc_sql( 'X' ) . '\')';
+	}
+
 	if( isset( $_GET['f'] )) {
 		$f = $_GET['f'];
 		if( ! empty( $f['name'] )) $filters[] = '`fund-name` LIKE \'' . esc_sql( $f['name'] ) . '\'';
