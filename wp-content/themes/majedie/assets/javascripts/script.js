@@ -59,49 +59,7 @@
 /* end menu mobile fund */
 
 
-/* popup 
-(function($){
-	if($(".module-investor-modal").length>0)
-	{
-		$("#wpg-checkbox-investor-modal").click(function(){
-			if($(this).is(':checked')) 
-			{
-				$(".wpg-button-accept").removeAttr("disabled");
-			}
-			else
-			{
-				$(".wpg-button-accept").attr("disabled","disabled");
-			}
-		});
-		$("body").on("click",".wpg-button-accept",function(){
-			$(".module-investor-modal").fadeOut();
-		});
-		$(".wpg-popup-investor-modal-close").click(function(){
-			$(".module-investor-modal").fadeOut();
-		});
-	}
-})(jQuery);
-var wpgHeightPopup=function($){
-	if($(".module-investor-modal").length>0)
-	{
-		$(".module-investor-modal").css("height","auto");
-		$(".module-investor-modal").css("height",$(document).height());
-	}
-};
-wpgHeightPopup(jQuery);
-jQuery(window).resize(function(){
-	wpgHeightPopup(jQuery);
-});
-jQuery(window).load(function(){
-	wpgHeightPopup(jQuery);
-	if(jQuery(".module-investor-modal").length>0)
-	{
-		// jQuery(".module-investor-modal").fadeIn();
-		jQuery(".module-investor-modal .wpg-investor-modal").css("top",jQuery(window).scrollTop()+100);
-	}
-});
 
-end popup */
 
 /* plugin select */
 (function($){
@@ -523,6 +481,11 @@ jQuery(window).resize(function(){
 				var disclaimer = $(this).attr('data-code');
 				$('.wpg-disclaimer .disclaimer').not(this).fadeOut('medium');
 				$('.wpg-disclaimer').find('.' + disclaimer).fadeIn('medium');
+			}
+			if($('#wpg-checkbox-investor-modal').is(':checked') && $('.wpg-investor-modal-lists ul li span').hasClass('active')) {
+				$('.wpg-investor-modal .wpg-button-accept').removeClass('disabled');
+			} else {
+				$('.wpg-investor-modal .wpg-button-accept').addClass('disabled');
 			}
 		});
 
