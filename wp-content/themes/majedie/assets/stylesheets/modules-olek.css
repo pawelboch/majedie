@@ -2461,6 +2461,7 @@
     background: -webkit-linear-gradient(top, rgba(183, 183, 183, 0) 0%, #b7b7b7 15%, #b7b7b7 85%, rgba(183, 183, 183, 0) 100%);
     background: linear-gradient(to bottom, rgba(183, 183, 183, 0) 0%, #b7b7b7 15%, #b7b7b7 85%, rgba(183, 183, 183, 0) 100%); } }
 /*** END MODULE 35 ***/
+/*****/
 /*** MODULE 36 ***/
 .module-full-width-fund-content {
   padding: 50px 0; }
@@ -2656,6 +2657,21 @@
                 background-color: #e2e1dd; }
       .module-full-width-fund .wpg-inset-col .wpg-inset-box-1 .wpg-box-fund:first-child {
         margin-top: 0; }
+      .module-full-width-fund .wpg-inset-col .wpg-inset-box-1 .wpg-video-box {
+        margin-top: 30px; }
+        .module-full-width-fund .wpg-inset-col .wpg-inset-box-1 .wpg-video-box iframe {
+          display: block;
+          width: 100%;
+          height: 340px; }
+      .module-full-width-fund .wpg-inset-col .wpg-inset-box-1 .wpg-inset-box-again {
+        margin-top: 30px;
+        padding: 20px;
+        color: #fff;
+        background: #dc6f26; }
+        .module-full-width-fund .wpg-inset-col .wpg-inset-box-1 .wpg-inset-box-again p {
+          font-size: 20px; }
+          .module-full-width-fund .wpg-inset-col .wpg-inset-box-1 .wpg-inset-box-again p a {
+            text-decoration: underline; }
     .module-full-width-fund .wpg-inset-col .wpg-inset-box-2 .wpg-box-fund {
       margin-top: 12.5px;
       padding: 30px 20px;
