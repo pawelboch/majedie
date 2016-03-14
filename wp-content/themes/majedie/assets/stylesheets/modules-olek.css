@@ -1310,6 +1310,8 @@
     font-size: 10px; }
   .module-full-width-content p {
     font-size: 15px; }
+    .module-full-width-content p span {
+      line-height: 140%; }
   .module-full-width-content a {
     text-decoration: underline; }
   .module-full-width-content strong {
@@ -2657,21 +2659,6 @@
                 background-color: #e2e1dd; }
       .module-full-width-fund .wpg-inset-col .wpg-inset-box-1 .wpg-box-fund:first-child {
         margin-top: 0; }
-      .module-full-width-fund .wpg-inset-col .wpg-inset-box-1 .wpg-video-box {
-        margin-top: 30px; }
-        .module-full-width-fund .wpg-inset-col .wpg-inset-box-1 .wpg-video-box iframe {
-          display: block;
-          width: 100%;
-          height: 340px; }
-      .module-full-width-fund .wpg-inset-col .wpg-inset-box-1 .wpg-inset-box-again {
-        margin-top: 30px;
-        padding: 20px;
-        color: #fff;
-        background: #dc6f26; }
-        .module-full-width-fund .wpg-inset-col .wpg-inset-box-1 .wpg-inset-box-again p {
-          font-size: 20px; }
-          .module-full-width-fund .wpg-inset-col .wpg-inset-box-1 .wpg-inset-box-again p a {
-            text-decoration: underline; }
     .module-full-width-fund .wpg-inset-col .wpg-inset-box-2 .wpg-box-fund {
       margin-top: 12.5px;
       padding: 30px 20px;
@@ -3001,6 +2988,29 @@
     margin-bottom: 15px !important;
     margin-left: auto; } }
 /*** END MODULE 39 ***/
+/*** MODULE 40 ***/
+.module-video-box {
+  padding: 60px 0; }
+  .module-video-box iframe {
+    display: block;
+    width: 100%;
+    height: 340px; }
+
+@media screen and (max-width: 544px) {
+  .module-video-box iframe {
+    height: 240px; } }
+/*** END MODULE 40 ***/
+/*** MODULE ***/
+.module-other-classic-box {
+  padding: 60px 0; }
+  .module-other-classic-box .wpg-other-classic-box-inset {
+    padding: 20px; }
+    .module-other-classic-box .wpg-other-classic-box-inset p span {
+      line-height: 140%; }
+    .module-other-classic-box .wpg-other-classic-box-inset p a {
+      text-decoration: underline !important; }
+
+/*** END MODULE ***/
 /*** MODULE ***/
 /*** END MODULE ***/
 
