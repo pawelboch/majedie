@@ -326,7 +326,7 @@ function majedie_get_prices_filters() {
 
 	$table_name = $wpdb->prefix . 'majedie_csv';
 
-	$whereParam = '';
+	$whereParams = '';
 	if(isset($_COOKIE['investor-type']) && $_COOKIE['investor-type'] == 'retail'){
 		$whereParams = ' WHERE(`share-class` LIKE \'' . esc_sql( 'Z' ) . '\' OR `share-class` LIKE \'' . esc_sql( 'X' ) . '\') ';
 	}
